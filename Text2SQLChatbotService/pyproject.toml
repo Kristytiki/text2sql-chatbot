@@ -18,6 +18,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# Needed only when LLM_PROVIDER=anthropic (direct Anthropic API instead of Bedrock).
+anthropic = [
+    "anthropic>=0.39",
+]
 metricflow = [
     "metricflow",
     "dbt-semantic-interfaces",
@@ -35,5 +39,15 @@ text2sqlchatbotservice = "text2sqlchatbotservice.app:run"
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+# Catalog YAML (metrics + semantic models) is loaded at runtime from inside the
+# package — without this it's dropped from the wheel and the container starts
+# with 0 metrics. Keep in sync with semantic/catalog/.
+[tool.setuptools.package-data]
+text2sqlchatbotservice = ["semantic/catalog/**/*.yaml"]

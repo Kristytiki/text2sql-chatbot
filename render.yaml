@@ -1,0 +1,47 @@
+# Render blueprint for the Census Text2SQL chatbot.
+# One Docker service: FastAPI backend that also serves the built UI (single
+# origin). Secrets are set in the Render dashboard, NOT here — sync:false means
+# Render prompts for them and never stores them in git.
+#
+# Full env var reference + how to obtain each value: doc/deployment.md
+services:
+  - type: web
+    name: census-chatbot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    region: ohio          # closest free region; LLM/data calls go to us-east-1 regardless
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_PROVIDER
+        value: bedrock
+      - key: AWS_REGION
+        value: us-east-1
+      - key: BEDROCK_MODEL_ID
+        value: us.anthropic.claude-sonnet-4-5-20250929-v1:0
+      - key: BEDROCK_GUARDRAIL_VERSION
+        value: "1"
+      - key: SNOWFLAKE_ACCOUNT
+        value: nhc33680.us-east-1
+      - key: SNOWFLAKE_DATABASE
+        value: CENSUS_DB
+      - key: SNOWFLAKE_SCHEMA
+        value: CENSUS_VIEWS
+      - key: SNOWFLAKE_WAREHOUSE
+        value: COMPUTE_WH
+      - key: SNOWFLAKE_ROLE
+        value: CENSUS_READONLY
+      - key: SNOWFLAKE_USER
+        value: CENSUS_APP
+      # --- secrets: set these in the Render dashboard (sync:false) ---
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: BEDROCK_GUARDRAIL_ID
+        sync: false
+      - key: SNOWFLAKE_PASSWORD
+        sync: false
+      - key: API_KEY
+        sync: false

@@ -108,7 +108,8 @@ src/text2_sql_agent/
     client.py             # snowflake-connector-python, read-only role, LIMIT cap
   guardrails/
     bedrock_guardrail.py  # Bedrock Guardrails (input + output)
-    sql_validator.py      # sqlglot AST: SELECT-only, allowlist schemas, LIMIT≤10k
+    canned.py             # capability-boundary tag dispatch ([REFUSE:<category>])
+    sql_validator.py      # sqlglot AST: SELECT-only, allowlist schemas, LIMIT≤10k (CTE/UNION-aware)
   memory/
     session_registry.py   # in-process dict[session_id] -> Agent
   api/
@@ -122,12 +123,36 @@ ui/                       # React + Vite (copy RolePlayChatbotUI)
 
 | Layer | Catches | Cost | Verdict |
 |---|---|---|---|
-| **Bedrock Guardrails** (managed) | Off-topic, profanity, PII, prompt-injection, denied topics; input + output in one API call | +200–400ms; ~$0.75/1k text units; configured in console | **Primary**. Covers ~80% of pre-flight + output-filter, with one config and AWS-managed updates. |
-| **Pre-flight LLM classifier** (custom) | Domain-specific rejects with canned replies | +1 LLM call (~500ms) | **Skip** — Bedrock Guardrails' "Denied Topics" subsumes this without an extra LLM call. |
-| **Token-level / SQL static validator** (sqlglot) | DDL/DML rejection, schema allowlist, LIMIT injection, join-bomb detection | <5ms; ~80 LOC | **Mandatory**. Bedrock operates on natural language, not SQL ASTs — cannot tell `DROP TABLE` from `SELECT`. |
-| **Output post-filter** (custom) | Hallucinated stats, leaked schema names | +200ms or regex | **Skip** — Bedrock output guardrail covers PII/profanity; hallucination is fought with grounding (cite SQL + row counts), not a post-filter. |
+| **Bedrock Guardrails** (managed, input+output) | Profanity, PII, prompt-injection, content-policy, broad off-topic via "Denied Topics" | +200–400ms; ~$0.75/1k text units; configured in console | **Primary** — covers ~80% of pre-flight + output-filter without an extra LLM call. |
+| **Capability-boundary canned responses** (post-LLM tag dispatch) | "Census-related but agent can't do it" — generate / synthesize / train / forecast / export / give advice | <1ms; ~30 LOC; deterministic | **Required** — Bedrock can't tell *"What's the population of CA?"* (we can answer) from *"Generate a synthetic CA census"* (we can't). Both pass content + denied-topic checks. |
+| **Token-level / SQL static validator** (sqlglot) | DDL/DML rejection, schema allowlist, LIMIT injection (incl. CTE/UNION) | <5ms; ~120 LOC | **Mandatory** — last gate at the data boundary. Bedrock operates on natural language, not SQL ASTs — cannot tell `DROP TABLE` from `SELECT`. |
+| **Pre-flight LLM classifier** (custom) | Domain-specific rejects with canned replies | +1 LLM call (~500ms) | **Skip** — Bedrock "Denied Topics" + the post-LLM canned dispatch below subsume the use case without doubling LLM latency. |
+| **Output post-filter** (hallucination check) | Hallucinated stats, leaked schema names | +200ms or regex | **Skip** — output Bedrock guardrail covers PII/profanity; hallucination is fought with grounding (`semantic_query` cites SQL + row counts), not a post-filter. |
 
-**Net stack:** Bedrock Guardrails (in+out) + sqlglot SQL validator + read-only Snowflake role + result-row cap. SQL validator is non-negotiable; the rest stays declarative.
+**Net stack:** Bedrock Guardrails (in+out) → LLM → canned-tag dispatch → sqlglot SQL validator → read-only Snowflake role → result-row cap. The capability-boundary layer + SQL validator are the only **mandatory** custom code; everything else is managed.
+
+### Capability-boundary canned responses
+
+The LLM is instructed (in `system_prompt.py`) that when a user asks for something **out of capability**, it must NOT improvise the refusal — instead it emits a single tag of the form `[REFUSE:<category>]` (optionally with `:key=value` parameters). The backend (`guardrails/canned.py`) catches that tag in `chat.py` after the agent returns and substitutes a deterministic canned message. This keeps the refusal **wording stable, brand-consistent, and reviewable in git** instead of regenerated every turn.
+
+**Tag categories:**
+
+| Tag | Triggered by | Canned response gist |
+|---|---|---|
+| `[REFUSE:off_topic]` | Question has nothing to do with US Census (weather, sports, jokes, code help) | "I can only answer questions about the US population using the Snowflake US Open Census dataset. Try …" + 3 example queries |
+| `[REFUSE:out_of_capability]` | Census-shaped but not a query — generate / synthesize / forecast / train / deploy / export / edit | "I can't generate or synthesize census data — I'm a query agent over the existing dataset. What I CAN do …" + suggested redirect |
+| `[REFUSE:future_data:year=YYYY]` | Asks for a year we don't have (anything outside 2019/2020) | "The dataset only covers 2019 and 2020 ACS 5-year snapshots. I don't have data for {year}. Did you mean 2020?" |
+| `[REFUSE:individual_data]` | Asks about a specific person, address, or sub-CBG geography | "I can't look up individual people. The Census Bureau only releases aggregated counts at the census-block-group level (~600–3000 people each)." |
+| `[REFUSE:personal_advice]` | Asks for legal / medical / financial / policy advice or actions on the user's behalf | "I can answer factual questions about census data but can't give advice or take actions. Is there a Census stat I can pull for you?" |
+| `[REFUSE:prompt_injection]` | Tries to override the agent's rules ("ignore previous instructions", role-play override, system-prompt extraction) | "I'll stick to answering questions about the US Census dataset. What demographic data can I help you find?" |
+| `[REFUSE:non_additive_metric:metric=X]` | User asks for a median / mean / aggregate column that the catalog excluded (sum-aggregating across CBGs is wrong) | "Census ACS provides {metric} per census-block-group; summing them across geographies is statistically incorrect. I can show you the underlying counts and you can compute a population-weighted estimate." |
+
+Tags are matched by a regex anchored at the **start of the LLM output** (`^\[REFUSE:([a-z_]+)(?::([^\]]*))?\]`). Anything after the tag is ignored. No tag → response goes through unchanged.
+
+Why "tag" and not "have the LLM write the canned text directly":
+- LLMs paraphrase silently → wording drifts every turn → ops can't audit
+- Tag dispatch is deterministic and trivially testable (snapshot tests)
+- Adding/changing a category is a 1-line YAML / dict edit + 1 line in `system_prompt.py`
 
 ---
 

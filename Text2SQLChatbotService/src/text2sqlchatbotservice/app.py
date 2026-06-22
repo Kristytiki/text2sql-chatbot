@@ -7,6 +7,7 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from text2sqlchatbotservice.agent import build_chat_agent
 from text2sqlchatbotservice.api.routers import chat as chat_router
@@ -60,7 +61,8 @@ async def lifespan(app: FastAPI):
         restore=_restore_agent,
     )
     logger.info(
-        "startup ok — guardrail=%s auth=%s db=%s catalog=%d metrics",
+        "startup ok — provider=%s guardrail=%s auth=%s db=%s catalog=%d metrics",
+        settings.llm_provider,
         "on" if app.state.guardrail.enabled else "off-shadow",
         "on" if settings.api_key else "OFF",
         settings.snowflake_database,
@@ -94,6 +96,17 @@ def create_app() -> FastAPI:
     def health() -> dict[str, str]:
         return {"status": "ok"}
 
+    # Serve the built UI (single origin) when a dist dir is configured & exists.
+    # Mounted last so /chat and /health take precedence; html=True makes the
+    # SPA fall back to index.html for client-side routes.
+    if settings.ui_dist_dir:
+        dist = Path(settings.ui_dist_dir)
+        if dist.is_dir():
+            app.mount("/", StaticFiles(directory=str(dist), html=True), name="ui")
+            logger.info("serving UI from %s", dist)
+        else:
+            logger.warning("UI_DIST_DIR=%s not found — serving API only", dist)
+
     return app
 
 
@@ -102,7 +115,13 @@ app = create_app()
 
 def run() -> None:
     import uvicorn
-    uvicorn.run("text2sqlchatbotservice.app:app", host="127.0.0.1", port=8000, reload=False)
+    settings = get_settings()
+    uvicorn.run(
+        "text2sqlchatbotservice.app:app",
+        host=settings.host,
+        port=settings.port,
+        reload=False,
+    )
 
 
 if __name__ == "__main__":

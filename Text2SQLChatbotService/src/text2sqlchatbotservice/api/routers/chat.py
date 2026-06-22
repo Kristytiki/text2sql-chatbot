@@ -8,6 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 
 from text2sqlchatbotservice.agent import build_chat_agent
 from text2sqlchatbotservice.api.auth import require_api_key
+from text2sqlchatbotservice.guardrails import dispatch as canned_dispatch
 from text2sqlchatbotservice.api.schemas import (
     CreateSessionRequest,
     CreateSessionResponse,
@@ -87,6 +88,17 @@ def send_message(session_id: str, body: SendMessageRequest, request: Request) ->
         new_messages = list((session.agent.messages or [])[baseline:])
 
     reply_text = _extract_text(result)
+
+    # Capability-boundary canned dispatch: if the LLM emitted a [REFUSE:cat]
+    # tag, replace its body with a deterministic canned response and mark the
+    # turn as blocked. We skip the output guardrail in that case — the canned
+    # text is hand-written and already safe.
+    canned = canned_dispatch(reply_text)
+    if canned.matched:
+        logger.info("canned refusal %s for session %s", canned.category, session_id)
+        return SendMessageResponse(
+            reply=canned.text, blocked=True, block_reason=f"refused:{canned.category}",
+        )
 
     # Output guardrail.
     out_verdict = state.guardrail.apply(reply_text, source="OUTPUT")

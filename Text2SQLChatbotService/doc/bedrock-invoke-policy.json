@@ -1,0 +1,23 @@
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "InvokeClaudeSonnet",
+        "Effect": "Allow",
+        "Action": [
+          "bedrock:InvokeModel",
+          "bedrock:InvokeModelWithResponseStream"
+        ],
+        "Resource": [
+          "arn:aws:bedrock:*::foundation-model/anthropic.claude-*",
+          "arn:aws:bedrock:*:996553104446:inference-profile/us.anthropic.claude-*"
+        ]
+      },
+      {
+        "Sid": "ApplyCensusGuardrail",
+        "Effect": "Allow",
+        "Action": "bedrock:ApplyGuardrail",
+        "Resource": "arn:aws:bedrock:us-east-1:996553104446:guardrail/t40dhfwhl8at"
+      }
+    ]
+  }

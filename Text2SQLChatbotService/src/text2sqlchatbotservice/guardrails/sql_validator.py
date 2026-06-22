@@ -121,11 +121,15 @@ def validate_select_sql(
                 # immutability of the caller's input.
                 stmt = stmt.limit(max_limit)
             else:
+                # Parse the literal LIMIT value. The raise MUST live outside the
+                # try: SqlValidationError subclasses ValueError, so catching
+                # ValueError here would swallow our own "exceeds max" error and
+                # silently let an oversized LIMIT through.
                 try:
                     lim_val = int(existing_limit.expression.name)
-                    if lim_val > max_limit:
-                        raise SqlValidationError(f"LIMIT {lim_val} exceeds max {max_limit}")
                 except (AttributeError, ValueError):
-                    pass
+                    lim_val = None
+                if lim_val is not None and lim_val > max_limit:
+                    raise SqlValidationError(f"LIMIT {lim_val} exceeds max {max_limit}")
 
     return stmt.sql(dialect="snowflake")

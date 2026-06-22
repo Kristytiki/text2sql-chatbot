@@ -1,0 +1,13 @@
+# Keep the build context small and free of local state / secrets.
+**/node_modules
+**/dist
+**/.venv
+**/venv
+**/__pycache__
+**/*.pyc
+**/.env
+**/.sessions
+**/*.egg-info
+**/.git
+**/.pytest_cache
+metricflow
