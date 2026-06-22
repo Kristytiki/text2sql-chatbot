@@ -1,0 +1,198 @@
+semantic_model:
+  name: cbg_b29
+  description: "Census ACS topic B29 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B29
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b29001e1_estimate_citizen_voting_age_population_by_age_citizens
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY AGE \u2014 Citizens\
+      \ 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B29001e1"'
+  - name: b29001m1_marginoferror_citizen_voting_age_population_by_age_citi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY AGE \u2014 Citizens 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B29001m1"'
+  - name: b29001e2_estimate_citizen_voting_age_population_by_age_citizens
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY AGE \u2014 Citizens\
+      \ 18 years and over \u2014 Total \u2014 18 to 29 years"
+    agg: sum
+    expr: '"B29001e2"'
+  - name: b29001m2_marginoferror_citizen_voting_age_population_by_age_citi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY AGE \u2014 Citizens 18 years and over \u2014 Total \u2014 18 to 29 years"
+    agg: sum
+    expr: '"B29001m2"'
+  - name: b29001e3_estimate_citizen_voting_age_population_by_age_citizens
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY AGE \u2014 Citizens\
+      \ 18 years and over \u2014 Total \u2014 30 to 44 years"
+    agg: sum
+    expr: '"B29001e3"'
+  - name: b29001m3_marginoferror_citizen_voting_age_population_by_age_citi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY AGE \u2014 Citizens 18 years and over \u2014 Total \u2014 30 to 44 years"
+    agg: sum
+    expr: '"B29001m3"'
+  - name: b29001e4_estimate_citizen_voting_age_population_by_age_citizens
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY AGE \u2014 Citizens\
+      \ 18 years and over \u2014 Total \u2014 45 to 64 years"
+    agg: sum
+    expr: '"B29001e4"'
+  - name: b29001m4_marginoferror_citizen_voting_age_population_by_age_citi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY AGE \u2014 Citizens 18 years and over \u2014 Total \u2014 45 to 64 years"
+    agg: sum
+    expr: '"B29001m4"'
+  - name: b29001e5_estimate_citizen_voting_age_population_by_age_citizens
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY AGE \u2014 Citizens\
+      \ 18 years and over \u2014 Total \u2014 65 years and over"
+    agg: sum
+    expr: '"B29001e5"'
+  - name: b29001m5_marginoferror_citizen_voting_age_population_by_age_citi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY AGE \u2014 Citizens 18 years and over \u2014 Total \u2014 65 years and\
+      \ over"
+    agg: sum
+    expr: '"B29001m5"'
+  - name: b29002e1_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B29002e1"'
+  - name: b29002m1_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B29002m1"'
+  - name: b29002e2_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 Less than 9th grade"
+    agg: sum
+    expr: '"B29002e2"'
+  - name: b29002m2_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ Less than 9th grade"
+    agg: sum
+    expr: '"B29002m2"'
+  - name: b29002e3_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 9th to 12th grade no\
+      \ diploma"
+    agg: sum
+    expr: '"B29002e3"'
+  - name: b29002m3_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ 9th to 12th grade no diploma"
+    agg: sum
+    expr: '"B29002m3"'
+  - name: b29002e4_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equivalency)"
+    agg: sum
+    expr: '"B29002e4"'
+  - name: b29002m4_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ High school graduate (includes equivalency)"
+    agg: sum
+    expr: '"B29002m4"'
+  - name: b29002e5_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 Some college no degree"
+    agg: sum
+    expr: '"B29002e5"'
+  - name: b29002m5_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ Some college no degree"
+    agg: sum
+    expr: '"B29002m5"'
+  - name: b29002e6_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 Associate's degree"
+    agg: sum
+    expr: '"B29002e6"'
+  - name: b29002m6_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ Associate's degree"
+    agg: sum
+    expr: '"B29002m6"'
+  - name: b29002e7_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 Bachelor's degree"
+    agg: sum
+    expr: '"B29002e7"'
+  - name: b29002m7_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ Bachelor's degree"
+    agg: sum
+    expr: '"B29002m7"'
+  - name: b29002e8_estimate_citizen_voting_age_population_by_educational_a
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY EDUCATIONAL ATTAINMENT\
+      \ \u2014 Citizens 18 years and over \u2014 Total \u2014 Graduate or professional\
+      \ degree"
+    agg: sum
+    expr: '"B29002e8"'
+  - name: b29002m8_marginoferror_citizen_voting_age_population_by_educatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY EDUCATIONAL ATTAINMENT \u2014 Citizens 18 years and over \u2014 Total \u2014\
+      \ Graduate or professional degree"
+    agg: sum
+    expr: '"B29002m8"'
+  - name: b29003e1_estimate_citizen_voting_age_population_by_poverty_statu
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY POVERTY STATUS\
+      \ \u2014 Citizens 18 years and over for whom poverty status is determined \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B29003e1"'
+  - name: b29003m1_marginoferror_citizen_voting_age_population_by_poverty
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY POVERTY STATUS \u2014 Citizens 18 years and over for whom poverty status\
+      \ is determined \u2014 Total"
+    agg: sum
+    expr: '"B29003m1"'
+  - name: b29003e2_estimate_citizen_voting_age_population_by_poverty_statu
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY POVERTY STATUS\
+      \ \u2014 Citizens 18 years and over for whom poverty status is determined \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level"
+    agg: sum
+    expr: '"B29003e2"'
+  - name: b29003m2_marginoferror_citizen_voting_age_population_by_poverty
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY POVERTY STATUS \u2014 Citizens 18 years and over for whom poverty status\
+      \ is determined \u2014 Total \u2014 Income in the past 12 months below poverty\
+      \ level"
+    agg: sum
+    expr: '"B29003m2"'
+  - name: b29003e3_estimate_citizen_voting_age_population_by_poverty_statu
+    description: "Estimate \u2014 CITIZEN, VOTING-AGE POPULATION BY POVERTY STATUS\
+      \ \u2014 Citizens 18 years and over for whom poverty status is determined \u2014\
+      \ Total \u2014 Income in the past 12 months at or above the poverty level"
+    agg: sum
+    expr: '"B29003e3"'
+  - name: b29003m3_marginoferror_citizen_voting_age_population_by_poverty
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 CITIZEN, VOTING-AGE POPULATION\
+      \ BY POVERTY STATUS \u2014 Citizens 18 years and over for whom poverty status\
+      \ is determined \u2014 Total \u2014 Income in the past 12 months at or above\
+      \ the poverty level"
+    agg: sum
+    expr: '"B29003m3"'

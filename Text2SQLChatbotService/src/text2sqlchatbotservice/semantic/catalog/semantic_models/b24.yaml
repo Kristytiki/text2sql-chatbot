@@ -1,0 +1,299 @@
+semantic_model:
+  name: cbg_b24
+  description: "Census ACS topic B24 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B24
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b24080e1_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B24080e1"'
+  - name: b24080m1_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B24080m1"'
+  - name: b24080e2_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B24080e2"'
+  - name: b24080m2_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B24080m2"'
+  - name: b24080e3_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Private for-profit wage and salary\
+      \ workers"
+    agg: sum
+    expr: '"B24080e3"'
+  - name: b24080m3_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Private for-profit\
+      \ wage and salary worke"
+    agg: sum
+    expr: '"B24080m3"'
+  - name: b24080e4_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Private for-profit wage and salary\
+      \ workers \u2014 "
+    agg: sum
+    expr: '"B24080e4"'
+  - name: b24080m4_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Private for-profit\
+      \ wage and salary worke"
+    agg: sum
+    expr: '"B24080m4"'
+  - name: b24080e5_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Private for-profit wage and salary\
+      \ workers \u2014 "
+    agg: sum
+    expr: '"B24080e5"'
+  - name: b24080m5_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Private for-profit\
+      \ wage and salary worke"
+    agg: sum
+    expr: '"B24080m5"'
+  - name: b24080e6_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Private not-for-profit wage and salary\
+      \ worker"
+    agg: sum
+    expr: '"B24080e6"'
+  - name: b24080m6_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Private not-for-profit\
+      \ wage and salary w"
+    agg: sum
+    expr: '"B24080m6"'
+  - name: b24080e7_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Local government workers"
+    agg: sum
+    expr: '"B24080e7"'
+  - name: b24080m7_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Local government\
+      \ workers"
+    agg: sum
+    expr: '"B24080m7"'
+  - name: b24080e8_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 State government workers"
+    agg: sum
+    expr: '"B24080e8"'
+  - name: b24080m8_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 State government\
+      \ workers"
+    agg: sum
+    expr: '"B24080m8"'
+  - name: b24080e9_estimate_sex_by_class_of_worker_for_the_civilian_employ
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Federal government workers"
+    agg: sum
+    expr: '"B24080e9"'
+  - name: b24080m9_marginoferror_sex_by_class_of_worker_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Federal government\
+      \ workers"
+    agg: sum
+    expr: '"B24080m9"'
+  - name: b24080e10_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Self-employed in own not incorporated\
+      \ busines"
+    agg: sum
+    expr: '"B24080e10"'
+  - name: b24080m10_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Self-employed\
+      \ in own not incorporated bu"
+    agg: sum
+    expr: '"B24080m10"'
+  - name: b24080e11_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Male \u2014 Unpaid family workers"
+    agg: sum
+    expr: '"B24080e11"'
+  - name: b24080m11_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Male \u2014 Unpaid family\
+      \ workers"
+    agg: sum
+    expr: '"B24080m11"'
+  - name: b24080e12_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B24080e12"'
+  - name: b24080m12_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B24080m12"'
+  - name: b24080e13_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Private for-profit wage and salary\
+      \ workers"
+    agg: sum
+    expr: '"B24080e13"'
+  - name: b24080m13_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Private for-profit\
+      \ wage and salary wor"
+    agg: sum
+    expr: '"B24080m13"'
+  - name: b24080e14_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Private for-profit wage and salary\
+      \ workers "
+    agg: sum
+    expr: '"B24080e14"'
+  - name: b24080m14_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Private for-profit\
+      \ wage and salary wor"
+    agg: sum
+    expr: '"B24080m14"'
+  - name: b24080e15_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Private for-profit wage and salary\
+      \ workers "
+    agg: sum
+    expr: '"B24080e15"'
+  - name: b24080m15_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Private for-profit\
+      \ wage and salary wor"
+    agg: sum
+    expr: '"B24080m15"'
+  - name: b24080e16_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Private not-for-profit wage and\
+      \ salary work"
+    agg: sum
+    expr: '"B24080e16"'
+  - name: b24080m16_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Private not-for-profit\
+      \ wage and salary"
+    agg: sum
+    expr: '"B24080m16"'
+  - name: b24080e17_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Local government workers"
+    agg: sum
+    expr: '"B24080e17"'
+  - name: b24080m17_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Local government\
+      \ workers"
+    agg: sum
+    expr: '"B24080m17"'
+  - name: b24080e18_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 State government workers"
+    agg: sum
+    expr: '"B24080e18"'
+  - name: b24080m18_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 State government\
+      \ workers"
+    agg: sum
+    expr: '"B24080m18"'
+  - name: b24080e19_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Federal government workers"
+    agg: sum
+    expr: '"B24080e19"'
+  - name: b24080m19_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Federal government\
+      \ workers"
+    agg: sum
+    expr: '"B24080m19"'
+  - name: b24080e20_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Self-employed in own not incorporated\
+      \ busin"
+    agg: sum
+    expr: '"B24080e20"'
+  - name: b24080m20_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Self-employed\
+      \ in own not incorporated "
+    agg: sum
+    expr: '"B24080m20"'
+  - name: b24080e21_estimate_sex_by_class_of_worker_for_the_civilian_emplo
+    description: "Estimate \u2014 SEX BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Female \u2014 Unpaid family workers"
+    agg: sum
+    expr: '"B24080e21"'
+  - name: b24080m21_marginoferror_sex_by_class_of_worker_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY CLASS OF WORKER FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Female \u2014 Unpaid family\
+      \ workers"
+    agg: sum
+    expr: '"B24080m21"'

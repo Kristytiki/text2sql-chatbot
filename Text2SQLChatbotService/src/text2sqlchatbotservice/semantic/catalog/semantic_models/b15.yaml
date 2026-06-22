@@ -1,0 +1,1478 @@
+semantic_model:
+  name: cbg_b15
+  description: "Census ACS topic B15 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B15
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b15002e1_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total"
+    agg: sum
+    expr: '"B15002e1"'
+  - name: b15002m1_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B15002m1"'
+  - name: b15002e2_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male"
+    agg: sum
+    expr: '"B15002e2"'
+  - name: b15002m2_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male"
+    agg: sum
+    expr: '"B15002m2"'
+  - name: b15002e3_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 No schooling completed"
+    agg: sum
+    expr: '"B15002e3"'
+  - name: b15002m3_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 No schooling completed"
+    agg: sum
+    expr: '"B15002m3"'
+  - name: b15002e4_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Nursery to 4th grade"
+    agg: sum
+    expr: '"B15002e4"'
+  - name: b15002m4_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Nursery to 4th grade"
+    agg: sum
+    expr: '"B15002m4"'
+  - name: b15002e5_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 5th and 6th grade"
+    agg: sum
+    expr: '"B15002e5"'
+  - name: b15002m5_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 5th and 6th grade"
+    agg: sum
+    expr: '"B15002m5"'
+  - name: b15002e6_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 7th and 8th grade"
+    agg: sum
+    expr: '"B15002e6"'
+  - name: b15002m6_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 7th and 8th grade"
+    agg: sum
+    expr: '"B15002m6"'
+  - name: b15002e7_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 9th grade"
+    agg: sum
+    expr: '"B15002e7"'
+  - name: b15002m7_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 9th grade"
+    agg: sum
+    expr: '"B15002m7"'
+  - name: b15002e8_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 10th grade"
+    agg: sum
+    expr: '"B15002e8"'
+  - name: b15002m8_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 10th grade"
+    agg: sum
+    expr: '"B15002m8"'
+  - name: b15002e9_estimate_sex_by_educational_attainment_for_the_populati
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 11th grade"
+    agg: sum
+    expr: '"B15002e9"'
+  - name: b15002m9_marginoferror_sex_by_educational_attainment_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 11th grade"
+    agg: sum
+    expr: '"B15002m9"'
+  - name: b15002e10_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 12th grade no diploma"
+    agg: sum
+    expr: '"B15002e10"'
+  - name: b15002m10_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 12th grade no diploma"
+    agg: sum
+    expr: '"B15002m10"'
+  - name: b15002e11_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 High school graduate (includes equivalency)"
+    agg: sum
+    expr: '"B15002e11"'
+  - name: b15002m11_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 High school graduate (includes equivalency)"
+    agg: sum
+    expr: '"B15002m11"'
+  - name: b15002e12_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Some college less than 1 year"
+    agg: sum
+    expr: '"B15002e12"'
+  - name: b15002m12_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Some college less than 1 year"
+    agg: sum
+    expr: '"B15002m12"'
+  - name: b15002e13_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Some college 1 or more years no degree"
+    agg: sum
+    expr: '"B15002e13"'
+  - name: b15002m13_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Some college 1 or more years no degree"
+    agg: sum
+    expr: '"B15002m13"'
+  - name: b15002e14_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Associate's degree"
+    agg: sum
+    expr: '"B15002e14"'
+  - name: b15002m14_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Associate's degree"
+    agg: sum
+    expr: '"B15002m14"'
+  - name: b15002e15_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Bachelor's degree"
+    agg: sum
+    expr: '"B15002e15"'
+  - name: b15002m15_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Bachelor's degree"
+    agg: sum
+    expr: '"B15002m15"'
+  - name: b15002e16_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Master's degree"
+    agg: sum
+    expr: '"B15002e16"'
+  - name: b15002m16_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Master's degree"
+    agg: sum
+    expr: '"B15002m16"'
+  - name: b15002e17_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Professional school degree"
+    agg: sum
+    expr: '"B15002e17"'
+  - name: b15002m17_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Professional school degree"
+    agg: sum
+    expr: '"B15002m17"'
+  - name: b15002e18_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Male \u2014 Doctorate degree"
+    agg: sum
+    expr: '"B15002e18"'
+  - name: b15002m18_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Male \u2014 Doctorate degree"
+    agg: sum
+    expr: '"B15002m18"'
+  - name: b15002e19_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female"
+    agg: sum
+    expr: '"B15002e19"'
+  - name: b15002m19_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female"
+    agg: sum
+    expr: '"B15002m19"'
+  - name: b15002e20_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 No schooling completed"
+    agg: sum
+    expr: '"B15002e20"'
+  - name: b15002m20_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 No schooling completed"
+    agg: sum
+    expr: '"B15002m20"'
+  - name: b15002e21_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Nursery to 4th grade"
+    agg: sum
+    expr: '"B15002e21"'
+  - name: b15002m21_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Nursery to 4th grade"
+    agg: sum
+    expr: '"B15002m21"'
+  - name: b15002e22_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 5th and 6th grade"
+    agg: sum
+    expr: '"B15002e22"'
+  - name: b15002m22_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 5th and 6th grade"
+    agg: sum
+    expr: '"B15002m22"'
+  - name: b15002e23_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 7th and 8th grade"
+    agg: sum
+    expr: '"B15002e23"'
+  - name: b15002m23_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 7th and 8th grade"
+    agg: sum
+    expr: '"B15002m23"'
+  - name: b15002e24_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 9th grade"
+    agg: sum
+    expr: '"B15002e24"'
+  - name: b15002m24_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 9th grade"
+    agg: sum
+    expr: '"B15002m24"'
+  - name: b15002e25_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 10th grade"
+    agg: sum
+    expr: '"B15002e25"'
+  - name: b15002m25_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 10th grade"
+    agg: sum
+    expr: '"B15002m25"'
+  - name: b15002e26_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 11th grade"
+    agg: sum
+    expr: '"B15002e26"'
+  - name: b15002m26_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 11th grade"
+    agg: sum
+    expr: '"B15002m26"'
+  - name: b15002e27_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 12th grade no diploma"
+    agg: sum
+    expr: '"B15002e27"'
+  - name: b15002m27_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 12th grade no diploma"
+    agg: sum
+    expr: '"B15002m27"'
+  - name: b15002e28_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 High school graduate (includes equivalency)"
+    agg: sum
+    expr: '"B15002e28"'
+  - name: b15002m28_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 High school graduate (includes equivalency)"
+    agg: sum
+    expr: '"B15002m28"'
+  - name: b15002e29_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Some college less than 1 year"
+    agg: sum
+    expr: '"B15002e29"'
+  - name: b15002m29_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Some college less than 1 year"
+    agg: sum
+    expr: '"B15002m29"'
+  - name: b15002e30_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Some college 1 or more years no degree"
+    agg: sum
+    expr: '"B15002e30"'
+  - name: b15002m30_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Some college 1 or more years no degree"
+    agg: sum
+    expr: '"B15002m30"'
+  - name: b15002e31_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Associate's degree"
+    agg: sum
+    expr: '"B15002e31"'
+  - name: b15002m31_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Associate's degree"
+    agg: sum
+    expr: '"B15002m31"'
+  - name: b15002e32_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Bachelor's degree"
+    agg: sum
+    expr: '"B15002e32"'
+  - name: b15002m32_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Bachelor's degree"
+    agg: sum
+    expr: '"B15002m32"'
+  - name: b15002e33_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Master's degree"
+    agg: sum
+    expr: '"B15002e33"'
+  - name: b15002m33_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Master's degree"
+    agg: sum
+    expr: '"B15002m33"'
+  - name: b15002e34_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Professional school degree"
+    agg: sum
+    expr: '"B15002e34"'
+  - name: b15002m34_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Professional school degree"
+    agg: sum
+    expr: '"B15002m34"'
+  - name: b15002e35_estimate_sex_by_educational_attainment_for_the_populat
+    description: "Estimate \u2014 SEX BY EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Female \u2014 Doctorate degree"
+    agg: sum
+    expr: '"B15002e35"'
+  - name: b15002m35_marginoferror_sex_by_educational_attainment_for_the_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EDUCATIONAL ATTAINMENT\
+      \ FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Female \u2014 Doctorate degree"
+    agg: sum
+    expr: '"B15002m35"'
+  - name: b15003e1_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total"
+    agg: sum
+    expr: '"B15003e1"'
+  - name: b15003m1_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B15003m1"'
+  - name: b15003e2_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 No schooling\
+      \ completed"
+    agg: sum
+    expr: '"B15003e2"'
+  - name: b15003m2_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 No schooling completed"
+    agg: sum
+    expr: '"B15003m2"'
+  - name: b15003e3_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Nursery school"
+    agg: sum
+    expr: '"B15003e3"'
+  - name: b15003m3_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Nursery school"
+    agg: sum
+    expr: '"B15003m3"'
+  - name: b15003e4_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Kindergarten"
+    agg: sum
+    expr: '"B15003e4"'
+  - name: b15003m4_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Kindergarten"
+    agg: sum
+    expr: '"B15003m4"'
+  - name: b15003e5_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 1st grade"
+    agg: sum
+    expr: '"B15003e5"'
+  - name: b15003m5_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 1st grade"
+    agg: sum
+    expr: '"B15003m5"'
+  - name: b15003e6_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 2nd grade"
+    agg: sum
+    expr: '"B15003e6"'
+  - name: b15003m6_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 2nd grade"
+    agg: sum
+    expr: '"B15003m6"'
+  - name: b15003e7_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 3rd grade"
+    agg: sum
+    expr: '"B15003e7"'
+  - name: b15003m7_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 3rd grade"
+    agg: sum
+    expr: '"B15003m7"'
+  - name: b15003e8_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 4th grade"
+    agg: sum
+    expr: '"B15003e8"'
+  - name: b15003m8_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 4th grade"
+    agg: sum
+    expr: '"B15003m8"'
+  - name: b15003e9_estimate_educational_attainment_for_the_population_25_y
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 5th grade"
+    agg: sum
+    expr: '"B15003e9"'
+  - name: b15003m9_marginoferror_educational_attainment_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 5th grade"
+    agg: sum
+    expr: '"B15003m9"'
+  - name: b15003e10_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 6th grade"
+    agg: sum
+    expr: '"B15003e10"'
+  - name: b15003m10_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 6th grade"
+    agg: sum
+    expr: '"B15003m10"'
+  - name: b15003e11_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 7th grade"
+    agg: sum
+    expr: '"B15003e11"'
+  - name: b15003m11_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 7th grade"
+    agg: sum
+    expr: '"B15003m11"'
+  - name: b15003e12_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 8th grade"
+    agg: sum
+    expr: '"B15003e12"'
+  - name: b15003m12_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 8th grade"
+    agg: sum
+    expr: '"B15003m12"'
+  - name: b15003e13_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 9th grade"
+    agg: sum
+    expr: '"B15003e13"'
+  - name: b15003m13_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 9th grade"
+    agg: sum
+    expr: '"B15003m13"'
+  - name: b15003e14_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 10th grade"
+    agg: sum
+    expr: '"B15003e14"'
+  - name: b15003m14_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 10th grade"
+    agg: sum
+    expr: '"B15003m14"'
+  - name: b15003e15_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 11th grade"
+    agg: sum
+    expr: '"B15003e15"'
+  - name: b15003m15_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 11th grade"
+    agg: sum
+    expr: '"B15003m15"'
+  - name: b15003e16_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 12th grade\
+      \ no diploma"
+    agg: sum
+    expr: '"B15003e16"'
+  - name: b15003m16_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 12th grade no diploma"
+    agg: sum
+    expr: '"B15003m16"'
+  - name: b15003e17_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Regular high\
+      \ school diploma"
+    agg: sum
+    expr: '"B15003e17"'
+  - name: b15003m17_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Regular high school diploma"
+    agg: sum
+    expr: '"B15003m17"'
+  - name: b15003e18_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 GED or alternative\
+      \ credential"
+    agg: sum
+    expr: '"B15003e18"'
+  - name: b15003m18_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 GED or alternative credential"
+    agg: sum
+    expr: '"B15003m18"'
+  - name: b15003e19_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Some college\
+      \ less than 1 year"
+    agg: sum
+    expr: '"B15003e19"'
+  - name: b15003m19_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Some college less than 1 year"
+    agg: sum
+    expr: '"B15003m19"'
+  - name: b15003e20_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Some college\
+      \ 1 or more years no degree"
+    agg: sum
+    expr: '"B15003e20"'
+  - name: b15003m20_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Some college 1 or more years no degree"
+    agg: sum
+    expr: '"B15003m20"'
+  - name: b15003e21_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Associate's\
+      \ degree"
+    agg: sum
+    expr: '"B15003e21"'
+  - name: b15003m21_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Associate's degree"
+    agg: sum
+    expr: '"B15003m21"'
+  - name: b15003e22_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Bachelor's\
+      \ degree"
+    agg: sum
+    expr: '"B15003e22"'
+  - name: b15003m22_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Bachelor's degree"
+    agg: sum
+    expr: '"B15003m22"'
+  - name: b15003e23_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Master's\
+      \ degree"
+    agg: sum
+    expr: '"B15003e23"'
+  - name: b15003m23_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Master's degree"
+    agg: sum
+    expr: '"B15003m23"'
+  - name: b15003e24_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Professional\
+      \ school degree"
+    agg: sum
+    expr: '"B15003e24"'
+  - name: b15003m24_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Professional school degree"
+    agg: sum
+    expr: '"B15003m24"'
+  - name: b15003e25_estimate_educational_attainment_for_the_population_25
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS\
+      \ AND OVER \u2014 Population 25 years and over \u2014 Total \u2014 Doctorate\
+      \ degree"
+    agg: sum
+    expr: '"B15003e25"'
+  - name: b15003m25_marginoferror_educational_attainment_for_the_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT FOR\
+      \ THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years and over \u2014\
+      \ Total \u2014 Doctorate degree"
+    agg: sum
+    expr: '"B15003m25"'
+  - name: b15011e1_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"B15011e1"'
+  - name: b15011m1_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"B15011m1"'
+  - name: b15011e2_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B15011e2"'
+  - name: b15011m2_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m2"'
+  - name: b15011e3_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 2"
+    agg: sum
+    expr: '"B15011e3"'
+  - name: b15011m3_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m3"'
+  - name: b15011e4_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 2"
+    agg: sum
+    expr: '"B15011e4"'
+  - name: b15011m4_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m4"'
+  - name: b15011e5_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 2"
+    agg: sum
+    expr: '"B15011e5"'
+  - name: b15011m5_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m5"'
+  - name: b15011e6_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 2"
+    agg: sum
+    expr: '"B15011e6"'
+  - name: b15011m6_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m6"'
+  - name: b15011e7_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 2"
+    agg: sum
+    expr: '"B15011e7"'
+  - name: b15011m7_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m7"'
+  - name: b15011e8_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 2"
+    agg: sum
+    expr: '"B15011e8"'
+  - name: b15011m8_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m8"'
+  - name: b15011e9_estimate_sex_by_age_by_field_of_bachelor_s_degree_for_f
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 4"
+    agg: sum
+    expr: '"B15011e9"'
+  - name: b15011m9_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m9"'
+  - name: b15011e10_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 4"
+    agg: sum
+    expr: '"B15011e10"'
+  - name: b15011m10_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m10"'
+  - name: b15011e11_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 4"
+    agg: sum
+    expr: '"B15011e11"'
+  - name: b15011m11_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m11"'
+  - name: b15011e12_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 4"
+    agg: sum
+    expr: '"B15011e12"'
+  - name: b15011m12_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m12"'
+  - name: b15011e13_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 4"
+    agg: sum
+    expr: '"B15011e13"'
+  - name: b15011m13_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m13"'
+  - name: b15011e14_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 4"
+    agg: sum
+    expr: '"B15011e14"'
+  - name: b15011m14_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m14"'
+  - name: b15011e15_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 6"
+    agg: sum
+    expr: '"B15011e15"'
+  - name: b15011m15_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m15"'
+  - name: b15011e16_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 6"
+    agg: sum
+    expr: '"B15011e16"'
+  - name: b15011m16_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m16"'
+  - name: b15011e17_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 6"
+    agg: sum
+    expr: '"B15011e17"'
+  - name: b15011m17_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m17"'
+  - name: b15011e18_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 6"
+    agg: sum
+    expr: '"B15011e18"'
+  - name: b15011m18_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m18"'
+  - name: b15011e19_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 6"
+    agg: sum
+    expr: '"B15011e19"'
+  - name: b15011m19_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m19"'
+  - name: b15011e20_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Male\
+      \ \u2014 6"
+    agg: sum
+    expr: '"B15011e20"'
+  - name: b15011m20_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Mal"
+    agg: sum
+    expr: '"B15011m20"'
+  - name: b15011e21_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B15011e21"'
+  - name: b15011m21_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m21"'
+  - name: b15011e22_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e22"'
+  - name: b15011m22_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m22"'
+  - name: b15011e23_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e23"'
+  - name: b15011m23_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m23"'
+  - name: b15011e24_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e24"'
+  - name: b15011m24_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m24"'
+  - name: b15011e25_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e25"'
+  - name: b15011m25_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m25"'
+  - name: b15011e26_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e26"'
+  - name: b15011m26_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m26"'
+  - name: b15011e27_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e27"'
+  - name: b15011m27_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m27"'
+  - name: b15011e28_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e28"'
+  - name: b15011m28_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m28"'
+  - name: b15011e29_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e29"'
+  - name: b15011m29_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m29"'
+  - name: b15011e30_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e30"'
+  - name: b15011m30_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m30"'
+  - name: b15011e31_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e31"'
+  - name: b15011m31_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m31"'
+  - name: b15011e32_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e32"'
+  - name: b15011m32_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m32"'
+  - name: b15011e33_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e33"'
+  - name: b15011m33_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m33"'
+  - name: b15011e34_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e34"'
+  - name: b15011m34_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m34"'
+  - name: b15011e35_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e35"'
+  - name: b15011m35_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m35"'
+  - name: b15011e36_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e36"'
+  - name: b15011m36_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m36"'
+  - name: b15011e37_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e37"'
+  - name: b15011m37_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m37"'
+  - name: b15011e38_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e38"'
+  - name: b15011m38_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m38"'
+  - name: b15011e39_estimate_sex_by_age_by_field_of_bachelor_s_degree_for
+    description: "Estimate \u2014 SEX BY AGE BY FIELD OF BACHELOR'S DEGREE FOR FIRST\
+      \ MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Female\
+      \ \u2014"
+    agg: sum
+    expr: '"B15011e39"'
+  - name: b15011m39_marginoferror_sex_by_age_by_field_of_bachelor_s_degree
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY FIELD OF BACHELOR'S\
+      \ DEGREE FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Fem"
+    agg: sum
+    expr: '"B15011m39"'
+  - name: b15012e1_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"B15012e1"'
+  - name: b15012m1_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"B15012m1"'
+  - name: b15012e2_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e2"'
+  - name: b15012m2_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m2"'
+  - name: b15012e3_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e3"'
+  - name: b15012m3_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m3"'
+  - name: b15012e4_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e4"'
+  - name: b15012m4_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m4"'
+  - name: b15012e5_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e5"'
+  - name: b15012m5_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m5"'
+  - name: b15012e6_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e6"'
+  - name: b15012m6_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m6"'
+  - name: b15012e7_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e7"'
+  - name: b15012m7_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m7"'
+  - name: b15012e8_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e8"'
+  - name: b15012m8_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m8"'
+  - name: b15012e9_estimate_total_fields_of_bachelor_s_degrees_reported_to
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Enginee"
+    agg: sum
+    expr: '"B15012e9"'
+  - name: b15012m9_marginoferror_total_fields_of_bachelor_s_degrees_report
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and En"
+    agg: sum
+    expr: '"B15012m9"'
+  - name: b15012e10_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Business"
+    agg: sum
+    expr: '"B15012e10"'
+  - name: b15012m10_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Business"
+    agg: sum
+    expr: '"B15012m10"'
+  - name: b15012e11_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Education"
+    agg: sum
+    expr: '"B15012e11"'
+  - name: b15012m11_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Education"
+    agg: sum
+    expr: '"B15012m11"'
+  - name: b15012e12_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Arts Humanities\
+      \ and"
+    agg: sum
+    expr: '"B15012e12"'
+  - name: b15012m12_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Arts Humanitie"
+    agg: sum
+    expr: '"B15012m12"'
+  - name: b15012e13_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Arts Humanities\
+      \ and"
+    agg: sum
+    expr: '"B15012e13"'
+  - name: b15012m13_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Arts Humanitie"
+    agg: sum
+    expr: '"B15012m13"'
+  - name: b15012e14_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Arts Humanities\
+      \ and"
+    agg: sum
+    expr: '"B15012e14"'
+  - name: b15012m14_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Arts Humanitie"
+    agg: sum
+    expr: '"B15012m14"'
+  - name: b15012e15_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Arts Humanities\
+      \ and"
+    agg: sum
+    expr: '"B15012e15"'
+  - name: b15012m15_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Arts Humanitie"
+    agg: sum
+    expr: '"B15012m15"'
+  - name: b15012e16_estimate_total_fields_of_bachelor_s_degrees_reported_t
+    description: "Estimate \u2014 TOTAL FIELDS OF BACHELOR'S DEGREES REPORTED \u2014\
+      \ TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE 25 YEARS AND OVER WITH A\
+      \ BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Arts Humanities\
+      \ and"
+    agg: sum
+    expr: '"B15012e16"'
+  - name: b15012m16_marginoferror_total_fields_of_bachelor_s_degrees_repor
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL FIELDS OF BACHELOR'S\
+      \ DEGREES REPORTED \u2014 TOTAL BACHELOR'S DEGREE MAJORS TALLIED FOR PEOPLE\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Arts Humanitie"
+    agg: sum
+    expr: '"B15012m16"'

@@ -1,0 +1,3383 @@
+semantic_model:
+  name: cbg_b14
+  description: "Census ACS topic B14 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B14
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b14002e1_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total"
+    agg: sum
+    expr: '"B14002e1"'
+  - name: b14002m1_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14002m1"'
+  - name: b14002e2_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B14002e2"'
+  - name: b14002m2_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B14002m2"'
+  - name: b14002e3_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14002e3"'
+  - name: b14002m3_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14002m3"'
+  - name: b14002e4_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ nursery sch"
+    agg: sum
+    expr: '"B14002e4"'
+  - name: b14002m4_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in nurser"
+    agg: sum
+    expr: '"B14002m4"'
+  - name: b14002e5_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ nursery sch"
+    agg: sum
+    expr: '"B14002e5"'
+  - name: b14002m5_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in nurser"
+    agg: sum
+    expr: '"B14002m5"'
+  - name: b14002e6_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ nursery sch"
+    agg: sum
+    expr: '"B14002e6"'
+  - name: b14002m6_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in nurser"
+    agg: sum
+    expr: '"B14002m6"'
+  - name: b14002e7_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ kindergarte"
+    agg: sum
+    expr: '"B14002e7"'
+  - name: b14002m7_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in kinder"
+    agg: sum
+    expr: '"B14002m7"'
+  - name: b14002e8_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ kindergarte"
+    agg: sum
+    expr: '"B14002e8"'
+  - name: b14002m8_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in kinder"
+    agg: sum
+    expr: '"B14002m8"'
+  - name: b14002e9_estimate_sex_by_school_enrollment_by_level_of_school_by
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ kindergarte"
+    agg: sum
+    expr: '"B14002e9"'
+  - name: b14002m9_marginoferror_sex_by_school_enrollment_by_level_of_scho
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in kinder"
+    agg: sum
+    expr: '"B14002m9"'
+  - name: b14002e10_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 1 to "
+    agg: sum
+    expr: '"B14002e10"'
+  - name: b14002m10_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m10"'
+  - name: b14002e11_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 1 to "
+    agg: sum
+    expr: '"B14002e11"'
+  - name: b14002m11_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m11"'
+  - name: b14002e12_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 1 to "
+    agg: sum
+    expr: '"B14002e12"'
+  - name: b14002m12_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m12"'
+  - name: b14002e13_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 5 to "
+    agg: sum
+    expr: '"B14002e13"'
+  - name: b14002m13_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m13"'
+  - name: b14002e14_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 5 to "
+    agg: sum
+    expr: '"B14002e14"'
+  - name: b14002m14_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m14"'
+  - name: b14002e15_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 5 to "
+    agg: sum
+    expr: '"B14002e15"'
+  - name: b14002m15_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m15"'
+  - name: b14002e16_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 9 to "
+    agg: sum
+    expr: '"B14002e16"'
+  - name: b14002m16_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m16"'
+  - name: b14002e17_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 9 to "
+    agg: sum
+    expr: '"B14002e17"'
+  - name: b14002m17_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m17"'
+  - name: b14002e18_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 9 to "
+    agg: sum
+    expr: '"B14002e18"'
+  - name: b14002m18_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in grade "
+    agg: sum
+    expr: '"B14002m18"'
+  - name: b14002e19_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ college und"
+    agg: sum
+    expr: '"B14002e19"'
+  - name: b14002m19_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in colleg"
+    agg: sum
+    expr: '"B14002m19"'
+  - name: b14002e20_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ college und"
+    agg: sum
+    expr: '"B14002e20"'
+  - name: b14002m20_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in colleg"
+    agg: sum
+    expr: '"B14002m20"'
+  - name: b14002e21_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ college und"
+    agg: sum
+    expr: '"B14002e21"'
+  - name: b14002m21_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in colleg"
+    agg: sum
+    expr: '"B14002m21"'
+  - name: b14002e22_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ graduate or"
+    agg: sum
+    expr: '"B14002e22"'
+  - name: b14002m22_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in gradua"
+    agg: sum
+    expr: '"B14002m22"'
+  - name: b14002e23_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ graduate or"
+    agg: sum
+    expr: '"B14002e23"'
+  - name: b14002m23_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in gradua"
+    agg: sum
+    expr: '"B14002m23"'
+  - name: b14002e24_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Enrolled in\
+      \ graduate or"
+    agg: sum
+    expr: '"B14002e24"'
+  - name: b14002m24_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Enrolled in school\
+      \ \u2014 Enrolled in gradua"
+    agg: sum
+    expr: '"B14002m24"'
+  - name: b14002e25_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Male \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14002e25"'
+  - name: b14002m25_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Male \u2014 Not enrolled in\
+      \ school"
+    agg: sum
+    expr: '"B14002m25"'
+  - name: b14002e26_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B14002e26"'
+  - name: b14002m26_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B14002m26"'
+  - name: b14002e27_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14002e27"'
+  - name: b14002m27_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school"
+    agg: sum
+    expr: '"B14002m27"'
+  - name: b14002e28_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in nursery s"
+    agg: sum
+    expr: '"B14002e28"'
+  - name: b14002m28_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in nurs"
+    agg: sum
+    expr: '"B14002m28"'
+  - name: b14002e29_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in nursery s"
+    agg: sum
+    expr: '"B14002e29"'
+  - name: b14002m29_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in nurs"
+    agg: sum
+    expr: '"B14002m29"'
+  - name: b14002e30_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in nursery s"
+    agg: sum
+    expr: '"B14002e30"'
+  - name: b14002m30_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in nurs"
+    agg: sum
+    expr: '"B14002m30"'
+  - name: b14002e31_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in kindergar"
+    agg: sum
+    expr: '"B14002e31"'
+  - name: b14002m31_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in kind"
+    agg: sum
+    expr: '"B14002m31"'
+  - name: b14002e32_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in kindergar"
+    agg: sum
+    expr: '"B14002e32"'
+  - name: b14002m32_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in kind"
+    agg: sum
+    expr: '"B14002m32"'
+  - name: b14002e33_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in kindergar"
+    agg: sum
+    expr: '"B14002e33"'
+  - name: b14002m33_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in kind"
+    agg: sum
+    expr: '"B14002m33"'
+  - name: b14002e34_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 1 t"
+    agg: sum
+    expr: '"B14002e34"'
+  - name: b14002m34_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m34"'
+  - name: b14002e35_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 1 t"
+    agg: sum
+    expr: '"B14002e35"'
+  - name: b14002m35_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m35"'
+  - name: b14002e36_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 1 t"
+    agg: sum
+    expr: '"B14002e36"'
+  - name: b14002m36_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m36"'
+  - name: b14002e37_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 5 t"
+    agg: sum
+    expr: '"B14002e37"'
+  - name: b14002m37_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m37"'
+  - name: b14002e38_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 5 t"
+    agg: sum
+    expr: '"B14002e38"'
+  - name: b14002m38_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m38"'
+  - name: b14002e39_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 5 t"
+    agg: sum
+    expr: '"B14002e39"'
+  - name: b14002m39_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m39"'
+  - name: b14002e40_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 9 t"
+    agg: sum
+    expr: '"B14002e40"'
+  - name: b14002m40_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m40"'
+  - name: b14002e41_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 9 t"
+    agg: sum
+    expr: '"B14002e41"'
+  - name: b14002m41_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m41"'
+  - name: b14002e42_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in grade 9 t"
+    agg: sum
+    expr: '"B14002e42"'
+  - name: b14002m42_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m42"'
+  - name: b14002e43_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in college u"
+    agg: sum
+    expr: '"B14002e43"'
+  - name: b14002m43_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in coll"
+    agg: sum
+    expr: '"B14002m43"'
+  - name: b14002e44_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in college u"
+    agg: sum
+    expr: '"B14002e44"'
+  - name: b14002m44_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in coll"
+    agg: sum
+    expr: '"B14002m44"'
+  - name: b14002e45_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in college u"
+    agg: sum
+    expr: '"B14002e45"'
+  - name: b14002m45_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in coll"
+    agg: sum
+    expr: '"B14002m45"'
+  - name: b14002e46_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in graduate "
+    agg: sum
+    expr: '"B14002e46"'
+  - name: b14002m46_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m46"'
+  - name: b14002e47_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in graduate "
+    agg: sum
+    expr: '"B14002e47"'
+  - name: b14002m47_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m47"'
+  - name: b14002e48_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Enrolled\
+      \ in graduate "
+    agg: sum
+    expr: '"B14002e48"'
+  - name: b14002m48_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Enrolled in\
+      \ school \u2014 Enrolled in grad"
+    agg: sum
+    expr: '"B14002m48"'
+  - name: b14002e49_estimate_sex_by_school_enrollment_by_level_of_school_b
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY LEVEL OF SCHOOL BY TYPE\
+      \ OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and\
+      \ over \u2014 Total \u2014 Female \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14002e49"'
+  - name: b14002m49_marginoferror_sex_by_school_enrollment_by_level_of_sch
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY LEVEL OF SCHOOL BY TYPE OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014\
+      \ Population 3 years and over \u2014 Total \u2014 Female \u2014 Not enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14002m49"'
+  - name: b14005e1_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total"
+    agg: sum
+    expr: '"B14005e1"'
+  - name: b14005m1_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total"
+    agg: sum
+    expr: '"B14005m1"'
+  - name: b14005e2_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B14005e2"'
+  - name: b14005m2_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B14005m2"'
+  - name: b14005e3_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14005e3"'
+  - name: b14005m3_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14005m3"'
+  - name: b14005e4_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Employed"
+    agg: sum
+    expr: '"B14005e4"'
+  - name: b14005m4_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Enrolled\
+      \ in school \u2014 Employed"
+    agg: sum
+    expr: '"B14005m4"'
+  - name: b14005e5_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Unemployed"
+    agg: sum
+    expr: '"B14005e5"'
+  - name: b14005m5_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Enrolled\
+      \ in school \u2014 Unemployed"
+    agg: sum
+    expr: '"B14005m5"'
+  - name: b14005e6_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Enrolled in school \u2014 Not\
+      \ in labor forc"
+    agg: sum
+    expr: '"B14005e6"'
+  - name: b14005m6_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Enrolled\
+      \ in school \u2014 Not in labor"
+    agg: sum
+    expr: '"B14005m6"'
+  - name: b14005e7_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14005e7"'
+  - name: b14005m7_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school"
+    agg: sum
+    expr: '"B14005m7"'
+  - name: b14005e8_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ High school g"
+    agg: sum
+    expr: '"B14005e8"'
+  - name: b14005m8_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 High sch"
+    agg: sum
+    expr: '"B14005m8"'
+  - name: b14005e9_estimate_sex_by_school_enrollment_by_educational_attain
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ High school g"
+    agg: sum
+    expr: '"B14005e9"'
+  - name: b14005m9_marginoferror_sex_by_school_enrollment_by_educational_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 High sch"
+    agg: sum
+    expr: '"B14005m9"'
+  - name: b14005e10_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ High school g"
+    agg: sum
+    expr: '"B14005e10"'
+  - name: b14005m10_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 High sch"
+    agg: sum
+    expr: '"B14005m10"'
+  - name: b14005e11_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ High school g"
+    agg: sum
+    expr: '"B14005e11"'
+  - name: b14005m11_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 High sch"
+    agg: sum
+    expr: '"B14005m11"'
+  - name: b14005e12_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ Not high scho"
+    agg: sum
+    expr: '"B14005e12"'
+  - name: b14005m12_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 Not high"
+    agg: sum
+    expr: '"B14005m12"'
+  - name: b14005e13_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ Not high scho"
+    agg: sum
+    expr: '"B14005e13"'
+  - name: b14005m13_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 Not high"
+    agg: sum
+    expr: '"B14005m13"'
+  - name: b14005e14_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ Not high scho"
+    agg: sum
+    expr: '"B14005e14"'
+  - name: b14005m14_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 Not high"
+    agg: sum
+    expr: '"B14005m14"'
+  - name: b14005e15_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Male \u2014 Not enrolled in school \u2014\
+      \ Not high scho"
+    agg: sum
+    expr: '"B14005e15"'
+  - name: b14005m15_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Male \u2014 Not\
+      \ enrolled in school \u2014 Not high"
+    agg: sum
+    expr: '"B14005m15"'
+  - name: b14005e16_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B14005e16"'
+  - name: b14005m16_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B14005m16"'
+  - name: b14005e17_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14005e17"'
+  - name: b14005m17_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14005m17"'
+  - name: b14005e18_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Employed"
+    agg: sum
+    expr: '"B14005e18"'
+  - name: b14005m18_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Enrolled\
+      \ in school \u2014 Employed"
+    agg: sum
+    expr: '"B14005m18"'
+  - name: b14005e19_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Unemployed"
+    agg: sum
+    expr: '"B14005e19"'
+  - name: b14005m19_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Enrolled\
+      \ in school \u2014 Unemployed"
+    agg: sum
+    expr: '"B14005m19"'
+  - name: b14005e20_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Enrolled in school \u2014 Not\
+      \ in labor fo"
+    agg: sum
+    expr: '"B14005e20"'
+  - name: b14005m20_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Enrolled\
+      \ in school \u2014 Not in lab"
+    agg: sum
+    expr: '"B14005m20"'
+  - name: b14005e21_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14005e21"'
+  - name: b14005m21_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school"
+    agg: sum
+    expr: '"B14005m21"'
+  - name: b14005e22_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ High school"
+    agg: sum
+    expr: '"B14005e22"'
+  - name: b14005m22_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 High s"
+    agg: sum
+    expr: '"B14005m22"'
+  - name: b14005e23_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ High school"
+    agg: sum
+    expr: '"B14005e23"'
+  - name: b14005m23_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 High s"
+    agg: sum
+    expr: '"B14005m23"'
+  - name: b14005e24_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ High school"
+    agg: sum
+    expr: '"B14005e24"'
+  - name: b14005m24_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 High s"
+    agg: sum
+    expr: '"B14005m24"'
+  - name: b14005e25_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ High school"
+    agg: sum
+    expr: '"B14005e25"'
+  - name: b14005m25_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 High s"
+    agg: sum
+    expr: '"B14005m25"'
+  - name: b14005e26_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ Not high sc"
+    agg: sum
+    expr: '"B14005e26"'
+  - name: b14005m26_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 Not hi"
+    agg: sum
+    expr: '"B14005m26"'
+  - name: b14005e27_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ Not high sc"
+    agg: sum
+    expr: '"B14005e27"'
+  - name: b14005m27_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 Not hi"
+    agg: sum
+    expr: '"B14005m27"'
+  - name: b14005e28_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ Not high sc"
+    agg: sum
+    expr: '"B14005e28"'
+  - name: b14005m28_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 Not hi"
+    agg: sum
+    expr: '"B14005m28"'
+  - name: b14005e29_estimate_sex_by_school_enrollment_by_educational_attai
+    description: "Estimate \u2014 SEX BY SCHOOL ENROLLMENT BY EDUCATIONAL ATTAINMENT\
+      \ BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19 YEARS \u2014 Population 16\
+      \ to 19 years \u2014 Total \u2014 Female \u2014 Not enrolled in school \u2014\
+      \ Not high sc"
+    agg: sum
+    expr: '"B14005e29"'
+  - name: b14005m29_marginoferror_sex_by_school_enrollment_by_educational
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY SCHOOL ENROLLMENT\
+      \ BY EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 16 TO 19\
+      \ YEARS \u2014 Population 16 to 19 years \u2014 Total \u2014 Female \u2014 Not\
+      \ enrolled in school \u2014 Not hi"
+    agg: sum
+    expr: '"B14005m29"'
+  - name: b14007e1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B14007e1"'
+  - name: b14007m1_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B14007m1"'
+  - name: b14007e2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007e2"'
+  - name: b14007m2_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007m2"'
+  - name: b14007e3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in nursery school preschool"
+    agg: sum
+    expr: '"B14007e3"'
+  - name: b14007m3_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in nursery\
+      \ school preschool"
+    agg: sum
+    expr: '"B14007m3"'
+  - name: b14007e4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in kindergarten"
+    agg: sum
+    expr: '"B14007e4"'
+  - name: b14007m4_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in kindergarten"
+    agg: sum
+    expr: '"B14007m4"'
+  - name: b14007e5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 1"
+    agg: sum
+    expr: '"B14007e5"'
+  - name: b14007m5_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 1"
+    agg: sum
+    expr: '"B14007m5"'
+  - name: b14007e6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 2"
+    agg: sum
+    expr: '"B14007e6"'
+  - name: b14007m6_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 2"
+    agg: sum
+    expr: '"B14007m6"'
+  - name: b14007e7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 3"
+    agg: sum
+    expr: '"B14007e7"'
+  - name: b14007m7_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 3"
+    agg: sum
+    expr: '"B14007m7"'
+  - name: b14007e8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 4"
+    agg: sum
+    expr: '"B14007e8"'
+  - name: b14007m8_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 4"
+    agg: sum
+    expr: '"B14007m8"'
+  - name: b14007e9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 5"
+    agg: sum
+    expr: '"B14007e9"'
+  - name: b14007m9_marginoferror_school_enrollment_by_detailed_level_of_sc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 5"
+    agg: sum
+    expr: '"B14007m9"'
+  - name: b14007e10_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 6"
+    agg: sum
+    expr: '"B14007e10"'
+  - name: b14007m10_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 6"
+    agg: sum
+    expr: '"B14007m10"'
+  - name: b14007e11_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 7"
+    agg: sum
+    expr: '"B14007e11"'
+  - name: b14007m11_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 7"
+    agg: sum
+    expr: '"B14007m11"'
+  - name: b14007e12_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 8"
+    agg: sum
+    expr: '"B14007e12"'
+  - name: b14007m12_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 8"
+    agg: sum
+    expr: '"B14007m12"'
+  - name: b14007e13_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 9"
+    agg: sum
+    expr: '"B14007e13"'
+  - name: b14007m13_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 9"
+    agg: sum
+    expr: '"B14007m13"'
+  - name: b14007e14_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 10"
+    agg: sum
+    expr: '"B14007e14"'
+  - name: b14007m14_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 10"
+    agg: sum
+    expr: '"B14007m14"'
+  - name: b14007e15_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 11"
+    agg: sum
+    expr: '"B14007e15"'
+  - name: b14007m15_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 11"
+    agg: sum
+    expr: '"B14007m15"'
+  - name: b14007e16_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in grade 12"
+    agg: sum
+    expr: '"B14007e16"'
+  - name: b14007m16_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in grade 12"
+    agg: sum
+    expr: '"B14007m16"'
+  - name: b14007e17_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Enrolled in college undergraduate years"
+    agg: sum
+    expr: '"B14007e17"'
+  - name: b14007m17_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in college\
+      \ undergraduate years"
+    agg: sum
+    expr: '"B14007m17"'
+  - name: b14007e18_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Enrolled in school \u2014 Graduate or professional school"
+    agg: sum
+    expr: '"B14007e18"'
+  - name: b14007m18_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Enrolled in school \u2014 Graduate or professional\
+      \ school"
+    agg: sum
+    expr: '"B14007m18"'
+  - name: b14007e19_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED  LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007e19"'
+  - name: b14007m19_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \  LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years\
+      \ and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007m19"'
+  - name: b14007ae1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Ae1"'
+  - name: b14007am1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Am1"'
+  - name: b14007ae2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007Ae2"'
+  - name: b14007am2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007Am2"'
+  - name: b14007ae3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ nursery "
+    agg: sum
+    expr: '"B14007Ae3"'
+  - name: b14007am3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in nur"
+    agg: sum
+    expr: '"B14007Am3"'
+  - name: b14007ae4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ kinderga"
+    agg: sum
+    expr: '"B14007Ae4"'
+  - name: b14007am4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in kin"
+    agg: sum
+    expr: '"B14007Am4"'
+  - name: b14007ae5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 1"
+    agg: sum
+    expr: '"B14007Ae5"'
+  - name: b14007am5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am5"'
+  - name: b14007ae6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 2"
+    agg: sum
+    expr: '"B14007Ae6"'
+  - name: b14007am6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am6"'
+  - name: b14007ae7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 3"
+    agg: sum
+    expr: '"B14007Ae7"'
+  - name: b14007am7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am7"'
+  - name: b14007ae8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 4"
+    agg: sum
+    expr: '"B14007Ae8"'
+  - name: b14007am8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am8"'
+  - name: b14007ae9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 5"
+    agg: sum
+    expr: '"B14007Ae9"'
+  - name: b14007am9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am9"'
+  - name: b14007ae10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 6"
+    agg: sum
+    expr: '"B14007Ae10"'
+  - name: b14007am10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am10"'
+  - name: b14007ae11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 7"
+    agg: sum
+    expr: '"B14007Ae11"'
+  - name: b14007am11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am11"'
+  - name: b14007ae12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 8"
+    agg: sum
+    expr: '"B14007Ae12"'
+  - name: b14007am12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am12"'
+  - name: b14007ae13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 9"
+    agg: sum
+    expr: '"B14007Ae13"'
+  - name: b14007am13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am13"'
+  - name: b14007ae14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 10"
+    agg: sum
+    expr: '"B14007Ae14"'
+  - name: b14007am14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am14"'
+  - name: b14007ae15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 11"
+    agg: sum
+    expr: '"B14007Ae15"'
+  - name: b14007am15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am15"'
+  - name: b14007ae16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 12"
+    agg: sum
+    expr: '"B14007Ae16"'
+  - name: b14007am16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Am16"'
+  - name: b14007ae17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ college "
+    agg: sum
+    expr: '"B14007Ae17"'
+  - name: b14007am17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in col"
+    agg: sum
+    expr: '"B14007Am17"'
+  - name: b14007ae18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Graduate or\
+      \ professi"
+    agg: sum
+    expr: '"B14007Ae18"'
+  - name: b14007am18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Graduate or pro"
+    agg: sum
+    expr: '"B14007Am18"'
+  - name: b14007ae19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White alone population\
+      \ 3 years and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007Ae19"'
+  - name: b14007am19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE) \u2014 White\
+      \ alone population 3 years and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007Am19"'
+  - name: b14007be1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Be1"'
+  - name: b14007bm1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm1"'
+  - name: b14007be2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be2"'
+  - name: b14007bm2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm2"'
+  - name: b14007be3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be3"'
+  - name: b14007bm3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm3"'
+  - name: b14007be4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be4"'
+  - name: b14007bm4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm4"'
+  - name: b14007be5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be5"'
+  - name: b14007bm5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm5"'
+  - name: b14007be6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be6"'
+  - name: b14007bm6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm6"'
+  - name: b14007be7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be7"'
+  - name: b14007bm7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm7"'
+  - name: b14007be8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be8"'
+  - name: b14007bm8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm8"'
+  - name: b14007be9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be9"'
+  - name: b14007bm9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm9"'
+  - name: b14007be10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be10"'
+  - name: b14007bm10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm10"'
+  - name: b14007be11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be11"'
+  - name: b14007bm11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm11"'
+  - name: b14007be12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be12"'
+  - name: b14007bm12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm12"'
+  - name: b14007be13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be13"'
+  - name: b14007bm13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm13"'
+  - name: b14007be14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be14"'
+  - name: b14007bm14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm14"'
+  - name: b14007be15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be15"'
+  - name: b14007bm15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm15"'
+  - name: b14007be16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be16"'
+  - name: b14007bm16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm16"'
+  - name: b14007be17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be17"'
+  - name: b14007bm17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm17"'
+  - name: b14007be18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ E"
+    agg: sum
+    expr: '"B14007Be18"'
+  - name: b14007bm18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm18"'
+  - name: b14007be19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black\
+      \ or African American alone population 3 years and over \u2014 Total \u2014\
+      \ N"
+    agg: sum
+    expr: '"B14007Be19"'
+  - name: b14007bm19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 Black or African American alone population 3 years and over\
+      \ \u2014 Tota"
+    agg: sum
+    expr: '"B14007Bm19"'
+  - name: b14007ce1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce1"'
+  - name: b14007cm1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm1"'
+  - name: b14007ce2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce2"'
+  - name: b14007cm2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm2"'
+  - name: b14007ce3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce3"'
+  - name: b14007cm3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm3"'
+  - name: b14007ce4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce4"'
+  - name: b14007cm4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm4"'
+  - name: b14007ce5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce5"'
+  - name: b14007cm5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm5"'
+  - name: b14007ce6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce6"'
+  - name: b14007cm6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm6"'
+  - name: b14007ce7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce7"'
+  - name: b14007cm7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm7"'
+  - name: b14007ce8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce8"'
+  - name: b14007cm8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm8"'
+  - name: b14007ce9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce9"'
+  - name: b14007cm9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm9"'
+  - name: b14007ce10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce10"'
+  - name: b14007cm10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm10"'
+  - name: b14007ce11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce11"'
+  - name: b14007cm11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm11"'
+  - name: b14007ce12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce12"'
+  - name: b14007cm12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm12"'
+  - name: b14007ce13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce13"'
+  - name: b14007cm13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm13"'
+  - name: b14007ce14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce14"'
+  - name: b14007cm14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm14"'
+  - name: b14007ce15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce15"'
+  - name: b14007cm15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm15"'
+  - name: b14007ce16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce16"'
+  - name: b14007cm16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm16"'
+  - name: b14007ce17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce17"'
+  - name: b14007cm17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm17"'
+  - name: b14007ce18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce18"'
+  - name: b14007cm18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm18"'
+  - name: b14007ce19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE)\
+      \ \u2014 American Indian and Alaska Native alone population 3 years and "
+    agg: sum
+    expr: '"B14007Ce19"'
+  - name: b14007cm19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 American Indian and Alaska Native alone population 3\
+      \ years"
+    agg: sum
+    expr: '"B14007Cm19"'
+  - name: b14007de1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007De1"'
+  - name: b14007dm1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Dm1"'
+  - name: b14007de2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007De2"'
+  - name: b14007dm2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007Dm2"'
+  - name: b14007de3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ nursery "
+    agg: sum
+    expr: '"B14007De3"'
+  - name: b14007dm3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in nur"
+    agg: sum
+    expr: '"B14007Dm3"'
+  - name: b14007de4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ kinderga"
+    agg: sum
+    expr: '"B14007De4"'
+  - name: b14007dm4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in kin"
+    agg: sum
+    expr: '"B14007Dm4"'
+  - name: b14007de5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 1"
+    agg: sum
+    expr: '"B14007De5"'
+  - name: b14007dm5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm5"'
+  - name: b14007de6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 2"
+    agg: sum
+    expr: '"B14007De6"'
+  - name: b14007dm6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm6"'
+  - name: b14007de7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 3"
+    agg: sum
+    expr: '"B14007De7"'
+  - name: b14007dm7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm7"'
+  - name: b14007de8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 4"
+    agg: sum
+    expr: '"B14007De8"'
+  - name: b14007dm8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm8"'
+  - name: b14007de9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 5"
+    agg: sum
+    expr: '"B14007De9"'
+  - name: b14007dm9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm9"'
+  - name: b14007de10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 6"
+    agg: sum
+    expr: '"B14007De10"'
+  - name: b14007dm10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm10"'
+  - name: b14007de11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 7"
+    agg: sum
+    expr: '"B14007De11"'
+  - name: b14007dm11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm11"'
+  - name: b14007de12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 8"
+    agg: sum
+    expr: '"B14007De12"'
+  - name: b14007dm12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm12"'
+  - name: b14007de13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 9"
+    agg: sum
+    expr: '"B14007De13"'
+  - name: b14007dm13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm13"'
+  - name: b14007de14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 10"
+    agg: sum
+    expr: '"B14007De14"'
+  - name: b14007dm14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm14"'
+  - name: b14007de15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 11"
+    agg: sum
+    expr: '"B14007De15"'
+  - name: b14007dm15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm15"'
+  - name: b14007de16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ grade 12"
+    agg: sum
+    expr: '"B14007De16"'
+  - name: b14007dm16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in gra"
+    agg: sum
+    expr: '"B14007Dm16"'
+  - name: b14007de17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Enrolled in\
+      \ college "
+    agg: sum
+    expr: '"B14007De17"'
+  - name: b14007dm17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled in col"
+    agg: sum
+    expr: '"B14007Dm17"'
+  - name: b14007de18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Enrolled in school \u2014 Graduate or\
+      \ professi"
+    agg: sum
+    expr: '"B14007De18"'
+  - name: b14007dm18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Graduate or pro"
+    agg: sum
+    expr: '"B14007Dm18"'
+  - name: b14007de19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian alone population\
+      \ 3 years and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007De19"'
+  - name: b14007dm19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (ASIAN ALONE) \u2014 Asian\
+      \ alone population 3 years and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007Dm19"'
+  - name: b14007fe1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Fe1"'
+  - name: b14007fm1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Fm1"'
+  - name: b14007fe2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007Fe2"'
+  - name: b14007fm2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm2"'
+  - name: b14007fe3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe3"'
+  - name: b14007fm3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm3"'
+  - name: b14007fe4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe4"'
+  - name: b14007fm4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm4"'
+  - name: b14007fe5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe5"'
+  - name: b14007fm5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm5"'
+  - name: b14007fe6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe6"'
+  - name: b14007fm6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm6"'
+  - name: b14007fe7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe7"'
+  - name: b14007fm7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm7"'
+  - name: b14007fe8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe8"'
+  - name: b14007fm8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm8"'
+  - name: b14007fe9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe9"'
+  - name: b14007fm9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm9"'
+  - name: b14007fe10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe10"'
+  - name: b14007fm10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm10"'
+  - name: b14007fe11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe11"'
+  - name: b14007fm11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm11"'
+  - name: b14007fe12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe12"'
+  - name: b14007fm12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm12"'
+  - name: b14007fe13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe13"'
+  - name: b14007fm13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm13"'
+  - name: b14007fe14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe14"'
+  - name: b14007fm14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm14"'
+  - name: b14007fe15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe15"'
+  - name: b14007fm15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm15"'
+  - name: b14007fe16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe16"'
+  - name: b14007fm16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm16"'
+  - name: b14007fe17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe17"'
+  - name: b14007fm17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm17"'
+  - name: b14007fe18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Enrolled in school\
+      \ \u2014 "
+    agg: sum
+    expr: '"B14007Fe18"'
+  - name: b14007fm18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Enrolled in scho"
+    agg: sum
+    expr: '"B14007Fm18"'
+  - name: b14007fe19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 Some other\
+      \ race alone population 3 years and over \u2014 Total \u2014 Not enrolled in\
+      \ schoo"
+    agg: sum
+    expr: '"B14007Fe19"'
+  - name: b14007fm19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (SOME OTHER RACE ALONE)\
+      \ \u2014 Some other race alone population 3 years and over \u2014 Total \u2014\
+      \ Not enrolled in "
+    agg: sum
+    expr: '"B14007Fm19"'
+  - name: b14007ge1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Ge1"'
+  - name: b14007gm1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Gm1"'
+  - name: b14007ge2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007Ge2"'
+  - name: b14007gm2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14007Gm2"'
+  - name: b14007ge3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge3"'
+  - name: b14007gm3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm3"'
+  - name: b14007ge4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge4"'
+  - name: b14007gm4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm4"'
+  - name: b14007ge5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge5"'
+  - name: b14007gm5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm5"'
+  - name: b14007ge6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge6"'
+  - name: b14007gm6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm6"'
+  - name: b14007ge7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge7"'
+  - name: b14007gm7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm7"'
+  - name: b14007ge8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge8"'
+  - name: b14007gm8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm8"'
+  - name: b14007ge9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge9"'
+  - name: b14007gm9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm9"'
+  - name: b14007ge10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge10"'
+  - name: b14007gm10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm10"'
+  - name: b14007ge11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge11"'
+  - name: b14007gm11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm11"'
+  - name: b14007ge12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge12"'
+  - name: b14007gm12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm12"'
+  - name: b14007ge13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge13"'
+  - name: b14007gm13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm13"'
+  - name: b14007ge14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge14"'
+  - name: b14007gm14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm14"'
+  - name: b14007ge15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge15"'
+  - name: b14007gm15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm15"'
+  - name: b14007ge16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge16"'
+  - name: b14007gm16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm16"'
+  - name: b14007ge17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enrolled"
+    agg: sum
+    expr: '"B14007Ge17"'
+  - name: b14007gm17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Enr"
+    agg: sum
+    expr: '"B14007Gm17"'
+  - name: b14007ge18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Graduate"
+    agg: sum
+    expr: '"B14007Ge18"'
+  - name: b14007gm18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 Gra"
+    agg: sum
+    expr: '"B14007Gm18"'
+  - name: b14007ge19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014 Two or more races\
+      \ population 3 years and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007Ge19"'
+  - name: b14007gm19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ Two or more races population 3 years and over \u2014 Total \u2014 Not enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14007Gm19"'
+  - name: b14007he1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He1"'
+  - name: b14007hm1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm1"'
+  - name: b14007he2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He2"'
+  - name: b14007hm2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm2"'
+  - name: b14007he3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He3"'
+  - name: b14007hm3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm3"'
+  - name: b14007he4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He4"'
+  - name: b14007hm4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm4"'
+  - name: b14007he5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He5"'
+  - name: b14007hm5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm5"'
+  - name: b14007he6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He6"'
+  - name: b14007hm6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm6"'
+  - name: b14007he7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He7"'
+  - name: b14007hm7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm7"'
+  - name: b14007he8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He8"'
+  - name: b14007hm8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm8"'
+  - name: b14007he9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He9"'
+  - name: b14007hm9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm9"'
+  - name: b14007he10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He10"'
+  - name: b14007hm10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm10"'
+  - name: b14007he11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He11"'
+  - name: b14007hm11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm11"'
+  - name: b14007he12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He12"'
+  - name: b14007hm12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm12"'
+  - name: b14007he13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He13"'
+  - name: b14007hm13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm13"'
+  - name: b14007he14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He14"'
+  - name: b14007hm14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm14"'
+  - name: b14007he15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He15"'
+  - name: b14007hm15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm15"'
+  - name: b14007he16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He16"'
+  - name: b14007hm16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm16"'
+  - name: b14007he17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He17"'
+  - name: b14007hm17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm17"'
+  - name: b14007he18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He18"'
+  - name: b14007hm18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm18"'
+  - name: b14007he19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014\
+      \ White alone, not Hispanic or Latino, population 3 years and over \u2014 "
+    agg: sum
+    expr: '"B14007He19"'
+  - name: b14007hm19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino, population 3 years\
+      \ and ov"
+    agg: sum
+    expr: '"B14007Hm19"'
+  - name: b14007ie1_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Ie1"'
+  - name: b14007im1_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B14007Im1"'
+  - name: b14007ie2_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school"
+    agg: sum
+    expr: '"B14007Ie2"'
+  - name: b14007im2_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14007Im2"'
+  - name: b14007ie3_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie3"'
+  - name: b14007im3_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im3"'
+  - name: b14007ie4_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie4"'
+  - name: b14007im4_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im4"'
+  - name: b14007ie5_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie5"'
+  - name: b14007im5_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im5"'
+  - name: b14007ie6_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie6"'
+  - name: b14007im6_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im6"'
+  - name: b14007ie7_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie7"'
+  - name: b14007im7_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im7"'
+  - name: b14007ie8_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie8"'
+  - name: b14007im8_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im8"'
+  - name: b14007ie9_estimate_school_enrollment_by_detailed_level_of_school
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie9"'
+  - name: b14007im9_marginoferror_school_enrollment_by_detailed_level_of_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im9"'
+  - name: b14007ie10_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie10"'
+  - name: b14007im10_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im10"'
+  - name: b14007ie11_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie11"'
+  - name: b14007im11_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im11"'
+  - name: b14007ie12_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie12"'
+  - name: b14007im12_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im12"'
+  - name: b14007ie13_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie13"'
+  - name: b14007im13_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im13"'
+  - name: b14007ie14_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie14"'
+  - name: b14007im14_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im14"'
+  - name: b14007ie15_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie15"'
+  - name: b14007im15_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im15"'
+  - name: b14007ie16_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie16"'
+  - name: b14007im16_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im16"'
+  - name: b14007ie17_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Enroll"
+    agg: sum
+    expr: '"B14007Ie17"'
+  - name: b14007im17_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 E"
+    agg: sum
+    expr: '"B14007Im17"'
+  - name: b14007ie18_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Enrolled in school \u2014\
+      \ Gradua"
+    agg: sum
+    expr: '"B14007Ie18"'
+  - name: b14007im18_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Enrolled\
+      \ in school \u2014 G"
+    agg: sum
+    expr: '"B14007Im18"'
+  - name: b14007ie19_estimate_school_enrollment_by_detailed_level_of_schoo
+    description: "Estimate \u2014 SCHOOL ENROLLMENT BY DETAILED LEVEL OF SCHOOL FOR\
+      \ THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014 Hispanic or Latino\
+      \ population 3 years and over \u2014 Total \u2014 Not enrolled in school"
+    agg: sum
+    expr: '"B14007Ie19"'
+  - name: b14007im19_marginoferror_school_enrollment_by_detailed_level_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SCHOOL ENROLLMENT BY DETAILED\
+      \ LEVEL OF SCHOOL FOR THE POPULATION 3 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ Hispanic or Latino population 3 years and over \u2014 Total \u2014 Not enrolled\
+      \ in school"
+    agg: sum
+    expr: '"B14007Im19"'

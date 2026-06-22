@@ -1,0 +1,578 @@
+semantic_model:
+  name: cbg_b20
+  description: "Census ACS topic B20 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B20
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b20001e1_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e1"'
+  - name: b20001m1_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m1"'
+  - name: b20001e2_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e2"'
+  - name: b20001m2_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m2"'
+  - name: b20001e3_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e3"'
+  - name: b20001m3_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m3"'
+  - name: b20001e4_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e4"'
+  - name: b20001m4_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m4"'
+  - name: b20001e5_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e5"'
+  - name: b20001m5_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m5"'
+  - name: b20001e6_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e6"'
+  - name: b20001m6_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m6"'
+  - name: b20001e7_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e7"'
+  - name: b20001m7_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m7"'
+  - name: b20001e8_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e8"'
+  - name: b20001m8_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m8"'
+  - name: b20001e9_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e9"'
+  - name: b20001m9_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m9"'
+  - name: b20001e10_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e10"'
+  - name: b20001m10_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m10"'
+  - name: b20001e11_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e11"'
+  - name: b20001m11_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m11"'
+  - name: b20001e12_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e12"'
+  - name: b20001m12_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m12"'
+  - name: b20001e13_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e13"'
+  - name: b20001m13_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m13"'
+  - name: b20001e14_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e14"'
+  - name: b20001m14_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m14"'
+  - name: b20001e15_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e15"'
+  - name: b20001m15_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m15"'
+  - name: b20001e16_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e16"'
+  - name: b20001m16_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m16"'
+  - name: b20001e17_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e17"'
+  - name: b20001m17_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m17"'
+  - name: b20001e18_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e18"'
+  - name: b20001m18_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m18"'
+  - name: b20001e19_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e19"'
+  - name: b20001m19_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m19"'
+  - name: b20001e20_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e20"'
+  - name: b20001m20_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m20"'
+  - name: b20001e21_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e21"'
+  - name: b20001m21_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m21"'
+  - name: b20001e22_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e22"'
+  - name: b20001m22_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m22"'
+  - name: b20001e23_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e23"'
+  - name: b20001m23_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m23"'
+  - name: b20001e24_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e24"'
+  - name: b20001m24_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m24"'
+  - name: b20001e25_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e25"'
+  - name: b20001m25_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m25"'
+  - name: b20001e26_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e26"'
+  - name: b20001m26_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m26"'
+  - name: b20001e27_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e27"'
+  - name: b20001m27_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m27"'
+  - name: b20001e28_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e28"'
+  - name: b20001m28_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m28"'
+  - name: b20001e29_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e29"'
+  - name: b20001m29_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m29"'
+  - name: b20001e30_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e30"'
+  - name: b20001m30_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m30"'
+  - name: b20001e31_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e31"'
+  - name: b20001m31_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m31"'
+  - name: b20001e32_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e32"'
+  - name: b20001m32_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m32"'
+  - name: b20001e33_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e33"'
+  - name: b20001m33_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m33"'
+  - name: b20001e34_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e34"'
+  - name: b20001m34_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m34"'
+  - name: b20001e35_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e35"'
+  - name: b20001m35_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m35"'
+  - name: b20001e36_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e36"'
+  - name: b20001m36_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m36"'
+  - name: b20001e37_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e37"'
+  - name: b20001m37_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m37"'
+  - name: b20001e38_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e38"'
+  - name: b20001m38_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m38"'
+  - name: b20001e39_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e39"'
+  - name: b20001m39_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m39"'
+  - name: b20001e40_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e40"'
+  - name: b20001m40_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m40"'
+  - name: b20001e41_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e41"'
+  - name: b20001m41_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m41"'
+  - name: b20001e42_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e42"'
+  - name: b20001m42_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m42"'
+  - name: b20001e43_estimate_sex_by_earnings_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 SEX BY EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12\
+      \ MONTHS \u2014 Population 16 years and over with earni"
+    agg: sum
+    expr: '"B20001e43"'
+  - name: b20001m43_marginoferror_sex_by_earnings_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY EARNINGS IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) FOR THE POPULATION 16 YEARS\
+      \ AND OVER WITH EARNINGS IN THE PAST 12 MONTHS \u2014 Population 16 years and\
+      \ over with "
+    agg: sum
+    expr: '"B20001m43"'

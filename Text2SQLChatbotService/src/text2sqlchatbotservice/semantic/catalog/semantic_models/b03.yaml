@@ -1,0 +1,288 @@
+semantic_model:
+  name: cbg_b03
+  description: "Census ACS topic B03 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B03
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b03002e1_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B03002e1"'
+  - name: b03002m1_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B03002m1"'
+  - name: b03002e2_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino"
+    agg: sum
+    expr: '"B03002e2"'
+  - name: b03002m2_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino"
+    agg: sum
+    expr: '"B03002m2"'
+  - name: b03002e3_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 White alone"
+    agg: sum
+    expr: '"B03002e3"'
+  - name: b03002m3_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 White alone"
+    agg: sum
+    expr: '"B03002m3"'
+  - name: b03002e4_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Black or African American\
+      \ alone"
+    agg: sum
+    expr: '"B03002e4"'
+  - name: b03002m4_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Black or African American alone"
+    agg: sum
+    expr: '"B03002m4"'
+  - name: b03002e5_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 American Indian and Alaska\
+      \ Native alone"
+    agg: sum
+    expr: '"B03002e5"'
+  - name: b03002m5_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 American Indian and Alaska Native alone"
+    agg: sum
+    expr: '"B03002m5"'
+  - name: b03002e6_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Asian alone"
+    agg: sum
+    expr: '"B03002e6"'
+  - name: b03002m6_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Asian alone"
+    agg: sum
+    expr: '"B03002m6"'
+  - name: b03002e7_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Native Hawaiian and Other\
+      \ Pacific Islander alone"
+    agg: sum
+    expr: '"B03002e7"'
+  - name: b03002m7_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Native Hawaiian and Other Pacific Islander alone"
+    agg: sum
+    expr: '"B03002m7"'
+  - name: b03002e8_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Some other race alone"
+    agg: sum
+    expr: '"B03002e8"'
+  - name: b03002m8_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Some other race alone"
+    agg: sum
+    expr: '"B03002m8"'
+  - name: b03002e9_estimate_hispanic_or_latino_origin_by_race_total_popula
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Two or more races"
+    agg: sum
+    expr: '"B03002e9"'
+  - name: b03002m9_marginoferror_hispanic_or_latino_origin_by_race_total_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Two or more races"
+    agg: sum
+    expr: '"B03002m9"'
+  - name: b03002e10_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Two or more races \u2014\
+      \ Two races including Some other race"
+    agg: sum
+    expr: '"B03002e10"'
+  - name: b03002m10_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Two or more races \u2014 Two races including Some other race"
+    agg: sum
+    expr: '"B03002m10"'
+  - name: b03002e11_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino \u2014 Two or more races \u2014\
+      \ Two races excluding Some other race and three or more races"
+    agg: sum
+    expr: '"B03002e11"'
+  - name: b03002m11_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino\
+      \ \u2014 Two or more races \u2014 Two races excluding Some other race and three\
+      \ or more races"
+    agg: sum
+    expr: '"B03002m11"'
+  - name: b03002e12_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino"
+    agg: sum
+    expr: '"B03002e12"'
+  - name: b03002m12_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino"
+    agg: sum
+    expr: '"B03002m12"'
+  - name: b03002e13_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 White alone"
+    agg: sum
+    expr: '"B03002e13"'
+  - name: b03002m13_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ White alone"
+    agg: sum
+    expr: '"B03002m13"'
+  - name: b03002e14_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Black or African American alone"
+    agg: sum
+    expr: '"B03002e14"'
+  - name: b03002m14_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Black or African American alone"
+    agg: sum
+    expr: '"B03002m14"'
+  - name: b03002e15_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 American Indian and Alaska Native\
+      \ alone"
+    agg: sum
+    expr: '"B03002e15"'
+  - name: b03002m15_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ American Indian and Alaska Native alone"
+    agg: sum
+    expr: '"B03002m15"'
+  - name: b03002e16_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Asian alone"
+    agg: sum
+    expr: '"B03002e16"'
+  - name: b03002m16_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Asian alone"
+    agg: sum
+    expr: '"B03002m16"'
+  - name: b03002e17_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Native Hawaiian and Other Pacific\
+      \ Islander alone"
+    agg: sum
+    expr: '"B03002e17"'
+  - name: b03002m17_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Native Hawaiian and Other Pacific Islander alone"
+    agg: sum
+    expr: '"B03002m17"'
+  - name: b03002e18_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Some other race alone"
+    agg: sum
+    expr: '"B03002e18"'
+  - name: b03002m18_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Some other race alone"
+    agg: sum
+    expr: '"B03002m18"'
+  - name: b03002e19_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Two or more races"
+    agg: sum
+    expr: '"B03002e19"'
+  - name: b03002m19_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Two or more races"
+    agg: sum
+    expr: '"B03002m19"'
+  - name: b03002e20_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Two or more races \u2014 Two\
+      \ races including Some other race"
+    agg: sum
+    expr: '"B03002e20"'
+  - name: b03002m20_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Two or more races \u2014 Two races including Some other race"
+    agg: sum
+    expr: '"B03002m20"'
+  - name: b03002e21_estimate_hispanic_or_latino_origin_by_race_total_popul
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN BY RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino \u2014 Two or more races \u2014 Two\
+      \ races excluding Some other race and three or more races"
+    agg: sum
+    expr: '"B03002e21"'
+  - name: b03002m21_marginoferror_hispanic_or_latino_origin_by_race_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ BY RACE \u2014 Total population \u2014 Total \u2014 Hispanic or Latino \u2014\
+      \ Two or more races \u2014 Two races excluding Some other race and three or\
+      \ more races"
+    agg: sum
+    expr: '"B03002m21"'
+  - name: b03003e1_estimate_hispanic_or_latino_origin_total_population_tot
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN \u2014 Total population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B03003e1"'
+  - name: b03003m1_marginoferror_hispanic_or_latino_origin_total_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B03003m1"'
+  - name: b03003e2_estimate_hispanic_or_latino_origin_total_population_tot
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN \u2014 Total population\
+      \ \u2014 Total \u2014 Not Hispanic or Latino"
+    agg: sum
+    expr: '"B03003e2"'
+  - name: b03003m2_marginoferror_hispanic_or_latino_origin_total_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ \u2014 Total population \u2014 Total \u2014 Not Hispanic or Latino"
+    agg: sum
+    expr: '"B03003m2"'
+  - name: b03003e3_estimate_hispanic_or_latino_origin_total_population_tot
+    description: "Estimate \u2014 HISPANIC OR LATINO ORIGIN \u2014 Total population\
+      \ \u2014 Total \u2014 Hispanic or Latino"
+    agg: sum
+    expr: '"B03003e3"'
+  - name: b03003m3_marginoferror_hispanic_or_latino_origin_total_populatio
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HISPANIC OR LATINO ORIGIN\
+      \ \u2014 Total population \u2014 Total \u2014 Hispanic or Latino"
+    agg: sum
+    expr: '"B03003m3"'

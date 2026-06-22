@@ -1,0 +1,720 @@
+semantic_model:
+  name: cbg_c15
+  description: "Census ACS topic C15 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_C15
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: c15010e1_estimate_field_of_bachelor_s_degree_for_first_major_for
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE\
+      \ POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S\
+      \ DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"C15010e1"'
+  - name: c15010m1_marginoferror_field_of_bachelor_s_degree_for_first_majo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25\
+      \ YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"C15010m1"'
+  - name: c15010e2_estimate_field_of_bachelor_s_degree_for_first_major_for
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE\
+      \ POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S\
+      \ DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Engineerin"
+    agg: sum
+    expr: '"C15010e2"'
+  - name: c15010m2_marginoferror_field_of_bachelor_s_degree_for_first_majo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25\
+      \ YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and Engin"
+    agg: sum
+    expr: '"C15010m2"'
+  - name: c15010e3_estimate_field_of_bachelor_s_degree_for_first_major_for
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE\
+      \ POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S\
+      \ DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Science and Engineerin"
+    agg: sum
+    expr: '"C15010e3"'
+  - name: c15010m3_marginoferror_field_of_bachelor_s_degree_for_first_majo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25\
+      \ YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Science and Engin"
+    agg: sum
+    expr: '"C15010m3"'
+  - name: c15010e4_estimate_field_of_bachelor_s_degree_for_first_major_for
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE\
+      \ POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S\
+      \ DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Business"
+    agg: sum
+    expr: '"C15010e4"'
+  - name: c15010m4_marginoferror_field_of_bachelor_s_degree_for_first_majo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25\
+      \ YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Business"
+    agg: sum
+    expr: '"C15010m4"'
+  - name: c15010e5_estimate_field_of_bachelor_s_degree_for_first_major_for
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE\
+      \ POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S\
+      \ DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Education"
+    agg: sum
+    expr: '"C15010e5"'
+  - name: c15010m5_marginoferror_field_of_bachelor_s_degree_for_first_majo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25\
+      \ YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Education"
+    agg: sum
+    expr: '"C15010m5"'
+  - name: c15010e6_estimate_field_of_bachelor_s_degree_for_first_major_for
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR FOR THE\
+      \ POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S\
+      \ DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Arts Humanities and Ot"
+    agg: sum
+    expr: '"C15010e6"'
+  - name: c15010m6_marginoferror_field_of_bachelor_s_degree_for_first_majo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR FOR THE POPULATION 25 YEARS AND OVER \u2014 POPULATION 25\
+      \ YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total\
+      \ \u2014 Arts Humanities a"
+    agg: sum
+    expr: '"C15010m6"'
+  - name: c15010ae1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"C15010Ae1"'
+  - name: c15010am1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Am1"'
+  - name: c15010ae2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010Ae2"'
+  - name: c15010am2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Am2"'
+  - name: c15010ae3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010Ae3"'
+  - name: c15010am3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Am3"'
+  - name: c15010ae4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010Ae4"'
+  - name: c15010am4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Am4"'
+  - name: c15010ae5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010Ae5"'
+  - name: c15010am5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Am5"'
+  - name: c15010ae6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010Ae6"'
+  - name: c15010am6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE) \u2014 WHITE\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Am6"'
+  - name: c15010be1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 BLACK OR AFRICAN\
+      \ AMERICAN ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'"
+    agg: sum
+    expr: '"C15010Be1"'
+  - name: c15010bm1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 BLACK OR AFRICAN AMERICAN ALONE POPULATION 25 YEARS AND OVER\
+      \ WITH A BACH"
+    agg: sum
+    expr: '"C15010Bm1"'
+  - name: c15010be2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 BLACK OR AFRICAN\
+      \ AMERICAN ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'"
+    agg: sum
+    expr: '"C15010Be2"'
+  - name: c15010bm2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 BLACK OR AFRICAN AMERICAN ALONE POPULATION 25 YEARS AND OVER\
+      \ WITH A BACH"
+    agg: sum
+    expr: '"C15010Bm2"'
+  - name: c15010be3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 BLACK OR AFRICAN\
+      \ AMERICAN ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'"
+    agg: sum
+    expr: '"C15010Be3"'
+  - name: c15010bm3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 BLACK OR AFRICAN AMERICAN ALONE POPULATION 25 YEARS AND OVER\
+      \ WITH A BACH"
+    agg: sum
+    expr: '"C15010Bm3"'
+  - name: c15010be4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 BLACK OR AFRICAN\
+      \ AMERICAN ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'"
+    agg: sum
+    expr: '"C15010Be4"'
+  - name: c15010bm4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 BLACK OR AFRICAN AMERICAN ALONE POPULATION 25 YEARS AND OVER\
+      \ WITH A BACH"
+    agg: sum
+    expr: '"C15010Bm4"'
+  - name: c15010be5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 BLACK OR AFRICAN\
+      \ AMERICAN ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'"
+    agg: sum
+    expr: '"C15010Be5"'
+  - name: c15010bm5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 BLACK OR AFRICAN AMERICAN ALONE POPULATION 25 YEARS AND OVER\
+      \ WITH A BACH"
+    agg: sum
+    expr: '"C15010Bm5"'
+  - name: c15010be6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN ALONE) \u2014 BLACK OR AFRICAN\
+      \ AMERICAN ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'"
+    agg: sum
+    expr: '"C15010Be6"'
+  - name: c15010bm6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 BLACK OR AFRICAN AMERICAN ALONE POPULATION 25 YEARS AND OVER\
+      \ WITH A BACH"
+    agg: sum
+    expr: '"C15010Bm6"'
+  - name: c15010ce1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 AMERICAN\
+      \ INDIAN AND ALASKA NATIVE ALONE POPULATION 25 YEARS AND OVER "
+    agg: sum
+    expr: '"C15010Ce1"'
+  - name: c15010cm1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 25\
+      \ YEARS AND "
+    agg: sum
+    expr: '"C15010Cm1"'
+  - name: c15010ce2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 AMERICAN\
+      \ INDIAN AND ALASKA NATIVE ALONE POPULATION 25 YEARS AND OVER "
+    agg: sum
+    expr: '"C15010Ce2"'
+  - name: c15010cm2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 25\
+      \ YEARS AND "
+    agg: sum
+    expr: '"C15010Cm2"'
+  - name: c15010ce3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 AMERICAN\
+      \ INDIAN AND ALASKA NATIVE ALONE POPULATION 25 YEARS AND OVER "
+    agg: sum
+    expr: '"C15010Ce3"'
+  - name: c15010cm3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 25\
+      \ YEARS AND "
+    agg: sum
+    expr: '"C15010Cm3"'
+  - name: c15010ce4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 AMERICAN\
+      \ INDIAN AND ALASKA NATIVE ALONE POPULATION 25 YEARS AND OVER "
+    agg: sum
+    expr: '"C15010Ce4"'
+  - name: c15010cm4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 25\
+      \ YEARS AND "
+    agg: sum
+    expr: '"C15010Cm4"'
+  - name: c15010ce5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 AMERICAN\
+      \ INDIAN AND ALASKA NATIVE ALONE POPULATION 25 YEARS AND OVER "
+    agg: sum
+    expr: '"C15010Ce5"'
+  - name: c15010cm5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 25\
+      \ YEARS AND "
+    agg: sum
+    expr: '"C15010Cm5"'
+  - name: c15010ce6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 AMERICAN\
+      \ INDIAN AND ALASKA NATIVE ALONE POPULATION 25 YEARS AND OVER "
+    agg: sum
+    expr: '"C15010Ce6"'
+  - name: c15010cm6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE POPULATION 25\
+      \ YEARS AND "
+    agg: sum
+    expr: '"C15010Cm6"'
+  - name: c15010de1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"C15010De1"'
+  - name: c15010dm1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Dm1"'
+  - name: c15010de2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010De2"'
+  - name: c15010dm2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Dm2"'
+  - name: c15010de3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010De3"'
+  - name: c15010dm3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Dm3"'
+  - name: c15010de4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010De4"'
+  - name: c15010dm4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Dm4"'
+  - name: c15010de5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010De5"'
+  - name: c15010dm5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Dm5"'
+  - name: c15010de6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN ALONE POPULATION 25 YEARS AND\
+      \ OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 "
+    agg: sum
+    expr: '"C15010De6"'
+  - name: c15010dm6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (ASIAN ALONE) \u2014 ASIAN\
+      \ ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMENT\
+      \ \u2014 Tot"
+    agg: sum
+    expr: '"C15010Dm6"'
+  - name: c15010fe1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 SOME OTHER RACE ALONE POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER A"
+    agg: sum
+    expr: '"C15010Fe1"'
+  - name: c15010fm1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014\
+      \ SOME OTHER RACE ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIG"
+    agg: sum
+    expr: '"C15010Fm1"'
+  - name: c15010fe2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 SOME OTHER RACE ALONE POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER A"
+    agg: sum
+    expr: '"C15010Fe2"'
+  - name: c15010fm2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014\
+      \ SOME OTHER RACE ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIG"
+    agg: sum
+    expr: '"C15010Fm2"'
+  - name: c15010fe3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 SOME OTHER RACE ALONE POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER A"
+    agg: sum
+    expr: '"C15010Fe3"'
+  - name: c15010fm3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014\
+      \ SOME OTHER RACE ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIG"
+    agg: sum
+    expr: '"C15010Fm3"'
+  - name: c15010fe4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 SOME OTHER RACE ALONE POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER A"
+    agg: sum
+    expr: '"C15010Fe4"'
+  - name: c15010fm4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014\
+      \ SOME OTHER RACE ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIG"
+    agg: sum
+    expr: '"C15010Fm4"'
+  - name: c15010fe5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 SOME OTHER RACE ALONE POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER A"
+    agg: sum
+    expr: '"C15010Fe5"'
+  - name: c15010fm5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014\
+      \ SOME OTHER RACE ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIG"
+    agg: sum
+    expr: '"C15010Fm5"'
+  - name: c15010fe6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014 SOME OTHER RACE ALONE POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER A"
+    agg: sum
+    expr: '"C15010Fe6"'
+  - name: c15010fm6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (SOME OTHER RACE ALONE) \u2014\
+      \ SOME OTHER RACE ALONE POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIG"
+    agg: sum
+    expr: '"C15010Fm6"'
+  - name: c15010ge1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (TWO OR MORE RACES) \u2014 TWO OR MORE RACES POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMEN"
+    agg: sum
+    expr: '"C15010Ge1"'
+  - name: c15010gm1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ TWO OR MORE RACES POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER ATTA"
+    agg: sum
+    expr: '"C15010Gm1"'
+  - name: c15010ge2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (TWO OR MORE RACES) \u2014 TWO OR MORE RACES POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMEN"
+    agg: sum
+    expr: '"C15010Ge2"'
+  - name: c15010gm2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ TWO OR MORE RACES POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER ATTA"
+    agg: sum
+    expr: '"C15010Gm2"'
+  - name: c15010ge3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (TWO OR MORE RACES) \u2014 TWO OR MORE RACES POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMEN"
+    agg: sum
+    expr: '"C15010Ge3"'
+  - name: c15010gm3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ TWO OR MORE RACES POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER ATTA"
+    agg: sum
+    expr: '"C15010Gm3"'
+  - name: c15010ge4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (TWO OR MORE RACES) \u2014 TWO OR MORE RACES POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMEN"
+    agg: sum
+    expr: '"C15010Ge4"'
+  - name: c15010gm4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ TWO OR MORE RACES POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER ATTA"
+    agg: sum
+    expr: '"C15010Gm4"'
+  - name: c15010ge5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (TWO OR MORE RACES) \u2014 TWO OR MORE RACES POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMEN"
+    agg: sum
+    expr: '"C15010Ge5"'
+  - name: c15010gm5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ TWO OR MORE RACES POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER ATTA"
+    agg: sum
+    expr: '"C15010Gm5"'
+  - name: c15010ge6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (TWO OR MORE RACES) \u2014 TWO OR MORE RACES POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINMEN"
+    agg: sum
+    expr: '"C15010Ge6"'
+  - name: c15010gm6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (TWO OR MORE RACES) \u2014\
+      \ TWO OR MORE RACES POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER ATTA"
+    agg: sum
+    expr: '"C15010Gm6"'
+  - name: c15010he1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 WHITE ALONE,\
+      \ NOT HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A B"
+    agg: sum
+    expr: '"C15010He1"'
+  - name: c15010hm1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 25 YEARS\
+      \ AND OVER WIT"
+    agg: sum
+    expr: '"C15010Hm1"'
+  - name: c15010he2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 WHITE ALONE,\
+      \ NOT HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A B"
+    agg: sum
+    expr: '"C15010He2"'
+  - name: c15010hm2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 25 YEARS\
+      \ AND OVER WIT"
+    agg: sum
+    expr: '"C15010Hm2"'
+  - name: c15010he3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 WHITE ALONE,\
+      \ NOT HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A B"
+    agg: sum
+    expr: '"C15010He3"'
+  - name: c15010hm3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 25 YEARS\
+      \ AND OVER WIT"
+    agg: sum
+    expr: '"C15010Hm3"'
+  - name: c15010he4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 WHITE ALONE,\
+      \ NOT HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A B"
+    agg: sum
+    expr: '"C15010He4"'
+  - name: c15010hm4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 25 YEARS\
+      \ AND OVER WIT"
+    agg: sum
+    expr: '"C15010Hm4"'
+  - name: c15010he5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 WHITE ALONE,\
+      \ NOT HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A B"
+    agg: sum
+    expr: '"C15010He5"'
+  - name: c15010hm5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 25 YEARS\
+      \ AND OVER WIT"
+    agg: sum
+    expr: '"C15010Hm5"'
+  - name: c15010he6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 WHITE ALONE,\
+      \ NOT HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A B"
+    agg: sum
+    expr: '"C15010He6"'
+  - name: c15010hm6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 WHITE ALONE, NOT HISPANIC OR LATINO POPULATION 25 YEARS\
+      \ AND OVER WIT"
+    agg: sum
+    expr: '"C15010Hm6"'
+  - name: c15010ie1_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014 HISPANIC OR LATINO POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINM"
+    agg: sum
+    expr: '"C15010Ie1"'
+  - name: c15010im1_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER AT"
+    agg: sum
+    expr: '"C15010Im1"'
+  - name: c15010ie2_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014 HISPANIC OR LATINO POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINM"
+    agg: sum
+    expr: '"C15010Ie2"'
+  - name: c15010im2_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER AT"
+    agg: sum
+    expr: '"C15010Im2"'
+  - name: c15010ie3_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014 HISPANIC OR LATINO POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINM"
+    agg: sum
+    expr: '"C15010Ie3"'
+  - name: c15010im3_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER AT"
+    agg: sum
+    expr: '"C15010Im3"'
+  - name: c15010ie4_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014 HISPANIC OR LATINO POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINM"
+    agg: sum
+    expr: '"C15010Ie4"'
+  - name: c15010im4_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER AT"
+    agg: sum
+    expr: '"C15010Im4"'
+  - name: c15010ie5_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014 HISPANIC OR LATINO POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINM"
+    agg: sum
+    expr: '"C15010Ie5"'
+  - name: c15010im5_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER AT"
+    agg: sum
+    expr: '"C15010Im5"'
+  - name: c15010ie6_estimate_field_of_bachelor_s_degree_for_first_major_th
+    description: "Estimate \u2014 FIELD OF BACHELOR'S DEGREE FOR FIRST MAJOR THE POPULATION\
+      \ 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014 HISPANIC OR LATINO POPULATION\
+      \ 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR HIGHER ATTAINM"
+    agg: sum
+    expr: '"C15010Ie6"'
+  - name: c15010im6_marginoferror_field_of_bachelor_s_degree_for_first_maj
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FIELD OF BACHELOR'S DEGREE\
+      \ FOR FIRST MAJOR THE POPULATION 25 YEARS AND OVER (HISPANIC OR LATINO) \u2014\
+      \ HISPANIC OR LATINO POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE OR\
+      \ HIGHER AT"
+    agg: sum
+    expr: '"C15010Im6"'

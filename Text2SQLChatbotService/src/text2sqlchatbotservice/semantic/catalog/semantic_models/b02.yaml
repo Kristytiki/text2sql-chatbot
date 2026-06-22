@@ -1,0 +1,195 @@
+semantic_model:
+  name: cbg_b02
+  description: "Census ACS topic B02 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B02
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b02001e1_estimate_race_total_population_total
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B02001e1"'
+  - name: b02001m1_marginoferror_race_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B02001m1"'
+  - name: b02001e2_estimate_race_total_population_total_white_alone
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ White alone"
+    agg: sum
+    expr: '"B02001e2"'
+  - name: b02001m2_marginoferror_race_total_population_total_white_alone
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 White alone"
+    agg: sum
+    expr: '"B02001m2"'
+  - name: b02001e3_estimate_race_total_population_total_black_or_african_a
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Black or African American alone"
+    agg: sum
+    expr: '"B02001e3"'
+  - name: b02001m3_marginoferror_race_total_population_total_black_or_afri
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Black or African American alone"
+    agg: sum
+    expr: '"B02001m3"'
+  - name: b02001e4_estimate_race_total_population_total_american_indian_an
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ American Indian and Alaska Native alone"
+    agg: sum
+    expr: '"B02001e4"'
+  - name: b02001m4_marginoferror_race_total_population_total_american_indi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 American Indian and Alaska Native alone"
+    agg: sum
+    expr: '"B02001m4"'
+  - name: b02001e5_estimate_race_total_population_total_asian_alone
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Asian alone"
+    agg: sum
+    expr: '"B02001e5"'
+  - name: b02001m5_marginoferror_race_total_population_total_asian_alone
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Asian alone"
+    agg: sum
+    expr: '"B02001m5"'
+  - name: b02001e6_estimate_race_total_population_total_native_hawaiian_an
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Native Hawaiian and Other Pacific Islander alone"
+    agg: sum
+    expr: '"B02001e6"'
+  - name: b02001m6_marginoferror_race_total_population_total_native_hawaii
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Native Hawaiian and Other Pacific Islander alone"
+    agg: sum
+    expr: '"B02001m6"'
+  - name: b02001e7_estimate_race_total_population_total_some_other_race_al
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Some other race alone"
+    agg: sum
+    expr: '"B02001e7"'
+  - name: b02001m7_marginoferror_race_total_population_total_some_other_ra
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Some other race alone"
+    agg: sum
+    expr: '"B02001m7"'
+  - name: b02001e8_estimate_race_total_population_total_two_or_more_races
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Two or more races"
+    agg: sum
+    expr: '"B02001e8"'
+  - name: b02001m8_marginoferror_race_total_population_total_two_or_more_r
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Two or more races"
+    agg: sum
+    expr: '"B02001m8"'
+  - name: b02001e9_estimate_race_total_population_total_two_or_more_races
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Two or more races \u2014 Two races including Some other race"
+    agg: sum
+    expr: '"B02001e9"'
+  - name: b02001m9_marginoferror_race_total_population_total_two_or_more_r
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Two or more races \u2014 Two races including Some other\
+      \ race"
+    agg: sum
+    expr: '"B02001m9"'
+  - name: b02001e10_estimate_race_total_population_total_two_or_more_races
+    description: "Estimate \u2014 RACE \u2014 Total population \u2014 Total \u2014\
+      \ Two or more races \u2014 Two races excluding Some other race and three or\
+      \ more races"
+    agg: sum
+    expr: '"B02001e10"'
+  - name: b02001m10_marginoferror_race_total_population_total_two_or_more
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RACE \u2014 Total population\
+      \ \u2014 Total \u2014 Two or more races \u2014 Two races excluding Some other\
+      \ race and three or more races"
+    agg: sum
+    expr: '"B02001m10"'
+  - name: b02008e1_estimate_white_alone_or_in_combination_with_one_or_more
+    description: "Estimate \u2014 WHITE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER\
+      \ RACES \u2014 White alone or in combination with one or more other races \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B02008e1"'
+  - name: b02008m1_marginoferror_white_alone_or_in_combination_with_one_or
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 WHITE ALONE OR IN COMBINATION\
+      \ WITH ONE OR MORE OTHER RACES \u2014 White alone or in combination with one\
+      \ or more other races \u2014 Total"
+    agg: sum
+    expr: '"B02008m1"'
+  - name: b02009e1_estimate_black_or_african_american_alone_or_in_combinat
+    description: "Estimate \u2014 BLACK OR AFRICAN AMERICAN ALONE OR IN COMBINATION\
+      \ WITH ONE OR MORE OTHER RACES \u2014 Black or African American alone or in\
+      \ combination with one or more other races \u2014 Total"
+    agg: sum
+    expr: '"B02009e1"'
+  - name: b02009m1_marginoferror_black_or_african_american_alone_or_in_com
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 BLACK OR AFRICAN AMERICAN\
+      \ ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES \u2014 Black or African\
+      \ American alone or in combination with one or more other races \u2014 Total"
+    agg: sum
+    expr: '"B02009m1"'
+  - name: b02010e1_estimate_american_indian_and_alaska_native_alone_or_in
+    description: "Estimate \u2014 AMERICAN INDIAN AND ALASKA NATIVE ALONE OR IN COMBINATION\
+      \ WITH ONE OR MORE OTHER RACES \u2014 People who are American Indian or Alaska\
+      \ Native alone or in combination with one or more other races"
+    agg: sum
+    expr: '"B02010e1"'
+  - name: b02010m1_marginoferror_american_indian_and_alaska_native_alone_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES \u2014 People\
+      \ who are American Indian or Alaska Native alone or in combination with one\
+      \ or more other "
+    agg: sum
+    expr: '"B02010m1"'
+  - name: b02011e1_estimate_asian_alone_or_in_combination_with_one_or_more
+    description: "Estimate \u2014 ASIAN ALONE OR IN COMBINATION WITH ONE OR MORE OTHER\
+      \ RACES \u2014 Asian alone or in combination with one or more other races \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B02011e1"'
+  - name: b02011m1_marginoferror_asian_alone_or_in_combination_with_one_or
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ASIAN ALONE OR IN COMBINATION\
+      \ WITH ONE OR MORE OTHER RACES \u2014 Asian alone or in combination with one\
+      \ or more other races \u2014 Total"
+    agg: sum
+    expr: '"B02011m1"'
+  - name: b02012e1_estimate_native_hawaiian_and_other_pacific_islander_alo
+    description: "Estimate \u2014 NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE\
+      \ OR IN COMBINATION WITH ONE OR MORE OTHER RACES \u2014 Native Hawaiian and\
+      \ Other Pacific Islander alone or in combination with one or more other r"
+    agg: sum
+    expr: '"B02012e1"'
+  - name: b02012m1_marginoferror_native_hawaiian_and_other_pacific_islande
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NATIVE HAWAIIAN AND OTHER\
+      \ PACIFIC ISLANDER ALONE OR IN COMBINATION WITH ONE OR MORE OTHER RACES \u2014\
+      \ Native Hawaiian and Other Pacific Islander alone or in combination with one\
+      \ or more ot"
+    agg: sum
+    expr: '"B02012m1"'
+  - name: b02013e1_estimate_some_other_race_alone_or_in_combination_with_o
+    description: "Estimate \u2014 SOME OTHER RACE ALONE OR IN COMBINATION WITH ONE\
+      \ OR MORE OTHER RACES \u2014 Some other race alone or in combination with one\
+      \ or more other races \u2014 Total"
+    agg: sum
+    expr: '"B02013e1"'
+  - name: b02013m1_marginoferror_some_other_race_alone_or_in_combination_w
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SOME OTHER RACE ALONE OR\
+      \ IN COMBINATION WITH ONE OR MORE OTHER RACES \u2014 Some other race alone or\
+      \ in combination with one or more other races \u2014 Total"
+    agg: sum
+    expr: '"B02013m1"'

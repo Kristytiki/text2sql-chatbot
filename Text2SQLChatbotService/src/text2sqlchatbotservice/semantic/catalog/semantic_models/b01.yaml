@@ -1,0 +1,518 @@
+semantic_model:
+  name: cbg_b01
+  description: "Census ACS topic B01 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B01
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b01001e1_estimate_sex_by_age_total_population_total
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B01001e1"'
+  - name: b01001m1_marginoferror_sex_by_age_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B01001m1"'
+  - name: b01001e2_estimate_sex_by_age_total_population_total_male
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male"
+    agg: sum
+    expr: '"B01001e2"'
+  - name: b01001m2_marginoferror_sex_by_age_total_population_total_male
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B01001m2"'
+  - name: b01001e3_estimate_sex_by_age_total_population_total_male_under_5
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 Under 5 years"
+    agg: sum
+    expr: '"B01001e3"'
+  - name: b01001m3_marginoferror_sex_by_age_total_population_total_male_un
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 Under 5 years"
+    agg: sum
+    expr: '"B01001m3"'
+  - name: b01001e4_estimate_sex_by_age_total_population_total_male_5_to_9
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 5 to 9 years"
+    agg: sum
+    expr: '"B01001e4"'
+  - name: b01001m4_marginoferror_sex_by_age_total_population_total_male_5
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 5 to 9 years"
+    agg: sum
+    expr: '"B01001m4"'
+  - name: b01001e5_estimate_sex_by_age_total_population_total_male_10_to_1
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 10 to 14 years"
+    agg: sum
+    expr: '"B01001e5"'
+  - name: b01001m5_marginoferror_sex_by_age_total_population_total_male_10
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 10 to 14 years"
+    agg: sum
+    expr: '"B01001m5"'
+  - name: b01001e6_estimate_sex_by_age_total_population_total_male_15_to_1
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 15 to 17 years"
+    agg: sum
+    expr: '"B01001e6"'
+  - name: b01001m6_marginoferror_sex_by_age_total_population_total_male_15
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 15 to 17 years"
+    agg: sum
+    expr: '"B01001m6"'
+  - name: b01001e7_estimate_sex_by_age_total_population_total_male_18_and
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 18 and 19 years"
+    agg: sum
+    expr: '"B01001e7"'
+  - name: b01001m7_marginoferror_sex_by_age_total_population_total_male_18
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 18 and 19 years"
+    agg: sum
+    expr: '"B01001m7"'
+  - name: b01001e8_estimate_sex_by_age_total_population_total_male_20_year
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 20 years"
+    agg: sum
+    expr: '"B01001e8"'
+  - name: b01001m8_marginoferror_sex_by_age_total_population_total_male_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 20 years"
+    agg: sum
+    expr: '"B01001m8"'
+  - name: b01001e9_estimate_sex_by_age_total_population_total_male_21_year
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 21 years"
+    agg: sum
+    expr: '"B01001e9"'
+  - name: b01001m9_marginoferror_sex_by_age_total_population_total_male_21
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 21 years"
+    agg: sum
+    expr: '"B01001m9"'
+  - name: b01001e10_estimate_sex_by_age_total_population_total_male_22_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 22 to 24 years"
+    agg: sum
+    expr: '"B01001e10"'
+  - name: b01001m10_marginoferror_sex_by_age_total_population_total_male_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 22 to 24 years"
+    agg: sum
+    expr: '"B01001m10"'
+  - name: b01001e11_estimate_sex_by_age_total_population_total_male_25_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 25 to 29 years"
+    agg: sum
+    expr: '"B01001e11"'
+  - name: b01001m11_marginoferror_sex_by_age_total_population_total_male_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 25 to 29 years"
+    agg: sum
+    expr: '"B01001m11"'
+  - name: b01001e12_estimate_sex_by_age_total_population_total_male_30_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 30 to 34 years"
+    agg: sum
+    expr: '"B01001e12"'
+  - name: b01001m12_marginoferror_sex_by_age_total_population_total_male_3
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 30 to 34 years"
+    agg: sum
+    expr: '"B01001m12"'
+  - name: b01001e13_estimate_sex_by_age_total_population_total_male_35_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 35 to 39 years"
+    agg: sum
+    expr: '"B01001e13"'
+  - name: b01001m13_marginoferror_sex_by_age_total_population_total_male_3
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 35 to 39 years"
+    agg: sum
+    expr: '"B01001m13"'
+  - name: b01001e14_estimate_sex_by_age_total_population_total_male_40_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 40 to 44 years"
+    agg: sum
+    expr: '"B01001e14"'
+  - name: b01001m14_marginoferror_sex_by_age_total_population_total_male_4
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 40 to 44 years"
+    agg: sum
+    expr: '"B01001m14"'
+  - name: b01001e15_estimate_sex_by_age_total_population_total_male_45_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 45 to 49 years"
+    agg: sum
+    expr: '"B01001e15"'
+  - name: b01001m15_marginoferror_sex_by_age_total_population_total_male_4
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 45 to 49 years"
+    agg: sum
+    expr: '"B01001m15"'
+  - name: b01001e16_estimate_sex_by_age_total_population_total_male_50_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 50 to 54 years"
+    agg: sum
+    expr: '"B01001e16"'
+  - name: b01001m16_marginoferror_sex_by_age_total_population_total_male_5
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 50 to 54 years"
+    agg: sum
+    expr: '"B01001m16"'
+  - name: b01001e17_estimate_sex_by_age_total_population_total_male_55_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 55 to 59 years"
+    agg: sum
+    expr: '"B01001e17"'
+  - name: b01001m17_marginoferror_sex_by_age_total_population_total_male_5
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 55 to 59 years"
+    agg: sum
+    expr: '"B01001m17"'
+  - name: b01001e18_estimate_sex_by_age_total_population_total_male_60_and
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 60 and 61 years"
+    agg: sum
+    expr: '"B01001e18"'
+  - name: b01001m18_marginoferror_sex_by_age_total_population_total_male_6
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 60 and 61 years"
+    agg: sum
+    expr: '"B01001m18"'
+  - name: b01001e19_estimate_sex_by_age_total_population_total_male_62_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 62 to 64 years"
+    agg: sum
+    expr: '"B01001e19"'
+  - name: b01001m19_marginoferror_sex_by_age_total_population_total_male_6
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 62 to 64 years"
+    agg: sum
+    expr: '"B01001m19"'
+  - name: b01001e20_estimate_sex_by_age_total_population_total_male_65_and
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 65 and 66 years"
+    agg: sum
+    expr: '"B01001e20"'
+  - name: b01001m20_marginoferror_sex_by_age_total_population_total_male_6
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 65 and 66 years"
+    agg: sum
+    expr: '"B01001m20"'
+  - name: b01001e21_estimate_sex_by_age_total_population_total_male_67_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 67 to 69 years"
+    agg: sum
+    expr: '"B01001e21"'
+  - name: b01001m21_marginoferror_sex_by_age_total_population_total_male_6
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 67 to 69 years"
+    agg: sum
+    expr: '"B01001m21"'
+  - name: b01001e22_estimate_sex_by_age_total_population_total_male_70_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 70 to 74 years"
+    agg: sum
+    expr: '"B01001e22"'
+  - name: b01001m22_marginoferror_sex_by_age_total_population_total_male_7
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 70 to 74 years"
+    agg: sum
+    expr: '"B01001m22"'
+  - name: b01001e23_estimate_sex_by_age_total_population_total_male_75_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 75 to 79 years"
+    agg: sum
+    expr: '"B01001e23"'
+  - name: b01001m23_marginoferror_sex_by_age_total_population_total_male_7
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 75 to 79 years"
+    agg: sum
+    expr: '"B01001m23"'
+  - name: b01001e24_estimate_sex_by_age_total_population_total_male_80_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 80 to 84 years"
+    agg: sum
+    expr: '"B01001e24"'
+  - name: b01001m24_marginoferror_sex_by_age_total_population_total_male_8
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 80 to 84 years"
+    agg: sum
+    expr: '"B01001m24"'
+  - name: b01001e25_estimate_sex_by_age_total_population_total_male_85_yea
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Male \u2014 85 years and over"
+    agg: sum
+    expr: '"B01001e25"'
+  - name: b01001m25_marginoferror_sex_by_age_total_population_total_male_8
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Male \u2014 85 years and over"
+    agg: sum
+    expr: '"B01001m25"'
+  - name: b01001e26_estimate_sex_by_age_total_population_total_female
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female"
+    agg: sum
+    expr: '"B01001e26"'
+  - name: b01001m26_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B01001m26"'
+  - name: b01001e27_estimate_sex_by_age_total_population_total_female_unde
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 Under 5 years"
+    agg: sum
+    expr: '"B01001e27"'
+  - name: b01001m27_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 Under 5 years"
+    agg: sum
+    expr: '"B01001m27"'
+  - name: b01001e28_estimate_sex_by_age_total_population_total_female_5_to
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 5 to 9 years"
+    agg: sum
+    expr: '"B01001e28"'
+  - name: b01001m28_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 5 to 9 years"
+    agg: sum
+    expr: '"B01001m28"'
+  - name: b01001e29_estimate_sex_by_age_total_population_total_female_10_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 10 to 14 years"
+    agg: sum
+    expr: '"B01001e29"'
+  - name: b01001m29_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 10 to 14 years"
+    agg: sum
+    expr: '"B01001m29"'
+  - name: b01001e30_estimate_sex_by_age_total_population_total_female_15_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 15 to 17 years"
+    agg: sum
+    expr: '"B01001e30"'
+  - name: b01001m30_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 15 to 17 years"
+    agg: sum
+    expr: '"B01001m30"'
+  - name: b01001e31_estimate_sex_by_age_total_population_total_female_18_a
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 18 and 19 years"
+    agg: sum
+    expr: '"B01001e31"'
+  - name: b01001m31_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 18 and 19 years"
+    agg: sum
+    expr: '"B01001m31"'
+  - name: b01001e32_estimate_sex_by_age_total_population_total_female_20_y
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 20 years"
+    agg: sum
+    expr: '"B01001e32"'
+  - name: b01001m32_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 20 years"
+    agg: sum
+    expr: '"B01001m32"'
+  - name: b01001e33_estimate_sex_by_age_total_population_total_female_21_y
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 21 years"
+    agg: sum
+    expr: '"B01001e33"'
+  - name: b01001m33_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 21 years"
+    agg: sum
+    expr: '"B01001m33"'
+  - name: b01001e34_estimate_sex_by_age_total_population_total_female_22_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 22 to 24 years"
+    agg: sum
+    expr: '"B01001e34"'
+  - name: b01001m34_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 22 to 24 years"
+    agg: sum
+    expr: '"B01001m34"'
+  - name: b01001e35_estimate_sex_by_age_total_population_total_female_25_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 25 to 29 years"
+    agg: sum
+    expr: '"B01001e35"'
+  - name: b01001m35_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 25 to 29 years"
+    agg: sum
+    expr: '"B01001m35"'
+  - name: b01001e36_estimate_sex_by_age_total_population_total_female_30_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 30 to 34 years"
+    agg: sum
+    expr: '"B01001e36"'
+  - name: b01001m36_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 30 to 34 years"
+    agg: sum
+    expr: '"B01001m36"'
+  - name: b01001e37_estimate_sex_by_age_total_population_total_female_35_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 35 to 39 years"
+    agg: sum
+    expr: '"B01001e37"'
+  - name: b01001m37_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 35 to 39 years"
+    agg: sum
+    expr: '"B01001m37"'
+  - name: b01001e38_estimate_sex_by_age_total_population_total_female_40_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 40 to 44 years"
+    agg: sum
+    expr: '"B01001e38"'
+  - name: b01001m38_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 40 to 44 years"
+    agg: sum
+    expr: '"B01001m38"'
+  - name: b01001e39_estimate_sex_by_age_total_population_total_female_45_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 45 to 49 years"
+    agg: sum
+    expr: '"B01001e39"'
+  - name: b01001m39_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 45 to 49 years"
+    agg: sum
+    expr: '"B01001m39"'
+  - name: b01001e40_estimate_sex_by_age_total_population_total_female_50_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 50 to 54 years"
+    agg: sum
+    expr: '"B01001e40"'
+  - name: b01001m40_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 50 to 54 years"
+    agg: sum
+    expr: '"B01001m40"'
+  - name: b01001e41_estimate_sex_by_age_total_population_total_female_55_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 55 to 59 years"
+    agg: sum
+    expr: '"B01001e41"'
+  - name: b01001m41_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 55 to 59 years"
+    agg: sum
+    expr: '"B01001m41"'
+  - name: b01001e42_estimate_sex_by_age_total_population_total_female_60_a
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 60 and 61 years"
+    agg: sum
+    expr: '"B01001e42"'
+  - name: b01001m42_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 60 and 61 years"
+    agg: sum
+    expr: '"B01001m42"'
+  - name: b01001e43_estimate_sex_by_age_total_population_total_female_62_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 62 to 64 years"
+    agg: sum
+    expr: '"B01001e43"'
+  - name: b01001m43_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 62 to 64 years"
+    agg: sum
+    expr: '"B01001m43"'
+  - name: b01001e44_estimate_sex_by_age_total_population_total_female_65_a
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 65 and 66 years"
+    agg: sum
+    expr: '"B01001e44"'
+  - name: b01001m44_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 65 and 66 years"
+    agg: sum
+    expr: '"B01001m44"'
+  - name: b01001e45_estimate_sex_by_age_total_population_total_female_67_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 67 to 69 years"
+    agg: sum
+    expr: '"B01001e45"'
+  - name: b01001m45_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 67 to 69 years"
+    agg: sum
+    expr: '"B01001m45"'
+  - name: b01001e46_estimate_sex_by_age_total_population_total_female_70_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 70 to 74 years"
+    agg: sum
+    expr: '"B01001e46"'
+  - name: b01001m46_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 70 to 74 years"
+    agg: sum
+    expr: '"B01001m46"'
+  - name: b01001e47_estimate_sex_by_age_total_population_total_female_75_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 75 to 79 years"
+    agg: sum
+    expr: '"B01001e47"'
+  - name: b01001m47_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 75 to 79 years"
+    agg: sum
+    expr: '"B01001m47"'
+  - name: b01001e48_estimate_sex_by_age_total_population_total_female_80_t
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 80 to 84 years"
+    agg: sum
+    expr: '"B01001e48"'
+  - name: b01001m48_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 80 to 84 years"
+    agg: sum
+    expr: '"B01001m48"'
+  - name: b01001e49_estimate_sex_by_age_total_population_total_female_85_y
+    description: "Estimate \u2014 SEX BY AGE \u2014 Total population \u2014 Total\
+      \ \u2014 Female \u2014 85 years and over"
+    agg: sum
+    expr: '"B01001e49"'
+  - name: b01001m49_marginoferror_sex_by_age_total_population_total_female
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE \u2014 Total population\
+      \ \u2014 Total \u2014 Female \u2014 85 years and over"
+    agg: sum
+    expr: '"B01001m49"'
+  - name: b01003e1_estimate_total_population_total_population_total
+    description: "Estimate \u2014 TOTAL POPULATION \u2014 Total population \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B01003e1"'
+  - name: b01003m1_marginoferror_total_population_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TOTAL POPULATION \u2014 Total\
+      \ population \u2014 Total"
+    agg: sum
+    expr: '"B01003m1"'

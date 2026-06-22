@@ -1,0 +1,246 @@
+semantic_model:
+  name: cbg_b12
+  description: "Census ACS topic B12 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B12
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b12001e1_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total"
+    agg: sum
+    expr: '"B12001e1"'
+  - name: b12001m1_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B12001m1"'
+  - name: b12001e2_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B12001e2"'
+  - name: b12001m2_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male"
+    agg: sum
+    expr: '"B12001m2"'
+  - name: b12001e3_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Never married"
+    agg: sum
+    expr: '"B12001e3"'
+  - name: b12001m3_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Never married"
+    agg: sum
+    expr: '"B12001m3"'
+  - name: b12001e4_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Now married"
+    agg: sum
+    expr: '"B12001e4"'
+  - name: b12001m4_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Now married"
+    agg: sum
+    expr: '"B12001m4"'
+  - name: b12001e5_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Now married \u2014 Married spouse present"
+    agg: sum
+    expr: '"B12001e5"'
+  - name: b12001m5_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Now married \u2014 Married spouse present"
+    agg: sum
+    expr: '"B12001m5"'
+  - name: b12001e6_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Now married \u2014 Married spouse absent"
+    agg: sum
+    expr: '"B12001e6"'
+  - name: b12001m6_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Now married \u2014 Married spouse absent"
+    agg: sum
+    expr: '"B12001m6"'
+  - name: b12001e7_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Now married \u2014 Married spouse absent \u2014 Separated"
+    agg: sum
+    expr: '"B12001e7"'
+  - name: b12001m7_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Now married \u2014 Married spouse absent \u2014 Separated"
+    agg: sum
+    expr: '"B12001m7"'
+  - name: b12001e8_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Now married \u2014 Married spouse absent \u2014 Other"
+    agg: sum
+    expr: '"B12001e8"'
+  - name: b12001m8_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Now married \u2014 Married spouse absent \u2014 Other"
+    agg: sum
+    expr: '"B12001m8"'
+  - name: b12001e9_estimate_sex_by_marital_status_for_the_population_15_ye
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Widowed"
+    agg: sum
+    expr: '"B12001e9"'
+  - name: b12001m9_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Widowed"
+    agg: sum
+    expr: '"B12001m9"'
+  - name: b12001e10_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Male \u2014\
+      \ Divorced"
+    agg: sum
+    expr: '"B12001e10"'
+  - name: b12001m10_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Male \u2014 Divorced"
+    agg: sum
+    expr: '"B12001m10"'
+  - name: b12001e11_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B12001e11"'
+  - name: b12001m11_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female"
+    agg: sum
+    expr: '"B12001m11"'
+  - name: b12001e12_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Never married"
+    agg: sum
+    expr: '"B12001e12"'
+  - name: b12001m12_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Never married"
+    agg: sum
+    expr: '"B12001m12"'
+  - name: b12001e13_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Now married"
+    agg: sum
+    expr: '"B12001e13"'
+  - name: b12001m13_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Now married"
+    agg: sum
+    expr: '"B12001m13"'
+  - name: b12001e14_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Now married \u2014 Married spouse present"
+    agg: sum
+    expr: '"B12001e14"'
+  - name: b12001m14_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Now married \u2014 Married spouse present"
+    agg: sum
+    expr: '"B12001m14"'
+  - name: b12001e15_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Now married \u2014 Married spouse absent"
+    agg: sum
+    expr: '"B12001e15"'
+  - name: b12001m15_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Now married \u2014 Married spouse absent"
+    agg: sum
+    expr: '"B12001m15"'
+  - name: b12001e16_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Now married \u2014 Married spouse absent \u2014 Separated"
+    agg: sum
+    expr: '"B12001e16"'
+  - name: b12001m16_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Now married \u2014 Married spouse absent \u2014\
+      \ Separated"
+    agg: sum
+    expr: '"B12001m16"'
+  - name: b12001e17_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Now married \u2014 Married spouse absent \u2014 Other"
+    agg: sum
+    expr: '"B12001e17"'
+  - name: b12001m17_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Now married \u2014 Married spouse absent \u2014\
+      \ Other"
+    agg: sum
+    expr: '"B12001m17"'
+  - name: b12001e18_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Widowed"
+    agg: sum
+    expr: '"B12001e18"'
+  - name: b12001m18_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Widowed"
+    agg: sum
+    expr: '"B12001m18"'
+  - name: b12001e19_estimate_sex_by_marital_status_for_the_population_15_y
+    description: "Estimate \u2014 SEX BY MARITAL STATUS FOR THE POPULATION 15 YEARS\
+      \ AND OVER \u2014 Population 15 years and over \u2014 Total \u2014 Female \u2014\
+      \ Divorced"
+    agg: sum
+    expr: '"B12001e19"'
+  - name: b12001m19_marginoferror_sex_by_marital_status_for_the_population
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY MARITAL STATUS FOR\
+      \ THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Female \u2014 Divorced"
+    agg: sum
+    expr: '"B12001m19"'

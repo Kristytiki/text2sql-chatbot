@@ -1,0 +1,1876 @@
+semantic_model:
+  name: cbg_b17
+  description: "Census ACS topic B17 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B17
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b17010e1_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B17010e1"'
+  - name: b17010m1_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B17010m1"'
+  - name: b17010e2_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e2"'
+  - name: b17010m2_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m2"'
+  - name: b17010e3_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e3"'
+  - name: b17010m3_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m3"'
+  - name: b17010e4_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e4"'
+  - name: b17010m4_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m4"'
+  - name: b17010e5_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e5"'
+  - name: b17010m5_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m5"'
+  - name: b17010e6_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e6"'
+  - name: b17010m6_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m6"'
+  - name: b17010e7_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e7"'
+  - name: b17010m7_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m7"'
+  - name: b17010e8_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e8"'
+  - name: b17010m8_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m8"'
+  - name: b17010e9_estimate_poverty_status_in_the_past_12_months_of_famili
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e9"'
+  - name: b17010m9_marginoferror_poverty_status_in_the_past_12_months_of_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m9"'
+  - name: b17010e10_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e10"'
+  - name: b17010m10_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m10"'
+  - name: b17010e11_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e11"'
+  - name: b17010m11_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m11"'
+  - name: b17010e12_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e12"'
+  - name: b17010m12_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m12"'
+  - name: b17010e13_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e13"'
+  - name: b17010m13_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m13"'
+  - name: b17010e14_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e14"'
+  - name: b17010m14_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m14"'
+  - name: b17010e15_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e15"'
+  - name: b17010m15_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m15"'
+  - name: b17010e16_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e16"'
+  - name: b17010m16_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m16"'
+  - name: b17010e17_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e17"'
+  - name: b17010m17_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m17"'
+  - name: b17010e18_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e18"'
+  - name: b17010m18_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m18"'
+  - name: b17010e19_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e19"'
+  - name: b17010m19_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m19"'
+  - name: b17010e20_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e20"'
+  - name: b17010m20_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m20"'
+  - name: b17010e21_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ b"
+    agg: sum
+    expr: '"B17010e21"'
+  - name: b17010m21_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m21"'
+  - name: b17010e22_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e22"'
+  - name: b17010m22_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m22"'
+  - name: b17010e23_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e23"'
+  - name: b17010m23_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m23"'
+  - name: b17010e24_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e24"'
+  - name: b17010m24_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m24"'
+  - name: b17010e25_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e25"'
+  - name: b17010m25_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m25"'
+  - name: b17010e26_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e26"'
+  - name: b17010m26_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m26"'
+  - name: b17010e27_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e27"'
+  - name: b17010m27_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m27"'
+  - name: b17010e28_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e28"'
+  - name: b17010m28_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m28"'
+  - name: b17010e29_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e29"'
+  - name: b17010m29_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m29"'
+  - name: b17010e30_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e30"'
+  - name: b17010m30_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m30"'
+  - name: b17010e31_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e31"'
+  - name: b17010m31_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m31"'
+  - name: b17010e32_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e32"'
+  - name: b17010m32_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m32"'
+  - name: b17010e33_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e33"'
+  - name: b17010m33_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m33"'
+  - name: b17010e34_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e34"'
+  - name: b17010m34_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m34"'
+  - name: b17010e35_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e35"'
+  - name: b17010m35_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m35"'
+  - name: b17010e36_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e36"'
+  - name: b17010m36_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m36"'
+  - name: b17010e37_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e37"'
+  - name: b17010m37_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m37"'
+  - name: b17010e38_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e38"'
+  - name: b17010m38_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m38"'
+  - name: b17010e39_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e39"'
+  - name: b17010m39_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m39"'
+  - name: b17010e40_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e40"'
+  - name: b17010m40_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m40"'
+  - name: b17010e41_estimate_poverty_status_in_the_past_12_months_of_famil
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS OF FAMILIES\
+      \ BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER 18 YEARS BY AGE OF RELATED\
+      \ CHILDREN \u2014 Families \u2014 Total \u2014 Income in the past 12 months\
+      \ a"
+    agg: sum
+    expr: '"B17010e41"'
+  - name: b17010m41_marginoferror_poverty_status_in_the_past_12_months_of
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS OF FAMILIES BY FAMILY TYPE BY PRESENCE OF RELATED CHILDREN UNDER\
+      \ 18 YEARS BY AGE OF RELATED CHILDREN \u2014 Families \u2014 Total \u2014 Income\
+      \ in the past 12 mon"
+    agg: sum
+    expr: '"B17010m41"'
+  - name: b17017e1_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B17017e1"'
+  - name: b17017m1_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B17017m1"'
+  - name: b17017e2_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level"
+    agg: sum
+    expr: '"B17017e2"'
+  - name: b17017m2_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level"
+    agg: sum
+    expr: '"B17017m2"'
+  - name: b17017e3_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households"
+    agg: sum
+    expr: '"B17017e3"'
+  - name: b17017m3_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households"
+    agg: sum
+    expr: '"B17017m3"'
+  - name: b17017e4_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Married-couple\
+      \ fam"
+    agg: sum
+    expr: '"B17017e4"'
+  - name: b17017m4_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Married-coupl"
+    agg: sum
+    expr: '"B17017m4"'
+  - name: b17017e5_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Married-couple\
+      \ fam"
+    agg: sum
+    expr: '"B17017e5"'
+  - name: b17017m5_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Married-coupl"
+    agg: sum
+    expr: '"B17017m5"'
+  - name: b17017e6_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Married-couple\
+      \ fam"
+    agg: sum
+    expr: '"B17017e6"'
+  - name: b17017m6_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Married-coupl"
+    agg: sum
+    expr: '"B17017m6"'
+  - name: b17017e7_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Married-couple\
+      \ fam"
+    agg: sum
+    expr: '"B17017e7"'
+  - name: b17017m7_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Married-coupl"
+    agg: sum
+    expr: '"B17017m7"'
+  - name: b17017e8_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Married-couple\
+      \ fam"
+    agg: sum
+    expr: '"B17017e8"'
+  - name: b17017m8_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Married-coupl"
+    agg: sum
+    expr: '"B17017m8"'
+  - name: b17017e9_estimate_poverty_status_in_the_past_12_months_by_househ
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family"
+    agg: sum
+    expr: '"B17017e9"'
+  - name: b17017m9_marginoferror_poverty_status_in_the_past_12_months_by_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family"
+    agg: sum
+    expr: '"B17017m9"'
+  - name: b17017e10_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Mal"
+    agg: sum
+    expr: '"B17017e10"'
+  - name: b17017m10_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m10"'
+  - name: b17017e11_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Mal"
+    agg: sum
+    expr: '"B17017e11"'
+  - name: b17017m11_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m11"'
+  - name: b17017e12_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Mal"
+    agg: sum
+    expr: '"B17017e12"'
+  - name: b17017m12_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m12"'
+  - name: b17017e13_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Mal"
+    agg: sum
+    expr: '"B17017e13"'
+  - name: b17017m13_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m13"'
+  - name: b17017e14_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Mal"
+    agg: sum
+    expr: '"B17017e14"'
+  - name: b17017m14_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m14"'
+  - name: b17017e15_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Fem"
+    agg: sum
+    expr: '"B17017e15"'
+  - name: b17017m15_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m15"'
+  - name: b17017e16_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Fem"
+    agg: sum
+    expr: '"B17017e16"'
+  - name: b17017m16_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m16"'
+  - name: b17017e17_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Fem"
+    agg: sum
+    expr: '"B17017e17"'
+  - name: b17017m17_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m17"'
+  - name: b17017e18_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Fem"
+    agg: sum
+    expr: '"B17017e18"'
+  - name: b17017m18_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m18"'
+  - name: b17017e19_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Family households \u2014 Other\
+      \ family \u2014 Fem"
+    agg: sum
+    expr: '"B17017e19"'
+  - name: b17017m19_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Family\
+      \ households \u2014 Other family "
+    agg: sum
+    expr: '"B17017m19"'
+  - name: b17017e20_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households"
+    agg: sum
+    expr: '"B17017e20"'
+  - name: b17017m20_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households"
+    agg: sum
+    expr: '"B17017m20"'
+  - name: b17017e21_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Male householde"
+    agg: sum
+    expr: '"B17017e21"'
+  - name: b17017m21_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Male house"
+    agg: sum
+    expr: '"B17017m21"'
+  - name: b17017e22_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Male householde"
+    agg: sum
+    expr: '"B17017e22"'
+  - name: b17017m22_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Male house"
+    agg: sum
+    expr: '"B17017m22"'
+  - name: b17017e23_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Male householde"
+    agg: sum
+    expr: '"B17017e23"'
+  - name: b17017m23_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Male house"
+    agg: sum
+    expr: '"B17017m23"'
+  - name: b17017e24_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Male householde"
+    agg: sum
+    expr: '"B17017e24"'
+  - name: b17017m24_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Male house"
+    agg: sum
+    expr: '"B17017m24"'
+  - name: b17017e25_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Male householde"
+    agg: sum
+    expr: '"B17017e25"'
+  - name: b17017m25_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Male house"
+    agg: sum
+    expr: '"B17017m25"'
+  - name: b17017e26_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Female househol"
+    agg: sum
+    expr: '"B17017e26"'
+  - name: b17017m26_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Female hou"
+    agg: sum
+    expr: '"B17017m26"'
+  - name: b17017e27_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Female househol"
+    agg: sum
+    expr: '"B17017e27"'
+  - name: b17017m27_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Female hou"
+    agg: sum
+    expr: '"B17017m27"'
+  - name: b17017e28_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Female househol"
+    agg: sum
+    expr: '"B17017e28"'
+  - name: b17017m28_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Female hou"
+    agg: sum
+    expr: '"B17017m28"'
+  - name: b17017e29_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Female househol"
+    agg: sum
+    expr: '"B17017e29"'
+  - name: b17017m29_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Female hou"
+    agg: sum
+    expr: '"B17017m29"'
+  - name: b17017e30_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months below poverty level \u2014 Nonfamily households \u2014\
+      \ Female househol"
+    agg: sum
+    expr: '"B17017e30"'
+  - name: b17017m30_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months below poverty level \u2014 Nonfamily\
+      \ households \u2014 Female hou"
+    agg: sum
+    expr: '"B17017m30"'
+  - name: b17017e31_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17017e31"'
+  - name: b17017m31_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17017m31"'
+  - name: b17017e32_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households"
+    agg: sum
+    expr: '"B17017e32"'
+  - name: b17017m32_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households"
+    agg: sum
+    expr: '"B17017m32"'
+  - name: b17017e33_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Married-coup"
+    agg: sum
+    expr: '"B17017e33"'
+  - name: b17017m33_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Married"
+    agg: sum
+    expr: '"B17017m33"'
+  - name: b17017e34_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Married-coup"
+    agg: sum
+    expr: '"B17017e34"'
+  - name: b17017m34_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Married"
+    agg: sum
+    expr: '"B17017m34"'
+  - name: b17017e35_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Married-coup"
+    agg: sum
+    expr: '"B17017e35"'
+  - name: b17017m35_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Married"
+    agg: sum
+    expr: '"B17017m35"'
+  - name: b17017e36_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Married-coup"
+    agg: sum
+    expr: '"B17017e36"'
+  - name: b17017m36_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Married"
+    agg: sum
+    expr: '"B17017m36"'
+  - name: b17017e37_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Married-coup"
+    agg: sum
+    expr: '"B17017e37"'
+  - name: b17017m37_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Married"
+    agg: sum
+    expr: '"B17017m37"'
+  - name: b17017e38_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e38"'
+  - name: b17017m38_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m38"'
+  - name: b17017e39_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e39"'
+  - name: b17017m39_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m39"'
+  - name: b17017e40_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e40"'
+  - name: b17017m40_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m40"'
+  - name: b17017e41_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e41"'
+  - name: b17017m41_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m41"'
+  - name: b17017e42_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e42"'
+  - name: b17017m42_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m42"'
+  - name: b17017e43_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e43"'
+  - name: b17017m43_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m43"'
+  - name: b17017e44_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e44"'
+  - name: b17017m44_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m44"'
+  - name: b17017e45_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e45"'
+  - name: b17017m45_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m45"'
+  - name: b17017e46_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e46"'
+  - name: b17017m46_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m46"'
+  - name: b17017e47_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e47"'
+  - name: b17017m47_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m47"'
+  - name: b17017e48_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Family households \u2014\
+      \ Other family"
+    agg: sum
+    expr: '"B17017e48"'
+  - name: b17017m48_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Family households \u2014 Other f"
+    agg: sum
+    expr: '"B17017m48"'
+  - name: b17017e49_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households"
+    agg: sum
+    expr: '"B17017e49"'
+  - name: b17017m49_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households"
+    agg: sum
+    expr: '"B17017m49"'
+  - name: b17017e50_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Male hous"
+    agg: sum
+    expr: '"B17017e50"'
+  - name: b17017m50_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Male"
+    agg: sum
+    expr: '"B17017m50"'
+  - name: b17017e51_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Male hous"
+    agg: sum
+    expr: '"B17017e51"'
+  - name: b17017m51_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Male"
+    agg: sum
+    expr: '"B17017m51"'
+  - name: b17017e52_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Male hous"
+    agg: sum
+    expr: '"B17017e52"'
+  - name: b17017m52_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Male"
+    agg: sum
+    expr: '"B17017m52"'
+  - name: b17017e53_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Male hous"
+    agg: sum
+    expr: '"B17017e53"'
+  - name: b17017m53_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Male"
+    agg: sum
+    expr: '"B17017m53"'
+  - name: b17017e54_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Male hous"
+    agg: sum
+    expr: '"B17017e54"'
+  - name: b17017m54_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Male"
+    agg: sum
+    expr: '"B17017m54"'
+  - name: b17017e55_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Female ho"
+    agg: sum
+    expr: '"B17017e55"'
+  - name: b17017m55_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Fema"
+    agg: sum
+    expr: '"B17017m55"'
+  - name: b17017e56_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Female ho"
+    agg: sum
+    expr: '"B17017e56"'
+  - name: b17017m56_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Fema"
+    agg: sum
+    expr: '"B17017m56"'
+  - name: b17017e57_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Female ho"
+    agg: sum
+    expr: '"B17017e57"'
+  - name: b17017m57_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Fema"
+    agg: sum
+    expr: '"B17017m57"'
+  - name: b17017e58_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Female ho"
+    agg: sum
+    expr: '"B17017e58"'
+  - name: b17017m58_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Fema"
+    agg: sum
+    expr: '"B17017m58"'
+  - name: b17017e59_estimate_poverty_status_in_the_past_12_months_by_house
+    description: "Estimate \u2014 POVERTY STATUS IN THE PAST 12 MONTHS BY HOUSEHOLD\
+      \ TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014 Total \u2014 Income in\
+      \ the past 12 months at or above poverty level \u2014 Nonfamily households \u2014\
+      \ Female ho"
+    agg: sum
+    expr: '"B17017e59"'
+  - name: b17017m59_marginoferror_poverty_status_in_the_past_12_months_by
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY HOUSEHOLD TYPE BY AGE OF HOUSEHOLDER \u2014 Households \u2014\
+      \ Total \u2014 Income in the past 12 months at or above poverty level \u2014\
+      \ Nonfamily households \u2014 Fema"
+    agg: sum
+    expr: '"B17017m59"'
+  - name: b17021e1_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B17021e1"'
+  - name: b17021m1_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total"
+    agg: sum
+    expr: '"B17021m1"'
+  - name: b17021e2_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level"
+    agg: sum
+    expr: '"B17021e2"'
+  - name: b17021m2_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level"
+    agg: sum
+    expr: '"B17021m2"'
+  - name: b17021e3_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e3"'
+  - name: b17021m3_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m3"'
+  - name: b17021e4_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e4"'
+  - name: b17021m4_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m4"'
+  - name: b17021e5_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e5"'
+  - name: b17021m5_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m5"'
+  - name: b17021e6_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e6"'
+  - name: b17021m6_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m6"'
+  - name: b17021e7_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e7"'
+  - name: b17021m7_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m7"'
+  - name: b17021e8_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e8"'
+  - name: b17021m8_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m8"'
+  - name: b17021e9_estimate_poverty_status_of_individuals_in_the_past_12_m
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e9"'
+  - name: b17021m9_marginoferror_poverty_status_of_individuals_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m9"'
+  - name: b17021e10_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e10"'
+  - name: b17021m10_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m10"'
+  - name: b17021e11_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e11"'
+  - name: b17021m11_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m11"'
+  - name: b17021e12_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e12"'
+  - name: b17021m12_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m12"'
+  - name: b17021e13_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e13"'
+  - name: b17021m13_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m13"'
+  - name: b17021e14_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e14"'
+  - name: b17021m14_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m14"'
+  - name: b17021e15_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e15"'
+  - name: b17021m15_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m15"'
+  - name: b17021e16_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e16"'
+  - name: b17021m16_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m16"'
+  - name: b17021e17_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e17"'
+  - name: b17021m17_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m17"'
+  - name: b17021e18_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months below poverty level \u2014\
+      \ In "
+    agg: sum
+    expr: '"B17021e18"'
+  - name: b17021m18_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months below\
+      \ poverty level "
+    agg: sum
+    expr: '"B17021m18"'
+  - name: b17021e19_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e19"'
+  - name: b17021m19_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m19"'
+  - name: b17021e20_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e20"'
+  - name: b17021m20_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m20"'
+  - name: b17021e21_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e21"'
+  - name: b17021m21_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m21"'
+  - name: b17021e22_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e22"'
+  - name: b17021m22_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m22"'
+  - name: b17021e23_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e23"'
+  - name: b17021m23_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m23"'
+  - name: b17021e24_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e24"'
+  - name: b17021m24_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m24"'
+  - name: b17021e25_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e25"'
+  - name: b17021m25_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m25"'
+  - name: b17021e26_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e26"'
+  - name: b17021m26_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m26"'
+  - name: b17021e27_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e27"'
+  - name: b17021m27_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m27"'
+  - name: b17021e28_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e28"'
+  - name: b17021m28_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m28"'
+  - name: b17021e29_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e29"'
+  - name: b17021m29_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m29"'
+  - name: b17021e30_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e30"'
+  - name: b17021m30_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m30"'
+  - name: b17021e31_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e31"'
+  - name: b17021m31_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m31"'
+  - name: b17021e32_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e32"'
+  - name: b17021m32_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m32"'
+  - name: b17021e33_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e33"'
+  - name: b17021m33_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m33"'
+  - name: b17021e34_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e34"'
+  - name: b17021m34_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m34"'
+  - name: b17021e35_estimate_poverty_status_of_individuals_in_the_past_12
+    description: "Estimate \u2014 POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS\
+      \ BY LIVING ARRANGEMENT \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Income in the past 12 months at or above poverty level"
+    agg: sum
+    expr: '"B17021e35"'
+  - name: b17021m35_marginoferror_poverty_status_of_individuals_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 POVERTY STATUS OF INDIVIDUALS\
+      \ IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT \u2014 Population for whom poverty\
+      \ status is determined \u2014 Total \u2014 Income in the past 12 months at or\
+      \ above poverty "
+    agg: sum
+    expr: '"B17021m35"'

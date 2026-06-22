@@ -1,0 +1,111 @@
+semantic_model:
+  name: cbg_b22
+  description: "Census ACS topic B22 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B22
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b22010e1_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B22010e1"'
+  - name: b22010m1_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B22010m1"'
+  - name: b22010e2_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ Household received Food Stamps/SNAP in the past 12 months"
+    agg: sum
+    expr: '"B22010e2"'
+  - name: b22010m2_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 Household received Food Stamps/SNAP in the past 12 months"
+    agg: sum
+    expr: '"B22010m2"'
+  - name: b22010e3_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ Household received Food Stamps/SNAP in the past 12 months \u2014 Households\
+      \ with 1 or"
+    agg: sum
+    expr: '"B22010e3"'
+  - name: b22010m3_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 Household received Food Stamps/SNAP in the past 12 months\
+      \ \u2014 Households with"
+    agg: sum
+    expr: '"B22010m3"'
+  - name: b22010e4_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ Household received Food Stamps/SNAP in the past 12 months \u2014 Households\
+      \ with no p"
+    agg: sum
+    expr: '"B22010e4"'
+  - name: b22010m4_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 Household received Food Stamps/SNAP in the past 12 months\
+      \ \u2014 Households with"
+    agg: sum
+    expr: '"B22010m4"'
+  - name: b22010e5_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ Household did not receive Food Stamps/SNAP in the past 12 months"
+    agg: sum
+    expr: '"B22010e5"'
+  - name: b22010m5_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 Household did not receive Food Stamps/SNAP in the past\
+      \ 12 months"
+    agg: sum
+    expr: '"B22010m5"'
+  - name: b22010e6_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ Household did not receive Food Stamps/SNAP in the past 12 months \u2014 Households\
+      \ wi"
+    agg: sum
+    expr: '"B22010e6"'
+  - name: b22010m6_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 Household did not receive Food Stamps/SNAP in the past\
+      \ 12 months \u2014 Househol"
+    agg: sum
+    expr: '"B22010m6"'
+  - name: b22010e7_estimate_receipt_of_food_stamps_snap_in_the_past_12_mon
+    description: "Estimate \u2014 RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS\
+      \ BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ Household did not receive Food Stamps/SNAP in the past 12 months \u2014 Households\
+      \ wi"
+    agg: sum
+    expr: '"B22010e7"'
+  - name: b22010m7_marginoferror_receipt_of_food_stamps_snap_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RECEIPT OF FOOD STAMPS/SNAP\
+      \ IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 Household did not receive Food Stamps/SNAP in the past\
+      \ 12 months \u2014 Househol"
+    agg: sum
+    expr: '"B22010m7"'

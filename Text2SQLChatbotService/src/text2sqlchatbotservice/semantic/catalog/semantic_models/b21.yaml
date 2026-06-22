@@ -1,0 +1,685 @@
+semantic_model:
+  name: cbg_b21
+  description: "Census ACS topic B21 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B21
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b21001e1_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B21001e1"'
+  - name: b21001m1_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total"
+    agg: sum
+    expr: '"B21001m1"'
+  - name: b21001e2_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e2"'
+  - name: b21001m2_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m2"'
+  - name: b21001e3_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e3"'
+  - name: b21001m3_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m3"'
+  - name: b21001e4_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male"
+    agg: sum
+    expr: '"B21001e4"'
+  - name: b21001m4_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B21001m4"'
+  - name: b21001e5_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e5"'
+  - name: b21001m5_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m5"'
+  - name: b21001e6_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e6"'
+  - name: b21001m6_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m6"'
+  - name: b21001e7_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 18 to 34 years"
+    agg: sum
+    expr: '"B21001e7"'
+  - name: b21001m7_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 18 to 34 years"
+    agg: sum
+    expr: '"B21001m7"'
+  - name: b21001e8_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 18 to 34 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e8"'
+  - name: b21001m8_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 18 to 34 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m8"'
+  - name: b21001e9_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 18 to 34 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e9"'
+  - name: b21001m9_marginoferror_sex_by_age_by_veteran_status_for_the_civi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 18 to 34 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m9"'
+  - name: b21001e10_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 35 to 54 years"
+    agg: sum
+    expr: '"B21001e10"'
+  - name: b21001m10_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 35 to 54 years"
+    agg: sum
+    expr: '"B21001m10"'
+  - name: b21001e11_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 35 to 54 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e11"'
+  - name: b21001m11_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 35 to 54 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m11"'
+  - name: b21001e12_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 35 to 54 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e12"'
+  - name: b21001m12_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 35 to 54 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m12"'
+  - name: b21001e13_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 55 to 64 years"
+    agg: sum
+    expr: '"B21001e13"'
+  - name: b21001m13_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 55 to 64 years"
+    agg: sum
+    expr: '"B21001m13"'
+  - name: b21001e14_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 55 to 64 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e14"'
+  - name: b21001m14_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 55 to 64 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m14"'
+  - name: b21001e15_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 55 to 64 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e15"'
+  - name: b21001m15_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 55 to 64 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m15"'
+  - name: b21001e16_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 65 to 74 years"
+    agg: sum
+    expr: '"B21001e16"'
+  - name: b21001m16_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 65 to 74 years"
+    agg: sum
+    expr: '"B21001m16"'
+  - name: b21001e17_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 65 to 74 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e17"'
+  - name: b21001m17_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 65 to 74 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m17"'
+  - name: b21001e18_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 65 to 74 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e18"'
+  - name: b21001m18_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 65 to 74 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m18"'
+  - name: b21001e19_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 75 years and over"
+    agg: sum
+    expr: '"B21001e19"'
+  - name: b21001m19_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 75 years and over"
+    agg: sum
+    expr: '"B21001m19"'
+  - name: b21001e20_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 75 years and over \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e20"'
+  - name: b21001m20_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 75 years and over \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m20"'
+  - name: b21001e21_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Male \u2014 75 years and over \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e21"'
+  - name: b21001m21_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Male \u2014 75 years and over \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m21"'
+  - name: b21001e22_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female"
+    agg: sum
+    expr: '"B21001e22"'
+  - name: b21001m22_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B21001m22"'
+  - name: b21001e23_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e23"'
+  - name: b21001m23_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m23"'
+  - name: b21001e24_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e24"'
+  - name: b21001m24_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m24"'
+  - name: b21001e25_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 18 to 34 years"
+    agg: sum
+    expr: '"B21001e25"'
+  - name: b21001m25_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 18 to 34 years"
+    agg: sum
+    expr: '"B21001m25"'
+  - name: b21001e26_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 18 to 34 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e26"'
+  - name: b21001m26_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 18 to 34 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m26"'
+  - name: b21001e27_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 18 to 34 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e27"'
+  - name: b21001m27_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 18 to 34 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m27"'
+  - name: b21001e28_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 35 to 54 years"
+    agg: sum
+    expr: '"B21001e28"'
+  - name: b21001m28_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 35 to 54 years"
+    agg: sum
+    expr: '"B21001m28"'
+  - name: b21001e29_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 35 to 54 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e29"'
+  - name: b21001m29_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 35 to 54 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m29"'
+  - name: b21001e30_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 35 to 54 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e30"'
+  - name: b21001m30_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 35 to 54 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m30"'
+  - name: b21001e31_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 55 to 64 years"
+    agg: sum
+    expr: '"B21001e31"'
+  - name: b21001m31_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 55 to 64 years"
+    agg: sum
+    expr: '"B21001m31"'
+  - name: b21001e32_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 55 to 64 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e32"'
+  - name: b21001m32_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 55 to 64 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m32"'
+  - name: b21001e33_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 55 to 64 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e33"'
+  - name: b21001m33_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 55 to 64 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m33"'
+  - name: b21001e34_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 65 to 74 years"
+    agg: sum
+    expr: '"B21001e34"'
+  - name: b21001m34_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 65 to 74 years"
+    agg: sum
+    expr: '"B21001m34"'
+  - name: b21001e35_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 65 to 74 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e35"'
+  - name: b21001m35_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 65 to 74 years \u2014 Veteran"
+    agg: sum
+    expr: '"B21001m35"'
+  - name: b21001e36_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 65 to 74 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e36"'
+  - name: b21001m36_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 65 to 74 years \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001m36"'
+  - name: b21001e37_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 75 years and over"
+    agg: sum
+    expr: '"B21001e37"'
+  - name: b21001m37_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 75 years and over"
+    agg: sum
+    expr: '"B21001m37"'
+  - name: b21001e38_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 75 years and over \u2014 Veteran"
+    agg: sum
+    expr: '"B21001e38"'
+  - name: b21001m38_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 75 years and over \u2014\
+      \ Veteran"
+    agg: sum
+    expr: '"B21001m38"'
+  - name: b21001e39_estimate_sex_by_age_by_veteran_status_for_the_civilian
+    description: "Estimate \u2014 SEX BY AGE BY VETERAN STATUS FOR THE CIVILIAN POPULATION\
+      \ 18 YEARS AND OVER \u2014 Civilian population 18 years and over \u2014 Total\
+      \ \u2014 Female \u2014 75 years and over \u2014 Nonveteran"
+    agg: sum
+    expr: '"B21001e39"'
+  - name: b21001m39_marginoferror_sex_by_age_by_veteran_status_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX BY AGE BY VETERAN STATUS\
+      \ FOR THE CIVILIAN POPULATION 18 YEARS AND OVER \u2014 Civilian population 18\
+      \ years and over \u2014 Total \u2014 Female \u2014 75 years and over \u2014\
+      \ Nonveteran"
+    agg: sum
+    expr: '"B21001m39"'
+  - name: b21002e1_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B21002e1"'
+  - name: b21002m1_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B21002m1"'
+  - name: b21002e2_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Gulf War (9/2001 or later) no Gulf War (8/1990 to 8/2001) no Vietnam\
+      \ Era"
+    agg: sum
+    expr: '"B21002e2"'
+  - name: b21002m2_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Gulf War (9/2001 or later) no Gulf War (8/1990\
+      \ to 8/2001) no Vietnam "
+    agg: sum
+    expr: '"B21002m2"'
+  - name: b21002e3_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Gulf War (9/2001 or later) and Gulf War (8/1990 to 8/2001) no Vietnam\
+      \ Era"
+    agg: sum
+    expr: '"B21002e3"'
+  - name: b21002m3_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Gulf War (9/2001 or later) and Gulf War (8/1990\
+      \ to 8/2001) no Vietnam"
+    agg: sum
+    expr: '"B21002m3"'
+  - name: b21002e4_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Gulf War (9/2001 or later) and Gulf War (8/1990 to 8/2001) and Vietnam\
+      \ Era"
+    agg: sum
+    expr: '"B21002e4"'
+  - name: b21002m4_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Gulf War (9/2001 or later) and Gulf War (8/1990\
+      \ to 8/2001) and Vietna"
+    agg: sum
+    expr: '"B21002m4"'
+  - name: b21002e5_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Gulf War (8/1990 to 8/2001) no Vietnam Era"
+    agg: sum
+    expr: '"B21002e5"'
+  - name: b21002m5_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Gulf War (8/1990 to 8/2001) no Vietnam Era"
+    agg: sum
+    expr: '"B21002m5"'
+  - name: b21002e6_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Gulf War (8/1990 to 8/2001) and Vietnam Era"
+    agg: sum
+    expr: '"B21002e6"'
+  - name: b21002m6_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Gulf War (8/1990 to 8/2001) and Vietnam Era"
+    agg: sum
+    expr: '"B21002m6"'
+  - name: b21002e7_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Vietnam Era no Korean War no World War II"
+    agg: sum
+    expr: '"B21002e7"'
+  - name: b21002m7_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Vietnam Era no Korean War no World War II"
+    agg: sum
+    expr: '"B21002m7"'
+  - name: b21002e8_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Vietnam Era and Korean War no World War II"
+    agg: sum
+    expr: '"B21002e8"'
+  - name: b21002m8_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Vietnam Era and Korean War no World War II"
+    agg: sum
+    expr: '"B21002m8"'
+  - name: b21002e9_estimate_period_of_military_service_for_civilian_vetera
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Vietnam Era and Korean War and World War II"
+    agg: sum
+    expr: '"B21002e9"'
+  - name: b21002m9_marginoferror_period_of_military_service_for_civilian_v
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Vietnam Era and Korean War and World War II"
+    agg: sum
+    expr: '"B21002m9"'
+  - name: b21002e10_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Korean War no Vietnam Era no World War II"
+    agg: sum
+    expr: '"B21002e10"'
+  - name: b21002m10_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Korean War no Vietnam Era no World War II"
+    agg: sum
+    expr: '"B21002m10"'
+  - name: b21002e11_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Korean War and World War II no Vietnam Era"
+    agg: sum
+    expr: '"B21002e11"'
+  - name: b21002m11_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Korean War and World War II no Vietnam Era"
+    agg: sum
+    expr: '"B21002m11"'
+  - name: b21002e12_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 World War II no Korean War no Vietnam Era"
+    agg: sum
+    expr: '"B21002e12"'
+  - name: b21002m12_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 World War II no Korean War no Vietnam Era"
+    agg: sum
+    expr: '"B21002m12"'
+  - name: b21002e13_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Between Gulf War and Vietnam Era only"
+    agg: sum
+    expr: '"B21002e13"'
+  - name: b21002m13_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Between Gulf War and Vietnam Era only"
+    agg: sum
+    expr: '"B21002m13"'
+  - name: b21002e14_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Between Vietnam Era and Korean War only"
+    agg: sum
+    expr: '"B21002e14"'
+  - name: b21002m14_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Between Vietnam Era and Korean War only"
+    agg: sum
+    expr: '"B21002m14"'
+  - name: b21002e15_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Between Korean War and World War II only"
+    agg: sum
+    expr: '"B21002e15"'
+  - name: b21002m15_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Between Korean War and World War II only"
+    agg: sum
+    expr: '"B21002m15"'
+  - name: b21002e16_estimate_period_of_military_service_for_civilian_veter
+    description: "Estimate \u2014 PERIOD OF MILITARY SERVICE FOR CIVILIAN VETERANS\
+      \ 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014 Total\
+      \ \u2014 Pre-World War II only"
+    agg: sum
+    expr: '"B21002e16"'
+  - name: b21002m16_marginoferror_period_of_military_service_for_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PERIOD OF MILITARY SERVICE\
+      \ FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years\
+      \ and over \u2014 Total \u2014 Pre-World War II only"
+    agg: sum
+    expr: '"B21002m16"'

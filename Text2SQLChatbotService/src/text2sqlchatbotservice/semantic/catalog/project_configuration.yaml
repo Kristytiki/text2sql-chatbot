@@ -1,0 +1,5 @@
+project_configuration:
+  time_spine_table_configurations:
+  - location: CENSUS_DB.CENSUS_VIEWS.V_TIME_SPINE
+    column_name: SNAPSHOT_YEAR
+    grain: year

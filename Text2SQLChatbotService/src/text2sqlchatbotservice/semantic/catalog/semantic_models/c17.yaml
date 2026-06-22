@@ -1,0 +1,114 @@
+semantic_model:
+  name: cbg_c17
+  description: "Census ACS topic C17 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_C17
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: c17002e1_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total"
+    agg: sum
+    expr: '"C17002e1"'
+  - name: c17002m1_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"C17002m1"'
+  - name: c17002e2_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 Under .50"
+    agg: sum
+    expr: '"C17002e2"'
+  - name: c17002m2_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 Under .50"
+    agg: sum
+    expr: '"C17002m2"'
+  - name: c17002e3_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 .50 to .99"
+    agg: sum
+    expr: '"C17002e3"'
+  - name: c17002m3_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 .50 to .99"
+    agg: sum
+    expr: '"C17002m3"'
+  - name: c17002e4_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 1.00 to 1.24"
+    agg: sum
+    expr: '"C17002e4"'
+  - name: c17002m4_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 1.00 to 1.24"
+    agg: sum
+    expr: '"C17002m4"'
+  - name: c17002e5_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 1.25 to 1.49"
+    agg: sum
+    expr: '"C17002e5"'
+  - name: c17002m5_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 1.25 to 1.49"
+    agg: sum
+    expr: '"C17002m5"'
+  - name: c17002e6_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 1.50 to 1.84"
+    agg: sum
+    expr: '"C17002e6"'
+  - name: c17002m6_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 1.50 to 1.84"
+    agg: sum
+    expr: '"C17002m6"'
+  - name: c17002e7_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 1.85 to 1.99"
+    agg: sum
+    expr: '"C17002e7"'
+  - name: c17002m7_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 1.85 to 1.99"
+    agg: sum
+    expr: '"C17002m7"'
+  - name: c17002e8_estimate_ratio_of_income_to_poverty_level_in_the_past_1
+    description: "Estimate \u2014 RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12\
+      \ MONTHS \u2014 Population for whom poverty status is determined \u2014 Total\
+      \ \u2014 2.00 and over"
+    agg: sum
+    expr: '"C17002e8"'
+  - name: c17002m8_marginoferror_ratio_of_income_to_poverty_level_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RATIO OF INCOME TO POVERTY\
+      \ LEVEL IN THE PAST 12 MONTHS \u2014 Population for whom poverty status is determined\
+      \ \u2014 Total \u2014 2.00 and over"
+    agg: sum
+    expr: '"C17002m8"'

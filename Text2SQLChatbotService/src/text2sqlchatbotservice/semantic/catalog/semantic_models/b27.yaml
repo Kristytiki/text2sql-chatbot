@@ -1,0 +1,905 @@
+semantic_model:
+  name: cbg_b27
+  description: "Census ACS topic B27 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B27
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b27010e1_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total"
+    agg: sum
+    expr: '"B27010e1"'
+  - name: b27010m1_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total"
+    agg: sum
+    expr: '"B27010m1"'
+  - name: b27010e2_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years"
+    agg: sum
+    expr: '"B27010e2"'
+  - name: b27010m2_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years"
+    agg: sum
+    expr: '"B27010m2"'
+  - name: b27010e3_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010e3"'
+  - name: b27010m3_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010m3"'
+  - name: b27010e4_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With employer-based\
+      \ health insur"
+    agg: sum
+    expr: '"B27010e4"'
+  - name: b27010m4_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage \u2014\
+      \ With employer-based health "
+    agg: sum
+    expr: '"B27010m4"'
+  - name: b27010e5_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With direct-purchase\
+      \ health insu"
+    agg: sum
+    expr: '"B27010e5"'
+  - name: b27010m5_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage \u2014\
+      \ With direct-purchase health"
+    agg: sum
+    expr: '"B27010m5"'
+  - name: b27010e6_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With Medicare coverage\
+      \ only"
+    agg: sum
+    expr: '"B27010e6"'
+  - name: b27010m6_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage \u2014\
+      \ With Medicare coverage only"
+    agg: sum
+    expr: '"B27010m6"'
+  - name: b27010e7_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With Medicaid/means-tested\
+      \ publi"
+    agg: sum
+    expr: '"B27010e7"'
+  - name: b27010m7_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage \u2014\
+      \ With Medicaid/means-tested "
+    agg: sum
+    expr: '"B27010m7"'
+  - name: b27010e8_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With TRICARE/military\
+      \ health cov"
+    agg: sum
+    expr: '"B27010e8"'
+  - name: b27010m8_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage \u2014\
+      \ With TRICARE/military healt"
+    agg: sum
+    expr: '"B27010m8"'
+  - name: b27010e9_estimate_types_of_health_insurance_coverage_by_age_civi
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With VA Health Care\
+      \ only"
+    agg: sum
+    expr: '"B27010e9"'
+  - name: b27010m9_marginoferror_types_of_health_insurance_coverage_by_age
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With one type of health insurance coverage \u2014\
+      \ With VA Health Care only"
+    agg: sum
+    expr: '"B27010m9"'
+  - name: b27010e10_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010e10"'
+  - name: b27010m10_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010m10"'
+  - name: b27010e11_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With employer-based\
+      \ and"
+    agg: sum
+    expr: '"B27010e11"'
+  - name: b27010m11_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With employer-base"
+    agg: sum
+    expr: '"B27010m11"'
+  - name: b27010e12_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With employer-based\
+      \ and"
+    agg: sum
+    expr: '"B27010e12"'
+  - name: b27010m12_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With employer-base"
+    agg: sum
+    expr: '"B27010m12"'
+  - name: b27010e13_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With Medicare\
+      \ and Medic"
+    agg: sum
+    expr: '"B27010e13"'
+  - name: b27010m13_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With Medicare and "
+    agg: sum
+    expr: '"B27010m13"'
+  - name: b27010e14_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other private\
+      \ only comb"
+    agg: sum
+    expr: '"B27010e14"'
+  - name: b27010m14_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other private only"
+    agg: sum
+    expr: '"B27010m14"'
+  - name: b27010e15_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other public\
+      \ only combi"
+    agg: sum
+    expr: '"B27010e15"'
+  - name: b27010m15_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other public only "
+    agg: sum
+    expr: '"B27010m15"'
+  - name: b27010e16_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other coverage\
+      \ combinat"
+    agg: sum
+    expr: '"B27010e16"'
+  - name: b27010m16_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other coverage com"
+    agg: sum
+    expr: '"B27010m16"'
+  - name: b27010e17_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 Under 19 years\
+      \ \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010e17"'
+  - name: b27010m17_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 Under 19 years \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010m17"'
+  - name: b27010e18_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years"
+    agg: sum
+    expr: '"B27010e18"'
+  - name: b27010m18_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years"
+    agg: sum
+    expr: '"B27010m18"'
+  - name: b27010e19_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010e19"'
+  - name: b27010m19_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010m19"'
+  - name: b27010e20_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With employer-based\
+      \ health insur"
+    agg: sum
+    expr: '"B27010e20"'
+  - name: b27010m20_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage \u2014\
+      \ With employer-based health "
+    agg: sum
+    expr: '"B27010m20"'
+  - name: b27010e21_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With direct-purchase\
+      \ health insu"
+    agg: sum
+    expr: '"B27010e21"'
+  - name: b27010m21_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage \u2014\
+      \ With direct-purchase health"
+    agg: sum
+    expr: '"B27010m21"'
+  - name: b27010e22_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With Medicare coverage\
+      \ only"
+    agg: sum
+    expr: '"B27010e22"'
+  - name: b27010m22_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage \u2014\
+      \ With Medicare coverage only"
+    agg: sum
+    expr: '"B27010m22"'
+  - name: b27010e23_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With Medicaid/means-tested\
+      \ publi"
+    agg: sum
+    expr: '"B27010e23"'
+  - name: b27010m23_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage \u2014\
+      \ With Medicaid/means-tested "
+    agg: sum
+    expr: '"B27010m23"'
+  - name: b27010e24_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With TRICARE/military\
+      \ health cov"
+    agg: sum
+    expr: '"B27010e24"'
+  - name: b27010m24_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage \u2014\
+      \ With TRICARE/military healt"
+    agg: sum
+    expr: '"B27010m24"'
+  - name: b27010e25_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With VA Health Care\
+      \ only"
+    agg: sum
+    expr: '"B27010e25"'
+  - name: b27010m25_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With one type of health insurance coverage \u2014\
+      \ With VA Health Care only"
+    agg: sum
+    expr: '"B27010m25"'
+  - name: b27010e26_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010e26"'
+  - name: b27010m26_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010m26"'
+  - name: b27010e27_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With employer-based\
+      \ and"
+    agg: sum
+    expr: '"B27010e27"'
+  - name: b27010m27_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With employer-base"
+    agg: sum
+    expr: '"B27010m27"'
+  - name: b27010e28_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With employer-based\
+      \ and"
+    agg: sum
+    expr: '"B27010e28"'
+  - name: b27010m28_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With employer-base"
+    agg: sum
+    expr: '"B27010m28"'
+  - name: b27010e29_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With Medicare\
+      \ and Medic"
+    agg: sum
+    expr: '"B27010e29"'
+  - name: b27010m29_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With Medicare and "
+    agg: sum
+    expr: '"B27010m29"'
+  - name: b27010e30_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other private\
+      \ only comb"
+    agg: sum
+    expr: '"B27010e30"'
+  - name: b27010m30_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other private only"
+    agg: sum
+    expr: '"B27010m30"'
+  - name: b27010e31_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other public\
+      \ only combi"
+    agg: sum
+    expr: '"B27010e31"'
+  - name: b27010m31_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other public only "
+    agg: sum
+    expr: '"B27010m31"'
+  - name: b27010e32_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other coverage\
+      \ combinat"
+    agg: sum
+    expr: '"B27010e32"'
+  - name: b27010m32_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other coverage com"
+    agg: sum
+    expr: '"B27010m32"'
+  - name: b27010e33_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 19 to 34 years\
+      \ \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010e33"'
+  - name: b27010m33_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 19 to 34 years \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010m33"'
+  - name: b27010e34_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years"
+    agg: sum
+    expr: '"B27010e34"'
+  - name: b27010m34_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years"
+    agg: sum
+    expr: '"B27010m34"'
+  - name: b27010e35_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010e35"'
+  - name: b27010m35_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010m35"'
+  - name: b27010e36_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With employer-based\
+      \ health insur"
+    agg: sum
+    expr: '"B27010e36"'
+  - name: b27010m36_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage \u2014\
+      \ With employer-based health "
+    agg: sum
+    expr: '"B27010m36"'
+  - name: b27010e37_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With direct-purchase\
+      \ health insu"
+    agg: sum
+    expr: '"B27010e37"'
+  - name: b27010m37_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage \u2014\
+      \ With direct-purchase health"
+    agg: sum
+    expr: '"B27010m37"'
+  - name: b27010e38_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With Medicare coverage\
+      \ only"
+    agg: sum
+    expr: '"B27010e38"'
+  - name: b27010m38_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage \u2014\
+      \ With Medicare coverage only"
+    agg: sum
+    expr: '"B27010m38"'
+  - name: b27010e39_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With Medicaid/means-tested\
+      \ publi"
+    agg: sum
+    expr: '"B27010e39"'
+  - name: b27010m39_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage \u2014\
+      \ With Medicaid/means-tested "
+    agg: sum
+    expr: '"B27010m39"'
+  - name: b27010e40_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With TRICARE/military\
+      \ health cov"
+    agg: sum
+    expr: '"B27010e40"'
+  - name: b27010m40_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage \u2014\
+      \ With TRICARE/military healt"
+    agg: sum
+    expr: '"B27010m40"'
+  - name: b27010e41_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With one type of health insurance coverage \u2014 With VA Health Care\
+      \ only"
+    agg: sum
+    expr: '"B27010e41"'
+  - name: b27010m41_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With one type of health insurance coverage \u2014\
+      \ With VA Health Care only"
+    agg: sum
+    expr: '"B27010m41"'
+  - name: b27010e42_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010e42"'
+  - name: b27010m42_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010m42"'
+  - name: b27010e43_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With employer-based\
+      \ and"
+    agg: sum
+    expr: '"B27010e43"'
+  - name: b27010m43_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With employer-base"
+    agg: sum
+    expr: '"B27010m43"'
+  - name: b27010e44_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With employer-based\
+      \ and"
+    agg: sum
+    expr: '"B27010e44"'
+  - name: b27010m44_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With employer-base"
+    agg: sum
+    expr: '"B27010m44"'
+  - name: b27010e45_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With direct-purchase\
+      \ an"
+    agg: sum
+    expr: '"B27010e45"'
+  - name: b27010m45_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With direct-purcha"
+    agg: sum
+    expr: '"B27010m45"'
+  - name: b27010e46_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 With Medicare\
+      \ and Medic"
+    agg: sum
+    expr: '"B27010e46"'
+  - name: b27010m46_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 With Medicare and "
+    agg: sum
+    expr: '"B27010m46"'
+  - name: b27010e47_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other private\
+      \ only comb"
+    agg: sum
+    expr: '"B27010e47"'
+  - name: b27010m47_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other private only"
+    agg: sum
+    expr: '"B27010m47"'
+  - name: b27010e48_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other public\
+      \ only combi"
+    agg: sum
+    expr: '"B27010e48"'
+  - name: b27010m48_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other public only "
+    agg: sum
+    expr: '"B27010m48"'
+  - name: b27010e49_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 With two or more types of health insurance coverage \u2014 Other coverage\
+      \ combinat"
+    agg: sum
+    expr: '"B27010e49"'
+  - name: b27010m49_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 With two or more types of health insurance coverage\
+      \ \u2014 Other coverage com"
+    agg: sum
+    expr: '"B27010m49"'
+  - name: b27010e50_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 35 to 64 years\
+      \ \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010e50"'
+  - name: b27010m50_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 35 to 64 years \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010m50"'
+  - name: b27010e51_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over"
+    agg: sum
+    expr: '"B27010e51"'
+  - name: b27010m51_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over"
+    agg: sum
+    expr: '"B27010m51"'
+  - name: b27010e52_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010e52"'
+  - name: b27010m52_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With one type of health insurance coverage"
+    agg: sum
+    expr: '"B27010m52"'
+  - name: b27010e53_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With one type of health insurance coverage \u2014 With employer-based\
+      \ health in"
+    agg: sum
+    expr: '"B27010e53"'
+  - name: b27010m53_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With one type of health insurance coverage\
+      \ \u2014 With employer-based heal"
+    agg: sum
+    expr: '"B27010m53"'
+  - name: b27010e54_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With one type of health insurance coverage \u2014 With direct-purchase\
+      \ health i"
+    agg: sum
+    expr: '"B27010e54"'
+  - name: b27010m54_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With one type of health insurance coverage\
+      \ \u2014 With direct-purchase hea"
+    agg: sum
+    expr: '"B27010m54"'
+  - name: b27010e55_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With one type of health insurance coverage \u2014 With Medicare\
+      \ coverage only"
+    agg: sum
+    expr: '"B27010e55"'
+  - name: b27010m55_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With one type of health insurance coverage\
+      \ \u2014 With Medicare coverage o"
+    agg: sum
+    expr: '"B27010m55"'
+  - name: b27010e56_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With one type of health insurance coverage \u2014 With TRICARE/military\
+      \ health "
+    agg: sum
+    expr: '"B27010e56"'
+  - name: b27010m56_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With one type of health insurance coverage\
+      \ \u2014 With TRICARE/military he"
+    agg: sum
+    expr: '"B27010m56"'
+  - name: b27010e57_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With one type of health insurance coverage \u2014 With VA Health\
+      \ Care only"
+    agg: sum
+    expr: '"B27010e57"'
+  - name: b27010m57_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With one type of health insurance coverage\
+      \ \u2014 With VA Health Care only"
+    agg: sum
+    expr: '"B27010m57"'
+  - name: b27010e58_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage"
+    agg: sum
+    expr: '"B27010e58"'
+  - name: b27010m58_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage"
+    agg: sum
+    expr: '"B27010m58"'
+  - name: b27010e59_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 With\
+      \ employer-based "
+    agg: sum
+    expr: '"B27010e59"'
+  - name: b27010m59_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 With employer-b"
+    agg: sum
+    expr: '"B27010m59"'
+  - name: b27010e60_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 With\
+      \ employer-based "
+    agg: sum
+    expr: '"B27010e60"'
+  - name: b27010m60_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 With employer-b"
+    agg: sum
+    expr: '"B27010m60"'
+  - name: b27010e61_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 With\
+      \ direct-purchase"
+    agg: sum
+    expr: '"B27010e61"'
+  - name: b27010m61_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 With direct-pur"
+    agg: sum
+    expr: '"B27010m61"'
+  - name: b27010e62_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 With\
+      \ Medicare and Me"
+    agg: sum
+    expr: '"B27010e62"'
+  - name: b27010m62_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 With Medicare a"
+    agg: sum
+    expr: '"B27010m62"'
+  - name: b27010e63_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 Other\
+      \ private only c"
+    agg: sum
+    expr: '"B27010e63"'
+  - name: b27010m63_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 Other private o"
+    agg: sum
+    expr: '"B27010m63"'
+  - name: b27010e64_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 Other\
+      \ public only co"
+    agg: sum
+    expr: '"B27010e64"'
+  - name: b27010m64_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 Other public on"
+    agg: sum
+    expr: '"B27010m64"'
+  - name: b27010e65_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 With two or more types of health insurance coverage \u2014 Other\
+      \ coverage combi"
+    agg: sum
+    expr: '"B27010e65"'
+  - name: b27010m65_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 With two or more types of health insurance\
+      \ coverage \u2014 Other coverage "
+    agg: sum
+    expr: '"B27010m65"'
+  - name: b27010e66_estimate_types_of_health_insurance_coverage_by_age_civ
+    description: "Estimate \u2014 TYPES OF HEALTH INSURANCE COVERAGE BY AGE \u2014\
+      \ Civilian noninstitutionalized population \u2014 Total \u2014 65 years and\
+      \ over \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010e66"'
+  - name: b27010m66_marginoferror_types_of_health_insurance_coverage_by_ag
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF HEALTH INSURANCE\
+      \ COVERAGE BY AGE \u2014 Civilian noninstitutionalized population \u2014 Total\
+      \ \u2014 65 years and over \u2014 No health insurance coverage"
+    agg: sum
+    expr: '"B27010m66"'

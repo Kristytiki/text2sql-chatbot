@@ -1,0 +1,1059 @@
+semantic_model:
+  name: cbg_b07
+  description: "Census ACS topic B07 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B07
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b07201e1_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e1"'
+  - name: b07201m1_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m1"'
+  - name: b07201e2_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e2"'
+  - name: b07201m2_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m2"'
+  - name: b07201e3_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e3"'
+  - name: b07201m3_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m3"'
+  - name: b07201e4_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e4"'
+  - name: b07201m4_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m4"'
+  - name: b07201e5_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e5"'
+  - name: b07201m5_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m5"'
+  - name: b07201e6_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e6"'
+  - name: b07201m6_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m6"'
+  - name: b07201e7_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e7"'
+  - name: b07201m7_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m7"'
+  - name: b07201e8_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e8"'
+  - name: b07201m8_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m8"'
+  - name: b07201e9_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e9"'
+  - name: b07201m9_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m9"'
+  - name: b07201e10_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e10"'
+  - name: b07201m10_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m10"'
+  - name: b07201e11_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e11"'
+  - name: b07201m11_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m11"'
+  - name: b07201e12_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e12"'
+  - name: b07201m12_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m12"'
+  - name: b07201e13_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e13"'
+  - name: b07201m13_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m13"'
+  - name: b07201e14_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Metropolitan Statistical Area"
+    agg: sum
+    expr: '"B07201e14"'
+  - name: b07201m14_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Metropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07201m14"'
+  - name: b07201pre1_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe1"'
+  - name: b07201prm1_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm1"'
+  - name: b07201pre2_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe2"'
+  - name: b07201prm2_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm2"'
+  - name: b07201pre3_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe3"'
+  - name: b07201prm3_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm3"'
+  - name: b07201pre4_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe4"'
+  - name: b07201prm4_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm4"'
+  - name: b07201pre5_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe5"'
+  - name: b07201prm5_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm5"'
+  - name: b07201pre6_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe6"'
+  - name: b07201prm6_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm6"'
+  - name: b07201pre7_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe7"'
+  - name: b07201prm7_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm7"'
+  - name: b07201pre8_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe8"'
+  - name: b07201prm8_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm8"'
+  - name: b07201pre9_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe9"'
+  - name: b07201prm9_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm9"'
+  - name: b07201pre10_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe10"'
+  - name: b07201prm10_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm10"'
+  - name: b07201pre11_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe11"'
+  - name: b07201prm11_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm11"'
+  - name: b07201pre12_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe12"'
+  - name: b07201prm12_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm12"'
+  - name: b07201pre13_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe13"'
+  - name: b07201prm13_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm13"'
+  - name: b07201pre14_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe14"'
+  - name: b07201prm14_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm14"'
+  - name: b07201pre15_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe15"'
+  - name: b07201prm15_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm15"'
+  - name: b07201pre16_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe16"'
+  - name: b07201prm16_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm16"'
+  - name: b07201pre17_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe17"'
+  - name: b07201prm17_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm17"'
+  - name: b07201pre18_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe18"'
+  - name: b07201prm18_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm18"'
+  - name: b07201pre19_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe19"'
+  - name: b07201prm19_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm19"'
+  - name: b07201pre20_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe20"'
+  - name: b07201prm20_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm20"'
+  - name: b07201pre21_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe21"'
+  - name: b07201prm21_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm21"'
+  - name: b07201pre22_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Metropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07201PRe22"'
+  - name: b07201prm22_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--METROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Metropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07201PRm22"'
+  - name: b07202e1_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e1"'
+  - name: b07202m1_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m1"'
+  - name: b07202e2_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e2"'
+  - name: b07202m2_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m2"'
+  - name: b07202e3_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e3"'
+  - name: b07202m3_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m3"'
+  - name: b07202e4_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e4"'
+  - name: b07202m4_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m4"'
+  - name: b07202e5_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e5"'
+  - name: b07202m5_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m5"'
+  - name: b07202e6_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e6"'
+  - name: b07202m6_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m6"'
+  - name: b07202e7_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e7"'
+  - name: b07202m7_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m7"'
+  - name: b07202e8_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e8"'
+  - name: b07202m8_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m8"'
+  - name: b07202e9_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e9"'
+  - name: b07202m9_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m9"'
+  - name: b07202e10_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e10"'
+  - name: b07202m10_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m10"'
+  - name: b07202e11_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e11"'
+  - name: b07202m11_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m11"'
+  - name: b07202e12_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e12"'
+  - name: b07202m12_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m12"'
+  - name: b07202e13_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e13"'
+  - name: b07202m13_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m13"'
+  - name: b07202e14_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN THE UNITED STATES \u2014\
+      \ Population 1 year and over living in a Micropolitan Statistical Area"
+    agg: sum
+    expr: '"B07202e14"'
+  - name: b07202m14_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ THE UNITED STATES \u2014 Population 1 year and over living in a Micropolitan\
+      \ Statistical"
+    agg: sum
+    expr: '"B07202m14"'
+  - name: b07202pre1_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe1"'
+  - name: b07202prm1_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm1"'
+  - name: b07202pre2_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe2"'
+  - name: b07202prm2_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm2"'
+  - name: b07202pre3_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe3"'
+  - name: b07202prm3_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm3"'
+  - name: b07202pre4_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe4"'
+  - name: b07202prm4_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm4"'
+  - name: b07202pre5_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe5"'
+  - name: b07202prm5_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm5"'
+  - name: b07202pre6_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe6"'
+  - name: b07202prm6_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm6"'
+  - name: b07202pre7_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe7"'
+  - name: b07202prm7_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm7"'
+  - name: b07202pre8_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe8"'
+  - name: b07202prm8_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm8"'
+  - name: b07202pre9_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe9"'
+  - name: b07202prm9_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm9"'
+  - name: b07202pre10_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe10"'
+  - name: b07202prm10_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm10"'
+  - name: b07202pre11_estimate_geographical_mobility_in_the_past_year_for
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO RICO \u2014 Population\
+      \ 1 year and over living in a Micropolitan Statistical Area in Pu"
+    agg: sum
+    expr: '"B07202PRe11"'
+  - name: b07202prm11_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--MICROPOLITAN STATISTICAL AREA LEVEL IN\
+      \ PUERTO RICO \u2014 Population 1 year and over living in a Micropolitan Statistical\
+      \ Area "
+    agg: sum
+    expr: '"B07202PRm11"'
+  - name: b07203e1_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e1"'
+  - name: b07203m1_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m1"'
+  - name: b07203e2_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e2"'
+  - name: b07203m2_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m2"'
+  - name: b07203e3_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e3"'
+  - name: b07203m3_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m3"'
+  - name: b07203e4_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e4"'
+  - name: b07203m4_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m4"'
+  - name: b07203e5_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e5"'
+  - name: b07203m5_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m5"'
+  - name: b07203e6_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e6"'
+  - name: b07203m6_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m6"'
+  - name: b07203e7_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e7"'
+  - name: b07203m7_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m7"'
+  - name: b07203e8_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e8"'
+  - name: b07203m8_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m8"'
+  - name: b07203e9_estimate_geographical_mobility_in_the_past_year_for_cur
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e9"'
+  - name: b07203m9_marginoferror_geographical_mobility_in_the_past_year_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m9"'
+  - name: b07203e10_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e10"'
+  - name: b07203m10_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m10"'
+  - name: b07203e11_estimate_geographical_mobility_in_the_past_year_for_cu
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN THE\
+      \ UNITED STATES \u2014 Population 1 year and over not living in a Metro"
+    agg: sum
+    expr: '"B07203e11"'
+  - name: b07203m11_marginoferror_geographical_mobility_in_the_past_year_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN THE UNITED STATES \u2014 Population 1 year and over not living\
+      \ in a "
+    agg: sum
+    expr: '"B07203m11"'
+  - name: b07203pre1_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe1"'
+  - name: b07203prm1_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm1"'
+  - name: b07203pre2_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe2"'
+  - name: b07203prm2_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm2"'
+  - name: b07203pre3_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe3"'
+  - name: b07203prm3_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm3"'
+  - name: b07203pre4_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe4"'
+  - name: b07203prm4_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm4"'
+  - name: b07203pre5_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe5"'
+  - name: b07203prm5_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm5"'
+  - name: b07203pre6_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe6"'
+  - name: b07203prm6_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm6"'
+  - name: b07203pre7_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe7"'
+  - name: b07203prm7_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm7"'
+  - name: b07203pre8_estimate_geographical_mobility_in_the_past_year_for_c
+    description: "Estimate \u2014 GEOGRAPHICAL MOBILITY IN THE PAST YEAR FOR CURRENT\
+      \ RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL IN PUERTO\
+      \ RICO \u2014 Population 1 year and over not living in a Metropolita"
+    agg: sum
+    expr: '"B07203PRe8"'
+  - name: b07203prm8_marginoferror_geographical_mobility_in_the_past_year
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 GEOGRAPHICAL MOBILITY IN\
+      \ THE PAST YEAR FOR CURRENT RESIDENCE--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL\
+      \ AREA LEVEL IN PUERTO RICO \u2014 Population 1 year and over not living in\
+      \ a Metrop"
+    agg: sum
+    expr: '"B07203PRm8"'

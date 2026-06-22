@@ -1,0 +1,37 @@
+semantic_model:
+  name: geography
+  description: Geographic dimensions for every census block group.
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_GEOGRAPHY
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: state_code
+    type: categorical
+    expr: STATE_CODE
+  - name: state_name
+    type: categorical
+    expr: STATE_NAME
+  - name: state_fips
+    type: categorical
+    expr: STATE_FIPS
+  - name: county_name
+    type: categorical
+    expr: COUNTY_NAME
+  - name: county_fips
+    type: categorical
+    expr: COUNTY_FIPS
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP('2020-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: geography_universe
+    agg: sum
+    expr: '0'

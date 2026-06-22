@@ -1,0 +1,29 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# Sessions (Strands FileSessionManager)
+**/.sessions/
+
+# Frontend
+node_modules/
+**/dist/
+.vite/
+.eslintcache
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

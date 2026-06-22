@@ -1,0 +1,422 @@
+semantic_model:
+  name: cbg_c21
+  description: "Census ACS topic C21 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_C21
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: c21007e1_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e1"'
+  - name: c21007m1_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m1"'
+  - name: c21007e2_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e2"'
+  - name: c21007m2_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m2"'
+  - name: c21007e3_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e3"'
+  - name: c21007m3_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m3"'
+  - name: c21007e4_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e4"'
+  - name: c21007m4_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m4"'
+  - name: c21007e5_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e5"'
+  - name: c21007m5_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m5"'
+  - name: c21007e6_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e6"'
+  - name: c21007m6_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m6"'
+  - name: c21007e7_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e7"'
+  - name: c21007m7_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m7"'
+  - name: c21007e8_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e8"'
+  - name: c21007m8_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m8"'
+  - name: c21007e9_estimate_age_by_veteran_status_by_poverty_status_in_the
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e9"'
+  - name: c21007m9_marginoferror_age_by_veteran_status_by_poverty_status_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m9"'
+  - name: c21007e10_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e10"'
+  - name: c21007m10_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m10"'
+  - name: c21007e11_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e11"'
+  - name: c21007m11_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m11"'
+  - name: c21007e12_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e12"'
+  - name: c21007m12_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m12"'
+  - name: c21007e13_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e13"'
+  - name: c21007m13_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m13"'
+  - name: c21007e14_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e14"'
+  - name: c21007m14_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m14"'
+  - name: c21007e15_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e15"'
+  - name: c21007m15_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m15"'
+  - name: c21007e16_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e16"'
+  - name: c21007m16_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m16"'
+  - name: c21007e17_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e17"'
+  - name: c21007m17_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m17"'
+  - name: c21007e18_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e18"'
+  - name: c21007m18_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m18"'
+  - name: c21007e19_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e19"'
+  - name: c21007m19_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m19"'
+  - name: c21007e20_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e20"'
+  - name: c21007m20_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m20"'
+  - name: c21007e21_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e21"'
+  - name: c21007m21_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m21"'
+  - name: c21007e22_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e22"'
+  - name: c21007m22_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m22"'
+  - name: c21007e23_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e23"'
+  - name: c21007m23_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m23"'
+  - name: c21007e24_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e24"'
+  - name: c21007m24_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m24"'
+  - name: c21007e25_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e25"'
+  - name: c21007m25_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m25"'
+  - name: c21007e26_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e26"'
+  - name: c21007m26_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m26"'
+  - name: c21007e27_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e27"'
+  - name: c21007m27_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m27"'
+  - name: c21007e28_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e28"'
+  - name: c21007m28_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m28"'
+  - name: c21007e29_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e29"'
+  - name: c21007m29_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m29"'
+  - name: c21007e30_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e30"'
+  - name: c21007m30_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m30"'
+  - name: c21007e31_estimate_age_by_veteran_status_by_poverty_status_in_th
+    description: "Estimate \u2014 AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST\
+      \ 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER\
+      \ \u2014 Civilian population 18 years and over for whom poverty sta"
+    agg: sum
+    expr: '"C21007e31"'
+  - name: c21007m31_marginoferror_age_by_veteran_status_by_poverty_status
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY VETERAN STATUS BY\
+      \ POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN\
+      \ POPULATION 18 YEARS AND OVER \u2014 Civilian population 18 years and over\
+      \ for whom povert"
+    agg: sum
+    expr: '"C21007m31"'

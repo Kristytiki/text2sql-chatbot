@@ -1,0 +1,938 @@
+semantic_model:
+  name: cbg_b16
+  description: "Census ACS topic B16 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B16
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b16004e1_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total"
+    agg: sum
+    expr: '"B16004e1"'
+  - name: b16004m1_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total"
+    agg: sum
+    expr: '"B16004m1"'
+  - name: b16004e2_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years"
+    agg: sum
+    expr: '"B16004e2"'
+  - name: b16004m2_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years"
+    agg: sum
+    expr: '"B16004m2"'
+  - name: b16004e3_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak only English"
+    agg: sum
+    expr: '"B16004e3"'
+  - name: b16004m3_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ only English"
+    agg: sum
+    expr: '"B16004m3"'
+  - name: b16004e4_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Spanish"
+    agg: sum
+    expr: '"B16004e4"'
+  - name: b16004m4_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Spanish"
+    agg: sum
+    expr: '"B16004m4"'
+  - name: b16004e5_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Spanish \u2014 Speak English\
+      \ very wel"
+    agg: sum
+    expr: '"B16004e5"'
+  - name: b16004m5_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Spanish \u2014 Speak English ver"
+    agg: sum
+    expr: '"B16004m5"'
+  - name: b16004e6_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Spanish \u2014 Speak English\
+      \ well"
+    agg: sum
+    expr: '"B16004e6"'
+  - name: b16004m6_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Spanish \u2014 Speak English wel"
+    agg: sum
+    expr: '"B16004m6"'
+  - name: b16004e7_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Spanish \u2014 Speak English\
+      \ not well"
+    agg: sum
+    expr: '"B16004e7"'
+  - name: b16004m7_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Spanish \u2014 Speak English not"
+    agg: sum
+    expr: '"B16004m7"'
+  - name: b16004e8_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Spanish \u2014 Speak English\
+      \ not at a"
+    agg: sum
+    expr: '"B16004e8"'
+  - name: b16004m8_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Spanish \u2014 Speak English not"
+    agg: sum
+    expr: '"B16004m8"'
+  - name: b16004e9_estimate_age_by_language_spoken_at_home_by_ability_to_s
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other Indo-European languages"
+    agg: sum
+    expr: '"B16004e9"'
+  - name: b16004m9_marginoferror_age_by_language_spoken_at_home_by_ability
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other Indo-European languag"
+    agg: sum
+    expr: '"B16004m9"'
+  - name: b16004e10_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other Indo-European languages\
+      \ \u2014 "
+    agg: sum
+    expr: '"B16004e10"'
+  - name: b16004m10_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other Indo-European languag"
+    agg: sum
+    expr: '"B16004m10"'
+  - name: b16004e11_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other Indo-European languages\
+      \ \u2014 "
+    agg: sum
+    expr: '"B16004e11"'
+  - name: b16004m11_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other Indo-European languag"
+    agg: sum
+    expr: '"B16004m11"'
+  - name: b16004e12_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other Indo-European languages\
+      \ \u2014 "
+    agg: sum
+    expr: '"B16004e12"'
+  - name: b16004m12_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other Indo-European languag"
+    agg: sum
+    expr: '"B16004m12"'
+  - name: b16004e13_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other Indo-European languages\
+      \ \u2014 "
+    agg: sum
+    expr: '"B16004e13"'
+  - name: b16004m13_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other Indo-European languag"
+    agg: sum
+    expr: '"B16004m13"'
+  - name: b16004e14_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Asian and Pacific Island\
+      \ languag"
+    agg: sum
+    expr: '"B16004e14"'
+  - name: b16004m14_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Asian and Pacific Island la"
+    agg: sum
+    expr: '"B16004m14"'
+  - name: b16004e15_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Asian and Pacific Island\
+      \ languag"
+    agg: sum
+    expr: '"B16004e15"'
+  - name: b16004m15_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Asian and Pacific Island la"
+    agg: sum
+    expr: '"B16004m15"'
+  - name: b16004e16_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Asian and Pacific Island\
+      \ languag"
+    agg: sum
+    expr: '"B16004e16"'
+  - name: b16004m16_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Asian and Pacific Island la"
+    agg: sum
+    expr: '"B16004m16"'
+  - name: b16004e17_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Asian and Pacific Island\
+      \ languag"
+    agg: sum
+    expr: '"B16004e17"'
+  - name: b16004m17_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Asian and Pacific Island la"
+    agg: sum
+    expr: '"B16004m17"'
+  - name: b16004e18_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak Asian and Pacific Island\
+      \ languag"
+    agg: sum
+    expr: '"B16004e18"'
+  - name: b16004m18_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ Asian and Pacific Island la"
+    agg: sum
+    expr: '"B16004m18"'
+  - name: b16004e19_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other languages"
+    agg: sum
+    expr: '"B16004e19"'
+  - name: b16004m19_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other languages"
+    agg: sum
+    expr: '"B16004m19"'
+  - name: b16004e20_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other languages \u2014\
+      \ Speak English "
+    agg: sum
+    expr: '"B16004e20"'
+  - name: b16004m20_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other languages \u2014 Speak Eng"
+    agg: sum
+    expr: '"B16004m20"'
+  - name: b16004e21_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other languages \u2014\
+      \ Speak English "
+    agg: sum
+    expr: '"B16004e21"'
+  - name: b16004m21_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other languages \u2014 Speak Eng"
+    agg: sum
+    expr: '"B16004m21"'
+  - name: b16004e22_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other languages \u2014\
+      \ Speak English "
+    agg: sum
+    expr: '"B16004e22"'
+  - name: b16004m22_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other languages \u2014 Speak Eng"
+    agg: sum
+    expr: '"B16004m22"'
+  - name: b16004e23_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 5 to 17 years \u2014 Speak other languages \u2014\
+      \ Speak English "
+    agg: sum
+    expr: '"B16004e23"'
+  - name: b16004m23_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 5 to 17 years \u2014 Speak\
+      \ other languages \u2014 Speak Eng"
+    agg: sum
+    expr: '"B16004m23"'
+  - name: b16004e24_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years"
+    agg: sum
+    expr: '"B16004e24"'
+  - name: b16004m24_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years"
+    agg: sum
+    expr: '"B16004m24"'
+  - name: b16004e25_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak only English"
+    agg: sum
+    expr: '"B16004e25"'
+  - name: b16004m25_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ only English"
+    agg: sum
+    expr: '"B16004m25"'
+  - name: b16004e26_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Spanish"
+    agg: sum
+    expr: '"B16004e26"'
+  - name: b16004m26_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Spanish"
+    agg: sum
+    expr: '"B16004m26"'
+  - name: b16004e27_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Spanish \u2014 Speak\
+      \ English very we"
+    agg: sum
+    expr: '"B16004e27"'
+  - name: b16004m27_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Spanish \u2014 Speak English ve"
+    agg: sum
+    expr: '"B16004m27"'
+  - name: b16004e28_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Spanish \u2014 Speak\
+      \ English well"
+    agg: sum
+    expr: '"B16004e28"'
+  - name: b16004m28_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Spanish \u2014 Speak English we"
+    agg: sum
+    expr: '"B16004m28"'
+  - name: b16004e29_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Spanish \u2014 Speak\
+      \ English not wel"
+    agg: sum
+    expr: '"B16004e29"'
+  - name: b16004m29_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Spanish \u2014 Speak English no"
+    agg: sum
+    expr: '"B16004m29"'
+  - name: b16004e30_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Spanish \u2014 Speak\
+      \ English not at "
+    agg: sum
+    expr: '"B16004e30"'
+  - name: b16004m30_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Spanish \u2014 Speak English no"
+    agg: sum
+    expr: '"B16004m30"'
+  - name: b16004e31_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other Indo-European languages"
+    agg: sum
+    expr: '"B16004e31"'
+  - name: b16004m31_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other Indo-European langua"
+    agg: sum
+    expr: '"B16004m31"'
+  - name: b16004e32_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other Indo-European languages\
+      \ \u2014"
+    agg: sum
+    expr: '"B16004e32"'
+  - name: b16004m32_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other Indo-European langua"
+    agg: sum
+    expr: '"B16004m32"'
+  - name: b16004e33_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other Indo-European languages\
+      \ \u2014"
+    agg: sum
+    expr: '"B16004e33"'
+  - name: b16004m33_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other Indo-European langua"
+    agg: sum
+    expr: '"B16004m33"'
+  - name: b16004e34_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other Indo-European languages\
+      \ \u2014"
+    agg: sum
+    expr: '"B16004e34"'
+  - name: b16004m34_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other Indo-European langua"
+    agg: sum
+    expr: '"B16004m34"'
+  - name: b16004e35_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other Indo-European languages\
+      \ \u2014"
+    agg: sum
+    expr: '"B16004e35"'
+  - name: b16004m35_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other Indo-European langua"
+    agg: sum
+    expr: '"B16004m35"'
+  - name: b16004e36_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Asian and Pacific Island\
+      \ langua"
+    agg: sum
+    expr: '"B16004e36"'
+  - name: b16004m36_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Asian and Pacific Island l"
+    agg: sum
+    expr: '"B16004m36"'
+  - name: b16004e37_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Asian and Pacific Island\
+      \ langua"
+    agg: sum
+    expr: '"B16004e37"'
+  - name: b16004m37_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Asian and Pacific Island l"
+    agg: sum
+    expr: '"B16004m37"'
+  - name: b16004e38_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Asian and Pacific Island\
+      \ langua"
+    agg: sum
+    expr: '"B16004e38"'
+  - name: b16004m38_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Asian and Pacific Island l"
+    agg: sum
+    expr: '"B16004m38"'
+  - name: b16004e39_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Asian and Pacific Island\
+      \ langua"
+    agg: sum
+    expr: '"B16004e39"'
+  - name: b16004m39_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Asian and Pacific Island l"
+    agg: sum
+    expr: '"B16004m39"'
+  - name: b16004e40_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak Asian and Pacific Island\
+      \ langua"
+    agg: sum
+    expr: '"B16004e40"'
+  - name: b16004m40_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ Asian and Pacific Island l"
+    agg: sum
+    expr: '"B16004m40"'
+  - name: b16004e41_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other languages"
+    agg: sum
+    expr: '"B16004e41"'
+  - name: b16004m41_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other languages"
+    agg: sum
+    expr: '"B16004m41"'
+  - name: b16004e42_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other languages \u2014\
+      \ Speak English"
+    agg: sum
+    expr: '"B16004e42"'
+  - name: b16004m42_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other languages \u2014 Speak En"
+    agg: sum
+    expr: '"B16004m42"'
+  - name: b16004e43_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other languages \u2014\
+      \ Speak English"
+    agg: sum
+    expr: '"B16004e43"'
+  - name: b16004m43_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other languages \u2014 Speak En"
+    agg: sum
+    expr: '"B16004m43"'
+  - name: b16004e44_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other languages \u2014\
+      \ Speak English"
+    agg: sum
+    expr: '"B16004e44"'
+  - name: b16004m44_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other languages \u2014 Speak En"
+    agg: sum
+    expr: '"B16004m44"'
+  - name: b16004e45_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 18 to 64 years \u2014 Speak other languages \u2014\
+      \ Speak English"
+    agg: sum
+    expr: '"B16004e45"'
+  - name: b16004m45_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 18 to 64 years \u2014 Speak\
+      \ other languages \u2014 Speak En"
+    agg: sum
+    expr: '"B16004m45"'
+  - name: b16004e46_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over"
+    agg: sum
+    expr: '"B16004e46"'
+  - name: b16004m46_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over"
+    agg: sum
+    expr: '"B16004m46"'
+  - name: b16004e47_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak only English"
+    agg: sum
+    expr: '"B16004e47"'
+  - name: b16004m47_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ only English"
+    agg: sum
+    expr: '"B16004m47"'
+  - name: b16004e48_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Spanish"
+    agg: sum
+    expr: '"B16004e48"'
+  - name: b16004m48_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Spanish"
+    agg: sum
+    expr: '"B16004m48"'
+  - name: b16004e49_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Spanish \u2014 Speak\
+      \ English very"
+    agg: sum
+    expr: '"B16004e49"'
+  - name: b16004m49_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Spanish \u2014 Speak English"
+    agg: sum
+    expr: '"B16004m49"'
+  - name: b16004e50_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Spanish \u2014 Speak\
+      \ English well"
+    agg: sum
+    expr: '"B16004e50"'
+  - name: b16004m50_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Spanish \u2014 Speak English"
+    agg: sum
+    expr: '"B16004m50"'
+  - name: b16004e51_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Spanish \u2014 Speak\
+      \ English not "
+    agg: sum
+    expr: '"B16004e51"'
+  - name: b16004m51_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Spanish \u2014 Speak English"
+    agg: sum
+    expr: '"B16004m51"'
+  - name: b16004e52_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Spanish \u2014 Speak\
+      \ English not "
+    agg: sum
+    expr: '"B16004e52"'
+  - name: b16004m52_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Spanish \u2014 Speak English"
+    agg: sum
+    expr: '"B16004m52"'
+  - name: b16004e53_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other Indo-European\
+      \ language"
+    agg: sum
+    expr: '"B16004e53"'
+  - name: b16004m53_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other Indo-European lan"
+    agg: sum
+    expr: '"B16004m53"'
+  - name: b16004e54_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other Indo-European\
+      \ language"
+    agg: sum
+    expr: '"B16004e54"'
+  - name: b16004m54_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other Indo-European lan"
+    agg: sum
+    expr: '"B16004m54"'
+  - name: b16004e55_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other Indo-European\
+      \ language"
+    agg: sum
+    expr: '"B16004e55"'
+  - name: b16004m55_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other Indo-European lan"
+    agg: sum
+    expr: '"B16004m55"'
+  - name: b16004e56_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other Indo-European\
+      \ language"
+    agg: sum
+    expr: '"B16004e56"'
+  - name: b16004m56_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other Indo-European lan"
+    agg: sum
+    expr: '"B16004m56"'
+  - name: b16004e57_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other Indo-European\
+      \ language"
+    agg: sum
+    expr: '"B16004e57"'
+  - name: b16004m57_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other Indo-European lan"
+    agg: sum
+    expr: '"B16004m57"'
+  - name: b16004e58_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Asian and Pacific\
+      \ Island lan"
+    agg: sum
+    expr: '"B16004e58"'
+  - name: b16004m58_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Asian and Pacific Islan"
+    agg: sum
+    expr: '"B16004m58"'
+  - name: b16004e59_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Asian and Pacific\
+      \ Island lan"
+    agg: sum
+    expr: '"B16004e59"'
+  - name: b16004m59_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Asian and Pacific Islan"
+    agg: sum
+    expr: '"B16004m59"'
+  - name: b16004e60_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Asian and Pacific\
+      \ Island lan"
+    agg: sum
+    expr: '"B16004e60"'
+  - name: b16004m60_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Asian and Pacific Islan"
+    agg: sum
+    expr: '"B16004m60"'
+  - name: b16004e61_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Asian and Pacific\
+      \ Island lan"
+    agg: sum
+    expr: '"B16004e61"'
+  - name: b16004m61_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Asian and Pacific Islan"
+    agg: sum
+    expr: '"B16004m61"'
+  - name: b16004e62_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak Asian and Pacific\
+      \ Island lan"
+    agg: sum
+    expr: '"B16004e62"'
+  - name: b16004m62_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ Asian and Pacific Islan"
+    agg: sum
+    expr: '"B16004m62"'
+  - name: b16004e63_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other languages"
+    agg: sum
+    expr: '"B16004e63"'
+  - name: b16004m63_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other languages"
+    agg: sum
+    expr: '"B16004m63"'
+  - name: b16004e64_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other languages \u2014\
+      \ Speak Engl"
+    agg: sum
+    expr: '"B16004e64"'
+  - name: b16004m64_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other languages \u2014 Speak"
+    agg: sum
+    expr: '"B16004m64"'
+  - name: b16004e65_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other languages \u2014\
+      \ Speak Engl"
+    agg: sum
+    expr: '"B16004e65"'
+  - name: b16004m65_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other languages \u2014 Speak"
+    agg: sum
+    expr: '"B16004m65"'
+  - name: b16004e66_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other languages \u2014\
+      \ Speak Engl"
+    agg: sum
+    expr: '"B16004e66"'
+  - name: b16004m66_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other languages \u2014 Speak"
+    agg: sum
+    expr: '"B16004m66"'
+  - name: b16004e67_estimate_age_by_language_spoken_at_home_by_ability_to
+    description: "Estimate \u2014 AGE BY LANGUAGE SPOKEN AT HOME BY ABILITY TO SPEAK\
+      \ ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 65 years and over \u2014 Speak other languages \u2014\
+      \ Speak Engl"
+    agg: sum
+    expr: '"B16004e67"'
+  - name: b16004m67_marginoferror_age_by_language_spoken_at_home_by_abilit
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY LANGUAGE SPOKEN AT\
+      \ HOME BY ABILITY TO SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014\
+      \ Population 5 years and over \u2014 Total \u2014 65 years and over \u2014 Speak\
+      \ other languages \u2014 Speak"
+    agg: sum
+    expr: '"B16004m67"'

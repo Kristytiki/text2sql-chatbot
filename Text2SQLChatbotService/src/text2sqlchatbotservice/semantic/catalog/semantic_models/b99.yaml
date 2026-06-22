@@ -1,0 +1,3489 @@
+semantic_model:
+  name: cbg_b99
+  description: "Census ACS topic B99 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B99
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b99011e1_estimate_allocation_of_sex_total_population_total
+    description: "Estimate \u2014 ALLOCATION OF SEX \u2014 Total population \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99011e1"'
+  - name: b99011m1_marginoferror_allocation_of_sex_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF SEX \u2014\
+      \ Total population \u2014 Total"
+    agg: sum
+    expr: '"B99011m1"'
+  - name: b99011e2_estimate_allocation_of_sex_total_population_total_alloc
+    description: "Estimate \u2014 ALLOCATION OF SEX \u2014 Total population \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99011e2"'
+  - name: b99011m2_marginoferror_allocation_of_sex_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF SEX \u2014\
+      \ Total population \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99011m2"'
+  - name: b99011e3_estimate_allocation_of_sex_total_population_total_not_a
+    description: "Estimate \u2014 ALLOCATION OF SEX \u2014 Total population \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99011e3"'
+  - name: b99011m3_marginoferror_allocation_of_sex_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF SEX \u2014\
+      \ Total population \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99011m3"'
+  - name: b99012e1_estimate_allocation_of_age_total_population_total
+    description: "Estimate \u2014 ALLOCATION OF AGE \u2014 Total population \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99012e1"'
+  - name: b99012m1_marginoferror_allocation_of_age_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF AGE \u2014\
+      \ Total population \u2014 Total"
+    agg: sum
+    expr: '"B99012m1"'
+  - name: b99012e2_estimate_allocation_of_age_total_population_total_alloc
+    description: "Estimate \u2014 ALLOCATION OF AGE \u2014 Total population \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99012e2"'
+  - name: b99012m2_marginoferror_allocation_of_age_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF AGE \u2014\
+      \ Total population \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99012m2"'
+  - name: b99012e3_estimate_allocation_of_age_total_population_total_not_a
+    description: "Estimate \u2014 ALLOCATION OF AGE \u2014 Total population \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99012e3"'
+  - name: b99012m3_marginoferror_allocation_of_age_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF AGE \u2014\
+      \ Total population \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99012m3"'
+  - name: b99021e1_estimate_allocation_of_race_total_population_total
+    description: "Estimate \u2014 ALLOCATION OF RACE \u2014 Total population \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99021e1"'
+  - name: b99021m1_marginoferror_allocation_of_race_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RACE \u2014\
+      \ Total population \u2014 Total"
+    agg: sum
+    expr: '"B99021m1"'
+  - name: b99021e2_estimate_allocation_of_race_total_population_total_allo
+    description: "Estimate \u2014 ALLOCATION OF RACE \u2014 Total population \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99021e2"'
+  - name: b99021m2_marginoferror_allocation_of_race_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RACE \u2014\
+      \ Total population \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99021m2"'
+  - name: b99021e3_estimate_allocation_of_race_total_population_total_not
+    description: "Estimate \u2014 ALLOCATION OF RACE \u2014 Total population \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99021e3"'
+  - name: b99021m3_marginoferror_allocation_of_race_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RACE \u2014\
+      \ Total population \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99021m3"'
+  - name: b99031e1_estimate_allocation_of_hispanic_or_latino_origin_total
+    description: "Estimate \u2014 ALLOCATION OF HISPANIC OR LATINO ORIGIN \u2014 Total\
+      \ population \u2014 Total"
+    agg: sum
+    expr: '"B99031e1"'
+  - name: b99031m1_marginoferror_allocation_of_hispanic_or_latino_origin_t
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HISPANIC OR\
+      \ LATINO ORIGIN \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B99031m1"'
+  - name: b99031e2_estimate_allocation_of_hispanic_or_latino_origin_total
+    description: "Estimate \u2014 ALLOCATION OF HISPANIC OR LATINO ORIGIN \u2014 Total\
+      \ population \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99031e2"'
+  - name: b99031m2_marginoferror_allocation_of_hispanic_or_latino_origin_t
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HISPANIC OR\
+      \ LATINO ORIGIN \u2014 Total population \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99031m2"'
+  - name: b99031e3_estimate_allocation_of_hispanic_or_latino_origin_total
+    description: "Estimate \u2014 ALLOCATION OF HISPANIC OR LATINO ORIGIN \u2014 Total\
+      \ population \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99031e3"'
+  - name: b99031m3_marginoferror_allocation_of_hispanic_or_latino_origin_t
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HISPANIC OR\
+      \ LATINO ORIGIN \u2014 Total population \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99031m3"'
+  - name: b99051e1_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99051e1"'
+  - name: b99051m1_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B99051m1"'
+  - name: b99051e2_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total \u2014 Native"
+    agg: sum
+    expr: '"B99051e2"'
+  - name: b99051m2_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total \u2014 Native"
+    agg: sum
+    expr: '"B99051m2"'
+  - name: b99051e3_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total \u2014 Native \u2014 Allocated"
+    agg: sum
+    expr: '"B99051e3"'
+  - name: b99051m3_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total \u2014 Native \u2014 Allocated"
+    agg: sum
+    expr: '"B99051m3"'
+  - name: b99051e4_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total \u2014 Native \u2014 Not allocated"
+    agg: sum
+    expr: '"B99051e4"'
+  - name: b99051m4_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total \u2014 Native \u2014 Not allocated"
+    agg: sum
+    expr: '"B99051m4"'
+  - name: b99051e5_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total \u2014 Foreign born"
+    agg: sum
+    expr: '"B99051e5"'
+  - name: b99051m5_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total \u2014 Foreign born"
+    agg: sum
+    expr: '"B99051m5"'
+  - name: b99051e6_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total \u2014 Foreign born \u2014 Allocated"
+    agg: sum
+    expr: '"B99051e6"'
+  - name: b99051m6_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total \u2014 Foreign born \u2014 Allocated"
+    agg: sum
+    expr: '"B99051m6"'
+  - name: b99051e7_estimate_allocation_of_citizenship_status_total_populat
+    description: "Estimate \u2014 ALLOCATION OF CITIZENSHIP STATUS \u2014 Total population\
+      \ \u2014 Total \u2014 Foreign born \u2014 Not allocated"
+    agg: sum
+    expr: '"B99051e7"'
+  - name: b99051m7_marginoferror_allocation_of_citizenship_status_total_po
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CITIZENSHIP\
+      \ STATUS \u2014 Total population \u2014 Total \u2014 Foreign born \u2014 Not\
+      \ allocated"
+    agg: sum
+    expr: '"B99051m7"'
+  - name: b99052e1_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total"
+    agg: sum
+    expr: '"B99052e1"'
+  - name: b99052m1_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total"
+    agg: sum
+    expr: '"B99052m1"'
+  - name: b99052e2_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total \u2014 Native"
+    agg: sum
+    expr: '"B99052e2"'
+  - name: b99052m2_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total \u2014 Native"
+    agg: sum
+    expr: '"B99052m2"'
+  - name: b99052e3_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total \u2014 Native \u2014 Allocated"
+    agg: sum
+    expr: '"B99052e3"'
+  - name: b99052m3_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total \u2014 Native\
+      \ \u2014 Allocated"
+    agg: sum
+    expr: '"B99052m3"'
+  - name: b99052e4_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total \u2014 Native \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052e4"'
+  - name: b99052m4_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total \u2014 Native\
+      \ \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052m4"'
+  - name: b99052e5_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total \u2014 Foreign born"
+    agg: sum
+    expr: '"B99052e5"'
+  - name: b99052m5_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total \u2014 Foreign\
+      \ born"
+    agg: sum
+    expr: '"B99052m5"'
+  - name: b99052e6_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total \u2014 Foreign born \u2014 Allocated"
+    agg: sum
+    expr: '"B99052e6"'
+  - name: b99052m6_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total \u2014 Foreign\
+      \ born \u2014 Allocated"
+    agg: sum
+    expr: '"B99052m6"'
+  - name: b99052e7_estimate_allocation_of_year_of_entry_population_born_ou
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY \u2014 Population born\
+      \ outside the United States \u2014 Total \u2014 Foreign born \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052e7"'
+  - name: b99052m7_marginoferror_allocation_of_year_of_entry_population_bo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ \u2014 Population born outside the United States \u2014 Total \u2014 Foreign\
+      \ born \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052m7"'
+  - name: b99052pre1_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total"
+    agg: sum
+    expr: '"B99052PRe1"'
+  - name: b99052prm1_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total"
+    agg: sum
+    expr: '"B99052PRm1"'
+  - name: b99052pre2_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total\
+      \ \u2014 Native"
+    agg: sum
+    expr: '"B99052PRe2"'
+  - name: b99052prm2_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total \u2014 Native"
+    agg: sum
+    expr: '"B99052PRm2"'
+  - name: b99052pre3_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total\
+      \ \u2014 Native \u2014 Allocated"
+    agg: sum
+    expr: '"B99052PRe3"'
+  - name: b99052prm3_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total \u2014 Native \u2014 Allocated"
+    agg: sum
+    expr: '"B99052PRm3"'
+  - name: b99052pre4_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total\
+      \ \u2014 Native \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052PRe4"'
+  - name: b99052prm4_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total \u2014 Native \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052PRm4"'
+  - name: b99052pre5_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total\
+      \ \u2014 Foreign born"
+    agg: sum
+    expr: '"B99052PRe5"'
+  - name: b99052prm5_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total \u2014 Foreign born"
+    agg: sum
+    expr: '"B99052PRm5"'
+  - name: b99052pre6_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total\
+      \ \u2014 Foreign born \u2014 Allocated"
+    agg: sum
+    expr: '"B99052PRe6"'
+  - name: b99052prm6_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total \u2014 Foreign born \u2014 Allocated"
+    agg: sum
+    expr: '"B99052PRm6"'
+  - name: b99052pre7_estimate_allocation_of_year_of_entry_for_population_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF ENTRY FOR POPULATION BORN\
+      \ OUTSIDE PUERTO RICO \u2014 Population born outside Puerto Rico \u2014 Total\
+      \ \u2014 Foreign born \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052PRe7"'
+  - name: b99052prm7_marginoferror_allocation_of_year_of_entry_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF ENTRY\
+      \ FOR POPULATION BORN OUTSIDE PUERTO RICO \u2014 Population born outside Puerto\
+      \ Rico \u2014 Total \u2014 Foreign born \u2014 Not allocated"
+    agg: sum
+    expr: '"B99052PRm7"'
+  - name: b99053e1_estimate_allocation_of_year_of_naturalization_foreign_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF NATURALIZATION \u2014 Foreign-born\
+      \ naturalized citizens \u2014 Total"
+    agg: sum
+    expr: '"B99053e1"'
+  - name: b99053m1_marginoferror_allocation_of_year_of_naturalization_fore
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF NATURALIZATION\
+      \ \u2014 Foreign-born naturalized citizens \u2014 Total"
+    agg: sum
+    expr: '"B99053m1"'
+  - name: b99053e2_estimate_allocation_of_year_of_naturalization_foreign_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF NATURALIZATION \u2014 Foreign-born\
+      \ naturalized citizens \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99053e2"'
+  - name: b99053m2_marginoferror_allocation_of_year_of_naturalization_fore
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF NATURALIZATION\
+      \ \u2014 Foreign-born naturalized citizens \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99053m2"'
+  - name: b99053e3_estimate_allocation_of_year_of_naturalization_foreign_b
+    description: "Estimate \u2014 ALLOCATION OF YEAR OF NATURALIZATION \u2014 Foreign-born\
+      \ naturalized citizens \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99053e3"'
+  - name: b99053m3_marginoferror_allocation_of_year_of_naturalization_fore
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR OF NATURALIZATION\
+      \ \u2014 Foreign-born naturalized citizens \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99053m3"'
+  - name: b99061e1_estimate_allocation_of_place_of_birth_total_population
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF BIRTH \u2014 Total population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99061e1"'
+  - name: b99061m1_marginoferror_allocation_of_place_of_birth_total_popula
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF BIRTH\
+      \ \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"B99061m1"'
+  - name: b99061e2_estimate_allocation_of_place_of_birth_total_population
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF BIRTH \u2014 Total population\
+      \ \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99061e2"'
+  - name: b99061m2_marginoferror_allocation_of_place_of_birth_total_popula
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF BIRTH\
+      \ \u2014 Total population \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99061m2"'
+  - name: b99061e3_estimate_allocation_of_place_of_birth_total_population
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF BIRTH \u2014 Total population\
+      \ \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99061e3"'
+  - name: b99061m3_marginoferror_allocation_of_place_of_birth_total_popula
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF BIRTH\
+      \ \u2014 Total population \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99061m3"'
+  - name: b99071e1_estimate_allocation_of_mobility_status_for_the_populati
+    description: "Estimate \u2014 ALLOCATION OF MOBILITY STATUS FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total"
+    agg: sum
+    expr: '"B99071e1"'
+  - name: b99071m1_marginoferror_allocation_of_mobility_status_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MOBILITY STATUS\
+      \ FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99071m1"'
+  - name: b99071e2_estimate_allocation_of_mobility_status_for_the_populati
+    description: "Estimate \u2014 ALLOCATION OF MOBILITY STATUS FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99071e2"'
+  - name: b99071m2_marginoferror_allocation_of_mobility_status_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MOBILITY STATUS\
+      \ FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99071m2"'
+  - name: b99071e3_estimate_allocation_of_mobility_status_for_the_populati
+    description: "Estimate \u2014 ALLOCATION OF MOBILITY STATUS FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Not\
+      \ allocated"
+    agg: sum
+    expr: '"B99071e3"'
+  - name: b99071m3_marginoferror_allocation_of_mobility_status_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MOBILITY STATUS\
+      \ FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99071m3"'
+  - name: b99072e1_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total"
+    agg: sum
+    expr: '"B99072e1"'
+  - name: b99072m1_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99072m1"'
+  - name: b99072e2_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Different\
+      \ house"
+    agg: sum
+    expr: '"B99072e2"'
+  - name: b99072m2_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total \u2014 Different house"
+    agg: sum
+    expr: '"B99072m2"'
+  - name: b99072e3_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Different\
+      \ house \u2014 Allocated"
+    agg: sum
+    expr: '"B99072e3"'
+  - name: b99072m3_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total \u2014 Different house \u2014 Allocated"
+    agg: sum
+    expr: '"B99072m3"'
+  - name: b99072e4_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Different\
+      \ house \u2014 Allocated \u2014 One or more but not all geographic parts allocated"
+    agg: sum
+    expr: '"B99072e4"'
+  - name: b99072m4_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total \u2014 Different house \u2014 Allocated \u2014 One or more but\
+      \ not all geographic parts allo"
+    agg: sum
+    expr: '"B99072m4"'
+  - name: b99072e5_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Different\
+      \ house \u2014 Allocated \u2014 All geographic parts allocated"
+    agg: sum
+    expr: '"B99072e5"'
+  - name: b99072m5_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total \u2014 Different house \u2014 Allocated \u2014 All geographic\
+      \ parts allocated"
+    agg: sum
+    expr: '"B99072m5"'
+  - name: b99072e6_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Different\
+      \ house \u2014 Not allocated"
+    agg: sum
+    expr: '"B99072e6"'
+  - name: b99072m6_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total \u2014 Different house \u2014 Not allocated"
+    agg: sum
+    expr: '"B99072m6"'
+  - name: b99072e7_estimate_allocation_of_residence_1_year_ago_for_the_pop
+    description: "Estimate \u2014 ALLOCATION OF RESIDENCE 1 YEAR AGO FOR THE POPULATION\
+      \ 1 YEAR AND OVER \u2014 Population 1 year and over \u2014 Total \u2014 Same\
+      \ house"
+    agg: sum
+    expr: '"B99072e7"'
+  - name: b99072m7_marginoferror_allocation_of_residence_1_year_ago_for_th
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RESIDENCE 1\
+      \ YEAR AGO FOR THE POPULATION 1 YEAR AND OVER \u2014 Population 1 year and over\
+      \ \u2014 Total \u2014 Same house"
+    agg: sum
+    expr: '"B99072m7"'
+  - name: b99080e1_estimate_allocation_of_means_of_transportation_to_work
+    description: "Estimate \u2014 ALLOCATION OF MEANS OF TRANSPORTATION TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99080e1"'
+  - name: b99080m1_marginoferror_allocation_of_means_of_transportation_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MEANS OF TRANSPORTATION\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99080m1"'
+  - name: b99080e2_estimate_allocation_of_means_of_transportation_to_work
+    description: "Estimate \u2014 ALLOCATION OF MEANS OF TRANSPORTATION TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99080e2"'
+  - name: b99080m2_marginoferror_allocation_of_means_of_transportation_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MEANS OF TRANSPORTATION\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99080m2"'
+  - name: b99080e3_estimate_allocation_of_means_of_transportation_to_work
+    description: "Estimate \u2014 ALLOCATION OF MEANS OF TRANSPORTATION TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99080e3"'
+  - name: b99080m3_marginoferror_allocation_of_means_of_transportation_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MEANS OF TRANSPORTATION\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99080m3"'
+  - name: b99081e1_estimate_allocation_of_place_of_work_workers_16_years_a
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF WORK \u2014 Workers 16 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99081e1"'
+  - name: b99081m1_marginoferror_allocation_of_place_of_work_workers_16_ye
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF WORK\
+      \ \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99081m1"'
+  - name: b99081e2_estimate_allocation_of_place_of_work_workers_16_years_a
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF WORK \u2014 Workers 16 years\
+      \ and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99081e2"'
+  - name: b99081m2_marginoferror_allocation_of_place_of_work_workers_16_ye
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF WORK\
+      \ \u2014 Workers 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99081m2"'
+  - name: b99081e3_estimate_allocation_of_place_of_work_workers_16_years_a
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF WORK \u2014 Workers 16 years\
+      \ and over \u2014 Total \u2014 Allocated \u2014 One or more but not all geographic\
+      \ parts allocated"
+    agg: sum
+    expr: '"B99081e3"'
+  - name: b99081m3_marginoferror_allocation_of_place_of_work_workers_16_ye
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF WORK\
+      \ \u2014 Workers 16 years and over \u2014 Total \u2014 Allocated \u2014 One\
+      \ or more but not all geographic parts allocated"
+    agg: sum
+    expr: '"B99081m3"'
+  - name: b99081e4_estimate_allocation_of_place_of_work_workers_16_years_a
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF WORK \u2014 Workers 16 years\
+      \ and over \u2014 Total \u2014 Allocated \u2014 All geographic parts allocated"
+    agg: sum
+    expr: '"B99081e4"'
+  - name: b99081m4_marginoferror_allocation_of_place_of_work_workers_16_ye
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF WORK\
+      \ \u2014 Workers 16 years and over \u2014 Total \u2014 Allocated \u2014 All\
+      \ geographic parts allocated"
+    agg: sum
+    expr: '"B99081m4"'
+  - name: b99081e5_estimate_allocation_of_place_of_work_workers_16_years_a
+    description: "Estimate \u2014 ALLOCATION OF PLACE OF WORK \u2014 Workers 16 years\
+      \ and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99081e5"'
+  - name: b99081m5_marginoferror_allocation_of_place_of_work_workers_16_ye
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLACE OF WORK\
+      \ \u2014 Workers 16 years and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99081m5"'
+  - name: b99082e1_estimate_allocation_of_private_vehicle_occupancy_worker
+    description: "Estimate \u2014 ALLOCATION OF PRIVATE VEHICLE OCCUPANCY \u2014 Workers\
+      \ 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99082e1"'
+  - name: b99082m1_marginoferror_allocation_of_private_vehicle_occupancy_w
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRIVATE VEHICLE\
+      \ OCCUPANCY \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99082m1"'
+  - name: b99082e2_estimate_allocation_of_private_vehicle_occupancy_worker
+    description: "Estimate \u2014 ALLOCATION OF PRIVATE VEHICLE OCCUPANCY \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Car truck or van"
+    agg: sum
+    expr: '"B99082e2"'
+  - name: b99082m2_marginoferror_allocation_of_private_vehicle_occupancy_w
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRIVATE VEHICLE\
+      \ OCCUPANCY \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or\
+      \ van"
+    agg: sum
+    expr: '"B99082m2"'
+  - name: b99082e3_estimate_allocation_of_private_vehicle_occupancy_worker
+    description: "Estimate \u2014 ALLOCATION OF PRIVATE VEHICLE OCCUPANCY \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Car truck or van \u2014 Allocated"
+    agg: sum
+    expr: '"B99082e3"'
+  - name: b99082m3_marginoferror_allocation_of_private_vehicle_occupancy_w
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRIVATE VEHICLE\
+      \ OCCUPANCY \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or\
+      \ van \u2014 Allocated"
+    agg: sum
+    expr: '"B99082m3"'
+  - name: b99082e4_estimate_allocation_of_private_vehicle_occupancy_worker
+    description: "Estimate \u2014 ALLOCATION OF PRIVATE VEHICLE OCCUPANCY \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Car truck or van \u2014 Not allocated"
+    agg: sum
+    expr: '"B99082e4"'
+  - name: b99082m4_marginoferror_allocation_of_private_vehicle_occupancy_w
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRIVATE VEHICLE\
+      \ OCCUPANCY \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or\
+      \ van \u2014 Not allocated"
+    agg: sum
+    expr: '"B99082m4"'
+  - name: b99082e5_estimate_allocation_of_private_vehicle_occupancy_worker
+    description: "Estimate \u2014 ALLOCATION OF PRIVATE VEHICLE OCCUPANCY \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Other means (including those who worked\
+      \ from home)"
+    agg: sum
+    expr: '"B99082e5"'
+  - name: b99082m5_marginoferror_allocation_of_private_vehicle_occupancy_w
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRIVATE VEHICLE\
+      \ OCCUPANCY \u2014 Workers 16 years and over \u2014 Total \u2014 Other means\
+      \ (including those who worked from home)"
+    agg: sum
+    expr: '"B99082m5"'
+  - name: b99083e1_estimate_allocation_of_time_of_departure_to_go_to_work
+    description: "Estimate \u2014 ALLOCATION OF TIME OF DEPARTURE TO GO TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99083e1"'
+  - name: b99083m1_marginoferror_allocation_of_time_of_departure_to_go_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TIME OF DEPARTURE\
+      \ TO GO TO WORK \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99083m1"'
+  - name: b99083e2_estimate_allocation_of_time_of_departure_to_go_to_work
+    description: "Estimate \u2014 ALLOCATION OF TIME OF DEPARTURE TO GO TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Did not work from home"
+    agg: sum
+    expr: '"B99083e2"'
+  - name: b99083m2_marginoferror_allocation_of_time_of_departure_to_go_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TIME OF DEPARTURE\
+      \ TO GO TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Did not\
+      \ work from home"
+    agg: sum
+    expr: '"B99083m2"'
+  - name: b99083e3_estimate_allocation_of_time_of_departure_to_go_to_work
+    description: "Estimate \u2014 ALLOCATION OF TIME OF DEPARTURE TO GO TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Did not work from home \u2014\
+      \ Time of departure to go to work \u2014 Allocated"
+    agg: sum
+    expr: '"B99083e3"'
+  - name: b99083m3_marginoferror_allocation_of_time_of_departure_to_go_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TIME OF DEPARTURE\
+      \ TO GO TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Did not\
+      \ work from home \u2014 Time of departure to go to work \u2014 Allocated"
+    agg: sum
+    expr: '"B99083m3"'
+  - name: b99083e4_estimate_allocation_of_time_of_departure_to_go_to_work
+    description: "Estimate \u2014 ALLOCATION OF TIME OF DEPARTURE TO GO TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Did not work from home \u2014\
+      \ Time of departure to go to work \u2014 Not allocated"
+    agg: sum
+    expr: '"B99083e4"'
+  - name: b99083m4_marginoferror_allocation_of_time_of_departure_to_go_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TIME OF DEPARTURE\
+      \ TO GO TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Did not\
+      \ work from home \u2014 Time of departure to go to work \u2014 Not allocated"
+    agg: sum
+    expr: '"B99083m4"'
+  - name: b99083e5_estimate_allocation_of_time_of_departure_to_go_to_work
+    description: "Estimate \u2014 ALLOCATION OF TIME OF DEPARTURE TO GO TO WORK \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Worked from home"
+    agg: sum
+    expr: '"B99083e5"'
+  - name: b99083m5_marginoferror_allocation_of_time_of_departure_to_go_to
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TIME OF DEPARTURE\
+      \ TO GO TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Worked\
+      \ from home"
+    agg: sum
+    expr: '"B99083m5"'
+  - name: b99084e1_estimate_allocation_of_travel_time_to_work_workers_16_y
+    description: "Estimate \u2014 ALLOCATION OF TRAVEL TIME TO WORK \u2014 Workers\
+      \ 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99084e1"'
+  - name: b99084m1_marginoferror_allocation_of_travel_time_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TRAVEL TIME\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99084m1"'
+  - name: b99084e2_estimate_allocation_of_travel_time_to_work_workers_16_y
+    description: "Estimate \u2014 ALLOCATION OF TRAVEL TIME TO WORK \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Did not work from home"
+    agg: sum
+    expr: '"B99084e2"'
+  - name: b99084m2_marginoferror_allocation_of_travel_time_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TRAVEL TIME\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Did not work\
+      \ from home"
+    agg: sum
+    expr: '"B99084m2"'
+  - name: b99084e3_estimate_allocation_of_travel_time_to_work_workers_16_y
+    description: "Estimate \u2014 ALLOCATION OF TRAVEL TIME TO WORK \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Did not work from home \u2014 Travel\
+      \ time to work \u2014 Allocated"
+    agg: sum
+    expr: '"B99084e3"'
+  - name: b99084m3_marginoferror_allocation_of_travel_time_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TRAVEL TIME\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Did not work\
+      \ from home \u2014 Travel time to work \u2014 Allocated"
+    agg: sum
+    expr: '"B99084m3"'
+  - name: b99084e4_estimate_allocation_of_travel_time_to_work_workers_16_y
+    description: "Estimate \u2014 ALLOCATION OF TRAVEL TIME TO WORK \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Did not work from home \u2014 Travel\
+      \ time to work \u2014 Not allocated"
+    agg: sum
+    expr: '"B99084e4"'
+  - name: b99084m4_marginoferror_allocation_of_travel_time_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TRAVEL TIME\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Did not work\
+      \ from home \u2014 Travel time to work \u2014 Not allocated"
+    agg: sum
+    expr: '"B99084m4"'
+  - name: b99084e5_estimate_allocation_of_travel_time_to_work_workers_16_y
+    description: "Estimate \u2014 ALLOCATION OF TRAVEL TIME TO WORK \u2014 Workers\
+      \ 16 years and over \u2014 Total \u2014 Worked from home"
+    agg: sum
+    expr: '"B99084e5"'
+  - name: b99084m5_marginoferror_allocation_of_travel_time_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TRAVEL TIME\
+      \ TO WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Worked from home"
+    agg: sum
+    expr: '"B99084m5"'
+  - name: b99092e1_estimate_allocation_of_relationship_population_in_house
+    description: "Estimate \u2014 ALLOCATION OF RELATIONSHIP \u2014 Population in\
+      \ households \u2014 Total"
+    agg: sum
+    expr: '"B99092e1"'
+  - name: b99092m1_marginoferror_allocation_of_relationship_population_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RELATIONSHIP\
+      \ \u2014 Population in households \u2014 Total"
+    agg: sum
+    expr: '"B99092m1"'
+  - name: b99092e2_estimate_allocation_of_relationship_population_in_house
+    description: "Estimate \u2014 ALLOCATION OF RELATIONSHIP \u2014 Population in\
+      \ households \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99092e2"'
+  - name: b99092m2_marginoferror_allocation_of_relationship_population_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RELATIONSHIP\
+      \ \u2014 Population in households \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99092m2"'
+  - name: b99092e3_estimate_allocation_of_relationship_population_in_house
+    description: "Estimate \u2014 ALLOCATION OF RELATIONSHIP \u2014 Population in\
+      \ households \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99092e3"'
+  - name: b99092m3_marginoferror_allocation_of_relationship_population_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RELATIONSHIP\
+      \ \u2014 Population in households \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99092m3"'
+  - name: b99102e1_estimate_allocation_of_grandparents_living_with_grandch
+    description: "Estimate \u2014 ALLOCATION OF GRANDPARENTS LIVING WITH GRANDCHILDREN\
+      \ UNDER 18 YEARS \u2014 Population 30 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99102e1"'
+  - name: b99102m1_marginoferror_allocation_of_grandparents_living_with_gr
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRANDPARENTS\
+      \ LIVING WITH GRANDCHILDREN UNDER 18 YEARS \u2014 Population 30 years and over\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99102m1"'
+  - name: b99102e2_estimate_allocation_of_grandparents_living_with_grandch
+    description: "Estimate \u2014 ALLOCATION OF GRANDPARENTS LIVING WITH GRANDCHILDREN\
+      \ UNDER 18 YEARS \u2014 Population 30 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99102e2"'
+  - name: b99102m2_marginoferror_allocation_of_grandparents_living_with_gr
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRANDPARENTS\
+      \ LIVING WITH GRANDCHILDREN UNDER 18 YEARS \u2014 Population 30 years and over\
+      \ \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99102m2"'
+  - name: b99102e3_estimate_allocation_of_grandparents_living_with_grandch
+    description: "Estimate \u2014 ALLOCATION OF GRANDPARENTS LIVING WITH GRANDCHILDREN\
+      \ UNDER 18 YEARS \u2014 Population 30 years and over \u2014 Total \u2014 Not\
+      \ allocated"
+    agg: sum
+    expr: '"B99102e3"'
+  - name: b99102m3_marginoferror_allocation_of_grandparents_living_with_gr
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRANDPARENTS\
+      \ LIVING WITH GRANDCHILDREN UNDER 18 YEARS \u2014 Population 30 years and over\
+      \ \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99102m3"'
+  - name: b99103e1_estimate_allocation_of_grandparents_responsible_for_gra
+    description: "Estimate \u2014 ALLOCATION OF GRANDPARENTS RESPONSIBLE FOR GRANDCHILDREN\
+      \ UNDER 18 YEARS \u2014 Grandparents living with own grandchildren under 18\
+      \ years \u2014 Total"
+    agg: sum
+    expr: '"B99103e1"'
+  - name: b99103m1_marginoferror_allocation_of_grandparents_responsible_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRANDPARENTS\
+      \ RESPONSIBLE FOR GRANDCHILDREN UNDER 18 YEARS \u2014 Grandparents living with\
+      \ own grandchildren under 18 years \u2014 Total"
+    agg: sum
+    expr: '"B99103m1"'
+  - name: b99103e2_estimate_allocation_of_grandparents_responsible_for_gra
+    description: "Estimate \u2014 ALLOCATION OF GRANDPARENTS RESPONSIBLE FOR GRANDCHILDREN\
+      \ UNDER 18 YEARS \u2014 Grandparents living with own grandchildren under 18\
+      \ years \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99103e2"'
+  - name: b99103m2_marginoferror_allocation_of_grandparents_responsible_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRANDPARENTS\
+      \ RESPONSIBLE FOR GRANDCHILDREN UNDER 18 YEARS \u2014 Grandparents living with\
+      \ own grandchildren under 18 years \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99103m2"'
+  - name: b99103e3_estimate_allocation_of_grandparents_responsible_for_gra
+    description: "Estimate \u2014 ALLOCATION OF GRANDPARENTS RESPONSIBLE FOR GRANDCHILDREN\
+      \ UNDER 18 YEARS \u2014 Grandparents living with own grandchildren under 18\
+      \ years \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99103e3"'
+  - name: b99103m3_marginoferror_allocation_of_grandparents_responsible_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRANDPARENTS\
+      \ RESPONSIBLE FOR GRANDCHILDREN UNDER 18 YEARS \u2014 Grandparents living with\
+      \ own grandchildren under 18 years \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99103m3"'
+  - name: b99104e1_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99104e1"'
+  - name: b99104m1_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99104m1"'
+  - name: b99104e2_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total \u2014 Living with own grand"
+    agg: sum
+    expr: '"B99104e2"'
+  - name: b99104m2_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total \u2014\
+      \ Living with own "
+    agg: sum
+    expr: '"B99104m2"'
+  - name: b99104e3_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total \u2014 Living with own grand"
+    agg: sum
+    expr: '"B99104e3"'
+  - name: b99104m3_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total \u2014\
+      \ Living with own "
+    agg: sum
+    expr: '"B99104m3"'
+  - name: b99104e4_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total \u2014 Living with own grand"
+    agg: sum
+    expr: '"B99104e4"'
+  - name: b99104m4_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total \u2014\
+      \ Living with own "
+    agg: sum
+    expr: '"B99104m4"'
+  - name: b99104e5_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total \u2014 Living with own grand"
+    agg: sum
+    expr: '"B99104e5"'
+  - name: b99104m5_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total \u2014\
+      \ Living with own "
+    agg: sum
+    expr: '"B99104m5"'
+  - name: b99104e6_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total \u2014 Living with own grand"
+    agg: sum
+    expr: '"B99104e6"'
+  - name: b99104m6_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total \u2014\
+      \ Living with own "
+    agg: sum
+    expr: '"B99104m6"'
+  - name: b99104e7_estimate_allocation_of_length_of_time_grandparent_respo
+    description: "Estimate \u2014 ALLOCATION OF LENGTH OF TIME GRANDPARENT RESPONSIBLE\
+      \ FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION 30 YEARS AND OVER\
+      \ \u2014 Population 30 years and over \u2014 Total \u2014 Not living with own\
+      \ g"
+    agg: sum
+    expr: '"B99104e7"'
+  - name: b99104m7_marginoferror_allocation_of_length_of_time_grandparent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LENGTH OF TIME\
+      \ GRANDPARENT RESPONSIBLE FOR OWN GRANDCHILDREN UNDER 18 YEARS FOR THE POPULATION\
+      \ 30 YEARS AND OVER \u2014 Population 30 years and over \u2014 Total \u2014\
+      \ Not living with "
+    agg: sum
+    expr: '"B99104m7"'
+  - name: b99121e1_estimate_allocation_of_marital_status_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF MARITAL STATUS FOR THE POPULATION\
+      \ 15 YEARS AND OVER \u2014 Population 15 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99121e1"'
+  - name: b99121m1_marginoferror_allocation_of_marital_status_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MARITAL STATUS\
+      \ FOR THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99121m1"'
+  - name: b99121e2_estimate_allocation_of_marital_status_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF MARITAL STATUS FOR THE POPULATION\
+      \ 15 YEARS AND OVER \u2014 Population 15 years and over \u2014 Total \u2014\
+      \ Allocated"
+    agg: sum
+    expr: '"B99121e2"'
+  - name: b99121m2_marginoferror_allocation_of_marital_status_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MARITAL STATUS\
+      \ FOR THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99121m2"'
+  - name: b99121e3_estimate_allocation_of_marital_status_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF MARITAL STATUS FOR THE POPULATION\
+      \ 15 YEARS AND OVER \u2014 Population 15 years and over \u2014 Total \u2014\
+      \ Not allocated"
+    agg: sum
+    expr: '"B99121e3"'
+  - name: b99121m3_marginoferror_allocation_of_marital_status_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MARITAL STATUS\
+      \ FOR THE POPULATION 15 YEARS AND OVER \u2014 Population 15 years and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99121m3"'
+  - name: b99141e1_estimate_allocation_of_school_enrollment_for_the_popula
+    description: "Estimate \u2014 ALLOCATION OF SCHOOL ENROLLMENT FOR THE POPULATION\
+      \ 3 YEARS AND OVER \u2014 Population 3 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99141e1"'
+  - name: b99141m1_marginoferror_allocation_of_school_enrollment_for_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF SCHOOL ENROLLMENT\
+      \ FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99141m1"'
+  - name: b99141e2_estimate_allocation_of_school_enrollment_for_the_popula
+    description: "Estimate \u2014 ALLOCATION OF SCHOOL ENROLLMENT FOR THE POPULATION\
+      \ 3 YEARS AND OVER \u2014 Population 3 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99141e2"'
+  - name: b99141m2_marginoferror_allocation_of_school_enrollment_for_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF SCHOOL ENROLLMENT\
+      \ FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99141m2"'
+  - name: b99141e3_estimate_allocation_of_school_enrollment_for_the_popula
+    description: "Estimate \u2014 ALLOCATION OF SCHOOL ENROLLMENT FOR THE POPULATION\
+      \ 3 YEARS AND OVER \u2014 Population 3 years and over \u2014 Total \u2014 Not\
+      \ allocated"
+    agg: sum
+    expr: '"B99141e3"'
+  - name: b99141m3_marginoferror_allocation_of_school_enrollment_for_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF SCHOOL ENROLLMENT\
+      \ FOR THE POPULATION 3 YEARS AND OVER \u2014 Population 3 years and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99141m3"'
+  - name: b99142e1_estimate_allocation_of_grade_enrolled_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF GRADE ENROLLED FOR THE POPULATION\
+      \ 3 YEARS AND OVER ENROLLED IN SCHOOL \u2014 Population 3 years and over enrolled\
+      \ in school \u2014 Total"
+    agg: sum
+    expr: '"B99142e1"'
+  - name: b99142m1_marginoferror_allocation_of_grade_enrolled_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRADE ENROLLED\
+      \ FOR THE POPULATION 3 YEARS AND OVER ENROLLED IN SCHOOL \u2014 Population 3\
+      \ years and over enrolled in school \u2014 Total"
+    agg: sum
+    expr: '"B99142m1"'
+  - name: b99142e2_estimate_allocation_of_grade_enrolled_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF GRADE ENROLLED FOR THE POPULATION\
+      \ 3 YEARS AND OVER ENROLLED IN SCHOOL \u2014 Population 3 years and over enrolled\
+      \ in school \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99142e2"'
+  - name: b99142m2_marginoferror_allocation_of_grade_enrolled_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRADE ENROLLED\
+      \ FOR THE POPULATION 3 YEARS AND OVER ENROLLED IN SCHOOL \u2014 Population 3\
+      \ years and over enrolled in school \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99142m2"'
+  - name: b99142e3_estimate_allocation_of_grade_enrolled_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF GRADE ENROLLED FOR THE POPULATION\
+      \ 3 YEARS AND OVER ENROLLED IN SCHOOL \u2014 Population 3 years and over enrolled\
+      \ in school \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99142e3"'
+  - name: b99142m3_marginoferror_allocation_of_grade_enrolled_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GRADE ENROLLED\
+      \ FOR THE POPULATION 3 YEARS AND OVER ENROLLED IN SCHOOL \u2014 Population 3\
+      \ years and over enrolled in school \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99142m3"'
+  - name: b99151e1_estimate_allocation_of_educational_attainment_for_the_p
+    description: "Estimate \u2014 ALLOCATION OF EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99151e1"'
+  - name: b99151m1_marginoferror_allocation_of_educational_attainment_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EDUCATIONAL\
+      \ ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99151m1"'
+  - name: b99151e2_estimate_allocation_of_educational_attainment_for_the_p
+    description: "Estimate \u2014 ALLOCATION OF EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Allocated"
+    agg: sum
+    expr: '"B99151e2"'
+  - name: b99151m2_marginoferror_allocation_of_educational_attainment_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EDUCATIONAL\
+      \ ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years\
+      \ and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99151m2"'
+  - name: b99151e3_estimate_allocation_of_educational_attainment_for_the_p
+    description: "Estimate \u2014 ALLOCATION OF EDUCATIONAL ATTAINMENT FOR THE POPULATION\
+      \ 25 YEARS AND OVER \u2014 Population 25 years and over \u2014 Total \u2014\
+      \ Not allocated"
+    agg: sum
+    expr: '"B99151e3"'
+  - name: b99151m3_marginoferror_allocation_of_educational_attainment_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EDUCATIONAL\
+      \ ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER \u2014 Population 25 years\
+      \ and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99151m3"'
+  - name: b99152e1_estimate_allocation_of_field_of_degree_for_population_2
+    description: "Estimate \u2014 ALLOCATION OF FIELD OF DEGREE FOR POPULATION 25\
+      \ YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"B99152e1"'
+  - name: b99152m1_marginoferror_allocation_of_field_of_degree_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FIELD OF DEGREE\
+      \ FOR POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH\
+      \ A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total"
+    agg: sum
+    expr: '"B99152m1"'
+  - name: b99152e2_estimate_allocation_of_field_of_degree_for_population_2
+    description: "Estimate \u2014 ALLOCATION OF FIELD OF DEGREE FOR POPULATION 25\
+      \ YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIGHER ATTAINMENT \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99152e2"'
+  - name: b99152m2_marginoferror_allocation_of_field_of_degree_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FIELD OF DEGREE\
+      \ FOR POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH\
+      \ A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99152m2"'
+  - name: b99152e3_estimate_allocation_of_field_of_degree_for_population_2
+    description: "Estimate \u2014 ALLOCATION OF FIELD OF DEGREE FOR POPULATION 25\
+      \ YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH A BACHELOR'S DEGREE\
+      \ OR HIGHER ATTAINMENT \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99152e3"'
+  - name: b99152m3_marginoferror_allocation_of_field_of_degree_for_populat
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FIELD OF DEGREE\
+      \ FOR POPULATION 25 YEARS AND OVER \u2014 POPULATION 25 YEARS AND OVER WITH\
+      \ A BACHELOR'S DEGREE OR HIGHER ATTAINMENT \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99152m3"'
+  - name: b99161e1_estimate_allocation_of_language_status_for_the_populati
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE STATUS FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99161e1"'
+  - name: b99161m1_marginoferror_allocation_of_language_status_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE STATUS\
+      \ FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99161m1"'
+  - name: b99161e2_estimate_allocation_of_language_status_for_the_populati
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE STATUS FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99161e2"'
+  - name: b99161m2_marginoferror_allocation_of_language_status_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE STATUS\
+      \ FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99161m2"'
+  - name: b99161e3_estimate_allocation_of_language_status_for_the_populati
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE STATUS FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Not\
+      \ allocated"
+    agg: sum
+    expr: '"B99161e3"'
+  - name: b99161m3_marginoferror_allocation_of_language_status_for_the_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE STATUS\
+      \ FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99161m3"'
+  - name: b99162e1_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99162e1"'
+  - name: b99162m1_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total"
+    agg: sum
+    expr: '"B99162m1"'
+  - name: b99162e2_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ only English"
+    agg: sum
+    expr: '"B99162e2"'
+  - name: b99162m2_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 Speak only English"
+    agg: sum
+    expr: '"B99162m2"'
+  - name: b99162e3_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages"
+    agg: sum
+    expr: '"B99162e3"'
+  - name: b99162m3_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 Speak other languages"
+    agg: sum
+    expr: '"B99162m3"'
+  - name: b99162e4_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages \u2014 Specific languages spoken \u2014 Allocated"
+    agg: sum
+    expr: '"B99162e4"'
+  - name: b99162m4_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 Speak other languages \u2014 Specific languages spoken\
+      \ \u2014 Allocated"
+    agg: sum
+    expr: '"B99162m4"'
+  - name: b99162e5_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages \u2014 Specific languages spoken \u2014 Allocated \u2014 Language\
+      \ st"
+    agg: sum
+    expr: '"B99162e5"'
+  - name: b99162m5_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 Speak other languages \u2014 Specific languages spoken\
+      \ \u2014 Allocated \u2014 Langua"
+    agg: sum
+    expr: '"B99162m5"'
+  - name: b99162e6_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages \u2014 Specific languages spoken \u2014 Allocated \u2014 Language\
+      \ st"
+    agg: sum
+    expr: '"B99162e6"'
+  - name: b99162m6_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 Speak other languages \u2014 Specific languages spoken\
+      \ \u2014 Allocated \u2014 Langua"
+    agg: sum
+    expr: '"B99162m6"'
+  - name: b99162e7_estimate_allocation_of_language_spoken_at_home_for_the
+    description: "Estimate \u2014 ALLOCATION OF LANGUAGE SPOKEN AT HOME FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages \u2014 Specific languages spoken \u2014 Not allocated"
+    agg: sum
+    expr: '"B99162e7"'
+  - name: b99162m7_marginoferror_allocation_of_language_spoken_at_home_for
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF LANGUAGE SPOKEN\
+      \ AT HOME FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years and\
+      \ over \u2014 Total \u2014 Speak other languages \u2014 Specific languages spoken\
+      \ \u2014 Not allocated"
+    agg: sum
+    expr: '"B99162m7"'
+  - name: b99163e1_estimate_allocation_of_ability_to_speak_english_for_the
+    description: "Estimate \u2014 ALLOCATION OF ABILITY TO SPEAK ENGLISH FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99163e1"'
+  - name: b99163m1_marginoferror_allocation_of_ability_to_speak_english_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ABILITY TO\
+      \ SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99163m1"'
+  - name: b99163e2_estimate_allocation_of_ability_to_speak_english_for_the
+    description: "Estimate \u2014 ALLOCATION OF ABILITY TO SPEAK ENGLISH FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ only English"
+    agg: sum
+    expr: '"B99163e2"'
+  - name: b99163m2_marginoferror_allocation_of_ability_to_speak_english_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ABILITY TO\
+      \ SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years\
+      \ and over \u2014 Total \u2014 Speak only English"
+    agg: sum
+    expr: '"B99163m2"'
+  - name: b99163e3_estimate_allocation_of_ability_to_speak_english_for_the
+    description: "Estimate \u2014 ALLOCATION OF ABILITY TO SPEAK ENGLISH FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages"
+    agg: sum
+    expr: '"B99163e3"'
+  - name: b99163m3_marginoferror_allocation_of_ability_to_speak_english_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ABILITY TO\
+      \ SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years\
+      \ and over \u2014 Total \u2014 Speak other languages"
+    agg: sum
+    expr: '"B99163m3"'
+  - name: b99163e4_estimate_allocation_of_ability_to_speak_english_for_the
+    description: "Estimate \u2014 ALLOCATION OF ABILITY TO SPEAK ENGLISH FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages \u2014 Ability to speak English \u2014 Allocated"
+    agg: sum
+    expr: '"B99163e4"'
+  - name: b99163m4_marginoferror_allocation_of_ability_to_speak_english_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ABILITY TO\
+      \ SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years\
+      \ and over \u2014 Total \u2014 Speak other languages \u2014 Ability to speak\
+      \ English \u2014 Allocated"
+    agg: sum
+    expr: '"B99163m4"'
+  - name: b99163e5_estimate_allocation_of_ability_to_speak_english_for_the
+    description: "Estimate \u2014 ALLOCATION OF ABILITY TO SPEAK ENGLISH FOR THE POPULATION\
+      \ 5 YEARS AND OVER \u2014 Population 5 years and over \u2014 Total \u2014 Speak\
+      \ other languages \u2014 Ability to speak English \u2014 Not allocated"
+    agg: sum
+    expr: '"B99163e5"'
+  - name: b99163m5_marginoferror_allocation_of_ability_to_speak_english_fo
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ABILITY TO\
+      \ SPEAK ENGLISH FOR THE POPULATION 5 YEARS AND OVER \u2014 Population 5 years\
+      \ and over \u2014 Total \u2014 Speak other languages \u2014 Ability to speak\
+      \ English \u2014 Not allocated"
+    agg: sum
+    expr: '"B99163m5"'
+  - name: b99171e1_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Total"
+    agg: sum
+    expr: '"B99171e1"'
+  - name: b99171m1_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Total"
+    agg: sum
+    expr: '"B99171m1"'
+  - name: b99171e2_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e2"'
+  - name: b99171m2_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m2"'
+  - name: b99171e3_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e3"'
+  - name: b99171m3_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m3"'
+  - name: b99171e4_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e4"'
+  - name: b99171m4_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m4"'
+  - name: b99171e5_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e5"'
+  - name: b99171m5_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m5"'
+  - name: b99171e6_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e6"'
+  - name: b99171m6_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m6"'
+  - name: b99171e7_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e7"'
+  - name: b99171m7_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m7"'
+  - name: b99171e8_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e8"'
+  - name: b99171m8_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m8"'
+  - name: b99171e9_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e9"'
+  - name: b99171m9_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m9"'
+  - name: b99171e10_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e10"'
+  - name: b99171m10_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m10"'
+  - name: b99171e11_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e11"'
+  - name: b99171m11_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m11"'
+  - name: b99171e12_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e12"'
+  - name: b99171m12_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m12"'
+  - name: b99171e13_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e13"'
+  - name: b99171m13_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m13"'
+  - name: b99171e14_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e14"'
+  - name: b99171m14_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m14"'
+  - name: b99171e15_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals 15 years and over for\
+      \ whom poverty status is determined \u2014 Percent of income allocated fo"
+    agg: sum
+    expr: '"B99171e15"'
+  - name: b99171m15_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR UNRELATED INDIVIDUALS \u2014 Unrelated individuals\
+      \ 15 years and over for whom poverty status is determined \u2014 Percent of\
+      \ income allocat"
+    agg: sum
+    expr: '"B99171m15"'
+  - name: b99172e1_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B99172e1"'
+  - name: b99172m1_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B99172m1"'
+  - name: b99172e2_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 No incom"
+    agg: sum
+    expr: '"B99172e2"'
+  - name: b99172m2_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 No "
+    agg: sum
+    expr: '"B99172m2"'
+  - name: b99172e3_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 Dollar\
+      \ v"
+    agg: sum
+    expr: '"B99172e3"'
+  - name: b99172m3_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 Dol"
+    agg: sum
+    expr: '"B99172m3"'
+  - name: b99172e4_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 More\
+      \ tha"
+    agg: sum
+    expr: '"B99172e4"'
+  - name: b99172m4_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 Mor"
+    agg: sum
+    expr: '"B99172m4"'
+  - name: b99172e5_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 10 to\
+      \ le"
+    agg: sum
+    expr: '"B99172e5"'
+  - name: b99172m5_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 10 "
+    agg: sum
+    expr: '"B99172m5"'
+  - name: b99172e6_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 25 to\
+      \ le"
+    agg: sum
+    expr: '"B99172e6"'
+  - name: b99172m6_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 25 "
+    agg: sum
+    expr: '"B99172m6"'
+  - name: b99172e7_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 50 to\
+      \ le"
+    agg: sum
+    expr: '"B99172e7"'
+  - name: b99172m7_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 50 "
+    agg: sum
+    expr: '"B99172m7"'
+  - name: b99172e8_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months below poverty level \u2014 100\
+      \ perc"
+    agg: sum
+    expr: '"B99172e8"'
+  - name: b99172m8_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months below poverty\
+      \ level \u2014 100"
+    agg: sum
+    expr: '"B99172m8"'
+  - name: b99172e9_estimate_allocation_of_poverty_status_in_the_past_12_mo
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ No"
+    agg: sum
+    expr: '"B99172e9"'
+  - name: b99172m9_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m9"'
+  - name: b99172e10_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ Do"
+    agg: sum
+    expr: '"B99172e10"'
+  - name: b99172m10_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m10"'
+  - name: b99172e11_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ Mo"
+    agg: sum
+    expr: '"B99172e11"'
+  - name: b99172m11_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m11"'
+  - name: b99172e12_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ 10"
+    agg: sum
+    expr: '"B99172e12"'
+  - name: b99172m12_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m12"'
+  - name: b99172e13_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ 25"
+    agg: sum
+    expr: '"B99172e13"'
+  - name: b99172m13_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m13"'
+  - name: b99172e14_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ 50"
+    agg: sum
+    expr: '"B99172e14"'
+  - name: b99172m14_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m14"'
+  - name: b99172e15_estimate_allocation_of_poverty_status_in_the_past_12_m
+    description: "Estimate \u2014 ALLOCATION OF POVERTY STATUS IN THE PAST 12 MONTHS\
+      \ FOR FAMILIES \u2014 Families \u2014 Percent of family income allocated for\
+      \ families with income in the past 12 months at or above poverty level \u2014\
+      \ 10"
+    agg: sum
+    expr: '"B99172e15"'
+  - name: b99172m15_marginoferror_allocation_of_poverty_status_in_the_past
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF POVERTY STATUS\
+      \ IN THE PAST 12 MONTHS FOR FAMILIES \u2014 Families \u2014 Percent of family\
+      \ income allocated for families with income in the past 12 months at or above\
+      \ poverty level"
+    agg: sum
+    expr: '"B99172m15"'
+  - name: b99191e1_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99191e1"'
+  - name: b99191m1_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99191m1"'
+  - name: b99191e2_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ No "
+    agg: sum
+    expr: '"B99191e2"'
+  - name: b99191m2_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m2"'
+  - name: b99191e3_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ Dol"
+    agg: sum
+    expr: '"B99191e3"'
+  - name: b99191m3_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m3"'
+  - name: b99191e4_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ Mor"
+    agg: sum
+    expr: '"B99191e4"'
+  - name: b99191m4_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m4"'
+  - name: b99191e5_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ 10 "
+    agg: sum
+    expr: '"B99191e5"'
+  - name: b99191m5_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m5"'
+  - name: b99191e6_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ 25 "
+    agg: sum
+    expr: '"B99191e6"'
+  - name: b99191m6_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m6"'
+  - name: b99191e7_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ 50 "
+    agg: sum
+    expr: '"B99191e7"'
+  - name: b99191m7_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m7"'
+  - name: b99191e8_estimate_allocation_of_individuals_income_in_the_past_1
+    description: "Estimate \u2014 ALLOCATION OF INDIVIDUALS' INCOME IN THE PAST 12\
+      \ MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT OF INCOME ALLOCATED\
+      \ \u2014 Population 15 years and over \u2014 Percent of income allocated \u2014\
+      \ 100"
+    agg: sum
+    expr: '"B99191e8"'
+  - name: b99191m8_marginoferror_allocation_of_individuals_income_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDIVIDUALS'\
+      \ INCOME IN THE PAST 12 MONTHS FOR THE POPULATION 15 YEARS AND OVER - PERCENT\
+      \ OF INCOME ALLOCATED \u2014 Population 15 years and over \u2014 Percent of\
+      \ income allocated "
+    agg: sum
+    expr: '"B99191m8"'
+  - name: b99192e1_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B99192e1"'
+  - name: b99192m1_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99192m1"'
+  - name: b99192e2_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 No income allocated"
+    agg: sum
+    expr: '"B99192e2"'
+  - name: b99192m2_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 No income allocated"
+    agg: sum
+    expr: '"B99192m2"'
+  - name: b99192e3_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 Dollar value of zero allocated"
+    agg: sum
+    expr: '"B99192e3"'
+  - name: b99192m3_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 Dollar value of zero allocated"
+    agg: sum
+    expr: '"B99192m3"'
+  - name: b99192e4_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 More than 0 to less than 10 percent of total income for house"
+    agg: sum
+    expr: '"B99192e4"'
+  - name: b99192m4_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 More than 0 to less than 10 percent of\
+      \ total income for "
+    agg: sum
+    expr: '"B99192m4"'
+  - name: b99192e5_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 10 to less than 25 percent of total income for household allo"
+    agg: sum
+    expr: '"B99192e5"'
+  - name: b99192m5_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 10 to less than 25 percent of total income\
+      \ for household"
+    agg: sum
+    expr: '"B99192m5"'
+  - name: b99192e6_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 25 to less than 50 percent of total income for household allo"
+    agg: sum
+    expr: '"B99192e6"'
+  - name: b99192m6_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 25 to less than 50 percent of total income\
+      \ for household"
+    agg: sum
+    expr: '"B99192m6"'
+  - name: b99192e7_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 50 to less than 100 percent of total income for household all"
+    agg: sum
+    expr: '"B99192e7"'
+  - name: b99192m7_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 50 to less than 100 percent of total income\
+      \ for househol"
+    agg: sum
+    expr: '"B99192m7"'
+  - name: b99192e8_estimate_allocation_of_household_income_in_the_past_12
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014 Percent of income allocated\
+      \ \u2014 100 percent of total income for household allocated"
+    agg: sum
+    expr: '"B99192e8"'
+  - name: b99192m8_marginoferror_allocation_of_household_income_in_the_pas
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS - PERCENT OF INCOME ALLOCATED \u2014 Households \u2014\
+      \ Percent of income allocated \u2014 100 percent of total income for household\
+      \ allocated"
+    agg: sum
+    expr: '"B99192m8"'
+  - name: b99193e1_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B99193e1"'
+  - name: b99193m1_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99193m1"'
+  - name: b99193e2_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 No income allocated"
+    agg: sum
+    expr: '"B99193e2"'
+  - name: b99193m2_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 No income allocated"
+    agg: sum
+    expr: '"B99193m2"'
+  - name: b99193e3_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 Dollar value of zero allocated"
+    agg: sum
+    expr: '"B99193e3"'
+  - name: b99193m3_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 Dollar value of zero allocated"
+    agg: sum
+    expr: '"B99193m3"'
+  - name: b99193e4_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 More than 0 to less than 10 percent of total income for family al"
+    agg: sum
+    expr: '"B99193e4"'
+  - name: b99193m4_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 More than 0 to less than 10 percent of\
+      \ total income for fami"
+    agg: sum
+    expr: '"B99193m4"'
+  - name: b99193e5_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 10 to less than 25 percent of total income for family allocated"
+    agg: sum
+    expr: '"B99193e5"'
+  - name: b99193m5_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 10 to less than 25 percent of total income\
+      \ for family alloca"
+    agg: sum
+    expr: '"B99193m5"'
+  - name: b99193e6_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 25 to less than 50 percent of total income for family allocated"
+    agg: sum
+    expr: '"B99193e6"'
+  - name: b99193m6_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 25 to less than 50 percent of total income\
+      \ for family alloca"
+    agg: sum
+    expr: '"B99193m6"'
+  - name: b99193e7_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 50 to less than 100 percent of total income for family allocated"
+    agg: sum
+    expr: '"B99193e7"'
+  - name: b99193m7_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 50 to less than 100 percent of total income\
+      \ for family alloc"
+    agg: sum
+    expr: '"B99193m7"'
+  - name: b99193e8_estimate_allocation_of_family_income_in_the_past_12_mon
+    description: "Estimate \u2014 ALLOCATION OF FAMILY INCOME IN THE PAST 12 MONTHS\
+      \ -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014 Percent of income allocated\
+      \ \u2014 100 percent of total income for family allocated"
+    agg: sum
+    expr: '"B99193e8"'
+  - name: b99193m8_marginoferror_allocation_of_family_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF FAMILY INCOME\
+      \ IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Families \u2014\
+      \ Percent of income allocated \u2014 100 percent of total income for family\
+      \ allocated"
+    agg: sum
+    expr: '"B99193m8"'
+  - name: b99194e1_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99194e1"'
+  - name: b99194m1_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Total"
+    agg: sum
+    expr: '"B99194m1"'
+  - name: b99194e2_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 No income allocated"
+    agg: sum
+    expr: '"B99194e2"'
+  - name: b99194m2_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 No income allocated"
+    agg: sum
+    expr: '"B99194m2"'
+  - name: b99194e3_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 Dollar value of zero allocated"
+    agg: sum
+    expr: '"B99194e3"'
+  - name: b99194m3_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 Dollar value of zero\
+      \ allocated"
+    agg: sum
+    expr: '"B99194m3"'
+  - name: b99194e4_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 More than 0 to less than 10 percent\
+      \ of t"
+    agg: sum
+    expr: '"B99194e4"'
+  - name: b99194m4_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 More than 0 to less than\
+      \ 10 percent"
+    agg: sum
+    expr: '"B99194m4"'
+  - name: b99194e5_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 10 to less than 25 percent of total\
+      \ inco"
+    agg: sum
+    expr: '"B99194e5"'
+  - name: b99194m5_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 10 to less than 25 percent\
+      \ of total"
+    agg: sum
+    expr: '"B99194m5"'
+  - name: b99194e6_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 25 to less than 50 percent of total\
+      \ inco"
+    agg: sum
+    expr: '"B99194e6"'
+  - name: b99194m6_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 25 to less than 50 percent\
+      \ of total"
+    agg: sum
+    expr: '"B99194m6"'
+  - name: b99194e7_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 50 to less than 100 percent of total\
+      \ inc"
+    agg: sum
+    expr: '"B99194e7"'
+  - name: b99194m7_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 50 to less than 100 percent\
+      \ of tota"
+    agg: sum
+    expr: '"B99194m7"'
+  - name: b99194e8_estimate_allocation_of_nonfamily_household_income_in_th
+    description: "Estimate \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD INCOME IN THE\
+      \ PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily households\
+      \ \u2014 Percent of income allocated \u2014 100 percent of total income for\
+      \ househol"
+    agg: sum
+    expr: '"B99194e8"'
+  - name: b99194m8_marginoferror_allocation_of_nonfamily_household_income
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF NONFAMILY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS -- PERCENT OF INCOME ALLOCATED \u2014 Nonfamily\
+      \ households \u2014 Percent of income allocated \u2014 100 percent of total\
+      \ income for hou"
+    agg: sum
+    expr: '"B99194m8"'
+  - name: b99201e1_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99201e1"'
+  - name: b99201m1_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99201m1"'
+  - name: b99201e2_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 No earning"
+    agg: sum
+    expr: '"B99201e2"'
+  - name: b99201m2_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 No ea"
+    agg: sum
+    expr: '"B99201m2"'
+  - name: b99201e3_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 Dollar val"
+    agg: sum
+    expr: '"B99201e3"'
+  - name: b99201m3_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 Dolla"
+    agg: sum
+    expr: '"B99201m3"'
+  - name: b99201e4_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 More than "
+    agg: sum
+    expr: '"B99201e4"'
+  - name: b99201m4_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 More "
+    agg: sum
+    expr: '"B99201m4"'
+  - name: b99201e5_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 10 to less"
+    agg: sum
+    expr: '"B99201e5"'
+  - name: b99201m5_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 10 to"
+    agg: sum
+    expr: '"B99201m5"'
+  - name: b99201e6_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 25 to less"
+    agg: sum
+    expr: '"B99201e6"'
+  - name: b99201m6_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 25 to"
+    agg: sum
+    expr: '"B99201m6"'
+  - name: b99201e7_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 50 to less"
+    agg: sum
+    expr: '"B99201e7"'
+  - name: b99201m7_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 50 to"
+    agg: sum
+    expr: '"B99201m7"'
+  - name: b99201e8_estimate_allocation_of_earnings_in_the_past_12_months_f
+    description: "Estimate \u2014 ALLOCATION OF EARNINGS IN THE PAST 12 MONTHS FOR\
+      \ THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS ALLOCATED \u2014 Population\
+      \ 16 years and over \u2014 Percent of earnings allocated \u2014 100 percen"
+    agg: sum
+    expr: '"B99201e8"'
+  - name: b99201m8_marginoferror_allocation_of_earnings_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EARNINGS IN\
+      \ THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER - PERCENT OF EARNINGS\
+      \ ALLOCATED \u2014 Population 16 years and over \u2014 Percent of earnings allocated\
+      \ \u2014 100 p"
+    agg: sum
+    expr: '"B99201m8"'
+  - name: b99211e1_estimate_allocation_of_veteran_status_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF VETERAN STATUS FOR THE POPULATION\
+      \ 18 YEARS AND OVER \u2014 Population 18 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99211e1"'
+  - name: b99211m1_marginoferror_allocation_of_veteran_status_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VETERAN STATUS\
+      \ FOR THE POPULATION 18 YEARS AND OVER \u2014 Population 18 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99211m1"'
+  - name: b99211e2_estimate_allocation_of_veteran_status_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF VETERAN STATUS FOR THE POPULATION\
+      \ 18 YEARS AND OVER \u2014 Population 18 years and over \u2014 Total \u2014\
+      \ Allocated"
+    agg: sum
+    expr: '"B99211e2"'
+  - name: b99211m2_marginoferror_allocation_of_veteran_status_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VETERAN STATUS\
+      \ FOR THE POPULATION 18 YEARS AND OVER \u2014 Population 18 years and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99211m2"'
+  - name: b99211e3_estimate_allocation_of_veteran_status_for_the_populatio
+    description: "Estimate \u2014 ALLOCATION OF VETERAN STATUS FOR THE POPULATION\
+      \ 18 YEARS AND OVER \u2014 Population 18 years and over \u2014 Total \u2014\
+      \ Not allocated"
+    agg: sum
+    expr: '"B99211e3"'
+  - name: b99211m3_marginoferror_allocation_of_veteran_status_for_the_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VETERAN STATUS\
+      \ FOR THE POPULATION 18 YEARS AND OVER \u2014 Population 18 years and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99211m3"'
+  - name: b99212e1_estimate_allocation_of_period_of_military_service_for_c
+    description: "Estimate \u2014 ALLOCATION OF PERIOD OF MILITARY SERVICE FOR CIVILIAN\
+      \ VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99212e1"'
+  - name: b99212m1_marginoferror_allocation_of_period_of_military_service
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PERIOD OF MILITARY\
+      \ SERVICE FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18\
+      \ years and over \u2014 Total"
+    agg: sum
+    expr: '"B99212m1"'
+  - name: b99212e2_estimate_allocation_of_period_of_military_service_for_c
+    description: "Estimate \u2014 ALLOCATION OF PERIOD OF MILITARY SERVICE FOR CIVILIAN\
+      \ VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99212e2"'
+  - name: b99212m2_marginoferror_allocation_of_period_of_military_service
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PERIOD OF MILITARY\
+      \ SERVICE FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18\
+      \ years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99212m2"'
+  - name: b99212e3_estimate_allocation_of_period_of_military_service_for_c
+    description: "Estimate \u2014 ALLOCATION OF PERIOD OF MILITARY SERVICE FOR CIVILIAN\
+      \ VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18 years and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99212e3"'
+  - name: b99212m3_marginoferror_allocation_of_period_of_military_service
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PERIOD OF MILITARY\
+      \ SERVICE FOR CIVILIAN VETERANS 18 YEARS AND OVER \u2014 Civilian veterans 18\
+      \ years and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99212m3"'
+  - name: b99231e1_estimate_allocation_of_employment_status_for_the_popula
+    description: "Estimate \u2014 ALLOCATION OF EMPLOYMENT STATUS FOR THE POPULATION\
+      \ 16 YEARS AND OVER \u2014 Population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99231e1"'
+  - name: b99231m1_marginoferror_allocation_of_employment_status_for_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EMPLOYMENT\
+      \ STATUS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and\
+      \ over \u2014 Total"
+    agg: sum
+    expr: '"B99231m1"'
+  - name: b99231e2_estimate_allocation_of_employment_status_for_the_popula
+    description: "Estimate \u2014 ALLOCATION OF EMPLOYMENT STATUS FOR THE POPULATION\
+      \ 16 YEARS AND OVER \u2014 Population 16 years and over \u2014 Total \u2014\
+      \ Allocated"
+    agg: sum
+    expr: '"B99231e2"'
+  - name: b99231m2_marginoferror_allocation_of_employment_status_for_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EMPLOYMENT\
+      \ STATUS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and\
+      \ over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99231m2"'
+  - name: b99231e3_estimate_allocation_of_employment_status_for_the_popula
+    description: "Estimate \u2014 ALLOCATION OF EMPLOYMENT STATUS FOR THE POPULATION\
+      \ 16 YEARS AND OVER \u2014 Population 16 years and over \u2014 Total \u2014\
+      \ Not allocated"
+    agg: sum
+    expr: '"B99231e3"'
+  - name: b99231m3_marginoferror_allocation_of_employment_status_for_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF EMPLOYMENT\
+      \ STATUS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and\
+      \ over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99231m3"'
+  - name: b99232e1_estimate_allocation_of_work_status_in_the_past_12_month
+    description: "Estimate \u2014 ALLOCATION OF WORK STATUS IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99232e1"'
+  - name: b99232m1_marginoferror_allocation_of_work_status_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WORK STATUS\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99232m1"'
+  - name: b99232e2_estimate_allocation_of_work_status_in_the_past_12_month
+    description: "Estimate \u2014 ALLOCATION OF WORK STATUS IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99232e2"'
+  - name: b99232m2_marginoferror_allocation_of_work_status_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WORK STATUS\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99232m2"'
+  - name: b99232e3_estimate_allocation_of_work_status_in_the_past_12_month
+    description: "Estimate \u2014 ALLOCATION OF WORK STATUS IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99232e3"'
+  - name: b99232m3_marginoferror_allocation_of_work_status_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WORK STATUS\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99232m3"'
+  - name: b99233e1_estimate_allocation_of_usual_hours_worked_per_week_in_t
+    description: "Estimate \u2014 ALLOCATION OF USUAL HOURS WORKED PER WEEK IN THE\
+      \ PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99233e1"'
+  - name: b99233m1_marginoferror_allocation_of_usual_hours_worked_per_week
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF USUAL HOURS\
+      \ WORKED PER WEEK IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER\
+      \ \u2014 Population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99233m1"'
+  - name: b99233e2_estimate_allocation_of_usual_hours_worked_per_week_in_t
+    description: "Estimate \u2014 ALLOCATION OF USUAL HOURS WORKED PER WEEK IN THE\
+      \ PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years\
+      \ and over \u2014 Total \u2014 Worked in the past 12 months"
+    agg: sum
+    expr: '"B99233e2"'
+  - name: b99233m2_marginoferror_allocation_of_usual_hours_worked_per_week
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF USUAL HOURS\
+      \ WORKED PER WEEK IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER\
+      \ \u2014 Population 16 years and over \u2014 Total \u2014 Worked in the past\
+      \ 12 months"
+    agg: sum
+    expr: '"B99233m2"'
+  - name: b99233e3_estimate_allocation_of_usual_hours_worked_per_week_in_t
+    description: "Estimate \u2014 ALLOCATION OF USUAL HOURS WORKED PER WEEK IN THE\
+      \ PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years\
+      \ and over \u2014 Total \u2014 Worked in the past 12 months \u2014 Usual hours\
+      \ work"
+    agg: sum
+    expr: '"B99233e3"'
+  - name: b99233m3_marginoferror_allocation_of_usual_hours_worked_per_week
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF USUAL HOURS\
+      \ WORKED PER WEEK IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER\
+      \ \u2014 Population 16 years and over \u2014 Total \u2014 Worked in the past\
+      \ 12 months \u2014 Usual hours"
+    agg: sum
+    expr: '"B99233m3"'
+  - name: b99233e4_estimate_allocation_of_usual_hours_worked_per_week_in_t
+    description: "Estimate \u2014 ALLOCATION OF USUAL HOURS WORKED PER WEEK IN THE\
+      \ PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years\
+      \ and over \u2014 Total \u2014 Worked in the past 12 months \u2014 Usual hours\
+      \ work"
+    agg: sum
+    expr: '"B99233e4"'
+  - name: b99233m4_marginoferror_allocation_of_usual_hours_worked_per_week
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF USUAL HOURS\
+      \ WORKED PER WEEK IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER\
+      \ \u2014 Population 16 years and over \u2014 Total \u2014 Worked in the past\
+      \ 12 months \u2014 Usual hours"
+    agg: sum
+    expr: '"B99233m4"'
+  - name: b99233e5_estimate_allocation_of_usual_hours_worked_per_week_in_t
+    description: "Estimate \u2014 ALLOCATION OF USUAL HOURS WORKED PER WEEK IN THE\
+      \ PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years\
+      \ and over \u2014 Total \u2014 Did not work in the past 12 months"
+    agg: sum
+    expr: '"B99233e5"'
+  - name: b99233m5_marginoferror_allocation_of_usual_hours_worked_per_week
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF USUAL HOURS\
+      \ WORKED PER WEEK IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER\
+      \ \u2014 Population 16 years and over \u2014 Total \u2014 Did not work in the\
+      \ past 12 months"
+    agg: sum
+    expr: '"B99233m5"'
+  - name: b99234e1_estimate_allocation_of_weeks_worked_in_the_past_12_mont
+    description: "Estimate \u2014 ALLOCATION OF WEEKS WORKED IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99234e1"'
+  - name: b99234m1_marginoferror_allocation_of_weeks_worked_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WEEKS WORKED\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99234m1"'
+  - name: b99234e2_estimate_allocation_of_weeks_worked_in_the_past_12_mont
+    description: "Estimate \u2014 ALLOCATION OF WEEKS WORKED IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total \u2014 Worked in the past 12 months"
+    agg: sum
+    expr: '"B99234e2"'
+  - name: b99234m2_marginoferror_allocation_of_weeks_worked_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WEEKS WORKED\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total \u2014 Worked in the past 12 months"
+    agg: sum
+    expr: '"B99234m2"'
+  - name: b99234e3_estimate_allocation_of_weeks_worked_in_the_past_12_mont
+    description: "Estimate \u2014 ALLOCATION OF WEEKS WORKED IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total \u2014 Worked in the past 12 months \u2014 Weeks worked in the past\
+      \ 12 mon"
+    agg: sum
+    expr: '"B99234e3"'
+  - name: b99234m3_marginoferror_allocation_of_weeks_worked_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WEEKS WORKED\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total \u2014 Worked in the past 12 months \u2014\
+      \ Weeks worked in the past 1"
+    agg: sum
+    expr: '"B99234m3"'
+  - name: b99234e4_estimate_allocation_of_weeks_worked_in_the_past_12_mont
+    description: "Estimate \u2014 ALLOCATION OF WEEKS WORKED IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total \u2014 Worked in the past 12 months \u2014 Weeks worked in the past\
+      \ 12 mon"
+    agg: sum
+    expr: '"B99234e4"'
+  - name: b99234m4_marginoferror_allocation_of_weeks_worked_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WEEKS WORKED\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total \u2014 Worked in the past 12 months \u2014\
+      \ Weeks worked in the past 1"
+    agg: sum
+    expr: '"B99234m4"'
+  - name: b99234e5_estimate_allocation_of_weeks_worked_in_the_past_12_mont
+    description: "Estimate \u2014 ALLOCATION OF WEEKS WORKED IN THE PAST 12 MONTHS\
+      \ FOR THE POPULATION 16 YEARS AND OVER \u2014 Population 16 years and over \u2014\
+      \ Total \u2014 Did not work in the past 12 months"
+    agg: sum
+    expr: '"B99234e5"'
+  - name: b99234m5_marginoferror_allocation_of_weeks_worked_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF WEEKS WORKED\
+      \ IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER \u2014 Population\
+      \ 16 years and over \u2014 Total \u2014 Did not work in the past 12 months"
+    agg: sum
+    expr: '"B99234m5"'
+  - name: b99241e1_estimate_allocation_of_industry_for_the_civilian_employ
+    description: "Estimate \u2014 ALLOCATION OF INDUSTRY FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99241e1"'
+  - name: b99241m1_marginoferror_allocation_of_industry_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDUSTRY FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99241m1"'
+  - name: b99241e2_estimate_allocation_of_industry_for_the_civilian_employ
+    description: "Estimate \u2014 ALLOCATION OF INDUSTRY FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99241e2"'
+  - name: b99241m2_marginoferror_allocation_of_industry_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDUSTRY FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99241m2"'
+  - name: b99241e3_estimate_allocation_of_industry_for_the_civilian_employ
+    description: "Estimate \u2014 ALLOCATION OF INDUSTRY FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99241e3"'
+  - name: b99241m3_marginoferror_allocation_of_industry_for_the_civilian_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF INDUSTRY FOR\
+      \ THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99241m3"'
+  - name: b99242e1_estimate_allocation_of_occupation_for_the_civilian_empl
+    description: "Estimate \u2014 ALLOCATION OF OCCUPATION FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99242e1"'
+  - name: b99242m1_marginoferror_allocation_of_occupation_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF OCCUPATION\
+      \ FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99242m1"'
+  - name: b99242e2_estimate_allocation_of_occupation_for_the_civilian_empl
+    description: "Estimate \u2014 ALLOCATION OF OCCUPATION FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99242e2"'
+  - name: b99242m2_marginoferror_allocation_of_occupation_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF OCCUPATION\
+      \ FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99242m2"'
+  - name: b99242e3_estimate_allocation_of_occupation_for_the_civilian_empl
+    description: "Estimate \u2014 ALLOCATION OF OCCUPATION FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99242e3"'
+  - name: b99242m3_marginoferror_allocation_of_occupation_for_the_civilian
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF OCCUPATION\
+      \ FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99242m3"'
+  - name: b99243e1_estimate_allocation_of_class_of_worker_for_the_civilian
+    description: "Estimate \u2014 ALLOCATION OF CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total"
+    agg: sum
+    expr: '"B99243e1"'
+  - name: b99243m1_marginoferror_allocation_of_class_of_worker_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CLASS OF WORKER\
+      \ FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B99243m1"'
+  - name: b99243e2_estimate_allocation_of_class_of_worker_for_the_civilian
+    description: "Estimate \u2014 ALLOCATION OF CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99243e2"'
+  - name: b99243m2_marginoferror_allocation_of_class_of_worker_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CLASS OF WORKER\
+      \ FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99243m2"'
+  - name: b99243e3_estimate_allocation_of_class_of_worker_for_the_civilian
+    description: "Estimate \u2014 ALLOCATION OF CLASS OF WORKER FOR THE CIVILIAN EMPLOYED\
+      \ POPULATION 16 YEARS AND OVER \u2014 Civilian employed population 16 years\
+      \ and over \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99243e3"'
+  - name: b99243m3_marginoferror_allocation_of_class_of_worker_for_the_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CLASS OF WORKER\
+      \ FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER \u2014 Civilian employed\
+      \ population 16 years and over \u2014 Total \u2014 Not Allocated"
+    agg: sum
+    expr: '"B99243m3"'
+  - name: b992510e1_estimate_allocation_of_kitchen_facilities_housing_unit
+    description: "Estimate \u2014 ALLOCATION OF KITCHEN FACILITIES \u2014 Housing\
+      \ units \u2014 Total"
+    agg: sum
+    expr: '"B992510e1"'
+  - name: b992510m1_marginoferror_allocation_of_kitchen_facilities_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF KITCHEN FACILITIES\
+      \ \u2014 Housing units \u2014 Total"
+    agg: sum
+    expr: '"B992510m1"'
+  - name: b992510e2_estimate_allocation_of_kitchen_facilities_housing_unit
+    description: "Estimate \u2014 ALLOCATION OF KITCHEN FACILITIES \u2014 Housing\
+      \ units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992510e2"'
+  - name: b992510m2_marginoferror_allocation_of_kitchen_facilities_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF KITCHEN FACILITIES\
+      \ \u2014 Housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992510m2"'
+  - name: b992510e3_estimate_allocation_of_kitchen_facilities_housing_unit
+    description: "Estimate \u2014 ALLOCATION OF KITCHEN FACILITIES \u2014 Housing\
+      \ units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992510e3"'
+  - name: b992510m3_marginoferror_allocation_of_kitchen_facilities_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF KITCHEN FACILITIES\
+      \ \u2014 Housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992510m3"'
+  - name: b992511e1_estimate_allocation_of_house_heating_fuel_occupied_hou
+    description: "Estimate \u2014 ALLOCATION OF HOUSE HEATING FUEL \u2014 Occupied\
+      \ housing units \u2014 Total"
+    agg: sum
+    expr: '"B992511e1"'
+  - name: b992511m1_marginoferror_allocation_of_house_heating_fuel_occupie
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSE HEATING\
+      \ FUEL \u2014 Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992511m1"'
+  - name: b992511e2_estimate_allocation_of_house_heating_fuel_occupied_hou
+    description: "Estimate \u2014 ALLOCATION OF HOUSE HEATING FUEL \u2014 Occupied\
+      \ housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992511e2"'
+  - name: b992511m2_marginoferror_allocation_of_house_heating_fuel_occupie
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSE HEATING\
+      \ FUEL \u2014 Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992511m2"'
+  - name: b992511e3_estimate_allocation_of_house_heating_fuel_occupied_hou
+    description: "Estimate \u2014 ALLOCATION OF HOUSE HEATING FUEL \u2014 Occupied\
+      \ housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992511e3"'
+  - name: b992511m3_marginoferror_allocation_of_house_heating_fuel_occupie
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSE HEATING\
+      \ FUEL \u2014 Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992511m3"'
+  - name: b992512e1_estimate_allocation_of_vehicles_available_occupied_hou
+    description: "Estimate \u2014 ALLOCATION OF VEHICLES AVAILABLE \u2014 Occupied\
+      \ housing units \u2014 Total"
+    agg: sum
+    expr: '"B992512e1"'
+  - name: b992512m1_marginoferror_allocation_of_vehicles_available_occupie
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VEHICLES AVAILABLE\
+      \ \u2014 Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992512m1"'
+  - name: b992512e2_estimate_allocation_of_vehicles_available_occupied_hou
+    description: "Estimate \u2014 ALLOCATION OF VEHICLES AVAILABLE \u2014 Occupied\
+      \ housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992512e2"'
+  - name: b992512m2_marginoferror_allocation_of_vehicles_available_occupie
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VEHICLES AVAILABLE\
+      \ \u2014 Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992512m2"'
+  - name: b992512e3_estimate_allocation_of_vehicles_available_occupied_hou
+    description: "Estimate \u2014 ALLOCATION OF VEHICLES AVAILABLE \u2014 Occupied\
+      \ housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992512e3"'
+  - name: b992512m3_marginoferror_allocation_of_vehicles_available_occupie
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VEHICLES AVAILABLE\
+      \ \u2014 Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992512m3"'
+  - name: b992513e1_estimate_allocation_of_telephone_service_available_occ
+    description: "Estimate \u2014 ALLOCATION OF TELEPHONE SERVICE AVAILABLE \u2014\
+      \ Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992513e1"'
+  - name: b992513m1_marginoferror_allocation_of_telephone_service_availabl
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TELEPHONE SERVICE\
+      \ AVAILABLE \u2014 Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992513m1"'
+  - name: b992513e2_estimate_allocation_of_telephone_service_available_occ
+    description: "Estimate \u2014 ALLOCATION OF TELEPHONE SERVICE AVAILABLE \u2014\
+      \ Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992513e2"'
+  - name: b992513m2_marginoferror_allocation_of_telephone_service_availabl
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TELEPHONE SERVICE\
+      \ AVAILABLE \u2014 Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992513m2"'
+  - name: b992513e3_estimate_allocation_of_telephone_service_available_occ
+    description: "Estimate \u2014 ALLOCATION OF TELEPHONE SERVICE AVAILABLE \u2014\
+      \ Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992513e3"'
+  - name: b992513m3_marginoferror_allocation_of_telephone_service_availabl
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TELEPHONE SERVICE\
+      \ AVAILABLE \u2014 Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992513m3"'
+  - name: b992514e1_estimate_allocation_of_meals_included_in_rent_renter_o
+    description: "Estimate \u2014 ALLOCATION OF MEALS INCLUDED IN RENT \u2014 Renter-occupied\
+      \ housing units paying cash rent \u2014 Total"
+    agg: sum
+    expr: '"B992514e1"'
+  - name: b992514m1_marginoferror_allocation_of_meals_included_in_rent_ren
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MEALS INCLUDED\
+      \ IN RENT \u2014 Renter-occupied housing units paying cash rent \u2014 Total"
+    agg: sum
+    expr: '"B992514m1"'
+  - name: b992514e2_estimate_allocation_of_meals_included_in_rent_renter_o
+    description: "Estimate \u2014 ALLOCATION OF MEALS INCLUDED IN RENT \u2014 Renter-occupied\
+      \ housing units paying cash rent \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992514e2"'
+  - name: b992514m2_marginoferror_allocation_of_meals_included_in_rent_ren
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MEALS INCLUDED\
+      \ IN RENT \u2014 Renter-occupied housing units paying cash rent \u2014 Total\
+      \ \u2014 Allocated"
+    agg: sum
+    expr: '"B992514m2"'
+  - name: b992514e3_estimate_allocation_of_meals_included_in_rent_renter_o
+    description: "Estimate \u2014 ALLOCATION OF MEALS INCLUDED IN RENT \u2014 Renter-occupied\
+      \ housing units paying cash rent \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992514e3"'
+  - name: b992514m3_marginoferror_allocation_of_meals_included_in_rent_ren
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MEALS INCLUDED\
+      \ IN RENT \u2014 Renter-occupied housing units paying cash rent \u2014 Total\
+      \ \u2014 Not allocated"
+    agg: sum
+    expr: '"B992514m3"'
+  - name: b992515e1_estimate_allocation_of_contract_rent_renter_occupied_h
+    description: "Estimate \u2014 ALLOCATION OF CONTRACT RENT \u2014 Renter-occupied\
+      \ housing units \u2014 Total"
+    agg: sum
+    expr: '"B992515e1"'
+  - name: b992515m1_marginoferror_allocation_of_contract_rent_renter_occup
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CONTRACT RENT\
+      \ \u2014 Renter-occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992515m1"'
+  - name: b992515e2_estimate_allocation_of_contract_rent_renter_occupied_h
+    description: "Estimate \u2014 ALLOCATION OF CONTRACT RENT \u2014 Renter-occupied\
+      \ housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992515e2"'
+  - name: b992515m2_marginoferror_allocation_of_contract_rent_renter_occup
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CONTRACT RENT\
+      \ \u2014 Renter-occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992515m2"'
+  - name: b992515e3_estimate_allocation_of_contract_rent_renter_occupied_h
+    description: "Estimate \u2014 ALLOCATION OF CONTRACT RENT \u2014 Renter-occupied\
+      \ housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992515e3"'
+  - name: b992515m3_marginoferror_allocation_of_contract_rent_renter_occup
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF CONTRACT RENT\
+      \ \u2014 Renter-occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992515m3"'
+  - name: b992516e1_estimate_allocation_of_rent_asked_vacant_for_rent_and
+    description: "Estimate \u2014 ALLOCATION OF RENT ASKED \u2014 Vacant-for-rent\
+      \ and rented, not occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992516e1"'
+  - name: b992516m1_marginoferror_allocation_of_rent_asked_vacant_for_rent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RENT ASKED\
+      \ \u2014 Vacant-for-rent and rented, not occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992516m1"'
+  - name: b992516e2_estimate_allocation_of_rent_asked_vacant_for_rent_and
+    description: "Estimate \u2014 ALLOCATION OF RENT ASKED \u2014 Vacant-for-rent\
+      \ and rented, not occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992516e2"'
+  - name: b992516m2_marginoferror_allocation_of_rent_asked_vacant_for_rent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RENT ASKED\
+      \ \u2014 Vacant-for-rent and rented, not occupied housing units \u2014 Total\
+      \ \u2014 Allocated"
+    agg: sum
+    expr: '"B992516m2"'
+  - name: b992516e3_estimate_allocation_of_rent_asked_vacant_for_rent_and
+    description: "Estimate \u2014 ALLOCATION OF RENT ASKED \u2014 Vacant-for-rent\
+      \ and rented, not occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992516e3"'
+  - name: b992516m3_marginoferror_allocation_of_rent_asked_vacant_for_rent
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF RENT ASKED\
+      \ \u2014 Vacant-for-rent and rented, not occupied housing units \u2014 Total\
+      \ \u2014 Not allocated"
+    agg: sum
+    expr: '"B992516m3"'
+  - name: b992518e1_estimate_allocation_of_gross_rent_renter_occupied_hous
+    description: "Estimate \u2014 ALLOCATION OF GROSS RENT \u2014 Renter-occupied\
+      \ housing units \u2014 Total"
+    agg: sum
+    expr: '"B992518e1"'
+  - name: b992518m1_marginoferror_allocation_of_gross_rent_renter_occupied
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GROSS RENT\
+      \ \u2014 Renter-occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992518m1"'
+  - name: b992518e2_estimate_allocation_of_gross_rent_renter_occupied_hous
+    description: "Estimate \u2014 ALLOCATION OF GROSS RENT \u2014 Renter-occupied\
+      \ housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992518e2"'
+  - name: b992518m2_marginoferror_allocation_of_gross_rent_renter_occupied
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GROSS RENT\
+      \ \u2014 Renter-occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992518m2"'
+  - name: b992518e3_estimate_allocation_of_gross_rent_renter_occupied_hous
+    description: "Estimate \u2014 ALLOCATION OF GROSS RENT \u2014 Renter-occupied\
+      \ housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992518e3"'
+  - name: b992518m3_marginoferror_allocation_of_gross_rent_renter_occupied
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF GROSS RENT\
+      \ \u2014 Renter-occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992518m3"'
+  - name: b992519e1_estimate_allocation_of_value_owner_occupied_housing_un
+    description: "Estimate \u2014 ALLOCATION OF VALUE \u2014 Owner-occupied housing\
+      \ units \u2014 Total"
+    agg: sum
+    expr: '"B992519e1"'
+  - name: b992519m1_marginoferror_allocation_of_value_owner_occupied_housi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VALUE \u2014\
+      \ Owner-occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992519m1"'
+  - name: b992519e2_estimate_allocation_of_value_owner_occupied_housing_un
+    description: "Estimate \u2014 ALLOCATION OF VALUE \u2014 Owner-occupied housing\
+      \ units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992519e2"'
+  - name: b992519m2_marginoferror_allocation_of_value_owner_occupied_housi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VALUE \u2014\
+      \ Owner-occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992519m2"'
+  - name: b992519e3_estimate_allocation_of_value_owner_occupied_housing_un
+    description: "Estimate \u2014 ALLOCATION OF VALUE \u2014 Owner-occupied housing\
+      \ units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992519e3"'
+  - name: b992519m3_marginoferror_allocation_of_value_owner_occupied_housi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VALUE \u2014\
+      \ Owner-occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992519m3"'
+  - name: b99252e1_estimate_allocation_of_tenure_occupied_housing_units_to
+    description: "Estimate \u2014 ALLOCATION OF TENURE \u2014 Occupied housing units\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99252e1"'
+  - name: b99252m1_marginoferror_allocation_of_tenure_occupied_housing_uni
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TENURE \u2014\
+      \ Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B99252m1"'
+  - name: b99252e2_estimate_allocation_of_tenure_occupied_housing_units_to
+    description: "Estimate \u2014 ALLOCATION OF TENURE \u2014 Occupied housing units\
+      \ \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99252e2"'
+  - name: b99252m2_marginoferror_allocation_of_tenure_occupied_housing_uni
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TENURE \u2014\
+      \ Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99252m2"'
+  - name: b99252e3_estimate_allocation_of_tenure_occupied_housing_units_to
+    description: "Estimate \u2014 ALLOCATION OF TENURE \u2014 Occupied housing units\
+      \ \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99252e3"'
+  - name: b99252m3_marginoferror_allocation_of_tenure_occupied_housing_uni
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF TENURE \u2014\
+      \ Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99252m3"'
+  - name: b992520e1_estimate_allocation_of_price_asked_vacant_for_sale_onl
+    description: "Estimate \u2014 ALLOCATION OF PRICE ASKED \u2014 Vacant-for-sale-only\
+      \ and sold, not occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992520e1"'
+  - name: b992520m1_marginoferror_allocation_of_price_asked_vacant_for_sal
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRICE ASKED\
+      \ \u2014 Vacant-for-sale-only and sold, not occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992520m1"'
+  - name: b992520e2_estimate_allocation_of_price_asked_vacant_for_sale_onl
+    description: "Estimate \u2014 ALLOCATION OF PRICE ASKED \u2014 Vacant-for-sale-only\
+      \ and sold, not occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992520e2"'
+  - name: b992520m2_marginoferror_allocation_of_price_asked_vacant_for_sal
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRICE ASKED\
+      \ \u2014 Vacant-for-sale-only and sold, not occupied housing units \u2014 Total\
+      \ \u2014 Allocated"
+    agg: sum
+    expr: '"B992520m2"'
+  - name: b992520e3_estimate_allocation_of_price_asked_vacant_for_sale_onl
+    description: "Estimate \u2014 ALLOCATION OF PRICE ASKED \u2014 Vacant-for-sale-only\
+      \ and sold, not occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992520e3"'
+  - name: b992520m3_marginoferror_allocation_of_price_asked_vacant_for_sal
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PRICE ASKED\
+      \ \u2014 Vacant-for-sale-only and sold, not occupied housing units \u2014 Total\
+      \ \u2014 Not allocated"
+    agg: sum
+    expr: '"B992520m3"'
+  - name: b992521e1_estimate_allocation_of_mortgage_status_owner_occupied
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS \u2014 Owner-occupied\
+      \ housing units \u2014 Total"
+    agg: sum
+    expr: '"B992521e1"'
+  - name: b992521m1_marginoferror_allocation_of_mortgage_status_owner_occu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ \u2014 Owner-occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992521m1"'
+  - name: b992521e2_estimate_allocation_of_mortgage_status_owner_occupied
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS \u2014 Owner-occupied\
+      \ housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992521e2"'
+  - name: b992521m2_marginoferror_allocation_of_mortgage_status_owner_occu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ \u2014 Owner-occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B992521m2"'
+  - name: b992521e3_estimate_allocation_of_mortgage_status_owner_occupied
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS \u2014 Owner-occupied\
+      \ housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992521e3"'
+  - name: b992521m3_marginoferror_allocation_of_mortgage_status_owner_occu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ \u2014 Owner-occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B992521m3"'
+  - name: b992522e1_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B992522e1"'
+  - name: b992522m1_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B992522m1"'
+  - name: b992522e2_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total \u2014 Housing\
+      \ units with a mortgage"
+    agg: sum
+    expr: '"B992522e2"'
+  - name: b992522m2_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total \u2014 Housing units with a mortgage"
+    agg: sum
+    expr: '"B992522m2"'
+  - name: b992522e3_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total \u2014 Housing\
+      \ units with a mortgage \u2014 Selected monthly owner costs \u2014 One or more\
+      \ items allo"
+    agg: sum
+    expr: '"B992522e3"'
+  - name: b992522m3_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total \u2014 Housing units with a mortgage \u2014 Selected monthly owner costs\
+      \ \u2014 One or more items"
+    agg: sum
+    expr: '"B992522m3"'
+  - name: b992522e4_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total \u2014 Housing\
+      \ units with a mortgage \u2014 Selected monthly owner costs \u2014 No items\
+      \ allocated"
+    agg: sum
+    expr: '"B992522e4"'
+  - name: b992522m4_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total \u2014 Housing units with a mortgage \u2014 Selected monthly owner costs\
+      \ \u2014 No items allocate"
+    agg: sum
+    expr: '"B992522m4"'
+  - name: b992522e5_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total \u2014 Housing\
+      \ units without a mortgage"
+    agg: sum
+    expr: '"B992522e5"'
+  - name: b992522m5_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total \u2014 Housing units without a mortgage"
+    agg: sum
+    expr: '"B992522m5"'
+  - name: b992522e6_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total \u2014 Housing\
+      \ units without a mortgage \u2014 Selected monthly owner costs \u2014 One or\
+      \ more items a"
+    agg: sum
+    expr: '"B992522e6"'
+  - name: b992522m6_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total \u2014 Housing units without a mortgage \u2014 Selected monthly owner\
+      \ costs \u2014 One or more it"
+    agg: sum
+    expr: '"B992522m6"'
+  - name: b992522e7_estimate_allocation_of_mortgage_status_and_selected_mo
+    description: "Estimate \u2014 ALLOCATION OF MORTGAGE STATUS AND SELECTED MONTHLY\
+      \ OWNER COSTS \u2014 Owner-occupied housing units \u2014 Total \u2014 Housing\
+      \ units without a mortgage \u2014 Selected monthly owner costs \u2014 No items\
+      \ allocated"
+    agg: sum
+    expr: '"B992522e7"'
+  - name: b992522m7_marginoferror_allocation_of_mortgage_status_and_select
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF MORTGAGE STATUS\
+      \ AND SELECTED MONTHLY OWNER COSTS \u2014 Owner-occupied housing units \u2014\
+      \ Total \u2014 Housing units without a mortgage \u2014 Selected monthly owner\
+      \ costs \u2014 No items alloc"
+    agg: sum
+    expr: '"B992522m7"'
+  - name: b99253e1_estimate_allocation_of_vacancy_status_vacant_housing_un
+    description: "Estimate \u2014 ALLOCATION OF VACANCY STATUS \u2014 Vacant housing\
+      \ units \u2014 Total"
+    agg: sum
+    expr: '"B99253e1"'
+  - name: b99253m1_marginoferror_allocation_of_vacancy_status_vacant_housi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VACANCY STATUS\
+      \ \u2014 Vacant housing units \u2014 Total"
+    agg: sum
+    expr: '"B99253m1"'
+  - name: b99253e2_estimate_allocation_of_vacancy_status_vacant_housing_un
+    description: "Estimate \u2014 ALLOCATION OF VACANCY STATUS \u2014 Vacant housing\
+      \ units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99253e2"'
+  - name: b99253m2_marginoferror_allocation_of_vacancy_status_vacant_housi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VACANCY STATUS\
+      \ \u2014 Vacant housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99253m2"'
+  - name: b99253e3_estimate_allocation_of_vacancy_status_vacant_housing_un
+    description: "Estimate \u2014 ALLOCATION OF VACANCY STATUS \u2014 Vacant housing\
+      \ units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99253e3"'
+  - name: b99253m3_marginoferror_allocation_of_vacancy_status_vacant_housi
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF VACANCY STATUS\
+      \ \u2014 Vacant housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99253m3"'
+  - name: b99254e1_estimate_allocation_of_rooms_housing_units_total
+    description: "Estimate \u2014 ALLOCATION OF ROOMS \u2014 Housing units \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99254e1"'
+  - name: b99254m1_marginoferror_allocation_of_rooms_housing_units_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ROOMS \u2014\
+      \ Housing units \u2014 Total"
+    agg: sum
+    expr: '"B99254m1"'
+  - name: b99254e2_estimate_allocation_of_rooms_housing_units_total_alloca
+    description: "Estimate \u2014 ALLOCATION OF ROOMS \u2014 Housing units \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99254e2"'
+  - name: b99254m2_marginoferror_allocation_of_rooms_housing_units_total_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ROOMS \u2014\
+      \ Housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99254m2"'
+  - name: b99254e3_estimate_allocation_of_rooms_housing_units_total_not_al
+    description: "Estimate \u2014 ALLOCATION OF ROOMS \u2014 Housing units \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99254e3"'
+  - name: b99254m3_marginoferror_allocation_of_rooms_housing_units_total_n
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF ROOMS \u2014\
+      \ Housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99254m3"'
+  - name: b99255e1_estimate_allocation_of_units_in_structure_housing_units
+    description: "Estimate \u2014 ALLOCATION OF UNITS IN STRUCTURE \u2014 Housing\
+      \ units \u2014 Total"
+    agg: sum
+    expr: '"B99255e1"'
+  - name: b99255m1_marginoferror_allocation_of_units_in_structure_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF UNITS IN STRUCTURE\
+      \ \u2014 Housing units \u2014 Total"
+    agg: sum
+    expr: '"B99255m1"'
+  - name: b99255e2_estimate_allocation_of_units_in_structure_housing_units
+    description: "Estimate \u2014 ALLOCATION OF UNITS IN STRUCTURE \u2014 Housing\
+      \ units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99255e2"'
+  - name: b99255m2_marginoferror_allocation_of_units_in_structure_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF UNITS IN STRUCTURE\
+      \ \u2014 Housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99255m2"'
+  - name: b99255e3_estimate_allocation_of_units_in_structure_housing_units
+    description: "Estimate \u2014 ALLOCATION OF UNITS IN STRUCTURE \u2014 Housing\
+      \ units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99255e3"'
+  - name: b99255m3_marginoferror_allocation_of_units_in_structure_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF UNITS IN STRUCTURE\
+      \ \u2014 Housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99255m3"'
+  - name: b99256e1_estimate_allocation_of_year_structure_built_housing_uni
+    description: "Estimate \u2014 ALLOCATION OF YEAR STRUCTURE BUILT \u2014 Housing\
+      \ units \u2014 Total"
+    agg: sum
+    expr: '"B99256e1"'
+  - name: b99256m1_marginoferror_allocation_of_year_structure_built_housin
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR STRUCTURE\
+      \ BUILT \u2014 Housing units \u2014 Total"
+    agg: sum
+    expr: '"B99256m1"'
+  - name: b99256e2_estimate_allocation_of_year_structure_built_housing_uni
+    description: "Estimate \u2014 ALLOCATION OF YEAR STRUCTURE BUILT \u2014 Housing\
+      \ units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99256e2"'
+  - name: b99256m2_marginoferror_allocation_of_year_structure_built_housin
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR STRUCTURE\
+      \ BUILT \u2014 Housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99256m2"'
+  - name: b99256e3_estimate_allocation_of_year_structure_built_housing_uni
+    description: "Estimate \u2014 ALLOCATION OF YEAR STRUCTURE BUILT \u2014 Housing\
+      \ units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99256e3"'
+  - name: b99256m3_marginoferror_allocation_of_year_structure_built_housin
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR STRUCTURE\
+      \ BUILT \u2014 Housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99256m3"'
+  - name: b99257e1_estimate_allocation_of_year_householder_moved_into_unit
+    description: "Estimate \u2014 ALLOCATION OF YEAR HOUSEHOLDER MOVED INTO UNIT \u2014\
+      \ Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B99257e1"'
+  - name: b99257m1_marginoferror_allocation_of_year_householder_moved_into
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR HOUSEHOLDER\
+      \ MOVED INTO UNIT \u2014 Occupied housing units \u2014 Total"
+    agg: sum
+    expr: '"B99257m1"'
+  - name: b99257e2_estimate_allocation_of_year_householder_moved_into_unit
+    description: "Estimate \u2014 ALLOCATION OF YEAR HOUSEHOLDER MOVED INTO UNIT \u2014\
+      \ Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99257e2"'
+  - name: b99257m2_marginoferror_allocation_of_year_householder_moved_into
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR HOUSEHOLDER\
+      \ MOVED INTO UNIT \u2014 Occupied housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99257m2"'
+  - name: b99257e3_estimate_allocation_of_year_householder_moved_into_unit
+    description: "Estimate \u2014 ALLOCATION OF YEAR HOUSEHOLDER MOVED INTO UNIT \u2014\
+      \ Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99257e3"'
+  - name: b99257m3_marginoferror_allocation_of_year_householder_moved_into
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF YEAR HOUSEHOLDER\
+      \ MOVED INTO UNIT \u2014 Occupied housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99257m3"'
+  - name: b99258e1_estimate_allocation_of_bedrooms_housing_units_total
+    description: "Estimate \u2014 ALLOCATION OF BEDROOMS \u2014 Housing units \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B99258e1"'
+  - name: b99258m1_marginoferror_allocation_of_bedrooms_housing_units_tota
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF BEDROOMS \u2014\
+      \ Housing units \u2014 Total"
+    agg: sum
+    expr: '"B99258m1"'
+  - name: b99258e2_estimate_allocation_of_bedrooms_housing_units_total_all
+    description: "Estimate \u2014 ALLOCATION OF BEDROOMS \u2014 Housing units \u2014\
+      \ Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99258e2"'
+  - name: b99258m2_marginoferror_allocation_of_bedrooms_housing_units_tota
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF BEDROOMS \u2014\
+      \ Housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99258m2"'
+  - name: b99258e3_estimate_allocation_of_bedrooms_housing_units_total_not
+    description: "Estimate \u2014 ALLOCATION OF BEDROOMS \u2014 Housing units \u2014\
+      \ Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99258e3"'
+  - name: b99258m3_marginoferror_allocation_of_bedrooms_housing_units_tota
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF BEDROOMS \u2014\
+      \ Housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99258m3"'
+  - name: b99259e1_estimate_allocation_of_plumbing_facilities_housing_unit
+    description: "Estimate \u2014 ALLOCATION OF PLUMBING FACILITIES \u2014 Housing\
+      \ units \u2014 Total"
+    agg: sum
+    expr: '"B99259e1"'
+  - name: b99259m1_marginoferror_allocation_of_plumbing_facilities_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLUMBING FACILITIES\
+      \ \u2014 Housing units \u2014 Total"
+    agg: sum
+    expr: '"B99259m1"'
+  - name: b99259e2_estimate_allocation_of_plumbing_facilities_housing_unit
+    description: "Estimate \u2014 ALLOCATION OF PLUMBING FACILITIES \u2014 Housing\
+      \ units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99259e2"'
+  - name: b99259m2_marginoferror_allocation_of_plumbing_facilities_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLUMBING FACILITIES\
+      \ \u2014 Housing units \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99259m2"'
+  - name: b99259e3_estimate_allocation_of_plumbing_facilities_housing_unit
+    description: "Estimate \u2014 ALLOCATION OF PLUMBING FACILITIES \u2014 Housing\
+      \ units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99259e3"'
+  - name: b99259m3_marginoferror_allocation_of_plumbing_facilities_housing
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF PLUMBING FACILITIES\
+      \ \u2014 Housing units \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99259m3"'
+  - name: b99281e1_estimate_allocation_of_household_internet_access_househ
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET ACCESS \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99281e1"'
+  - name: b99281m1_marginoferror_allocation_of_household_internet_access_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ ACCESS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B99281m1"'
+  - name: b99281e2_estimate_allocation_of_household_internet_access_househ
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET ACCESS \u2014 Households\
+      \ \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99281e2"'
+  - name: b99281m2_marginoferror_allocation_of_household_internet_access_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ ACCESS \u2014 Households \u2014 Total \u2014 Allocated"
+    agg: sum
+    expr: '"B99281m2"'
+  - name: b99281e3_estimate_allocation_of_household_internet_access_househ
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET ACCESS \u2014 Households\
+      \ \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99281e3"'
+  - name: b99281m3_marginoferror_allocation_of_household_internet_access_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ ACCESS \u2014 Households \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99281m3"'
+  - name: b99282e1_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B99282e1"'
+  - name: b99282m1_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B99282m1"'
+  - name: b99282e2_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Desktop or laptop \u2014 Allocated"
+    agg: sum
+    expr: '"B99282e2"'
+  - name: b99282m2_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Desktop or laptop \u2014 Allocated"
+    agg: sum
+    expr: '"B99282m2"'
+  - name: b99282e3_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Desktop or laptop \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282e3"'
+  - name: b99282m3_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Desktop or laptop \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282m3"'
+  - name: b99282e4_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Smartphone \u2014 Allocated"
+    agg: sum
+    expr: '"B99282e4"'
+  - name: b99282m4_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Smartphone \u2014 Allocated"
+    agg: sum
+    expr: '"B99282m4"'
+  - name: b99282e5_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Smartphone \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282e5"'
+  - name: b99282m5_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Smartphone \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282m5"'
+  - name: b99282e6_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Tablet or other portable wireless computer \u2014 Allocated"
+    agg: sum
+    expr: '"B99282e6"'
+  - name: b99282m6_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Tablet or other portable wireless\
+      \ computer \u2014 Allocated"
+    agg: sum
+    expr: '"B99282m6"'
+  - name: b99282e7_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Tablet or other portable wireless computer \u2014 Not\
+      \ allocated"
+    agg: sum
+    expr: '"B99282e7"'
+  - name: b99282m7_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Tablet or other portable wireless\
+      \ computer \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282m7"'
+  - name: b99282e8_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Other computer \u2014 Allocated"
+    agg: sum
+    expr: '"B99282e8"'
+  - name: b99282m8_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Other computer \u2014 Allocated"
+    agg: sum
+    expr: '"B99282m8"'
+  - name: b99282e9_estimate_allocation_of_household_computer_type_househol
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD COMPUTER TYPE \u2014 Households\
+      \ \u2014 Total \u2014 Other computer \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282e9"'
+  - name: b99282m9_marginoferror_allocation_of_household_computer_type_hou
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD COMPUTER\
+      \ TYPE \u2014 Households \u2014 Total \u2014 Other computer \u2014 Not allocated"
+    agg: sum
+    expr: '"B99282m9"'
+  - name: b99283e1_estimate_allocation_of_household_internet_subscription
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET SUBSCRIPTION TYPE\
+      \ \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B99283e1"'
+  - name: b99283m1_marginoferror_allocation_of_household_internet_subscrip
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ SUBSCRIPTION TYPE \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B99283m1"'
+  - name: b99283e2_estimate_allocation_of_household_internet_subscription
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET SUBSCRIPTION TYPE\
+      \ \u2014 Households \u2014 Total \u2014 Allocated \u2014 Dial-up"
+    agg: sum
+    expr: '"B99283e2"'
+  - name: b99283m2_marginoferror_allocation_of_household_internet_subscrip
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ SUBSCRIPTION TYPE \u2014 Households \u2014 Total \u2014 Allocated \u2014 Dial-up"
+    agg: sum
+    expr: '"B99283m2"'
+  - name: b99283e3_estimate_allocation_of_household_internet_subscription
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET SUBSCRIPTION TYPE\
+      \ \u2014 Households \u2014 Total \u2014 Allocated \u2014 Broadband such as cable\
+      \ fiberoptic or DSL satellite and other service"
+    agg: sum
+    expr: '"B99283e3"'
+  - name: b99283m3_marginoferror_allocation_of_household_internet_subscrip
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ SUBSCRIPTION TYPE \u2014 Households \u2014 Total \u2014 Allocated \u2014 Broadband\
+      \ such as cable fiberoptic or DSL satellite and other service"
+    agg: sum
+    expr: '"B99283m3"'
+  - name: b99283e4_estimate_allocation_of_household_internet_subscription
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET SUBSCRIPTION TYPE\
+      \ \u2014 Households \u2014 Total \u2014 Allocated \u2014 Cellular data plan"
+    agg: sum
+    expr: '"B99283e4"'
+  - name: b99283m4_marginoferror_allocation_of_household_internet_subscrip
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ SUBSCRIPTION TYPE \u2014 Households \u2014 Total \u2014 Allocated \u2014 Cellular\
+      \ data plan"
+    agg: sum
+    expr: '"B99283m4"'
+  - name: b99283e5_estimate_allocation_of_household_internet_subscription
+    description: "Estimate \u2014 ALLOCATION OF HOUSEHOLD INTERNET SUBSCRIPTION TYPE\
+      \ \u2014 Households \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99283e5"'
+  - name: b99283m5_marginoferror_allocation_of_household_internet_subscrip
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 ALLOCATION OF HOUSEHOLD INTERNET\
+      \ SUBSCRIPTION TYPE \u2014 Households \u2014 Total \u2014 Not allocated"
+    agg: sum
+    expr: '"B99283m5"'

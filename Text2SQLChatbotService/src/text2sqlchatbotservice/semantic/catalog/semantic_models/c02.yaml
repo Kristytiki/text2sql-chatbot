@@ -1,0 +1,229 @@
+semantic_model:
+  name: cbg_c02
+  description: "Census ACS topic C02 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_C02
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: c02003e1_estimate_detailed_race_total_population_total
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total"
+    agg: sum
+    expr: '"C02003e1"'
+  - name: c02003m1_marginoferror_detailed_race_total_population_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total"
+    agg: sum
+    expr: '"C02003m1"'
+  - name: c02003e2_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race"
+    agg: sum
+    expr: '"C02003e2"'
+  - name: c02003m2_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race"
+    agg: sum
+    expr: '"C02003m2"'
+  - name: c02003e3_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race \u2014 White"
+    agg: sum
+    expr: '"C02003e3"'
+  - name: c02003m3_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race \u2014 White"
+    agg: sum
+    expr: '"C02003m3"'
+  - name: c02003e4_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race \u2014 Black or African American"
+    agg: sum
+    expr: '"C02003e4"'
+  - name: c02003m4_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race \u2014 Black or African\
+      \ American"
+    agg: sum
+    expr: '"C02003m4"'
+  - name: c02003e5_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race \u2014 American Indian and Alaska Native"
+    agg: sum
+    expr: '"C02003e5"'
+  - name: c02003m5_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race \u2014 American Indian\
+      \ and Alaska Native"
+    agg: sum
+    expr: '"C02003m5"'
+  - name: c02003e6_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race \u2014 Asian"
+    agg: sum
+    expr: '"C02003e6"'
+  - name: c02003m6_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race \u2014 Asian"
+    agg: sum
+    expr: '"C02003m6"'
+  - name: c02003e7_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race \u2014 Native Hawaiian and Other Pacific Islander"
+    agg: sum
+    expr: '"C02003e7"'
+  - name: c02003m7_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race \u2014 Native Hawaiian\
+      \ and Other Pacific Islander"
+    agg: sum
+    expr: '"C02003m7"'
+  - name: c02003e8_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of one race \u2014 Some other race"
+    agg: sum
+    expr: '"C02003e8"'
+  - name: c02003m8_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of one race \u2014 Some other race"
+    agg: sum
+    expr: '"C02003m8"'
+  - name: c02003e9_estimate_detailed_race_total_population_total_populatio
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races"
+    agg: sum
+    expr: '"C02003e9"'
+  - name: c02003m9_marginoferror_detailed_race_total_population_total_popu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races"
+    agg: sum
+    expr: '"C02003m9"'
+  - name: c02003e10_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Two races including Some other\
+      \ race"
+    agg: sum
+    expr: '"C02003e10"'
+  - name: c02003m10_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Two\
+      \ races including Some other race"
+    agg: sum
+    expr: '"C02003m10"'
+  - name: c02003e11_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Two races excluding Some other\
+      \ race and three or more races"
+    agg: sum
+    expr: '"C02003e11"'
+  - name: c02003m11_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Two\
+      \ races excluding Some other race and three or more races"
+    agg: sum
+    expr: '"C02003m11"'
+  - name: c02003e12_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of two races"
+    agg: sum
+    expr: '"C02003e12"'
+  - name: c02003m12_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of two races"
+    agg: sum
+    expr: '"C02003m12"'
+  - name: c02003e13_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of two races \u2014\
+      \ White; Black or African American"
+    agg: sum
+    expr: '"C02003e13"'
+  - name: c02003m13_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of two races \u2014 White; Black or African American"
+    agg: sum
+    expr: '"C02003m13"'
+  - name: c02003e14_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of two races \u2014\
+      \ White; American Indian and Alaska Native"
+    agg: sum
+    expr: '"C02003e14"'
+  - name: c02003m14_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of two races \u2014 White; American Indian and Alaska Native"
+    agg: sum
+    expr: '"C02003m14"'
+  - name: c02003e15_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of two races \u2014\
+      \ White; Asian"
+    agg: sum
+    expr: '"C02003e15"'
+  - name: c02003m15_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of two races \u2014 White; Asian"
+    agg: sum
+    expr: '"C02003m15"'
+  - name: c02003e16_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of two races \u2014\
+      \ Black or African American; American Indian and Alaska Native"
+    agg: sum
+    expr: '"C02003e16"'
+  - name: c02003m16_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of two races \u2014 Black or African American; American Indian and Alaska\
+      \ Native"
+    agg: sum
+    expr: '"C02003m16"'
+  - name: c02003e17_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of two races \u2014\
+      \ All other two race combinations"
+    agg: sum
+    expr: '"C02003e17"'
+  - name: c02003m17_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of two races \u2014 All other two race combinations"
+    agg: sum
+    expr: '"C02003m17"'
+  - name: c02003e18_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of three races"
+    agg: sum
+    expr: '"C02003e18"'
+  - name: c02003m18_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of three races"
+    agg: sum
+    expr: '"C02003m18"'
+  - name: c02003e19_estimate_detailed_race_total_population_total_populati
+    description: "Estimate \u2014 DETAILED RACE \u2014 Total population \u2014 Total\
+      \ \u2014 Population of two or more races \u2014 Population of four or more races"
+    agg: sum
+    expr: '"C02003e19"'
+  - name: c02003m19_marginoferror_detailed_race_total_population_total_pop
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 DETAILED RACE \u2014 Total\
+      \ population \u2014 Total \u2014 Population of two or more races \u2014 Population\
+      \ of four or more races"
+    agg: sum
+    expr: '"C02003m19"'

@@ -1,0 +1,3401 @@
+semantic_model:
+  name: cbg_b08
+  description: "Census ACS topic B08 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B08
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b08007e1_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08007e1"'
+  - name: b08007m1_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08007m1"'
+  - name: b08007e2_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Worked in state\
+      \ of residence"
+    agg: sum
+    expr: '"B08007e2"'
+  - name: b08007m2_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Worked in state of residence"
+    agg: sum
+    expr: '"B08007m2"'
+  - name: b08007e3_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Worked in state\
+      \ of residence \u2014 Worked in county of residence"
+    agg: sum
+    expr: '"B08007e3"'
+  - name: b08007m3_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Worked in state of residence \u2014 Worked in county of residence"
+    agg: sum
+    expr: '"B08007m3"'
+  - name: b08007e4_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Worked in state\
+      \ of residence \u2014 Worked outside county of residence"
+    agg: sum
+    expr: '"B08007e4"'
+  - name: b08007m4_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Worked in state of residence \u2014 Worked outside county of residence"
+    agg: sum
+    expr: '"B08007m4"'
+  - name: b08007e5_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Worked outside\
+      \ state of residence"
+    agg: sum
+    expr: '"B08007e5"'
+  - name: b08007m5_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Worked outside state of residence"
+    agg: sum
+    expr: '"B08007m5"'
+  - name: b08007e6_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B08007e6"'
+  - name: b08007m6_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male"
+    agg: sum
+    expr: '"B08007m6"'
+  - name: b08007e7_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Worked\
+      \ in state of residence"
+    agg: sum
+    expr: '"B08007e7"'
+  - name: b08007m7_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Worked in state of residence"
+    agg: sum
+    expr: '"B08007m7"'
+  - name: b08007e8_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Worked\
+      \ in state of residence \u2014 Worked in county of residence"
+    agg: sum
+    expr: '"B08007e8"'
+  - name: b08007m8_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Worked in state of residence \u2014 Worked in county of\
+      \ residence"
+    agg: sum
+    expr: '"B08007m8"'
+  - name: b08007e9_estimate_sex_of_workers_by_place_of_work_state_and_coun
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Worked\
+      \ in state of residence \u2014 Worked outside county of residence"
+    agg: sum
+    expr: '"B08007e9"'
+  - name: b08007m9_marginoferror_sex_of_workers_by_place_of_work_state_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Worked in state of residence \u2014 Worked outside county\
+      \ of residence"
+    agg: sum
+    expr: '"B08007m9"'
+  - name: b08007e10_estimate_sex_of_workers_by_place_of_work_state_and_cou
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Worked\
+      \ outside state of residence"
+    agg: sum
+    expr: '"B08007e10"'
+  - name: b08007m10_marginoferror_sex_of_workers_by_place_of_work_state_an
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Worked outside state of residence"
+    agg: sum
+    expr: '"B08007m10"'
+  - name: b08007e11_estimate_sex_of_workers_by_place_of_work_state_and_cou
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B08007e11"'
+  - name: b08007m11_marginoferror_sex_of_workers_by_place_of_work_state_an
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female"
+    agg: sum
+    expr: '"B08007m11"'
+  - name: b08007e12_estimate_sex_of_workers_by_place_of_work_state_and_cou
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Worked\
+      \ in state of residence"
+    agg: sum
+    expr: '"B08007e12"'
+  - name: b08007m12_marginoferror_sex_of_workers_by_place_of_work_state_an
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Worked in state of residence"
+    agg: sum
+    expr: '"B08007m12"'
+  - name: b08007e13_estimate_sex_of_workers_by_place_of_work_state_and_cou
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Worked\
+      \ in state of residence \u2014 Worked in county of residence"
+    agg: sum
+    expr: '"B08007e13"'
+  - name: b08007m13_marginoferror_sex_of_workers_by_place_of_work_state_an
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Worked in state of residence \u2014 Worked in county\
+      \ of residence"
+    agg: sum
+    expr: '"B08007m13"'
+  - name: b08007e14_estimate_sex_of_workers_by_place_of_work_state_and_cou
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Worked\
+      \ in state of residence \u2014 Worked outside county of residence"
+    agg: sum
+    expr: '"B08007e14"'
+  - name: b08007m14_marginoferror_sex_of_workers_by_place_of_work_state_an
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Worked in state of residence \u2014 Worked outside county\
+      \ of residence"
+    agg: sum
+    expr: '"B08007m14"'
+  - name: b08007e15_estimate_sex_of_workers_by_place_of_work_state_and_cou
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--STATE AND COUNTY\
+      \ LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Worked\
+      \ outside state of residence"
+    agg: sum
+    expr: '"B08007e15"'
+  - name: b08007m15_marginoferror_sex_of_workers_by_place_of_work_state_an
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--STATE AND COUNTY LEVEL \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Worked outside state of residence"
+    agg: sum
+    expr: '"B08007m15"'
+  - name: b08008e1_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08008e1"'
+  - name: b08008m1_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08008m1"'
+  - name: b08008e2_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Living in a place"
+    agg: sum
+    expr: '"B08008e2"'
+  - name: b08008m2_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Living\
+      \ in a place"
+    agg: sum
+    expr: '"B08008m2"'
+  - name: b08008e3_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Living in a place \u2014 Worked\
+      \ in place of residence"
+    agg: sum
+    expr: '"B08008e3"'
+  - name: b08008m3_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Living\
+      \ in a place \u2014 Worked in place of residence"
+    agg: sum
+    expr: '"B08008m3"'
+  - name: b08008e4_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Living in a place \u2014 Worked\
+      \ outside place of residence"
+    agg: sum
+    expr: '"B08008e4"'
+  - name: b08008m4_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Living\
+      \ in a place \u2014 Worked outside place of residence"
+    agg: sum
+    expr: '"B08008m4"'
+  - name: b08008e5_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Not living in a place"
+    agg: sum
+    expr: '"B08008e5"'
+  - name: b08008m5_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Not\
+      \ living in a place"
+    agg: sum
+    expr: '"B08008m5"'
+  - name: b08008e6_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B08008e6"'
+  - name: b08008m6_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B08008m6"'
+  - name: b08008e7_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Male \u2014 Living in a place"
+    agg: sum
+    expr: '"B08008e7"'
+  - name: b08008m7_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male\
+      \ \u2014 Living in a place"
+    agg: sum
+    expr: '"B08008m7"'
+  - name: b08008e8_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Male \u2014 Living in a place\
+      \ \u2014 Worked in place of residence"
+    agg: sum
+    expr: '"B08008e8"'
+  - name: b08008m8_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male\
+      \ \u2014 Living in a place \u2014 Worked in place of residence"
+    agg: sum
+    expr: '"B08008m8"'
+  - name: b08008e9_estimate_sex_of_workers_by_place_of_work_place_level_wo
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Male \u2014 Living in a place\
+      \ \u2014 Worked outside place of residence"
+    agg: sum
+    expr: '"B08008e9"'
+  - name: b08008m9_marginoferror_sex_of_workers_by_place_of_work_place_lev
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male\
+      \ \u2014 Living in a place \u2014 Worked outside place of residence"
+    agg: sum
+    expr: '"B08008m9"'
+  - name: b08008e10_estimate_sex_of_workers_by_place_of_work_place_level_w
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Male \u2014 Not living in a\
+      \ place"
+    agg: sum
+    expr: '"B08008e10"'
+  - name: b08008m10_marginoferror_sex_of_workers_by_place_of_work_place_le
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Male\
+      \ \u2014 Not living in a place"
+    agg: sum
+    expr: '"B08008m10"'
+  - name: b08008e11_estimate_sex_of_workers_by_place_of_work_place_level_w
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B08008e11"'
+  - name: b08008m11_marginoferror_sex_of_workers_by_place_of_work_place_le
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B08008m11"'
+  - name: b08008e12_estimate_sex_of_workers_by_place_of_work_place_level_w
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Female \u2014 Living in a place"
+    agg: sum
+    expr: '"B08008e12"'
+  - name: b08008m12_marginoferror_sex_of_workers_by_place_of_work_place_le
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female\
+      \ \u2014 Living in a place"
+    agg: sum
+    expr: '"B08008m12"'
+  - name: b08008e13_estimate_sex_of_workers_by_place_of_work_place_level_w
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Female \u2014 Living in a place\
+      \ \u2014 Worked in place of residence"
+    agg: sum
+    expr: '"B08008e13"'
+  - name: b08008m13_marginoferror_sex_of_workers_by_place_of_work_place_le
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female\
+      \ \u2014 Living in a place \u2014 Worked in place of residence"
+    agg: sum
+    expr: '"B08008m13"'
+  - name: b08008e14_estimate_sex_of_workers_by_place_of_work_place_level_w
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Female \u2014 Living in a place\
+      \ \u2014 Worked outside place of residence"
+    agg: sum
+    expr: '"B08008e14"'
+  - name: b08008m14_marginoferror_sex_of_workers_by_place_of_work_place_le
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female\
+      \ \u2014 Living in a place \u2014 Worked outside place of residence"
+    agg: sum
+    expr: '"B08008m14"'
+  - name: b08008e15_estimate_sex_of_workers_by_place_of_work_place_level_w
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--PLACE LEVEL \u2014\
+      \ Workers 16 years and over \u2014 Total \u2014 Female \u2014 Not living in\
+      \ a place"
+    agg: sum
+    expr: '"B08008e15"'
+  - name: b08008m15_marginoferror_sex_of_workers_by_place_of_work_place_le
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--PLACE LEVEL \u2014 Workers 16 years and over \u2014 Total \u2014 Female\
+      \ \u2014 Not living in a place"
+    agg: sum
+    expr: '"B08008m15"'
+  - name: b08009e1_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08009e1"'
+  - name: b08009m1_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08009m1"'
+  - name: b08009e2_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Living in the 12\
+      \ se"
+    agg: sum
+    expr: '"B08009e2"'
+  - name: b08009m2_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Living in the "
+    agg: sum
+    expr: '"B08009m2"'
+  - name: b08009e3_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Living in the 12\
+      \ se"
+    agg: sum
+    expr: '"B08009e3"'
+  - name: b08009m3_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Living in the "
+    agg: sum
+    expr: '"B08009m3"'
+  - name: b08009e4_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Living in the 12\
+      \ se"
+    agg: sum
+    expr: '"B08009e4"'
+  - name: b08009m4_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Living in the "
+    agg: sum
+    expr: '"B08009m4"'
+  - name: b08009e5_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Not living in the\
+      \ 1"
+    agg: sum
+    expr: '"B08009e5"'
+  - name: b08009m5_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Not living in "
+    agg: sum
+    expr: '"B08009m5"'
+  - name: b08009e6_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Male"
+    agg: sum
+    expr: '"B08009e6"'
+  - name: b08009m6_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male"
+    agg: sum
+    expr: '"B08009m6"'
+  - name: b08009e7_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Living\
+      \ in th"
+    agg: sum
+    expr: '"B08009e7"'
+  - name: b08009m7_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Living "
+    agg: sum
+    expr: '"B08009m7"'
+  - name: b08009e8_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Living\
+      \ in th"
+    agg: sum
+    expr: '"B08009e8"'
+  - name: b08009m8_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Living "
+    agg: sum
+    expr: '"B08009m8"'
+  - name: b08009e9_estimate_sex_of_workers_by_place_of_work_minor_civil_di
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Living\
+      \ in th"
+    agg: sum
+    expr: '"B08009e9"'
+  - name: b08009m9_marginoferror_sex_of_workers_by_place_of_work_minor_civ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Living "
+    agg: sum
+    expr: '"B08009m9"'
+  - name: b08009e10_estimate_sex_of_workers_by_place_of_work_minor_civil_d
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Male \u2014 Not living\
+      \ i"
+    agg: sum
+    expr: '"B08009e10"'
+  - name: b08009m10_marginoferror_sex_of_workers_by_place_of_work_minor_ci
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Male \u2014 Not liv"
+    agg: sum
+    expr: '"B08009m10"'
+  - name: b08009e11_estimate_sex_of_workers_by_place_of_work_minor_civil_d
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Female"
+    agg: sum
+    expr: '"B08009e11"'
+  - name: b08009m11_marginoferror_sex_of_workers_by_place_of_work_minor_ci
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female"
+    agg: sum
+    expr: '"B08009m11"'
+  - name: b08009e12_estimate_sex_of_workers_by_place_of_work_minor_civil_d
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Living\
+      \ in "
+    agg: sum
+    expr: '"B08009e12"'
+  - name: b08009m12_marginoferror_sex_of_workers_by_place_of_work_minor_ci
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Livin"
+    agg: sum
+    expr: '"B08009m12"'
+  - name: b08009e13_estimate_sex_of_workers_by_place_of_work_minor_civil_d
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Living\
+      \ in "
+    agg: sum
+    expr: '"B08009e13"'
+  - name: b08009m13_marginoferror_sex_of_workers_by_place_of_work_minor_ci
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Livin"
+    agg: sum
+    expr: '"B08009m13"'
+  - name: b08009e14_estimate_sex_of_workers_by_place_of_work_minor_civil_d
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Living\
+      \ in "
+    agg: sum
+    expr: '"B08009e14"'
+  - name: b08009m14_marginoferror_sex_of_workers_by_place_of_work_minor_ci
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Livin"
+    agg: sum
+    expr: '"B08009m14"'
+  - name: b08009e15_estimate_sex_of_workers_by_place_of_work_minor_civil_d
+    description: "Estimate \u2014 SEX OF WORKERS BY PLACE OF WORK--MINOR CIVIL DIVISION\
+      \ LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN, NH, NJ, NY, PA, RI, VT,\
+      \ WI) \u2014 Workers 16 years and over \u2014 Total \u2014 Female \u2014 Not\
+      \ living"
+    agg: sum
+    expr: '"B08009e15"'
+  - name: b08009m15_marginoferror_sex_of_workers_by_place_of_work_minor_ci
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SEX OF WORKERS BY PLACE OF\
+      \ WORK--MINOR CIVIL DIVISION LEVEL FOR 12 SELECTED STATES (CT, ME, MA, MI, MN,\
+      \ NH, NJ, NY, PA, RI, VT, WI) \u2014 Workers 16 years and over \u2014 Total\
+      \ \u2014 Female \u2014 Not l"
+    agg: sum
+    expr: '"B08009m15"'
+  - name: b08016e1_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total"
+    agg: sum
+    expr: '"B08016e1"'
+  - name: b08016m1_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total"
+    agg: sum
+    expr: '"B08016m1"'
+  - name: b08016e2_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city"
+    agg: sum
+    expr: '"B08016e2"'
+  - name: b08016m2_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m2"'
+  - name: b08016e3_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e3"'
+  - name: b08016m3_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m3"'
+  - name: b08016e4_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e4"'
+  - name: b08016m4_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m4"'
+  - name: b08016e5_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e5"'
+  - name: b08016m5_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m5"'
+  - name: b08016e6_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e6"'
+  - name: b08016m6_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m6"'
+  - name: b08016e7_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e7"'
+  - name: b08016m7_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m7"'
+  - name: b08016e8_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e8"'
+  - name: b08016m8_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m8"'
+  - name: b08016e9_estimate_place_of_work_for_workers_16_years_and_over_me
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e9"'
+  - name: b08016m9_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m9"'
+  - name: b08016e10_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e10"'
+  - name: b08016m10_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m10"'
+  - name: b08016e11_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e11"'
+  - name: b08016m11_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m11"'
+  - name: b08016e12_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08016e12"'
+  - name: b08016m12_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08016m12"'
+  - name: b08016e13_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e13"'
+  - name: b08016m13_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m13"'
+  - name: b08016e14_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e14"'
+  - name: b08016m14_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m14"'
+  - name: b08016e15_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e15"'
+  - name: b08016m15_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m15"'
+  - name: b08016e16_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e16"'
+  - name: b08016m16_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m16"'
+  - name: b08016e17_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e17"'
+  - name: b08016m17_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m17"'
+  - name: b08016e18_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e18"'
+  - name: b08016m18_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m18"'
+  - name: b08016e19_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e19"'
+  - name: b08016m19_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m19"'
+  - name: b08016e20_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e20"'
+  - name: b08016m20_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m20"'
+  - name: b08016e21_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e21"'
+  - name: b08016m21_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m21"'
+  - name: b08016e22_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e22"'
+  - name: b08016m22_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m22"'
+  - name: b08016e23_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--METROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Metropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08016e23"'
+  - name: b08016m23_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--METROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Metropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08016m23"'
+  - name: b08017e1_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total"
+    agg: sum
+    expr: '"B08017e1"'
+  - name: b08017m1_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total"
+    agg: sum
+    expr: '"B08017m1"'
+  - name: b08017e2_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city"
+    agg: sum
+    expr: '"B08017e2"'
+  - name: b08017m2_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m2"'
+  - name: b08017e3_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e3"'
+  - name: b08017m3_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m3"'
+  - name: b08017e4_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e4"'
+  - name: b08017m4_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m4"'
+  - name: b08017e5_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e5"'
+  - name: b08017m5_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m5"'
+  - name: b08017e6_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e6"'
+  - name: b08017m6_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m6"'
+  - name: b08017e7_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e7"'
+  - name: b08017m7_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m7"'
+  - name: b08017e8_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e8"'
+  - name: b08017m8_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m8"'
+  - name: b08017e9_estimate_place_of_work_for_workers_16_years_and_over_mi
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e9"'
+  - name: b08017m9_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m9"'
+  - name: b08017e10_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e10"'
+  - name: b08017m10_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m10"'
+  - name: b08017e11_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e11"'
+  - name: b08017m11_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m11"'
+  - name: b08017e12_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living in a principal city \u2014"
+    agg: sum
+    expr: '"B08017e12"'
+  - name: b08017m12_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ in a principal c"
+    agg: sum
+    expr: '"B08017m12"'
+  - name: b08017e13_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e13"'
+  - name: b08017m13_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m13"'
+  - name: b08017e14_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e14"'
+  - name: b08017m14_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m14"'
+  - name: b08017e15_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e15"'
+  - name: b08017m15_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m15"'
+  - name: b08017e16_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e16"'
+  - name: b08017m16_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m16"'
+  - name: b08017e17_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e17"'
+  - name: b08017m17_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m17"'
+  - name: b08017e18_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e18"'
+  - name: b08017m18_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m18"'
+  - name: b08017e19_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e19"'
+  - name: b08017m19_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m19"'
+  - name: b08017e20_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e20"'
+  - name: b08017m20_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m20"'
+  - name: b08017e21_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e21"'
+  - name: b08017m21_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m21"'
+  - name: b08017e22_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e22"'
+  - name: b08017m22_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m22"'
+  - name: b08017e23_estimate_place_of_work_for_workers_16_years_and_over_m
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--MICROPOLITAN\
+      \ STATISTICAL AREA LEVEL \u2014 Workers 16 years and over living in a Micropolitan\
+      \ Statistical Area \u2014 Total \u2014 Living outside any principal"
+    agg: sum
+    expr: '"B08017e23"'
+  - name: b08017m23_marginoferror_place_of_work_for_workers_16_years_and_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over living in a Micropolitan Statistical Area \u2014 Total \u2014 Living\
+      \ outside any prin"
+    agg: sum
+    expr: '"B08017m23"'
+  - name: b08018e1_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e1"'
+  - name: b08018m1_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m1"'
+  - name: b08018e2_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e2"'
+  - name: b08018m2_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m2"'
+  - name: b08018e3_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e3"'
+  - name: b08018m3_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m3"'
+  - name: b08018e4_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e4"'
+  - name: b08018m4_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m4"'
+  - name: b08018e5_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e5"'
+  - name: b08018m5_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m5"'
+  - name: b08018e6_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e6"'
+  - name: b08018m6_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m6"'
+  - name: b08018e7_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e7"'
+  - name: b08018m7_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m7"'
+  - name: b08018e8_estimate_place_of_work_for_workers_16_years_and_over_no
+    description: "Estimate \u2014 PLACE OF WORK FOR WORKERS 16 YEARS AND OVER--NOT\
+      \ METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL \u2014 Workers 16 years\
+      \ and over not living in a Metropolitan or Micropolitan Statistical Are"
+    agg: sum
+    expr: '"B08018e8"'
+  - name: b08018m8_marginoferror_place_of_work_for_workers_16_years_and_ov
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PLACE OF WORK FOR WORKERS\
+      \ 16 YEARS AND OVER--NOT METROPOLITAN OR MICROPOLITAN STATISTICAL AREA LEVEL\
+      \ \u2014 Workers 16 years and over not living in a Metropolitan or Micropolitan\
+      \ Statistica"
+    agg: sum
+    expr: '"B08018m8"'
+  - name: b08134e1_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total"
+    agg: sum
+    expr: '"B08134e1"'
+  - name: b08134m1_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total"
+    agg: sum
+    expr: '"B08134m1"'
+  - name: b08134e2_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e2"'
+  - name: b08134m2_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134m2"'
+  - name: b08134e3_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e3"'
+  - name: b08134m3_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134m3"'
+  - name: b08134e4_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e4"'
+  - name: b08134m4_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134m4"'
+  - name: b08134e5_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e5"'
+  - name: b08134m5_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134m5"'
+  - name: b08134e6_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e6"'
+  - name: b08134m6_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134m6"'
+  - name: b08134e7_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e7"'
+  - name: b08134m7_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134m7"'
+  - name: b08134e8_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e8"'
+  - name: b08134m8_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134m8"'
+  - name: b08134e9_estimate_means_of_transportation_to_work_by_travel_time
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e9"'
+  - name: b08134m9_marginoferror_means_of_transportation_to_work_by_travel
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134m9"'
+  - name: b08134e10_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e10"'
+  - name: b08134m10_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134m10"'
+  - name: b08134e11_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van"
+    agg: sum
+    expr: '"B08134e11"'
+  - name: b08134m11_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van"
+    agg: sum
+    expr: '"B08134m11"'
+  - name: b08134e12_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e12"'
+  - name: b08134m12_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134m12"'
+  - name: b08134e13_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e13"'
+  - name: b08134m13_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134m13"'
+  - name: b08134e14_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e14"'
+  - name: b08134m14_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134m14"'
+  - name: b08134e15_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e15"'
+  - name: b08134m15_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134m15"'
+  - name: b08134e16_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e16"'
+  - name: b08134m16_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134m16"'
+  - name: b08134e17_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e17"'
+  - name: b08134m17_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134m17"'
+  - name: b08134e18_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e18"'
+  - name: b08134m18_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134m18"'
+  - name: b08134e19_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e19"'
+  - name: b08134m19_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134m19"'
+  - name: b08134e20_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e20"'
+  - name: b08134m20_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134m20"'
+  - name: b08134e21_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone"
+    agg: sum
+    expr: '"B08134e21"'
+  - name: b08134m21_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone"
+    agg: sum
+    expr: '"B08134m21"'
+  - name: b08134e22_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e22"'
+  - name: b08134m22_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 Less\
+      \ than 10 minutes"
+    agg: sum
+    expr: '"B08134m22"'
+  - name: b08134e23_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e23"'
+  - name: b08134m23_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 10\
+      \ to 14 minutes"
+    agg: sum
+    expr: '"B08134m23"'
+  - name: b08134e24_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e24"'
+  - name: b08134m24_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 15\
+      \ to 19 minutes"
+    agg: sum
+    expr: '"B08134m24"'
+  - name: b08134e25_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e25"'
+  - name: b08134m25_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 20\
+      \ to 24 minutes"
+    agg: sum
+    expr: '"B08134m25"'
+  - name: b08134e26_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e26"'
+  - name: b08134m26_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 25\
+      \ to 29 minutes"
+    agg: sum
+    expr: '"B08134m26"'
+  - name: b08134e27_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e27"'
+  - name: b08134m27_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 30\
+      \ to 34 minutes"
+    agg: sum
+    expr: '"B08134m27"'
+  - name: b08134e28_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e28"'
+  - name: b08134m28_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 35\
+      \ to 44 minutes"
+    agg: sum
+    expr: '"B08134m28"'
+  - name: b08134e29_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e29"'
+  - name: b08134m29_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 45\
+      \ to 59 minutes"
+    agg: sum
+    expr: '"B08134m29"'
+  - name: b08134e30_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Drove alone \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e30"'
+  - name: b08134m30_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Drove alone \u2014 60\
+      \ or more minutes"
+    agg: sum
+    expr: '"B08134m30"'
+  - name: b08134e31_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled"
+    agg: sum
+    expr: '"B08134e31"'
+  - name: b08134m31_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled"
+    agg: sum
+    expr: '"B08134m31"'
+  - name: b08134e32_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e32"'
+  - name: b08134m32_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 Less\
+      \ than 10 minutes"
+    agg: sum
+    expr: '"B08134m32"'
+  - name: b08134e33_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e33"'
+  - name: b08134m33_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 10\
+      \ to 14 minutes"
+    agg: sum
+    expr: '"B08134m33"'
+  - name: b08134e34_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e34"'
+  - name: b08134m34_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 15\
+      \ to 19 minutes"
+    agg: sum
+    expr: '"B08134m34"'
+  - name: b08134e35_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e35"'
+  - name: b08134m35_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 20\
+      \ to 24 minutes"
+    agg: sum
+    expr: '"B08134m35"'
+  - name: b08134e36_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e36"'
+  - name: b08134m36_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 25\
+      \ to 29 minutes"
+    agg: sum
+    expr: '"B08134m36"'
+  - name: b08134e37_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e37"'
+  - name: b08134m37_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 30\
+      \ to 34 minutes"
+    agg: sum
+    expr: '"B08134m37"'
+  - name: b08134e38_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e38"'
+  - name: b08134m38_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 35\
+      \ to 44 minutes"
+    agg: sum
+    expr: '"B08134m38"'
+  - name: b08134e39_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e39"'
+  - name: b08134m39_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 45\
+      \ to 59 minutes"
+    agg: sum
+    expr: '"B08134m39"'
+  - name: b08134e40_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e40"'
+  - name: b08134m40_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 60\
+      \ or more minutes"
+    agg: sum
+    expr: '"B08134m40"'
+  - name: b08134e41_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool"
+    agg: sum
+    expr: '"B08134e41"'
+  - name: b08134m41_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool"
+    agg: sum
+    expr: '"B08134m41"'
+  - name: b08134e42_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ Less than 10 min"
+    agg: sum
+    expr: '"B08134e42"'
+  - name: b08134m42_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 Less than 1"
+    agg: sum
+    expr: '"B08134m42"'
+  - name: b08134e43_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e43"'
+  - name: b08134m43_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 10 to 14 mi"
+    agg: sum
+    expr: '"B08134m43"'
+  - name: b08134e44_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e44"'
+  - name: b08134m44_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 15 to 19 mi"
+    agg: sum
+    expr: '"B08134m44"'
+  - name: b08134e45_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e45"'
+  - name: b08134m45_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 20 to 24 mi"
+    agg: sum
+    expr: '"B08134m45"'
+  - name: b08134e46_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e46"'
+  - name: b08134m46_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 25 to 29 mi"
+    agg: sum
+    expr: '"B08134m46"'
+  - name: b08134e47_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e47"'
+  - name: b08134m47_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 30 to 34 mi"
+    agg: sum
+    expr: '"B08134m47"'
+  - name: b08134e48_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e48"'
+  - name: b08134m48_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 35 to 44 mi"
+    agg: sum
+    expr: '"B08134m48"'
+  - name: b08134e49_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e49"'
+  - name: b08134m49_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 45 to 59 mi"
+    agg: sum
+    expr: '"B08134m49"'
+  - name: b08134e50_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 2-person carpool \u2014\
+      \ 60 or more minut"
+    agg: sum
+    expr: '"B08134e50"'
+  - name: b08134m50_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 2-person carpool \u2014 60 or more "
+    agg: sum
+    expr: '"B08134m50"'
+  - name: b08134e51_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool"
+    agg: sum
+    expr: '"B08134e51"'
+  - name: b08134m51_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool"
+    agg: sum
+    expr: '"B08134m51"'
+  - name: b08134e52_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 Less tha"
+    agg: sum
+    expr: '"B08134e52"'
+  - name: b08134m52_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 Les"
+    agg: sum
+    expr: '"B08134m52"'
+  - name: b08134e53_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 10 to 14"
+    agg: sum
+    expr: '"B08134e53"'
+  - name: b08134m53_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 10 "
+    agg: sum
+    expr: '"B08134m53"'
+  - name: b08134e54_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 15 to 19"
+    agg: sum
+    expr: '"B08134e54"'
+  - name: b08134m54_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 15 "
+    agg: sum
+    expr: '"B08134m54"'
+  - name: b08134e55_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 20 to 24"
+    agg: sum
+    expr: '"B08134e55"'
+  - name: b08134m55_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 20 "
+    agg: sum
+    expr: '"B08134m55"'
+  - name: b08134e56_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 25 to 29"
+    agg: sum
+    expr: '"B08134e56"'
+  - name: b08134m56_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 25 "
+    agg: sum
+    expr: '"B08134m56"'
+  - name: b08134e57_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 30 to 34"
+    agg: sum
+    expr: '"B08134e57"'
+  - name: b08134m57_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 30 "
+    agg: sum
+    expr: '"B08134m57"'
+  - name: b08134e58_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 35 to 44"
+    agg: sum
+    expr: '"B08134e58"'
+  - name: b08134m58_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 35 "
+    agg: sum
+    expr: '"B08134m58"'
+  - name: b08134e59_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 45 to 59"
+    agg: sum
+    expr: '"B08134e59"'
+  - name: b08134m59_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 45 "
+    agg: sum
+    expr: '"B08134m59"'
+  - name: b08134e60_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Car truck or van \u2014 Carpooled \u2014 In 3-or-more-person carpool\
+      \ \u2014 60 or mo"
+    agg: sum
+    expr: '"B08134e60"'
+  - name: b08134m60_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014 In\
+      \ 3-or-more-person carpool \u2014 60 "
+    agg: sum
+    expr: '"B08134m60"'
+  - name: b08134e61_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab)"
+    agg: sum
+    expr: '"B08134e61"'
+  - name: b08134m61_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab)"
+    agg: sum
+    expr: '"B08134m61"'
+  - name: b08134e62_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e62"'
+  - name: b08134m62_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Less than 10 minutes"
+    agg: sum
+    expr: '"B08134m62"'
+  - name: b08134e63_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e63"'
+  - name: b08134m63_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134m63"'
+  - name: b08134e64_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e64"'
+  - name: b08134m64_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134m64"'
+  - name: b08134e65_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e65"'
+  - name: b08134m65_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134m65"'
+  - name: b08134e66_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e66"'
+  - name: b08134m66_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134m66"'
+  - name: b08134e67_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e67"'
+  - name: b08134m67_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134m67"'
+  - name: b08134e68_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e68"'
+  - name: b08134m68_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134m68"'
+  - name: b08134e69_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e69"'
+  - name: b08134m69_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134m69"'
+  - name: b08134e70_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e70"'
+  - name: b08134m70_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ 60 or more minutes"
+    agg: sum
+    expr: '"B08134m70"'
+  - name: b08134e71_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus"
+    agg: sum
+    expr: '"B08134e71"'
+  - name: b08134m71_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus"
+    agg: sum
+    expr: '"B08134m71"'
+  - name: b08134e72_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 Less than\
+      \ 10 minute"
+    agg: sum
+    expr: '"B08134e72"'
+  - name: b08134m72_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 Less than 10 m"
+    agg: sum
+    expr: '"B08134m72"'
+  - name: b08134e73_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 10 to 14\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e73"'
+  - name: b08134m73_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 10 to 14 minut"
+    agg: sum
+    expr: '"B08134m73"'
+  - name: b08134e74_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 15 to 19\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e74"'
+  - name: b08134m74_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 15 to 19 minut"
+    agg: sum
+    expr: '"B08134m74"'
+  - name: b08134e75_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 20 to 24\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e75"'
+  - name: b08134m75_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 20 to 24 minut"
+    agg: sum
+    expr: '"B08134m75"'
+  - name: b08134e76_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 25 to 29\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e76"'
+  - name: b08134m76_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 25 to 29 minut"
+    agg: sum
+    expr: '"B08134m76"'
+  - name: b08134e77_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 30 to 34\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e77"'
+  - name: b08134m77_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 30 to 34 minut"
+    agg: sum
+    expr: '"B08134m77"'
+  - name: b08134e78_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 35 to 44\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e78"'
+  - name: b08134m78_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 35 to 44 minut"
+    agg: sum
+    expr: '"B08134m78"'
+  - name: b08134e79_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 45 to 59\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e79"'
+  - name: b08134m79_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 45 to 59 minut"
+    agg: sum
+    expr: '"B08134m79"'
+  - name: b08134e80_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Bus \u2014 60 or more\
+      \ minutes"
+    agg: sum
+    expr: '"B08134e80"'
+  - name: b08134m80_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Bus \u2014 60 or more min"
+    agg: sum
+    expr: '"B08134m80"'
+  - name: b08134e81_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e81"'
+  - name: b08134m81_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m81"'
+  - name: b08134e82_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e82"'
+  - name: b08134m82_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m82"'
+  - name: b08134e83_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e83"'
+  - name: b08134m83_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m83"'
+  - name: b08134e84_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e84"'
+  - name: b08134m84_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m84"'
+  - name: b08134e85_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e85"'
+  - name: b08134m85_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m85"'
+  - name: b08134e86_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e86"'
+  - name: b08134m86_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m86"'
+  - name: b08134e87_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e87"'
+  - name: b08134m87_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m87"'
+  - name: b08134e88_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e88"'
+  - name: b08134m88_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m88"'
+  - name: b08134e89_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e89"'
+  - name: b08134m89_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m89"'
+  - name: b08134e90_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Subway or elevated\
+      \ rail L"
+    agg: sum
+    expr: '"B08134e90"'
+  - name: b08134m90_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Subway or elevated r"
+    agg: sum
+    expr: '"B08134m90"'
+  - name: b08134e91_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e91"'
+  - name: b08134m91_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m91"'
+  - name: b08134e92_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e92"'
+  - name: b08134m92_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m92"'
+  - name: b08134e93_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e93"'
+  - name: b08134m93_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m93"'
+  - name: b08134e94_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e94"'
+  - name: b08134m94_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m94"'
+  - name: b08134e95_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e95"'
+  - name: b08134m95_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m95"'
+  - name: b08134e96_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e96"'
+  - name: b08134m96_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m96"'
+  - name: b08134e97_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e97"'
+  - name: b08134m97_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m97"'
+  - name: b08134e98_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e98"'
+  - name: b08134m98_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m98"'
+  - name: b08134e99_estimate_means_of_transportation_to_work_by_travel_tim
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e99"'
+  - name: b08134m99_marginoferror_means_of_transportation_to_work_by_trave
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m99"'
+  - name: b08134e100_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Public transportation (excluding taxicab) \u2014 Long-distance train\
+      \ or co"
+    agg: sum
+    expr: '"B08134e100"'
+  - name: b08134m100_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Public transportation (excluding taxicab) \u2014\
+      \ Long-distance train "
+    agg: sum
+    expr: '"B08134m100"'
+  - name: b08134e101_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked"
+    agg: sum
+    expr: '"B08134e101"'
+  - name: b08134m101_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked"
+    agg: sum
+    expr: '"B08134m101"'
+  - name: b08134e102_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e102"'
+  - name: b08134m102_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134m102"'
+  - name: b08134e103_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e103"'
+  - name: b08134m103_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134m103"'
+  - name: b08134e104_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e104"'
+  - name: b08134m104_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134m104"'
+  - name: b08134e105_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e105"'
+  - name: b08134m105_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134m105"'
+  - name: b08134e106_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e106"'
+  - name: b08134m106_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134m106"'
+  - name: b08134e107_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e107"'
+  - name: b08134m107_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134m107"'
+  - name: b08134e108_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e108"'
+  - name: b08134m108_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134m108"'
+  - name: b08134e109_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e109"'
+  - name: b08134m109_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134m109"'
+  - name: b08134e110_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Walked \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e110"'
+  - name: b08134m110_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Walked \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134m110"'
+  - name: b08134e111_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means"
+    agg: sum
+    expr: '"B08134e111"'
+  - name: b08134m111_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means"
+    agg: sum
+    expr: '"B08134m111"'
+  - name: b08134e112_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 Less than 10 minutes"
+    agg: sum
+    expr: '"B08134e112"'
+  - name: b08134m112_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ Less than 10 minutes"
+    agg: sum
+    expr: '"B08134m112"'
+  - name: b08134e113_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134e113"'
+  - name: b08134m113_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 10 to 14 minutes"
+    agg: sum
+    expr: '"B08134m113"'
+  - name: b08134e114_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134e114"'
+  - name: b08134m114_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 15 to 19 minutes"
+    agg: sum
+    expr: '"B08134m114"'
+  - name: b08134e115_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134e115"'
+  - name: b08134m115_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 20 to 24 minutes"
+    agg: sum
+    expr: '"B08134m115"'
+  - name: b08134e116_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134e116"'
+  - name: b08134m116_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 25 to 29 minutes"
+    agg: sum
+    expr: '"B08134m116"'
+  - name: b08134e117_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134e117"'
+  - name: b08134m117_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 30 to 34 minutes"
+    agg: sum
+    expr: '"B08134m117"'
+  - name: b08134e118_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134e118"'
+  - name: b08134m118_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 35 to 44 minutes"
+    agg: sum
+    expr: '"B08134m118"'
+  - name: b08134e119_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134e119"'
+  - name: b08134m119_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 45 to 59 minutes"
+    agg: sum
+    expr: '"B08134m119"'
+  - name: b08134e120_estimate_means_of_transportation_to_work_by_travel_ti
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK BY TRAVEL TIME TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 Taxicab motorcycle bicycle or other means \u2014 60 or more minutes"
+    agg: sum
+    expr: '"B08134e120"'
+  - name: b08134m120_marginoferror_means_of_transportation_to_work_by_trav
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK BY TRAVEL TIME TO WORK \u2014 Workers 16 years and over who did not work\
+      \ from home \u2014 Total \u2014 Taxicab motorcycle bicycle or other means \u2014\
+      \ 60 or more minutes"
+    agg: sum
+    expr: '"B08134m120"'
+  - name: b08301e1_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total"
+    agg: sum
+    expr: '"B08301e1"'
+  - name: b08301m1_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B08301m1"'
+  - name: b08301e2_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van"
+    agg: sum
+    expr: '"B08301e2"'
+  - name: b08301m2_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van"
+    agg: sum
+    expr: '"B08301m2"'
+  - name: b08301e3_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Drove alone"
+    agg: sum
+    expr: '"B08301e3"'
+  - name: b08301m3_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Drove alone"
+    agg: sum
+    expr: '"B08301m3"'
+  - name: b08301e4_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Carpooled"
+    agg: sum
+    expr: '"B08301e4"'
+  - name: b08301m4_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Carpooled"
+    agg: sum
+    expr: '"B08301m4"'
+  - name: b08301e5_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014\
+      \ In 2-person carpool"
+    agg: sum
+    expr: '"B08301e5"'
+  - name: b08301m5_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Carpooled \u2014 In 2-person carpool"
+    agg: sum
+    expr: '"B08301m5"'
+  - name: b08301e6_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014\
+      \ In 3-person carpool"
+    agg: sum
+    expr: '"B08301e6"'
+  - name: b08301m6_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Carpooled \u2014 In 3-person carpool"
+    agg: sum
+    expr: '"B08301m6"'
+  - name: b08301e7_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014\
+      \ In 4-person carpool"
+    agg: sum
+    expr: '"B08301e7"'
+  - name: b08301m7_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Carpooled \u2014 In 4-person carpool"
+    agg: sum
+    expr: '"B08301m7"'
+  - name: b08301e8_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014\
+      \ In 5- or 6-person carpool"
+    agg: sum
+    expr: '"B08301e8"'
+  - name: b08301m8_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Carpooled \u2014 In 5- or 6-person carpool"
+    agg: sum
+    expr: '"B08301m8"'
+  - name: b08301e9_estimate_means_of_transportation_to_work_workers_16_yea
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Car truck or van \u2014 Carpooled \u2014\
+      \ In 7-or-more-person carpool"
+    agg: sum
+    expr: '"B08301e9"'
+  - name: b08301m9_marginoferror_means_of_transportation_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Car truck or van\
+      \ \u2014 Carpooled \u2014 In 7-or-more-person carpool"
+    agg: sum
+    expr: '"B08301m9"'
+  - name: b08301e10_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Public transportation (excluding taxicab)"
+    agg: sum
+    expr: '"B08301e10"'
+  - name: b08301m10_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Public transportation\
+      \ (excluding taxicab)"
+    agg: sum
+    expr: '"B08301m10"'
+  - name: b08301e11_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Public transportation (excluding taxicab)\
+      \ \u2014 Bus"
+    agg: sum
+    expr: '"B08301e11"'
+  - name: b08301m11_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Public transportation\
+      \ (excluding taxicab) \u2014 Bus"
+    agg: sum
+    expr: '"B08301m11"'
+  - name: b08301e12_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Public transportation (excluding taxicab)\
+      \ \u2014 Subway or elevated rail"
+    agg: sum
+    expr: '"B08301e12"'
+  - name: b08301m12_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Public transportation\
+      \ (excluding taxicab) \u2014 Subway or elevated rail"
+    agg: sum
+    expr: '"B08301m12"'
+  - name: b08301e13_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Public transportation (excluding taxicab)\
+      \ \u2014 Long-distance train or commuter rail"
+    agg: sum
+    expr: '"B08301e13"'
+  - name: b08301m13_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Public transportation\
+      \ (excluding taxicab) \u2014 Long-distance train or commuter rail"
+    agg: sum
+    expr: '"B08301m13"'
+  - name: b08301e14_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Public transportation (excluding taxicab)\
+      \ \u2014 Light rail streetcar or trolley (carro p\xB7blico in Puerto Rico)"
+    agg: sum
+    expr: '"B08301e14"'
+  - name: b08301m14_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Public transportation\
+      \ (excluding taxicab) \u2014 Light rail streetcar or trolley (carro p\xB7blico\
+      \ in Puerto Rico)"
+    agg: sum
+    expr: '"B08301m14"'
+  - name: b08301e15_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Public transportation (excluding taxicab)\
+      \ \u2014 Ferryboat"
+    agg: sum
+    expr: '"B08301e15"'
+  - name: b08301m15_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Public transportation\
+      \ (excluding taxicab) \u2014 Ferryboat"
+    agg: sum
+    expr: '"B08301m15"'
+  - name: b08301e16_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Taxicab"
+    agg: sum
+    expr: '"B08301e16"'
+  - name: b08301m16_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Taxicab"
+    agg: sum
+    expr: '"B08301m16"'
+  - name: b08301e17_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Motorcycle"
+    agg: sum
+    expr: '"B08301e17"'
+  - name: b08301m17_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Motorcycle"
+    agg: sum
+    expr: '"B08301m17"'
+  - name: b08301e18_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Bicycle"
+    agg: sum
+    expr: '"B08301e18"'
+  - name: b08301m18_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Bicycle"
+    agg: sum
+    expr: '"B08301m18"'
+  - name: b08301e19_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Walked"
+    agg: sum
+    expr: '"B08301e19"'
+  - name: b08301m19_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Walked"
+    agg: sum
+    expr: '"B08301m19"'
+  - name: b08301e20_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Other means"
+    agg: sum
+    expr: '"B08301e20"'
+  - name: b08301m20_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Other means"
+    agg: sum
+    expr: '"B08301m20"'
+  - name: b08301e21_estimate_means_of_transportation_to_work_workers_16_ye
+    description: "Estimate \u2014 MEANS OF TRANSPORTATION TO WORK \u2014 Workers 16\
+      \ years and over \u2014 Total \u2014 Worked from home"
+    agg: sum
+    expr: '"B08301e21"'
+  - name: b08301m21_marginoferror_means_of_transportation_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 MEANS OF TRANSPORTATION TO\
+      \ WORK \u2014 Workers 16 years and over \u2014 Total \u2014 Worked from home"
+    agg: sum
+    expr: '"B08301m21"'
+  - name: b08302e1_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total"
+    agg: sum
+    expr: '"B08302e1"'
+  - name: b08302m1_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total"
+    agg: sum
+    expr: '"B08302m1"'
+  - name: b08302e2_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 12 00 a.m. to\
+      \ 4 59 a.m."
+    agg: sum
+    expr: '"B08302e2"'
+  - name: b08302m2_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 12 00 a.m. to 4 59 a.m."
+    agg: sum
+    expr: '"B08302m2"'
+  - name: b08302e3_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 5 00 a.m. to\
+      \ 5 29 a.m."
+    agg: sum
+    expr: '"B08302e3"'
+  - name: b08302m3_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 5 00 a.m. to 5 29 a.m."
+    agg: sum
+    expr: '"B08302m3"'
+  - name: b08302e4_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 5 30 a.m. to\
+      \ 5 59 a.m."
+    agg: sum
+    expr: '"B08302e4"'
+  - name: b08302m4_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 5 30 a.m. to 5 59 a.m."
+    agg: sum
+    expr: '"B08302m4"'
+  - name: b08302e5_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 6 00 a.m. to\
+      \ 6 29 a.m."
+    agg: sum
+    expr: '"B08302e5"'
+  - name: b08302m5_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 6 00 a.m. to 6 29 a.m."
+    agg: sum
+    expr: '"B08302m5"'
+  - name: b08302e6_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 6 30 a.m. to\
+      \ 6 59 a.m."
+    agg: sum
+    expr: '"B08302e6"'
+  - name: b08302m6_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 6 30 a.m. to 6 59 a.m."
+    agg: sum
+    expr: '"B08302m6"'
+  - name: b08302e7_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 7 00 a.m. to\
+      \ 7 29 a.m."
+    agg: sum
+    expr: '"B08302e7"'
+  - name: b08302m7_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 7 00 a.m. to 7 29 a.m."
+    agg: sum
+    expr: '"B08302m7"'
+  - name: b08302e8_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 7 30 a.m. to\
+      \ 7 59 a.m."
+    agg: sum
+    expr: '"B08302e8"'
+  - name: b08302m8_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 7 30 a.m. to 7 59 a.m."
+    agg: sum
+    expr: '"B08302m8"'
+  - name: b08302e9_estimate_time_of_departure_to_go_to_work_workers_16_yea
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 8 00 a.m. to\
+      \ 8 29 a.m."
+    agg: sum
+    expr: '"B08302e9"'
+  - name: b08302m9_marginoferror_time_of_departure_to_go_to_work_workers_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 8 00 a.m. to 8 29 a.m."
+    agg: sum
+    expr: '"B08302m9"'
+  - name: b08302e10_estimate_time_of_departure_to_go_to_work_workers_16_ye
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 8 30 a.m. to\
+      \ 8 59 a.m."
+    agg: sum
+    expr: '"B08302e10"'
+  - name: b08302m10_marginoferror_time_of_departure_to_go_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 8 30 a.m. to 8 59 a.m."
+    agg: sum
+    expr: '"B08302m10"'
+  - name: b08302e11_estimate_time_of_departure_to_go_to_work_workers_16_ye
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 9 00 a.m. to\
+      \ 9 59 a.m."
+    agg: sum
+    expr: '"B08302e11"'
+  - name: b08302m11_marginoferror_time_of_departure_to_go_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 9 00 a.m. to 9 59 a.m."
+    agg: sum
+    expr: '"B08302m11"'
+  - name: b08302e12_estimate_time_of_departure_to_go_to_work_workers_16_ye
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 10 00 a.m. to\
+      \ 10 59 a.m."
+    agg: sum
+    expr: '"B08302e12"'
+  - name: b08302m12_marginoferror_time_of_departure_to_go_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 10 00 a.m. to 10 59 a.m."
+    agg: sum
+    expr: '"B08302m12"'
+  - name: b08302e13_estimate_time_of_departure_to_go_to_work_workers_16_ye
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 11 00 a.m. to\
+      \ 11 59 a.m."
+    agg: sum
+    expr: '"B08302e13"'
+  - name: b08302m13_marginoferror_time_of_departure_to_go_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 11 00 a.m. to 11 59 a.m."
+    agg: sum
+    expr: '"B08302m13"'
+  - name: b08302e14_estimate_time_of_departure_to_go_to_work_workers_16_ye
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 12 00 p.m. to\
+      \ 3 59 p.m."
+    agg: sum
+    expr: '"B08302e14"'
+  - name: b08302m14_marginoferror_time_of_departure_to_go_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 12 00 p.m. to 3 59 p.m."
+    agg: sum
+    expr: '"B08302m14"'
+  - name: b08302e15_estimate_time_of_departure_to_go_to_work_workers_16_ye
+    description: "Estimate \u2014 TIME OF DEPARTURE TO GO TO WORK \u2014 Workers 16\
+      \ years and over who did not work from home \u2014 Total \u2014 4 00 p.m. to\
+      \ 11 59 p.m."
+    agg: sum
+    expr: '"B08302e15"'
+  - name: b08302m15_marginoferror_time_of_departure_to_go_to_work_workers
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TIME OF DEPARTURE TO GO TO\
+      \ WORK \u2014 Workers 16 years and over who did not work from home \u2014 Total\
+      \ \u2014 4 00 p.m. to 11 59 p.m."
+    agg: sum
+    expr: '"B08302m15"'
+  - name: b08303e1_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total"
+    agg: sum
+    expr: '"B08303e1"'
+  - name: b08303m1_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total"
+    agg: sum
+    expr: '"B08303m1"'
+  - name: b08303e2_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 Less than 5 minutes"
+    agg: sum
+    expr: '"B08303e2"'
+  - name: b08303m2_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 Less\
+      \ than 5 minutes"
+    agg: sum
+    expr: '"B08303m2"'
+  - name: b08303e3_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 5 to 9 minutes"
+    agg: sum
+    expr: '"B08303e3"'
+  - name: b08303m3_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 5\
+      \ to 9 minutes"
+    agg: sum
+    expr: '"B08303m3"'
+  - name: b08303e4_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 10 to 14 minutes"
+    agg: sum
+    expr: '"B08303e4"'
+  - name: b08303m4_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 10\
+      \ to 14 minutes"
+    agg: sum
+    expr: '"B08303m4"'
+  - name: b08303e5_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 15 to 19 minutes"
+    agg: sum
+    expr: '"B08303e5"'
+  - name: b08303m5_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 15\
+      \ to 19 minutes"
+    agg: sum
+    expr: '"B08303m5"'
+  - name: b08303e6_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 20 to 24 minutes"
+    agg: sum
+    expr: '"B08303e6"'
+  - name: b08303m6_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 20\
+      \ to 24 minutes"
+    agg: sum
+    expr: '"B08303m6"'
+  - name: b08303e7_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 25 to 29 minutes"
+    agg: sum
+    expr: '"B08303e7"'
+  - name: b08303m7_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 25\
+      \ to 29 minutes"
+    agg: sum
+    expr: '"B08303m7"'
+  - name: b08303e8_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 30 to 34 minutes"
+    agg: sum
+    expr: '"B08303e8"'
+  - name: b08303m8_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 30\
+      \ to 34 minutes"
+    agg: sum
+    expr: '"B08303m8"'
+  - name: b08303e9_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 35 to 39 minutes"
+    agg: sum
+    expr: '"B08303e9"'
+  - name: b08303m9_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 35\
+      \ to 39 minutes"
+    agg: sum
+    expr: '"B08303m9"'
+  - name: b08303e10_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 40 to 44 minutes"
+    agg: sum
+    expr: '"B08303e10"'
+  - name: b08303m10_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 40\
+      \ to 44 minutes"
+    agg: sum
+    expr: '"B08303m10"'
+  - name: b08303e11_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 45 to 59 minutes"
+    agg: sum
+    expr: '"B08303e11"'
+  - name: b08303m11_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 45\
+      \ to 59 minutes"
+    agg: sum
+    expr: '"B08303m11"'
+  - name: b08303e12_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 60 to 89 minutes"
+    agg: sum
+    expr: '"B08303e12"'
+  - name: b08303m12_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 60\
+      \ to 89 minutes"
+    agg: sum
+    expr: '"B08303m12"'
+  - name: b08303e13_estimate_travel_time_to_work_workers_16_years_and_over
+    description: "Estimate \u2014 TRAVEL TIME TO WORK \u2014 Workers 16 years and\
+      \ over who did not work from home \u2014 Total \u2014 90 or more minutes"
+    agg: sum
+    expr: '"B08303e13"'
+  - name: b08303m13_marginoferror_travel_time_to_work_workers_16_years_and
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TRAVEL TIME TO WORK \u2014\
+      \ Workers 16 years and over who did not work from home \u2014 Total \u2014 90\
+      \ or more minutes"
+    agg: sum
+    expr: '"B08303m13"'

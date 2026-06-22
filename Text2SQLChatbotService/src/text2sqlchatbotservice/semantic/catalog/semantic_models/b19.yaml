@@ -1,0 +1,2217 @@
+semantic_model:
+  name: cbg_b19
+  description: "Census ACS topic B19 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B19
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b19001e1_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19001e1"'
+  - name: b19001m1_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19001m1"'
+  - name: b19001e2_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 Less than\
+      \ USD 10 000"
+    agg: sum
+    expr: '"B19001e2"'
+  - name: b19001m2_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19001m2"'
+  - name: b19001e3_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 10 000\
+      \ to USD 14 999"
+    agg: sum
+    expr: '"B19001e3"'
+  - name: b19001m3_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19001m3"'
+  - name: b19001e4_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 15 000\
+      \ to USD 19 999"
+    agg: sum
+    expr: '"B19001e4"'
+  - name: b19001m4_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19001m4"'
+  - name: b19001e5_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 20 000\
+      \ to USD 24 999"
+    agg: sum
+    expr: '"B19001e5"'
+  - name: b19001m5_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19001m5"'
+  - name: b19001e6_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 25 000\
+      \ to USD 29 999"
+    agg: sum
+    expr: '"B19001e6"'
+  - name: b19001m6_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19001m6"'
+  - name: b19001e7_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 30 000\
+      \ to USD 34 999"
+    agg: sum
+    expr: '"B19001e7"'
+  - name: b19001m7_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19001m7"'
+  - name: b19001e8_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 35 000\
+      \ to USD 39 999"
+    agg: sum
+    expr: '"B19001e8"'
+  - name: b19001m8_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19001m8"'
+  - name: b19001e9_estimate_household_income_in_the_past_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 40 000\
+      \ to USD 44 999"
+    agg: sum
+    expr: '"B19001e9"'
+  - name: b19001m9_marginoferror_household_income_in_the_past_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19001m9"'
+  - name: b19001e10_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 45 000\
+      \ to USD 49 999"
+    agg: sum
+    expr: '"B19001e10"'
+  - name: b19001m10_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19001m10"'
+  - name: b19001e11_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 50 000\
+      \ to USD 59 999"
+    agg: sum
+    expr: '"B19001e11"'
+  - name: b19001m11_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19001m11"'
+  - name: b19001e12_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 60 000\
+      \ to USD 74 999"
+    agg: sum
+    expr: '"B19001e12"'
+  - name: b19001m12_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19001m12"'
+  - name: b19001e13_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 75 000\
+      \ to USD 99 999"
+    agg: sum
+    expr: '"B19001e13"'
+  - name: b19001m13_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19001m13"'
+  - name: b19001e14_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 100\
+      \ 000 to USD 124 999"
+    agg: sum
+    expr: '"B19001e14"'
+  - name: b19001m14_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19001m14"'
+  - name: b19001e15_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 125\
+      \ 000 to USD 149 999"
+    agg: sum
+    expr: '"B19001e15"'
+  - name: b19001m15_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19001m15"'
+  - name: b19001e16_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 150\
+      \ 000 to USD 199 999"
+    agg: sum
+    expr: '"B19001e16"'
+  - name: b19001m16_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19001m16"'
+  - name: b19001e17_estimate_household_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total \u2014 USD 200\
+      \ 000 or more"
+    agg: sum
+    expr: '"B19001e17"'
+  - name: b19001m17_marginoferror_household_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19001m17"'
+  - name: b19037e1_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19037e1"'
+  - name: b19037m1_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B19037m1"'
+  - name: b19037e2_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years"
+    agg: sum
+    expr: '"B19037e2"'
+  - name: b19037m2_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years"
+    agg: sum
+    expr: '"B19037m2"'
+  - name: b19037e3_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037e3"'
+  - name: b19037m3_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037m3"'
+  - name: b19037e4_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19037e4"'
+  - name: b19037m4_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 10 000 to USD 14\
+      \ 999"
+    agg: sum
+    expr: '"B19037m4"'
+  - name: b19037e5_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19037e5"'
+  - name: b19037m5_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 15 000 to USD 19\
+      \ 999"
+    agg: sum
+    expr: '"B19037m5"'
+  - name: b19037e6_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19037e6"'
+  - name: b19037m6_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 20 000 to USD 24\
+      \ 999"
+    agg: sum
+    expr: '"B19037m6"'
+  - name: b19037e7_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19037e7"'
+  - name: b19037m7_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 25 000 to USD 29\
+      \ 999"
+    agg: sum
+    expr: '"B19037m7"'
+  - name: b19037e8_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19037e8"'
+  - name: b19037m8_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 30 000 to USD 34\
+      \ 999"
+    agg: sum
+    expr: '"B19037m8"'
+  - name: b19037e9_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19037e9"'
+  - name: b19037m9_marginoferror_age_of_householder_by_household_income_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 35 000 to USD 39\
+      \ 999"
+    agg: sum
+    expr: '"B19037m9"'
+  - name: b19037e10_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19037e10"'
+  - name: b19037m10_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 40 000 to USD 44\
+      \ 999"
+    agg: sum
+    expr: '"B19037m10"'
+  - name: b19037e11_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19037e11"'
+  - name: b19037m11_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 45 000 to USD 49\
+      \ 999"
+    agg: sum
+    expr: '"B19037m11"'
+  - name: b19037e12_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19037e12"'
+  - name: b19037m12_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 50 000 to USD 59\
+      \ 999"
+    agg: sum
+    expr: '"B19037m12"'
+  - name: b19037e13_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19037e13"'
+  - name: b19037m13_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 60 000 to USD 74\
+      \ 999"
+    agg: sum
+    expr: '"B19037m13"'
+  - name: b19037e14_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19037e14"'
+  - name: b19037m14_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 75 000 to USD 99\
+      \ 999"
+    agg: sum
+    expr: '"B19037m14"'
+  - name: b19037e15_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19037e15"'
+  - name: b19037m15_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 100 000 to USD 124\
+      \ 999"
+    agg: sum
+    expr: '"B19037m15"'
+  - name: b19037e16_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19037e16"'
+  - name: b19037m16_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 125 000 to USD 149\
+      \ 999"
+    agg: sum
+    expr: '"B19037m16"'
+  - name: b19037e17_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19037e17"'
+  - name: b19037m17_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 150 000 to USD 199\
+      \ 999"
+    agg: sum
+    expr: '"B19037m17"'
+  - name: b19037e18_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder under 25 years \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037e18"'
+  - name: b19037m18_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder under 25 years \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037m18"'
+  - name: b19037e19_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years"
+    agg: sum
+    expr: '"B19037e19"'
+  - name: b19037m19_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years"
+    agg: sum
+    expr: '"B19037m19"'
+  - name: b19037e20_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037e20"'
+  - name: b19037m20_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037m20"'
+  - name: b19037e21_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19037e21"'
+  - name: b19037m21_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 10 000 to USD 14\
+      \ 999"
+    agg: sum
+    expr: '"B19037m21"'
+  - name: b19037e22_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19037e22"'
+  - name: b19037m22_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 15 000 to USD 19\
+      \ 999"
+    agg: sum
+    expr: '"B19037m22"'
+  - name: b19037e23_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19037e23"'
+  - name: b19037m23_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 20 000 to USD 24\
+      \ 999"
+    agg: sum
+    expr: '"B19037m23"'
+  - name: b19037e24_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19037e24"'
+  - name: b19037m24_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 25 000 to USD 29\
+      \ 999"
+    agg: sum
+    expr: '"B19037m24"'
+  - name: b19037e25_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19037e25"'
+  - name: b19037m25_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 30 000 to USD 34\
+      \ 999"
+    agg: sum
+    expr: '"B19037m25"'
+  - name: b19037e26_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19037e26"'
+  - name: b19037m26_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 35 000 to USD 39\
+      \ 999"
+    agg: sum
+    expr: '"B19037m26"'
+  - name: b19037e27_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19037e27"'
+  - name: b19037m27_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 40 000 to USD 44\
+      \ 999"
+    agg: sum
+    expr: '"B19037m27"'
+  - name: b19037e28_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19037e28"'
+  - name: b19037m28_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 45 000 to USD 49\
+      \ 999"
+    agg: sum
+    expr: '"B19037m28"'
+  - name: b19037e29_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19037e29"'
+  - name: b19037m29_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 50 000 to USD 59\
+      \ 999"
+    agg: sum
+    expr: '"B19037m29"'
+  - name: b19037e30_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19037e30"'
+  - name: b19037m30_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 60 000 to USD 74\
+      \ 999"
+    agg: sum
+    expr: '"B19037m30"'
+  - name: b19037e31_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19037e31"'
+  - name: b19037m31_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 75 000 to USD 99\
+      \ 999"
+    agg: sum
+    expr: '"B19037m31"'
+  - name: b19037e32_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19037e32"'
+  - name: b19037m32_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 100 000 to USD 124\
+      \ 999"
+    agg: sum
+    expr: '"B19037m32"'
+  - name: b19037e33_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19037e33"'
+  - name: b19037m33_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 125 000 to USD 149\
+      \ 999"
+    agg: sum
+    expr: '"B19037m33"'
+  - name: b19037e34_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19037e34"'
+  - name: b19037m34_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 150 000 to USD 199\
+      \ 999"
+    agg: sum
+    expr: '"B19037m34"'
+  - name: b19037e35_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 25 to 44 years \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037e35"'
+  - name: b19037m35_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 25 to 44 years \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037m35"'
+  - name: b19037e36_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years"
+    agg: sum
+    expr: '"B19037e36"'
+  - name: b19037m36_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years"
+    agg: sum
+    expr: '"B19037m36"'
+  - name: b19037e37_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037e37"'
+  - name: b19037m37_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037m37"'
+  - name: b19037e38_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19037e38"'
+  - name: b19037m38_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 10 000 to USD 14\
+      \ 999"
+    agg: sum
+    expr: '"B19037m38"'
+  - name: b19037e39_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19037e39"'
+  - name: b19037m39_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 15 000 to USD 19\
+      \ 999"
+    agg: sum
+    expr: '"B19037m39"'
+  - name: b19037e40_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19037e40"'
+  - name: b19037m40_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 20 000 to USD 24\
+      \ 999"
+    agg: sum
+    expr: '"B19037m40"'
+  - name: b19037e41_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19037e41"'
+  - name: b19037m41_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 25 000 to USD 29\
+      \ 999"
+    agg: sum
+    expr: '"B19037m41"'
+  - name: b19037e42_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19037e42"'
+  - name: b19037m42_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 30 000 to USD 34\
+      \ 999"
+    agg: sum
+    expr: '"B19037m42"'
+  - name: b19037e43_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19037e43"'
+  - name: b19037m43_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 35 000 to USD 39\
+      \ 999"
+    agg: sum
+    expr: '"B19037m43"'
+  - name: b19037e44_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19037e44"'
+  - name: b19037m44_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 40 000 to USD 44\
+      \ 999"
+    agg: sum
+    expr: '"B19037m44"'
+  - name: b19037e45_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19037e45"'
+  - name: b19037m45_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 45 000 to USD 49\
+      \ 999"
+    agg: sum
+    expr: '"B19037m45"'
+  - name: b19037e46_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19037e46"'
+  - name: b19037m46_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 50 000 to USD 59\
+      \ 999"
+    agg: sum
+    expr: '"B19037m46"'
+  - name: b19037e47_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19037e47"'
+  - name: b19037m47_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 60 000 to USD 74\
+      \ 999"
+    agg: sum
+    expr: '"B19037m47"'
+  - name: b19037e48_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19037e48"'
+  - name: b19037m48_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 75 000 to USD 99\
+      \ 999"
+    agg: sum
+    expr: '"B19037m48"'
+  - name: b19037e49_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19037e49"'
+  - name: b19037m49_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 100 000 to USD 124\
+      \ 999"
+    agg: sum
+    expr: '"B19037m49"'
+  - name: b19037e50_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19037e50"'
+  - name: b19037m50_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 125 000 to USD 149\
+      \ 999"
+    agg: sum
+    expr: '"B19037m50"'
+  - name: b19037e51_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19037e51"'
+  - name: b19037m51_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 150 000 to USD 199\
+      \ 999"
+    agg: sum
+    expr: '"B19037m51"'
+  - name: b19037e52_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 45 to 64 years \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037e52"'
+  - name: b19037m52_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 45 to 64 years \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037m52"'
+  - name: b19037e53_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over"
+    agg: sum
+    expr: '"B19037e53"'
+  - name: b19037m53_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over"
+    agg: sum
+    expr: '"B19037m53"'
+  - name: b19037e54_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19037e54"'
+  - name: b19037m54_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 Less than USD 10\
+      \ 000"
+    agg: sum
+    expr: '"B19037m54"'
+  - name: b19037e55_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19037e55"'
+  - name: b19037m55_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 10 000 to USD\
+      \ 14 999"
+    agg: sum
+    expr: '"B19037m55"'
+  - name: b19037e56_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19037e56"'
+  - name: b19037m56_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 15 000 to USD\
+      \ 19 999"
+    agg: sum
+    expr: '"B19037m56"'
+  - name: b19037e57_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19037e57"'
+  - name: b19037m57_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 20 000 to USD\
+      \ 24 999"
+    agg: sum
+    expr: '"B19037m57"'
+  - name: b19037e58_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19037e58"'
+  - name: b19037m58_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 25 000 to USD\
+      \ 29 999"
+    agg: sum
+    expr: '"B19037m58"'
+  - name: b19037e59_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19037e59"'
+  - name: b19037m59_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 30 000 to USD\
+      \ 34 999"
+    agg: sum
+    expr: '"B19037m59"'
+  - name: b19037e60_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19037e60"'
+  - name: b19037m60_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 35 000 to USD\
+      \ 39 999"
+    agg: sum
+    expr: '"B19037m60"'
+  - name: b19037e61_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19037e61"'
+  - name: b19037m61_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 40 000 to USD\
+      \ 44 999"
+    agg: sum
+    expr: '"B19037m61"'
+  - name: b19037e62_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19037e62"'
+  - name: b19037m62_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 45 000 to USD\
+      \ 49 999"
+    agg: sum
+    expr: '"B19037m62"'
+  - name: b19037e63_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19037e63"'
+  - name: b19037m63_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 50 000 to USD\
+      \ 59 999"
+    agg: sum
+    expr: '"B19037m63"'
+  - name: b19037e64_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19037e64"'
+  - name: b19037m64_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 60 000 to USD\
+      \ 74 999"
+    agg: sum
+    expr: '"B19037m64"'
+  - name: b19037e65_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19037e65"'
+  - name: b19037m65_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 75 000 to USD\
+      \ 99 999"
+    agg: sum
+    expr: '"B19037m65"'
+  - name: b19037e66_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19037e66"'
+  - name: b19037m66_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 100 000 to USD\
+      \ 124 999"
+    agg: sum
+    expr: '"B19037m66"'
+  - name: b19037e67_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19037e67"'
+  - name: b19037m67_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 125 000 to USD\
+      \ 149 999"
+    agg: sum
+    expr: '"B19037m67"'
+  - name: b19037e68_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19037e68"'
+  - name: b19037m68_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 150 000 to USD\
+      \ 199 999"
+    agg: sum
+    expr: '"B19037m68"'
+  - name: b19037e69_estimate_age_of_householder_by_household_income_in_the
+    description: "Estimate \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households \u2014 Total\
+      \ \u2014 Householder 65 years and over \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037e69"'
+  - name: b19037m69_marginoferror_age_of_householder_by_household_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE OF HOUSEHOLDER BY HOUSEHOLD\
+      \ INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Households\
+      \ \u2014 Total \u2014 Householder 65 years and over \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19037m69"'
+  - name: b19051e1_estimate_earnings_in_the_past_12_months_for_households
+    description: "Estimate \u2014 EARNINGS IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014\
+      \ Households \u2014 Total"
+    agg: sum
+    expr: '"B19051e1"'
+  - name: b19051m1_marginoferror_earnings_in_the_past_12_months_for_househ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EARNINGS IN THE PAST 12 MONTHS\
+      \ FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19051m1"'
+  - name: b19051e2_estimate_earnings_in_the_past_12_months_for_households
+    description: "Estimate \u2014 EARNINGS IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014\
+      \ Households \u2014 Total \u2014 With earnings"
+    agg: sum
+    expr: '"B19051e2"'
+  - name: b19051m2_marginoferror_earnings_in_the_past_12_months_for_househ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EARNINGS IN THE PAST 12 MONTHS\
+      \ FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With earnings"
+    agg: sum
+    expr: '"B19051m2"'
+  - name: b19051e3_estimate_earnings_in_the_past_12_months_for_households
+    description: "Estimate \u2014 EARNINGS IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014\
+      \ Households \u2014 Total \u2014 No earnings"
+    agg: sum
+    expr: '"B19051e3"'
+  - name: b19051m3_marginoferror_earnings_in_the_past_12_months_for_househ
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EARNINGS IN THE PAST 12 MONTHS\
+      \ FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No earnings"
+    agg: sum
+    expr: '"B19051m3"'
+  - name: b19052e1_estimate_wage_or_salary_income_in_the_past_12_months_fo
+    description: "Estimate \u2014 WAGE OR SALARY INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19052e1"'
+  - name: b19052m1_marginoferror_wage_or_salary_income_in_the_past_12_mont
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 WAGE OR SALARY INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19052m1"'
+  - name: b19052e2_estimate_wage_or_salary_income_in_the_past_12_months_fo
+    description: "Estimate \u2014 WAGE OR SALARY INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With wage or salary income"
+    agg: sum
+    expr: '"B19052e2"'
+  - name: b19052m2_marginoferror_wage_or_salary_income_in_the_past_12_mont
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 WAGE OR SALARY INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With\
+      \ wage or salary income"
+    agg: sum
+    expr: '"B19052m2"'
+  - name: b19052e3_estimate_wage_or_salary_income_in_the_past_12_months_fo
+    description: "Estimate \u2014 WAGE OR SALARY INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No wage or salary income"
+    agg: sum
+    expr: '"B19052e3"'
+  - name: b19052m3_marginoferror_wage_or_salary_income_in_the_past_12_mont
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 WAGE OR SALARY INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No\
+      \ wage or salary income"
+    agg: sum
+    expr: '"B19052m3"'
+  - name: b19053e1_estimate_self_employment_income_in_the_past_12_months_f
+    description: "Estimate \u2014 SELF-EMPLOYMENT INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19053e1"'
+  - name: b19053m1_marginoferror_self_employment_income_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SELF-EMPLOYMENT INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19053m1"'
+  - name: b19053e2_estimate_self_employment_income_in_the_past_12_months_f
+    description: "Estimate \u2014 SELF-EMPLOYMENT INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With self-employment income"
+    agg: sum
+    expr: '"B19053e2"'
+  - name: b19053m2_marginoferror_self_employment_income_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SELF-EMPLOYMENT INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With\
+      \ self-employment income"
+    agg: sum
+    expr: '"B19053m2"'
+  - name: b19053e3_estimate_self_employment_income_in_the_past_12_months_f
+    description: "Estimate \u2014 SELF-EMPLOYMENT INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No self-employment income"
+    agg: sum
+    expr: '"B19053e3"'
+  - name: b19053m3_marginoferror_self_employment_income_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SELF-EMPLOYMENT INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No\
+      \ self-employment income"
+    agg: sum
+    expr: '"B19053m3"'
+  - name: b19054e1_estimate_interest_dividends_or_net_rental_income_in_the
+    description: "Estimate \u2014 INTEREST, DIVIDENDS, OR NET RENTAL INCOME IN THE\
+      \ PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19054e1"'
+  - name: b19054m1_marginoferror_interest_dividends_or_net_rental_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTEREST, DIVIDENDS, OR NET\
+      \ RENTAL INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B19054m1"'
+  - name: b19054e2_estimate_interest_dividends_or_net_rental_income_in_the
+    description: "Estimate \u2014 INTEREST, DIVIDENDS, OR NET RENTAL INCOME IN THE\
+      \ PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With interest\
+      \ dividends or net rental income"
+    agg: sum
+    expr: '"B19054e2"'
+  - name: b19054m2_marginoferror_interest_dividends_or_net_rental_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTEREST, DIVIDENDS, OR NET\
+      \ RENTAL INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014\
+      \ Total \u2014 With interest dividends or net rental income"
+    agg: sum
+    expr: '"B19054m2"'
+  - name: b19054e3_estimate_interest_dividends_or_net_rental_income_in_the
+    description: "Estimate \u2014 INTEREST, DIVIDENDS, OR NET RENTAL INCOME IN THE\
+      \ PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No interest\
+      \ dividends or net rental income"
+    agg: sum
+    expr: '"B19054e3"'
+  - name: b19054m3_marginoferror_interest_dividends_or_net_rental_income_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTEREST, DIVIDENDS, OR NET\
+      \ RENTAL INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014\
+      \ Total \u2014 No interest dividends or net rental income"
+    agg: sum
+    expr: '"B19054m3"'
+  - name: b19055e1_estimate_social_security_income_in_the_past_12_months_f
+    description: "Estimate \u2014 SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19055e1"'
+  - name: b19055m1_marginoferror_social_security_income_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SOCIAL SECURITY INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19055m1"'
+  - name: b19055e2_estimate_social_security_income_in_the_past_12_months_f
+    description: "Estimate \u2014 SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With Social Security income"
+    agg: sum
+    expr: '"B19055e2"'
+  - name: b19055m2_marginoferror_social_security_income_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SOCIAL SECURITY INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With\
+      \ Social Security income"
+    agg: sum
+    expr: '"B19055m2"'
+  - name: b19055e3_estimate_social_security_income_in_the_past_12_months_f
+    description: "Estimate \u2014 SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No Social Security income"
+    agg: sum
+    expr: '"B19055e3"'
+  - name: b19055m3_marginoferror_social_security_income_in_the_past_12_mon
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SOCIAL SECURITY INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No\
+      \ Social Security income"
+    agg: sum
+    expr: '"B19055m3"'
+  - name: b19056e1_estimate_supplemental_security_income_ssi_in_the_past_1
+    description: "Estimate \u2014 SUPPLEMENTAL SECURITY INCOME (SSI) IN THE PAST 12\
+      \ MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19056e1"'
+  - name: b19056m1_marginoferror_supplemental_security_income_ssi_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SUPPLEMENTAL SECURITY INCOME\
+      \ (SSI) IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19056m1"'
+  - name: b19056e2_estimate_supplemental_security_income_ssi_in_the_past_1
+    description: "Estimate \u2014 SUPPLEMENTAL SECURITY INCOME (SSI) IN THE PAST 12\
+      \ MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With Supplemental\
+      \ Security Income (SSI)"
+    agg: sum
+    expr: '"B19056e2"'
+  - name: b19056m2_marginoferror_supplemental_security_income_ssi_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SUPPLEMENTAL SECURITY INCOME\
+      \ (SSI) IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total\
+      \ \u2014 With Supplemental Security Income (SSI)"
+    agg: sum
+    expr: '"B19056m2"'
+  - name: b19056e3_estimate_supplemental_security_income_ssi_in_the_past_1
+    description: "Estimate \u2014 SUPPLEMENTAL SECURITY INCOME (SSI) IN THE PAST 12\
+      \ MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No Supplemental\
+      \ Security Income (SSI)"
+    agg: sum
+    expr: '"B19056e3"'
+  - name: b19056m3_marginoferror_supplemental_security_income_ssi_in_the_p
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 SUPPLEMENTAL SECURITY INCOME\
+      \ (SSI) IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total\
+      \ \u2014 No Supplemental Security Income (SSI)"
+    agg: sum
+    expr: '"B19056m3"'
+  - name: b19057e1_estimate_public_assistance_income_in_the_past_12_months
+    description: "Estimate \u2014 PUBLIC ASSISTANCE INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19057e1"'
+  - name: b19057m1_marginoferror_public_assistance_income_in_the_past_12_m
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PUBLIC ASSISTANCE INCOME\
+      \ IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19057m1"'
+  - name: b19057e2_estimate_public_assistance_income_in_the_past_12_months
+    description: "Estimate \u2014 PUBLIC ASSISTANCE INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With public assistance income"
+    agg: sum
+    expr: '"B19057e2"'
+  - name: b19057m2_marginoferror_public_assistance_income_in_the_past_12_m
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PUBLIC ASSISTANCE INCOME\
+      \ IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ With public assistance income"
+    agg: sum
+    expr: '"B19057m2"'
+  - name: b19057e3_estimate_public_assistance_income_in_the_past_12_months
+    description: "Estimate \u2014 PUBLIC ASSISTANCE INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No public assistance income"
+    agg: sum
+    expr: '"B19057e3"'
+  - name: b19057m3_marginoferror_public_assistance_income_in_the_past_12_m
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PUBLIC ASSISTANCE INCOME\
+      \ IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014\
+      \ No public assistance income"
+    agg: sum
+    expr: '"B19057m3"'
+  - name: b19058e1_estimate_public_assistance_income_or_food_stamps_snap_i
+    description: "Estimate \u2014 PUBLIC ASSISTANCE INCOME OR FOOD STAMPS/SNAP IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19058e1"'
+  - name: b19058m1_marginoferror_public_assistance_income_or_food_stamps_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PUBLIC ASSISTANCE INCOME\
+      \ OR FOOD STAMPS/SNAP IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B19058m1"'
+  - name: b19058e2_estimate_public_assistance_income_or_food_stamps_snap_i
+    description: "Estimate \u2014 PUBLIC ASSISTANCE INCOME OR FOOD STAMPS/SNAP IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With\
+      \ cash public assistance or Food Stamps/SNAP"
+    agg: sum
+    expr: '"B19058e2"'
+  - name: b19058m2_marginoferror_public_assistance_income_or_food_stamps_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PUBLIC ASSISTANCE INCOME\
+      \ OR FOOD STAMPS/SNAP IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 With cash public assistance or Food Stamps/SNAP"
+    agg: sum
+    expr: '"B19058m2"'
+  - name: b19058e3_estimate_public_assistance_income_or_food_stamps_snap_i
+    description: "Estimate \u2014 PUBLIC ASSISTANCE INCOME OR FOOD STAMPS/SNAP IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No\
+      \ cash public assistance or Food Stamps/SNAP"
+    agg: sum
+    expr: '"B19058e3"'
+  - name: b19058m3_marginoferror_public_assistance_income_or_food_stamps_s
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PUBLIC ASSISTANCE INCOME\
+      \ OR FOOD STAMPS/SNAP IN THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households\
+      \ \u2014 Total \u2014 No cash public assistance or Food Stamps/SNAP"
+    agg: sum
+    expr: '"B19058m3"'
+  - name: b19059e1_estimate_retirement_income_in_the_past_12_months_for_ho
+    description: "Estimate \u2014 RETIREMENT INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS\
+      \ \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19059e1"'
+  - name: b19059m1_marginoferror_retirement_income_in_the_past_12_months_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RETIREMENT INCOME IN THE\
+      \ PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19059m1"'
+  - name: b19059e2_estimate_retirement_income_in_the_past_12_months_for_ho
+    description: "Estimate \u2014 RETIREMENT INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS\
+      \ \u2014 Households \u2014 Total \u2014 With retirement income"
+    agg: sum
+    expr: '"B19059e2"'
+  - name: b19059m2_marginoferror_retirement_income_in_the_past_12_months_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RETIREMENT INCOME IN THE\
+      \ PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With retirement\
+      \ income"
+    agg: sum
+    expr: '"B19059m2"'
+  - name: b19059e3_estimate_retirement_income_in_the_past_12_months_for_ho
+    description: "Estimate \u2014 RETIREMENT INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS\
+      \ \u2014 Households \u2014 Total \u2014 No retirement income"
+    agg: sum
+    expr: '"B19059e3"'
+  - name: b19059m3_marginoferror_retirement_income_in_the_past_12_months_f
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 RETIREMENT INCOME IN THE\
+      \ PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No retirement\
+      \ income"
+    agg: sum
+    expr: '"B19059m3"'
+  - name: b19060e1_estimate_other_types_of_income_in_the_past_12_months_fo
+    description: "Estimate \u2014 OTHER TYPES OF INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19060e1"'
+  - name: b19060m1_marginoferror_other_types_of_income_in_the_past_12_mont
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 OTHER TYPES OF INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B19060m1"'
+  - name: b19060e2_estimate_other_types_of_income_in_the_past_12_months_fo
+    description: "Estimate \u2014 OTHER TYPES OF INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With other types of income"
+    agg: sum
+    expr: '"B19060e2"'
+  - name: b19060m2_marginoferror_other_types_of_income_in_the_past_12_mont
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 OTHER TYPES OF INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 With\
+      \ other types of income"
+    agg: sum
+    expr: '"B19060m2"'
+  - name: b19060e3_estimate_other_types_of_income_in_the_past_12_months_fo
+    description: "Estimate \u2014 OTHER TYPES OF INCOME IN THE PAST 12 MONTHS FOR\
+      \ HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No other types of income"
+    agg: sum
+    expr: '"B19060e3"'
+  - name: b19060m3_marginoferror_other_types_of_income_in_the_past_12_mont
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 OTHER TYPES OF INCOME IN\
+      \ THE PAST 12 MONTHS FOR HOUSEHOLDS \u2014 Households \u2014 Total \u2014 No\
+      \ other types of income"
+    agg: sum
+    expr: '"B19060m3"'
+  - name: b19101e1_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B19101e1"'
+  - name: b19101m1_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B19101m1"'
+  - name: b19101e2_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19101e2"'
+  - name: b19101m2_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19101m2"'
+  - name: b19101e3_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19101e3"'
+  - name: b19101m3_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19101m3"'
+  - name: b19101e4_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19101e4"'
+  - name: b19101m4_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19101m4"'
+  - name: b19101e5_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19101e5"'
+  - name: b19101m5_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19101m5"'
+  - name: b19101e6_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19101e6"'
+  - name: b19101m6_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19101m6"'
+  - name: b19101e7_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19101e7"'
+  - name: b19101m7_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19101m7"'
+  - name: b19101e8_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19101e8"'
+  - name: b19101m8_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19101m8"'
+  - name: b19101e9_estimate_family_income_in_the_past_12_months_in_2020_in
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19101e9"'
+  - name: b19101m9_marginoferror_family_income_in_the_past_12_months_in_20
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19101m9"'
+  - name: b19101e10_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19101e10"'
+  - name: b19101m10_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19101m10"'
+  - name: b19101e11_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19101e11"'
+  - name: b19101m11_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19101m11"'
+  - name: b19101e12_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19101e12"'
+  - name: b19101m12_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19101m12"'
+  - name: b19101e13_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19101e13"'
+  - name: b19101m13_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19101m13"'
+  - name: b19101e14_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19101e14"'
+  - name: b19101m14_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19101m14"'
+  - name: b19101e15_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19101e15"'
+  - name: b19101m15_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19101m15"'
+  - name: b19101e16_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19101e16"'
+  - name: b19101m16_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19101m16"'
+  - name: b19101e17_estimate_family_income_in_the_past_12_months_in_2020_i
+    description: "Estimate \u2014 FAMILY INCOME IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED\
+      \ DOLLARS) \u2014 Families \u2014 Total \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19101e17"'
+  - name: b19101m17_marginoferror_family_income_in_the_past_12_months_in_2
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY INCOME IN THE PAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Families \u2014 Total\
+      \ \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19101m17"'
+  - name: b19123e1_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total"
+    agg: sum
+    expr: '"B19123e1"'
+  - name: b19123m1_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total"
+    agg: sum
+    expr: '"B19123m1"'
+  - name: b19123e2_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 With cash public assistance income or households\
+      \ re"
+    agg: sum
+    expr: '"B19123e2"'
+  - name: b19123m2_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 With cash public assistance\
+      \ income or househol"
+    agg: sum
+    expr: '"B19123m2"'
+  - name: b19123e3_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 No cash public assistance income or household\
+      \ Food "
+    agg: sum
+    expr: '"B19123e3"'
+  - name: b19123m3_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 No cash public assistance\
+      \ income or household "
+    agg: sum
+    expr: '"B19123m3"'
+  - name: b19123e4_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 2-person families"
+    agg: sum
+    expr: '"B19123e4"'
+  - name: b19123m4_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 2-person families"
+    agg: sum
+    expr: '"B19123m4"'
+  - name: b19123e5_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 2-person families \u2014 With cash public assistance\
+      \ inc"
+    agg: sum
+    expr: '"B19123e5"'
+  - name: b19123m5_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 2-person families \u2014\
+      \ With cash public assistanc"
+    agg: sum
+    expr: '"B19123m5"'
+  - name: b19123e6_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 2-person families \u2014 No cash public assistance\
+      \ incom"
+    agg: sum
+    expr: '"B19123e6"'
+  - name: b19123m6_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 2-person families \u2014\
+      \ No cash public assistance "
+    agg: sum
+    expr: '"B19123m6"'
+  - name: b19123e7_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 3-person families"
+    agg: sum
+    expr: '"B19123e7"'
+  - name: b19123m7_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 3-person families"
+    agg: sum
+    expr: '"B19123m7"'
+  - name: b19123e8_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 3-person families \u2014 With cash public assistance\
+      \ inc"
+    agg: sum
+    expr: '"B19123e8"'
+  - name: b19123m8_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 3-person families \u2014\
+      \ With cash public assistanc"
+    agg: sum
+    expr: '"B19123m8"'
+  - name: b19123e9_estimate_family_size_by_cash_public_assistance_income_o
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 3-person families \u2014 No cash public assistance\
+      \ incom"
+    agg: sum
+    expr: '"B19123e9"'
+  - name: b19123m9_marginoferror_family_size_by_cash_public_assistance_inc
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 3-person families \u2014\
+      \ No cash public assistance "
+    agg: sum
+    expr: '"B19123m9"'
+  - name: b19123e10_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 4-person families"
+    agg: sum
+    expr: '"B19123e10"'
+  - name: b19123m10_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 4-person families"
+    agg: sum
+    expr: '"B19123m10"'
+  - name: b19123e11_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 4-person families \u2014 With cash public assistance\
+      \ inc"
+    agg: sum
+    expr: '"B19123e11"'
+  - name: b19123m11_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 4-person families \u2014\
+      \ With cash public assistanc"
+    agg: sum
+    expr: '"B19123m11"'
+  - name: b19123e12_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 4-person families \u2014 No cash public assistance\
+      \ incom"
+    agg: sum
+    expr: '"B19123e12"'
+  - name: b19123m12_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 4-person families \u2014\
+      \ No cash public assistance "
+    agg: sum
+    expr: '"B19123m12"'
+  - name: b19123e13_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 5-person families"
+    agg: sum
+    expr: '"B19123e13"'
+  - name: b19123m13_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 5-person families"
+    agg: sum
+    expr: '"B19123m13"'
+  - name: b19123e14_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 5-person families \u2014 With cash public assistance\
+      \ inc"
+    agg: sum
+    expr: '"B19123e14"'
+  - name: b19123m14_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 5-person families \u2014\
+      \ With cash public assistanc"
+    agg: sum
+    expr: '"B19123m14"'
+  - name: b19123e15_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 5-person families \u2014 No cash public assistance\
+      \ incom"
+    agg: sum
+    expr: '"B19123e15"'
+  - name: b19123m15_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 5-person families \u2014\
+      \ No cash public assistance "
+    agg: sum
+    expr: '"B19123m15"'
+  - name: b19123e16_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 6-person families"
+    agg: sum
+    expr: '"B19123e16"'
+  - name: b19123m16_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 6-person families"
+    agg: sum
+    expr: '"B19123m16"'
+  - name: b19123e17_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 6-person families \u2014 With cash public assistance\
+      \ inc"
+    agg: sum
+    expr: '"B19123e17"'
+  - name: b19123m17_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 6-person families \u2014\
+      \ With cash public assistanc"
+    agg: sum
+    expr: '"B19123m17"'
+  - name: b19123e18_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 6-person families \u2014 No cash public assistance\
+      \ incom"
+    agg: sum
+    expr: '"B19123e18"'
+  - name: b19123m18_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 6-person families \u2014\
+      \ No cash public assistance "
+    agg: sum
+    expr: '"B19123m18"'
+  - name: b19123e19_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 7-or-more-person families"
+    agg: sum
+    expr: '"B19123e19"'
+  - name: b19123m19_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 7-or-more-person families"
+    agg: sum
+    expr: '"B19123m19"'
+  - name: b19123e20_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 7-or-more-person families \u2014 With cash public\
+      \ assist"
+    agg: sum
+    expr: '"B19123e20"'
+  - name: b19123m20_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 7-or-more-person families\
+      \ \u2014 With cash public a"
+    agg: sum
+    expr: '"B19123m20"'
+  - name: b19123e21_estimate_family_size_by_cash_public_assistance_income
+    description: "Estimate \u2014 FAMILY SIZE BY CASH PUBLIC ASSISTANCE INCOME OR\
+      \ HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE PAST 12 MONTHS \u2014\
+      \ Families \u2014 Total \u2014 7-or-more-person families \u2014 No cash public\
+      \ assistan"
+    agg: sum
+    expr: '"B19123e21"'
+  - name: b19123m21_marginoferror_family_size_by_cash_public_assistance_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 FAMILY SIZE BY CASH PUBLIC\
+      \ ASSISTANCE INCOME OR HOUSEHOLDS RECEIVING FOOD STAMPS/SNAP BENEFITS IN THE\
+      \ PAST 12 MONTHS \u2014 Families \u2014 Total \u2014 7-or-more-person families\
+      \ \u2014 No cash public ass"
+    agg: sum
+    expr: '"B19123m21"'
+  - name: b19201e1_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total"
+    agg: sum
+    expr: '"B19201e1"'
+  - name: b19201m1_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total"
+    agg: sum
+    expr: '"B19201m1"'
+  - name: b19201e2_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19201e2"'
+  - name: b19201m2_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B19201m2"'
+  - name: b19201e3_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19201e3"'
+  - name: b19201m3_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 10 000 to USD 14 999"
+    agg: sum
+    expr: '"B19201m3"'
+  - name: b19201e4_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19201e4"'
+  - name: b19201m4_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 15 000 to USD 19 999"
+    agg: sum
+    expr: '"B19201m4"'
+  - name: b19201e5_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19201e5"'
+  - name: b19201m5_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 20 000 to USD 24 999"
+    agg: sum
+    expr: '"B19201m5"'
+  - name: b19201e6_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19201e6"'
+  - name: b19201m6_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 25 000 to USD 29 999"
+    agg: sum
+    expr: '"B19201m6"'
+  - name: b19201e7_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19201e7"'
+  - name: b19201m7_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 30 000 to USD 34 999"
+    agg: sum
+    expr: '"B19201m7"'
+  - name: b19201e8_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19201e8"'
+  - name: b19201m8_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 35 000 to USD 39 999"
+    agg: sum
+    expr: '"B19201m8"'
+  - name: b19201e9_estimate_nonfamily_household_income_in_the_past_12_mont
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19201e9"'
+  - name: b19201m9_marginoferror_nonfamily_household_income_in_the_past_12
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 40 000 to USD 44 999"
+    agg: sum
+    expr: '"B19201m9"'
+  - name: b19201e10_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19201e10"'
+  - name: b19201m10_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 45 000 to USD 49 999"
+    agg: sum
+    expr: '"B19201m10"'
+  - name: b19201e11_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19201e11"'
+  - name: b19201m11_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 50 000 to USD 59 999"
+    agg: sum
+    expr: '"B19201m11"'
+  - name: b19201e12_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19201e12"'
+  - name: b19201m12_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 60 000 to USD 74 999"
+    agg: sum
+    expr: '"B19201m12"'
+  - name: b19201e13_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19201e13"'
+  - name: b19201m13_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 75 000 to USD 99 999"
+    agg: sum
+    expr: '"B19201m13"'
+  - name: b19201e14_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19201e14"'
+  - name: b19201m14_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 100 000 to USD 124 999"
+    agg: sum
+    expr: '"B19201m14"'
+  - name: b19201e15_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19201e15"'
+  - name: b19201m15_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 125 000 to USD 149 999"
+    agg: sum
+    expr: '"B19201m15"'
+  - name: b19201e16_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19201e16"'
+  - name: b19201m16_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 150 000 to USD 199 999"
+    agg: sum
+    expr: '"B19201m16"'
+  - name: b19201e17_estimate_nonfamily_household_income_in_the_past_12_mon
+    description: "Estimate \u2014 NONFAMILY HOUSEHOLD INCOME IN THE PAST 12 MONTHS\
+      \ (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily households \u2014 Total\
+      \ \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19201e17"'
+  - name: b19201m17_marginoferror_nonfamily_household_income_in_the_past_1
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 NONFAMILY HOUSEHOLD INCOME\
+      \ IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Nonfamily\
+      \ households \u2014 Total \u2014 USD 200 000 or more"
+    agg: sum
+    expr: '"B19201m17"'
+  - name: b19301e1_estimate_per_capita_income_in_the_past_12_months_in_202
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) \u2014 Total population \u2014 Per capita income\
+      \ in the past 12 months (in 2020 inflation-adjusted dollars)"
+    agg: sum
+    expr: '"B19301e1"'
+  - name: b19301m1_marginoferror_per_capita_income_in_the_past_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) \u2014 Total population\
+      \ \u2014 Per capita income in the past 12 months (in 2020 inflation-adjusted\
+      \ dollars)"
+    agg: sum
+    expr: '"B19301m1"'
+  - name: b19301ae1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (WHITE ALONE) \u2014 People who are White alone\
+      \ \u2014 Per capita income in the past 12 months (in 2020 inflation-adjusted"
+    agg: sum
+    expr: '"B19301Ae1"'
+  - name: b19301am1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (WHITE ALONE) \u2014 People\
+      \ who are White alone \u2014 Per capita income in the past 12 months (in 2020\
+      \ inflation-adj"
+    agg: sum
+    expr: '"B19301Am1"'
+  - name: b19301be1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (BLACK OR AFRICAN AMERICAN ALONE) \u2014 People\
+      \ who are Black or African American alone \u2014 Per capita income in the pa"
+    agg: sum
+    expr: '"B19301Be1"'
+  - name: b19301bm1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (BLACK OR AFRICAN AMERICAN\
+      \ ALONE) \u2014 People who are Black or African American alone \u2014 Per capita\
+      \ income in t"
+    agg: sum
+    expr: '"B19301Bm1"'
+  - name: b19301ce1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014\
+      \ People who are American Indian and Alaska Native alone \u2014 Per capita "
+    agg: sum
+    expr: '"B19301Ce1"'
+  - name: b19301cm1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (AMERICAN INDIAN AND ALASKA\
+      \ NATIVE ALONE) \u2014 People who are American Indian and Alaska Native alone\
+      \ \u2014 Per ca"
+    agg: sum
+    expr: '"B19301Cm1"'
+  - name: b19301de1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (ASIAN ALONE) \u2014 People who are Asian alone\
+      \ \u2014 Per capita income in the past 12 months (in 2020 inflation-adjusted"
+    agg: sum
+    expr: '"B19301De1"'
+  - name: b19301dm1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (ASIAN ALONE) \u2014 People\
+      \ who are Asian alone \u2014 Per capita income in the past 12 months (in 2020\
+      \ inflation-adj"
+    agg: sum
+    expr: '"B19301Dm1"'
+  - name: b19301fe1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (SOME OTHER RACE ALONE) \u2014 People who are\
+      \ Some Other Race alone \u2014 Per capita income in the past 12 months (in 202"
+    agg: sum
+    expr: '"B19301Fe1"'
+  - name: b19301fm1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (SOME OTHER RACE ALONE)\
+      \ \u2014 People who are Some Other Race alone \u2014 Per capita income in the\
+      \ past 12 months (i"
+    agg: sum
+    expr: '"B19301Fm1"'
+  - name: b19301ge1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (TWO OR MORE RACES) \u2014 Two or more races population\
+      \ \u2014 Per capita income in the past 12 months (in 2020 inflation-"
+    agg: sum
+    expr: '"B19301Ge1"'
+  - name: b19301gm1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (TWO OR MORE RACES) \u2014\
+      \ Two or more races population \u2014 Per capita income in the past 12 months\
+      \ (in 2020 infla"
+    agg: sum
+    expr: '"B19301Gm1"'
+  - name: b19301he1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White\
+      \ alone, not Hispanic or Latino population \u2014 Per capita income in th"
+    agg: sum
+    expr: '"B19301He1"'
+  - name: b19301hm1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (WHITE ALONE, NOT HISPANIC\
+      \ OR LATINO) \u2014 White alone, not Hispanic or Latino population \u2014 Per\
+      \ capita income "
+    agg: sum
+    expr: '"B19301Hm1"'
+  - name: b19301ie1_estimate_per_capita_income_in_the_past_12_months_in_20
+    description: "Estimate \u2014 PER CAPITA INCOME IN THE PAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) (HISPANIC OR LATINO) \u2014 People who are Hispanic\
+      \ or Latino \u2014 Per capita income in the past 12 months (in 2020 infl"
+    agg: sum
+    expr: '"B19301Ie1"'
+  - name: b19301im1_marginoferror_per_capita_income_in_the_past_12_months
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PER CAPITA INCOME IN THE\
+      \ PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) (HISPANIC OR LATINO) \u2014\
+      \ People who are Hispanic or Latino \u2014 Per capita income in the past 12\
+      \ months (in 2020"
+    agg: sum
+    expr: '"B19301Im1"'

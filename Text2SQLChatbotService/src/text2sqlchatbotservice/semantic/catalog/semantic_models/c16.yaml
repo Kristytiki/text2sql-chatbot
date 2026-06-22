@@ -1,0 +1,181 @@
+semantic_model:
+  name: cbg_c16
+  description: "Census ACS topic C16 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_C16
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: c16002e1_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"C16002e1"'
+  - name: c16002m1_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"C16002m1"'
+  - name: c16002e2_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 English only"
+    agg: sum
+    expr: '"C16002e2"'
+  - name: c16002m2_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 English\
+      \ only"
+    agg: sum
+    expr: '"C16002m2"'
+  - name: c16002e3_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Spanish"
+    agg: sum
+    expr: '"C16002e3"'
+  - name: c16002m3_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Spanish"
+    agg: sum
+    expr: '"C16002m3"'
+  - name: c16002e4_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Spanish \u2014 Limited\
+      \ English speaking household"
+    agg: sum
+    expr: '"C16002e4"'
+  - name: c16002m4_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Spanish\
+      \ \u2014 Limited English speaking household"
+    agg: sum
+    expr: '"C16002m4"'
+  - name: c16002e5_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Spanish \u2014 Not a\
+      \ limited English speaking household"
+    agg: sum
+    expr: '"C16002e5"'
+  - name: c16002m5_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Spanish\
+      \ \u2014 Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002m5"'
+  - name: c16002e6_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other Indo-European\
+      \ languages"
+    agg: sum
+    expr: '"C16002e6"'
+  - name: c16002m6_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other\
+      \ Indo-European languages"
+    agg: sum
+    expr: '"C16002m6"'
+  - name: c16002e7_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other Indo-European\
+      \ languages \u2014 Limited English speaking household"
+    agg: sum
+    expr: '"C16002e7"'
+  - name: c16002m7_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other\
+      \ Indo-European languages \u2014 Limited English speaking household"
+    agg: sum
+    expr: '"C16002m7"'
+  - name: c16002e8_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other Indo-European\
+      \ languages \u2014 Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002e8"'
+  - name: c16002m8_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other\
+      \ Indo-European languages \u2014 Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002m8"'
+  - name: c16002e9_estimate_household_language_by_household_limited_englis
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Asian and Pacific Island\
+      \ languages"
+    agg: sum
+    expr: '"C16002e9"'
+  - name: c16002m9_marginoferror_household_language_by_household_limited_e
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Asian\
+      \ and Pacific Island languages"
+    agg: sum
+    expr: '"C16002m9"'
+  - name: c16002e10_estimate_household_language_by_household_limited_engli
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Asian and Pacific Island\
+      \ languages \u2014 Limited English speaking household"
+    agg: sum
+    expr: '"C16002e10"'
+  - name: c16002m10_marginoferror_household_language_by_household_limited
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Asian\
+      \ and Pacific Island languages \u2014 Limited English speaking household"
+    agg: sum
+    expr: '"C16002m10"'
+  - name: c16002e11_estimate_household_language_by_household_limited_engli
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Asian and Pacific Island\
+      \ languages \u2014 Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002e11"'
+  - name: c16002m11_marginoferror_household_language_by_household_limited
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Asian\
+      \ and Pacific Island languages \u2014 Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002m11"'
+  - name: c16002e12_estimate_household_language_by_household_limited_engli
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other languages"
+    agg: sum
+    expr: '"C16002e12"'
+  - name: c16002m12_marginoferror_household_language_by_household_limited
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other\
+      \ languages"
+    agg: sum
+    expr: '"C16002m12"'
+  - name: c16002e13_estimate_household_language_by_household_limited_engli
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other languages \u2014\
+      \ Limited English speaking household"
+    agg: sum
+    expr: '"C16002e13"'
+  - name: c16002m13_marginoferror_household_language_by_household_limited
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other\
+      \ languages \u2014 Limited English speaking household"
+    agg: sum
+    expr: '"C16002m13"'
+  - name: c16002e14_estimate_household_language_by_household_limited_engli
+    description: "Estimate \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD LIMITED ENGLISH\
+      \ SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other languages \u2014\
+      \ Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002e14"'
+  - name: c16002m14_marginoferror_household_language_by_household_limited
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD LANGUAGE BY HOUSEHOLD\
+      \ LIMITED ENGLISH SPEAKING STATUS \u2014 Households \u2014 Total \u2014 Other\
+      \ languages \u2014 Not a limited English speaking household"
+    agg: sum
+    expr: '"C16002m14"'

@@ -1,0 +1,2364 @@
+semantic_model:
+  name: cbg_b28
+  description: "Census ACS topic B28 \u2014 auto-generated from field metadata."
+  node_relation:
+    schema_name: CENSUS_VIEWS
+    alias: V_CBG_B28
+  defaults:
+    agg_time_dimension: snapshot_year
+  entities:
+  - name: census_block_group
+    type: primary
+    expr: CENSUS_BLOCK_GROUP
+  dimensions:
+  - name: snapshot_year
+    type: time
+    expr: TO_TIMESTAMP(YEAR || '-01-01')
+    type_params:
+      time_granularity: year
+  measures:
+  - name: b28001e1_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28001e1"'
+  - name: b28001m1_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28001m1"'
+  - name: b28001e2_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices"
+    agg: sum
+    expr: '"B28001e2"'
+  - name: b28001m2_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices"
+    agg: sum
+    expr: '"B28001m2"'
+  - name: b28001e3_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Desktop\
+      \ or laptop"
+    agg: sum
+    expr: '"B28001e3"'
+  - name: b28001m3_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Desktop or laptop"
+    agg: sum
+    expr: '"B28001m3"'
+  - name: b28001e4_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Desktop\
+      \ or laptop \u2014 Desktop or laptop with no other type of computing device"
+    agg: sum
+    expr: '"B28001e4"'
+  - name: b28001m4_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Desktop or laptop \u2014 Desktop or laptop with no other type of computing\
+      \ device"
+    agg: sum
+    expr: '"B28001m4"'
+  - name: b28001e5_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Smartphone"
+    agg: sum
+    expr: '"B28001e5"'
+  - name: b28001m5_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Smartphone"
+    agg: sum
+    expr: '"B28001m5"'
+  - name: b28001e6_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Smartphone\
+      \ \u2014 Smartphone with no other type of computing device"
+    agg: sum
+    expr: '"B28001e6"'
+  - name: b28001m6_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Smartphone \u2014 Smartphone with no other type of computing device"
+    agg: sum
+    expr: '"B28001m6"'
+  - name: b28001e7_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Tablet\
+      \ or other portable wireless computer"
+    agg: sum
+    expr: '"B28001e7"'
+  - name: b28001m7_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Tablet or other portable wireless computer"
+    agg: sum
+    expr: '"B28001m7"'
+  - name: b28001e8_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Tablet\
+      \ or other portable wireless computer \u2014 Tablet or other portable wireless\
+      \ computer w"
+    agg: sum
+    expr: '"B28001e8"'
+  - name: b28001m8_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Tablet or other portable wireless computer \u2014 Tablet or other portable\
+      \ wireless compu"
+    agg: sum
+    expr: '"B28001m8"'
+  - name: b28001e9_estimate_types_of_computers_in_household_households_tot
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Other\
+      \ computer"
+    agg: sum
+    expr: '"B28001e9"'
+  - name: b28001m9_marginoferror_types_of_computers_in_household_household
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Other computer"
+    agg: sum
+    expr: '"B28001m9"'
+  - name: b28001e10_estimate_types_of_computers_in_household_households_to
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Has one or more types of computing devices \u2014 Other\
+      \ computer \u2014 Other computer with no other type of computing device"
+    agg: sum
+    expr: '"B28001e10"'
+  - name: b28001m10_marginoferror_types_of_computers_in_household_househol
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Other computer \u2014 Other computer with no other type of computing\
+      \ device"
+    agg: sum
+    expr: '"B28001m10"'
+  - name: b28001e11_estimate_types_of_computers_in_household_households_to
+    description: "Estimate \u2014 TYPES OF COMPUTERS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28001e11"'
+  - name: b28001m11_marginoferror_types_of_computers_in_household_househol
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 TYPES OF COMPUTERS IN HOUSEHOLD\
+      \ \u2014 Households \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28001m11"'
+  - name: b28002e1_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28002e1"'
+  - name: b28002m1_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28002m1"'
+  - name: b28002e2_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription"
+    agg: sum
+    expr: '"B28002e2"'
+  - name: b28002m2_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription"
+    agg: sum
+    expr: '"B28002m2"'
+  - name: b28002e3_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Dial-up with no other type of Internet subscription"
+    agg: sum
+    expr: '"B28002e3"'
+  - name: b28002m3_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Dial-up with no other type of Internet subscription"
+    agg: sum
+    expr: '"B28002m3"'
+  - name: b28002e4_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Broadband of any type"
+    agg: sum
+    expr: '"B28002e4"'
+  - name: b28002m4_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Broadband of any type"
+    agg: sum
+    expr: '"B28002m4"'
+  - name: b28002e5_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Cellular data plan"
+    agg: sum
+    expr: '"B28002e5"'
+  - name: b28002m5_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Cellular data plan"
+    agg: sum
+    expr: '"B28002m5"'
+  - name: b28002e6_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Cellular data plan \u2014 Cellular data plan with no other type of\
+      \ Internet subsc"
+    agg: sum
+    expr: '"B28002e6"'
+  - name: b28002m6_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Cellular data plan \u2014 Cellular data plan with no other\
+      \ type of Internet "
+    agg: sum
+    expr: '"B28002m6"'
+  - name: b28002e7_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Broadband such as cable fiber optic or DSL"
+    agg: sum
+    expr: '"B28002e7"'
+  - name: b28002m7_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Broadband such as cable fiber optic or DSL"
+    agg: sum
+    expr: '"B28002m7"'
+  - name: b28002e8_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Broadband such as cable fiber optic or DSL \u2014 Broadband such as\
+      \ cable fiber o"
+    agg: sum
+    expr: '"B28002e8"'
+  - name: b28002m8_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Broadband such as cable fiber optic or DSL \u2014 Broadband\
+      \ such as cable fi"
+    agg: sum
+    expr: '"B28002m8"'
+  - name: b28002e9_estimate_presence_and_types_of_internet_subscriptions_i
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Satellite Internet service"
+    agg: sum
+    expr: '"B28002e9"'
+  - name: b28002m9_marginoferror_presence_and_types_of_internet_subscripti
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Satellite Internet service"
+    agg: sum
+    expr: '"B28002m9"'
+  - name: b28002e10_estimate_presence_and_types_of_internet_subscriptions
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Satellite Internet service \u2014 Satellite Internet service with no\
+      \ other type o"
+    agg: sum
+    expr: '"B28002e10"'
+  - name: b28002m10_marginoferror_presence_and_types_of_internet_subscript
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Satellite Internet service \u2014 Satellite Internet service\
+      \ with no other t"
+    agg: sum
+    expr: '"B28002m10"'
+  - name: b28002e11_estimate_presence_and_types_of_internet_subscriptions
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Other service with no other type of Internet subscription"
+    agg: sum
+    expr: '"B28002e11"'
+  - name: b28002m11_marginoferror_presence_and_types_of_internet_subscript
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet\
+      \ subscription \u2014 Other service with no other type of Internet subscription"
+    agg: sum
+    expr: '"B28002m11"'
+  - name: b28002e12_estimate_presence_and_types_of_internet_subscriptions
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 Internet access without a\
+      \ subscription"
+    agg: sum
+    expr: '"B28002e12"'
+  - name: b28002m12_marginoferror_presence_and_types_of_internet_subscript
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Internet\
+      \ access without a subscription"
+    agg: sum
+    expr: '"B28002m12"'
+  - name: b28002e13_estimate_presence_and_types_of_internet_subscriptions
+    description: "Estimate \u2014 PRESENCE AND TYPES OF INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 No Internet access"
+    agg: sum
+    expr: '"B28002e13"'
+  - name: b28002m13_marginoferror_presence_and_types_of_internet_subscript
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE AND TYPES OF INTERNET\
+      \ SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 No Internet\
+      \ access"
+    agg: sum
+    expr: '"B28002m13"'
+  - name: b28003e1_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28003e1"'
+  - name: b28003m1_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28003m1"'
+  - name: b28003e2_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28003e2"'
+  - name: b28003m2_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total\
+      \ \u2014 Has a computer"
+    agg: sum
+    expr: '"B28003m2"'
+  - name: b28003e3_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Has a computer \u2014 With\
+      \ dial-up Internet subscription alone"
+    agg: sum
+    expr: '"B28003e3"'
+  - name: b28003m3_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total\
+      \ \u2014 Has a computer \u2014 With dial-up Internet subscription alone"
+    agg: sum
+    expr: '"B28003m3"'
+  - name: b28003e4_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Has a computer \u2014 With\
+      \ a broadband Internet subscription"
+    agg: sum
+    expr: '"B28003e4"'
+  - name: b28003m4_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total\
+      \ \u2014 Has a computer \u2014 With a broadband Internet subscription"
+    agg: sum
+    expr: '"B28003m4"'
+  - name: b28003e5_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Has a computer \u2014 Without\
+      \ an Internet subscription"
+    agg: sum
+    expr: '"B28003e5"'
+  - name: b28003m5_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total\
+      \ \u2014 Has a computer \u2014 Without an Internet subscription"
+    agg: sum
+    expr: '"B28003m5"'
+  - name: b28003e6_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 No computer"
+    agg: sum
+    expr: '"B28003e6"'
+  - name: b28003m6_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total\
+      \ \u2014 No computer"
+    agg: sum
+    expr: '"B28003m6"'
+  - name: b28004e1_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28004e1"'
+  - name: b28004m1_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28004m1"'
+  - name: b28004e2_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than USD 10 000"
+    agg: sum
+    expr: '"B28004e2"'
+  - name: b28004m2_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than\
+      \ USD 10 000"
+    agg: sum
+    expr: '"B28004m2"'
+  - name: b28004e3_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than USD 10 000 \u2014\
+      \ With dia"
+    agg: sum
+    expr: '"B28004e3"'
+  - name: b28004m3_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than\
+      \ USD 10 000 \u2014 Wit"
+    agg: sum
+    expr: '"B28004m3"'
+  - name: b28004e4_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than USD 10 000 \u2014\
+      \ With a b"
+    agg: sum
+    expr: '"B28004e4"'
+  - name: b28004m4_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than\
+      \ USD 10 000 \u2014 Wit"
+    agg: sum
+    expr: '"B28004m4"'
+  - name: b28004e5_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than USD 10 000 \u2014\
+      \ Without "
+    agg: sum
+    expr: '"B28004e5"'
+  - name: b28004m5_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 Less than\
+      \ USD 10 000 \u2014 Wit"
+    agg: sum
+    expr: '"B28004m5"'
+  - name: b28004e6_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000 to USD 19 999"
+    agg: sum
+    expr: '"B28004e6"'
+  - name: b28004m6_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000\
+      \ to USD 19 999"
+    agg: sum
+    expr: '"B28004m6"'
+  - name: b28004e7_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000 to USD 19 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e7"'
+  - name: b28004m7_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000\
+      \ to USD 19 999 \u2014"
+    agg: sum
+    expr: '"B28004m7"'
+  - name: b28004e8_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000 to USD 19 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e8"'
+  - name: b28004m8_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000\
+      \ to USD 19 999 \u2014"
+    agg: sum
+    expr: '"B28004m8"'
+  - name: b28004e9_estimate_household_income_in_the_last_12_months_in_2020
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000 to USD 19 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e9"'
+  - name: b28004m9_marginoferror_household_income_in_the_last_12_months_in
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 10 000\
+      \ to USD 19 999 \u2014"
+    agg: sum
+    expr: '"B28004m9"'
+  - name: b28004e10_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000 to USD 34 999"
+    agg: sum
+    expr: '"B28004e10"'
+  - name: b28004m10_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000\
+      \ to USD 34 999"
+    agg: sum
+    expr: '"B28004m10"'
+  - name: b28004e11_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000 to USD 34 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e11"'
+  - name: b28004m11_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000\
+      \ to USD 34 999 \u2014"
+    agg: sum
+    expr: '"B28004m11"'
+  - name: b28004e12_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000 to USD 34 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e12"'
+  - name: b28004m12_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000\
+      \ to USD 34 999 \u2014"
+    agg: sum
+    expr: '"B28004m12"'
+  - name: b28004e13_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000 to USD 34 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e13"'
+  - name: b28004m13_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 20 000\
+      \ to USD 34 999 \u2014"
+    agg: sum
+    expr: '"B28004m13"'
+  - name: b28004e14_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000 to USD 49 999"
+    agg: sum
+    expr: '"B28004e14"'
+  - name: b28004m14_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000\
+      \ to USD 49 999"
+    agg: sum
+    expr: '"B28004m14"'
+  - name: b28004e15_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000 to USD 49 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e15"'
+  - name: b28004m15_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000\
+      \ to USD 49 999 \u2014"
+    agg: sum
+    expr: '"B28004m15"'
+  - name: b28004e16_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000 to USD 49 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e16"'
+  - name: b28004m16_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000\
+      \ to USD 49 999 \u2014"
+    agg: sum
+    expr: '"B28004m16"'
+  - name: b28004e17_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000 to USD 49 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e17"'
+  - name: b28004m17_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 35 000\
+      \ to USD 49 999 \u2014"
+    agg: sum
+    expr: '"B28004m17"'
+  - name: b28004e18_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000 to USD 74 999"
+    agg: sum
+    expr: '"B28004e18"'
+  - name: b28004m18_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000\
+      \ to USD 74 999"
+    agg: sum
+    expr: '"B28004m18"'
+  - name: b28004e19_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000 to USD 74 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e19"'
+  - name: b28004m19_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000\
+      \ to USD 74 999 \u2014"
+    agg: sum
+    expr: '"B28004m19"'
+  - name: b28004e20_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000 to USD 74 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e20"'
+  - name: b28004m20_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000\
+      \ to USD 74 999 \u2014"
+    agg: sum
+    expr: '"B28004m20"'
+  - name: b28004e21_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000 to USD 74 999\
+      \ \u2014 With"
+    agg: sum
+    expr: '"B28004e21"'
+  - name: b28004m21_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 50 000\
+      \ to USD 74 999 \u2014"
+    agg: sum
+    expr: '"B28004m21"'
+  - name: b28004e22_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000 or more"
+    agg: sum
+    expr: '"B28004e22"'
+  - name: b28004m22_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000\
+      \ or more"
+    agg: sum
+    expr: '"B28004m22"'
+  - name: b28004e23_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000 or more \u2014\
+      \ With dial-"
+    agg: sum
+    expr: '"B28004e23"'
+  - name: b28004m23_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000\
+      \ or more \u2014 With "
+    agg: sum
+    expr: '"B28004m23"'
+  - name: b28004e24_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000 or more \u2014\
+      \ With a bro"
+    agg: sum
+    expr: '"B28004e24"'
+  - name: b28004m24_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000\
+      \ or more \u2014 With "
+    agg: sum
+    expr: '"B28004m24"'
+  - name: b28004e25_estimate_household_income_in_the_last_12_months_in_202
+    description: "Estimate \u2014 HOUSEHOLD INCOME IN THE LAST 12 MONTHS (IN 2020\
+      \ INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000 or more \u2014\
+      \ Without an"
+    agg: sum
+    expr: '"B28004e25"'
+  - name: b28004m25_marginoferror_household_income_in_the_last_12_months_i
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 HOUSEHOLD INCOME IN THE LAST\
+      \ 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY PRESENCE AND TYPE OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Households \u2014 Total \u2014 USD 75 000\
+      \ or more \u2014 Witho"
+    agg: sum
+    expr: '"B28004m25"'
+  - name: b28005e1_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total"
+    agg: sum
+    expr: '"B28005e1"'
+  - name: b28005m1_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28005m1"'
+  - name: b28005e2_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ Under 18 years"
+    agg: sum
+    expr: '"B28005e2"'
+  - name: b28005m2_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Under 18 years"
+    agg: sum
+    expr: '"B28005m2"'
+  - name: b28005e3_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ Under 18 years \u2014 Has a computer"
+    agg: sum
+    expr: '"B28005e3"'
+  - name: b28005m3_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Under 18 years \u2014 Has a computer"
+    agg: sum
+    expr: '"B28005m3"'
+  - name: b28005e4_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ Under 18 years \u2014 Has a computer \u2014 With dial-up Internet subscription\
+      \ alone"
+    agg: sum
+    expr: '"B28005e4"'
+  - name: b28005m4_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Under 18 years \u2014 Has a computer \u2014 With dial-up\
+      \ Internet subscription "
+    agg: sum
+    expr: '"B28005m4"'
+  - name: b28005e5_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ Under 18 years \u2014 Has a computer \u2014 With a broadband Internet subscription"
+    agg: sum
+    expr: '"B28005e5"'
+  - name: b28005m5_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Under 18 years \u2014 Has a computer \u2014 With a broadband\
+      \ Internet subscript"
+    agg: sum
+    expr: '"B28005m5"'
+  - name: b28005e6_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ Under 18 years \u2014 Has a computer \u2014 Without an Internet subscription"
+    agg: sum
+    expr: '"B28005e6"'
+  - name: b28005m6_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Under 18 years \u2014 Has a computer \u2014 Without an\
+      \ Internet subscription"
+    agg: sum
+    expr: '"B28005m6"'
+  - name: b28005e7_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ Under 18 years \u2014 No computer"
+    agg: sum
+    expr: '"B28005e7"'
+  - name: b28005m7_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Under 18 years \u2014 No computer"
+    agg: sum
+    expr: '"B28005m7"'
+  - name: b28005e8_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 18 to 64 years"
+    agg: sum
+    expr: '"B28005e8"'
+  - name: b28005m8_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 18 to 64 years"
+    agg: sum
+    expr: '"B28005m8"'
+  - name: b28005e9_estimate_age_by_presence_of_a_computer_and_types_of_int
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 18 to 64 years \u2014 Has a computer"
+    agg: sum
+    expr: '"B28005e9"'
+  - name: b28005m9_marginoferror_age_by_presence_of_a_computer_and_types_o
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 18 to 64 years \u2014 Has a computer"
+    agg: sum
+    expr: '"B28005m9"'
+  - name: b28005e10_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 18 to 64 years \u2014 Has a computer \u2014 With dial-up Internet subscription\
+      \ alone"
+    agg: sum
+    expr: '"B28005e10"'
+  - name: b28005m10_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 18 to 64 years \u2014 Has a computer \u2014 With dial-up\
+      \ Internet subscription "
+    agg: sum
+    expr: '"B28005m10"'
+  - name: b28005e11_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 18 to 64 years \u2014 Has a computer \u2014 With a broadband Internet subscription"
+    agg: sum
+    expr: '"B28005e11"'
+  - name: b28005m11_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 18 to 64 years \u2014 Has a computer \u2014 With a broadband\
+      \ Internet subscript"
+    agg: sum
+    expr: '"B28005m11"'
+  - name: b28005e12_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 18 to 64 years \u2014 Has a computer \u2014 Without an Internet subscription"
+    agg: sum
+    expr: '"B28005e12"'
+  - name: b28005m12_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 18 to 64 years \u2014 Has a computer \u2014 Without an\
+      \ Internet subscription"
+    agg: sum
+    expr: '"B28005m12"'
+  - name: b28005e13_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 18 to 64 years \u2014 No computer"
+    agg: sum
+    expr: '"B28005e13"'
+  - name: b28005m13_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 18 to 64 years \u2014 No computer"
+    agg: sum
+    expr: '"B28005m13"'
+  - name: b28005e14_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 65 years and over"
+    agg: sum
+    expr: '"B28005e14"'
+  - name: b28005m14_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 65 years and over"
+    agg: sum
+    expr: '"B28005m14"'
+  - name: b28005e15_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 65 years and over \u2014 Has a computer"
+    agg: sum
+    expr: '"B28005e15"'
+  - name: b28005m15_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 65 years and over \u2014 Has a computer"
+    agg: sum
+    expr: '"B28005m15"'
+  - name: b28005e16_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 65 years and over \u2014 Has a computer \u2014 With dial-up Internet subscription\
+      \ al"
+    agg: sum
+    expr: '"B28005e16"'
+  - name: b28005m16_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 65 years and over \u2014 Has a computer \u2014 With dial-up\
+      \ Internet subscripti"
+    agg: sum
+    expr: '"B28005m16"'
+  - name: b28005e17_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 65 years and over \u2014 Has a computer \u2014 With a broadband Internet subscriptio"
+    agg: sum
+    expr: '"B28005e17"'
+  - name: b28005m17_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 65 years and over \u2014 Has a computer \u2014 With a\
+      \ broadband Internet subscr"
+    agg: sum
+    expr: '"B28005m17"'
+  - name: b28005e18_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 65 years and over \u2014 Has a computer \u2014 Without an Internet subscription"
+    agg: sum
+    expr: '"B28005e18"'
+  - name: b28005m18_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 65 years and over \u2014 Has a computer \u2014 Without\
+      \ an Internet subscription"
+    agg: sum
+    expr: '"B28005m18"'
+  - name: b28005e19_estimate_age_by_presence_of_a_computer_and_types_of_in
+    description: "Estimate \u2014 AGE BY PRESENCE OF A COMPUTER AND TYPES OF INTERNET\
+      \ SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014\
+      \ 65 years and over \u2014 No computer"
+    agg: sum
+    expr: '"B28005e19"'
+  - name: b28005m19_marginoferror_age_by_presence_of_a_computer_and_types
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 AGE BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 65 years and over \u2014 No computer"
+    agg: sum
+    expr: '"B28005m19"'
+  - name: b28006e1_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total"
+    agg: sum
+    expr: '"B28006e1"'
+  - name: b28006m1_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total"
+    agg: sum
+    expr: '"B28006m1"'
+  - name: b28006e2_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Less than high school graduate or equival"
+    agg: sum
+    expr: '"B28006e2"'
+  - name: b28006m2_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Less than high\
+      \ school graduate or eq"
+    agg: sum
+    expr: '"B28006m2"'
+  - name: b28006e3_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Less than high school graduate or equival"
+    agg: sum
+    expr: '"B28006e3"'
+  - name: b28006m3_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Less than high\
+      \ school graduate or eq"
+    agg: sum
+    expr: '"B28006m3"'
+  - name: b28006e4_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Less than high school graduate or equival"
+    agg: sum
+    expr: '"B28006e4"'
+  - name: b28006m4_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Less than high\
+      \ school graduate or eq"
+    agg: sum
+    expr: '"B28006m4"'
+  - name: b28006e5_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Less than high school graduate or equival"
+    agg: sum
+    expr: '"B28006e5"'
+  - name: b28006m5_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Less than high\
+      \ school graduate or eq"
+    agg: sum
+    expr: '"B28006m5"'
+  - name: b28006e6_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Less than high school graduate or equival"
+    agg: sum
+    expr: '"B28006e6"'
+  - name: b28006m6_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Less than high\
+      \ school graduate or eq"
+    agg: sum
+    expr: '"B28006m6"'
+  - name: b28006e7_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Less than high school graduate or equival"
+    agg: sum
+    expr: '"B28006e7"'
+  - name: b28006m7_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Less than high\
+      \ school graduate or eq"
+    agg: sum
+    expr: '"B28006m7"'
+  - name: b28006e8_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 High school graduate (includes equivalenc"
+    agg: sum
+    expr: '"B28006e8"'
+  - name: b28006m8_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equiv"
+    agg: sum
+    expr: '"B28006m8"'
+  - name: b28006e9_estimate_educational_attainment_by_presence_of_a_comput
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 High school graduate (includes equivalenc"
+    agg: sum
+    expr: '"B28006e9"'
+  - name: b28006m9_marginoferror_educational_attainment_by_presence_of_a_c
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equiv"
+    agg: sum
+    expr: '"B28006m9"'
+  - name: b28006e10_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 High school graduate (includes equivalenc"
+    agg: sum
+    expr: '"B28006e10"'
+  - name: b28006m10_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equiv"
+    agg: sum
+    expr: '"B28006m10"'
+  - name: b28006e11_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 High school graduate (includes equivalenc"
+    agg: sum
+    expr: '"B28006e11"'
+  - name: b28006m11_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equiv"
+    agg: sum
+    expr: '"B28006m11"'
+  - name: b28006e12_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 High school graduate (includes equivalenc"
+    agg: sum
+    expr: '"B28006e12"'
+  - name: b28006m12_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equiv"
+    agg: sum
+    expr: '"B28006m12"'
+  - name: b28006e13_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 High school graduate (includes equivalenc"
+    agg: sum
+    expr: '"B28006e13"'
+  - name: b28006m13_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 High school graduate\
+      \ (includes equiv"
+    agg: sum
+    expr: '"B28006m13"'
+  - name: b28006e14_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Bachelor's degree or higher"
+    agg: sum
+    expr: '"B28006e14"'
+  - name: b28006m14_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Bachelor's degree\
+      \ or higher"
+    agg: sum
+    expr: '"B28006m14"'
+  - name: b28006e15_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Bachelor's degree or higher \u2014 Has\
+      \ a compu"
+    agg: sum
+    expr: '"B28006e15"'
+  - name: b28006m15_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Bachelor's degree\
+      \ or higher \u2014 Has a "
+    agg: sum
+    expr: '"B28006m15"'
+  - name: b28006e16_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Bachelor's degree or higher \u2014 Has\
+      \ a compu"
+    agg: sum
+    expr: '"B28006e16"'
+  - name: b28006m16_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Bachelor's degree\
+      \ or higher \u2014 Has a "
+    agg: sum
+    expr: '"B28006m16"'
+  - name: b28006e17_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Bachelor's degree or higher \u2014 Has\
+      \ a compu"
+    agg: sum
+    expr: '"B28006e17"'
+  - name: b28006m17_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Bachelor's degree\
+      \ or higher \u2014 Has a "
+    agg: sum
+    expr: '"B28006m17"'
+  - name: b28006e18_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Bachelor's degree or higher \u2014 Has\
+      \ a compu"
+    agg: sum
+    expr: '"B28006e18"'
+  - name: b28006m18_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Bachelor's degree\
+      \ or higher \u2014 Has a "
+    agg: sum
+    expr: '"B28006m18"'
+  - name: b28006e19_estimate_educational_attainment_by_presence_of_a_compu
+    description: "Estimate \u2014 EDUCATIONAL ATTAINMENT BY PRESENCE OF A COMPUTER\
+      \ AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Household population\
+      \ 25 years and over \u2014 Total \u2014 Bachelor's degree or higher \u2014 No\
+      \ computer"
+    agg: sum
+    expr: '"B28006e19"'
+  - name: b28006m19_marginoferror_educational_attainment_by_presence_of_a
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 EDUCATIONAL ATTAINMENT BY\
+      \ PRESENCE OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014\
+      \ Household population 25 years and over \u2014 Total \u2014 Bachelor's degree\
+      \ or higher \u2014 No com"
+    agg: sum
+    expr: '"B28006m19"'
+  - name: b28007e1_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B28007e1"'
+  - name: b28007m1_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total"
+    agg: sum
+    expr: '"B28007m1"'
+  - name: b28007e2_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force"
+    agg: sum
+    expr: '"B28007e2"'
+  - name: b28007m2_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force"
+    agg: sum
+    expr: '"B28007m2"'
+  - name: b28007e3_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Employ"
+    agg: sum
+    expr: '"B28007e3"'
+  - name: b28007m3_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 E"
+    agg: sum
+    expr: '"B28007m3"'
+  - name: b28007e4_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Employ"
+    agg: sum
+    expr: '"B28007e4"'
+  - name: b28007m4_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 E"
+    agg: sum
+    expr: '"B28007m4"'
+  - name: b28007e5_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Employ"
+    agg: sum
+    expr: '"B28007e5"'
+  - name: b28007m5_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 E"
+    agg: sum
+    expr: '"B28007m5"'
+  - name: b28007e6_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Employ"
+    agg: sum
+    expr: '"B28007e6"'
+  - name: b28007m6_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 E"
+    agg: sum
+    expr: '"B28007m6"'
+  - name: b28007e7_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Employ"
+    agg: sum
+    expr: '"B28007e7"'
+  - name: b28007m7_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 E"
+    agg: sum
+    expr: '"B28007m7"'
+  - name: b28007e8_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Employ"
+    agg: sum
+    expr: '"B28007e8"'
+  - name: b28007m8_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 E"
+    agg: sum
+    expr: '"B28007m8"'
+  - name: b28007e9_estimate_labor_force_status_by_presence_of_a_computer_a
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Unempl"
+    agg: sum
+    expr: '"B28007e9"'
+  - name: b28007m9_marginoferror_labor_force_status_by_presence_of_a_compu
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 U"
+    agg: sum
+    expr: '"B28007m9"'
+  - name: b28007e10_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Unempl"
+    agg: sum
+    expr: '"B28007e10"'
+  - name: b28007m10_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 U"
+    agg: sum
+    expr: '"B28007m10"'
+  - name: b28007e11_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Unempl"
+    agg: sum
+    expr: '"B28007e11"'
+  - name: b28007m11_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 U"
+    agg: sum
+    expr: '"B28007m11"'
+  - name: b28007e12_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Unempl"
+    agg: sum
+    expr: '"B28007e12"'
+  - name: b28007m12_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 U"
+    agg: sum
+    expr: '"B28007m12"'
+  - name: b28007e13_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Unempl"
+    agg: sum
+    expr: '"B28007e13"'
+  - name: b28007m13_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 U"
+    agg: sum
+    expr: '"B28007m13"'
+  - name: b28007e14_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 In the civilian labor force \u2014 Unempl"
+    agg: sum
+    expr: '"B28007e14"'
+  - name: b28007m14_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 In the civilian\
+      \ labor force \u2014 U"
+    agg: sum
+    expr: '"B28007m14"'
+  - name: b28007e15_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 Not in labor force"
+    agg: sum
+    expr: '"B28007e15"'
+  - name: b28007m15_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 Not in labor force"
+    agg: sum
+    expr: '"B28007m15"'
+  - name: b28007e16_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 Not in labor force \u2014 Has a computer"
+    agg: sum
+    expr: '"B28007e16"'
+  - name: b28007m16_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 Not in labor force\
+      \ \u2014 Has a comp"
+    agg: sum
+    expr: '"B28007m16"'
+  - name: b28007e17_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 Not in labor force \u2014 Has a computer "
+    agg: sum
+    expr: '"B28007e17"'
+  - name: b28007m17_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 Not in labor force\
+      \ \u2014 Has a comp"
+    agg: sum
+    expr: '"B28007m17"'
+  - name: b28007e18_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 Not in labor force \u2014 Has a computer "
+    agg: sum
+    expr: '"B28007e18"'
+  - name: b28007m18_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 Not in labor force\
+      \ \u2014 Has a comp"
+    agg: sum
+    expr: '"B28007m18"'
+  - name: b28007e19_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 Not in labor force \u2014 Has a computer "
+    agg: sum
+    expr: '"B28007e19"'
+  - name: b28007m19_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 Not in labor force\
+      \ \u2014 Has a comp"
+    agg: sum
+    expr: '"B28007m19"'
+  - name: b28007e20_estimate_labor_force_status_by_presence_of_a_computer
+    description: "Estimate \u2014 LABOR FORCE STATUS BY PRESENCE OF A COMPUTER AND\
+      \ TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian household population\
+      \ 16 years and over \u2014 Total \u2014 Not in labor force \u2014 No computer"
+    agg: sum
+    expr: '"B28007e20"'
+  - name: b28007m20_marginoferror_labor_force_status_by_presence_of_a_comp
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 LABOR FORCE STATUS BY PRESENCE\
+      \ OF A COMPUTER AND TYPES OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Civilian\
+      \ household population 16 years and over \u2014 Total \u2014 Not in labor force\
+      \ \u2014 No compute"
+    agg: sum
+    expr: '"B28007m20"'
+  - name: b28008e1_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total"
+    agg: sum
+    expr: '"B28008e1"'
+  - name: b28008m1_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28008m1"'
+  - name: b28008e2_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28008e2"'
+  - name: b28008m2_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28008m2"'
+  - name: b28008e3_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 With dial-up Internet subscription alone"
+    agg: sum
+    expr: '"B28008e3"'
+  - name: b28008m3_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 With dial-up Internet subscription\
+      \ alone"
+    agg: sum
+    expr: '"B28008m3"'
+  - name: b28008e4_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 With a broadband subscription"
+    agg: sum
+    expr: '"B28008e4"'
+  - name: b28008m4_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband subscription"
+    agg: sum
+    expr: '"B28008m4"'
+  - name: b28008e5_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 With a broadband subscription \u2014 With a fixed broadband Internet\
+      \ s"
+    agg: sum
+    expr: '"B28008e5"'
+  - name: b28008m5_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband subscription \u2014\
+      \ With a fixed broadband Inter"
+    agg: sum
+    expr: '"B28008m5"'
+  - name: b28008e6_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 With a broadband subscription \u2014 With a fixed broadband Internet\
+      \ s"
+    agg: sum
+    expr: '"B28008e6"'
+  - name: b28008m6_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband subscription \u2014\
+      \ With a fixed broadband Inter"
+    agg: sum
+    expr: '"B28008m6"'
+  - name: b28008e7_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 With a broadband subscription \u2014 With a fixed broadband Internet\
+      \ s"
+    agg: sum
+    expr: '"B28008e7"'
+  - name: b28008m7_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband subscription \u2014\
+      \ With a fixed broadband Inter"
+    agg: sum
+    expr: '"B28008m7"'
+  - name: b28008e8_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 With a broadband subscription \u2014 Cellular data plan alone or with "
+    agg: sum
+    expr: '"B28008e8"'
+  - name: b28008m8_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband subscription \u2014\
+      \ Cellular data plan alone or "
+    agg: sum
+    expr: '"B28008m8"'
+  - name: b28008e9_estimate_presence_of_a_computer_and_type_of_internet_su
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 Has a computer\
+      \ \u2014 Without Internet subscription"
+    agg: sum
+    expr: '"B28008e9"'
+  - name: b28008m9_marginoferror_presence_of_a_computer_and_type_of_intern
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 Has a computer \u2014 Without Internet subscription"
+    agg: sum
+    expr: '"B28008m9"'
+  - name: b28008e10_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD \u2014 Population in Households \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28008e10"'
+  - name: b28008m10_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD \u2014 Population in Households\
+      \ \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28008m10"'
+  - name: b28009ae1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE) \u2014 White alone household population \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B28009Ae1"'
+  - name: b28009am1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE) \u2014 White alone\
+      \ household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Am1"'
+  - name: b28009ae2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE) \u2014 White alone household population \u2014\
+      \ Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Ae2"'
+  - name: b28009am2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE) \u2014 White alone\
+      \ household population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Am2"'
+  - name: b28009ae3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE) \u2014 White alone household population \u2014\
+      \ Total \u2014 Has a computer \u2014 With dial-up Internet subscription alone"
+    agg: sum
+    expr: '"B28009Ae3"'
+  - name: b28009am3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE) \u2014 White alone\
+      \ household population \u2014 Total \u2014 Has a computer \u2014 With dial-up\
+      \ Internet subscription alo"
+    agg: sum
+    expr: '"B28009Am3"'
+  - name: b28009ae4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE) \u2014 White alone household population \u2014\
+      \ Total \u2014 Has a computer \u2014 With a broadband Internet subscription"
+    agg: sum
+    expr: '"B28009Ae4"'
+  - name: b28009am4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE) \u2014 White alone\
+      \ household population \u2014 Total \u2014 Has a computer \u2014 With a broadband\
+      \ Internet subscription"
+    agg: sum
+    expr: '"B28009Am4"'
+  - name: b28009ae5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE) \u2014 White alone household population \u2014\
+      \ Total \u2014 Has a computer \u2014 Without an Internet subscription"
+    agg: sum
+    expr: '"B28009Ae5"'
+  - name: b28009am5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE) \u2014 White alone\
+      \ household population \u2014 Total \u2014 Has a computer \u2014 Without an\
+      \ Internet subscription"
+    agg: sum
+    expr: '"B28009Am5"'
+  - name: b28009ae6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE) \u2014 White alone household population \u2014\
+      \ Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Ae6"'
+  - name: b28009am6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE) \u2014 White alone\
+      \ household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Am6"'
+  - name: b28009be1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black or African American\
+      \ alone household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Be1"'
+  - name: b28009bm1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE)\
+      \ \u2014 Black or African American alone household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Bm1"'
+  - name: b28009be2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black or African American\
+      \ alone household population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Be2"'
+  - name: b28009bm2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE)\
+      \ \u2014 Black or African American alone household population \u2014 Total \u2014\
+      \ Has a computer"
+    agg: sum
+    expr: '"B28009Bm2"'
+  - name: b28009be3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black or African American\
+      \ alone household population \u2014 Total \u2014 Has a computer \u2014 Wit"
+    agg: sum
+    expr: '"B28009Be3"'
+  - name: b28009bm3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE)\
+      \ \u2014 Black or African American alone household population \u2014 Total \u2014\
+      \ Has a computer "
+    agg: sum
+    expr: '"B28009Bm3"'
+  - name: b28009be4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black or African American\
+      \ alone household population \u2014 Total \u2014 Has a computer \u2014 Wit"
+    agg: sum
+    expr: '"B28009Be4"'
+  - name: b28009bm4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE)\
+      \ \u2014 Black or African American alone household population \u2014 Total \u2014\
+      \ Has a computer "
+    agg: sum
+    expr: '"B28009Bm4"'
+  - name: b28009be5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black or African American\
+      \ alone household population \u2014 Total \u2014 Has a computer \u2014 Wit"
+    agg: sum
+    expr: '"B28009Be5"'
+  - name: b28009bm5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE)\
+      \ \u2014 Black or African American alone household population \u2014 Total \u2014\
+      \ Has a computer "
+    agg: sum
+    expr: '"B28009Bm5"'
+  - name: b28009be6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE) \u2014 Black or African American\
+      \ alone household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Be6"'
+  - name: b28009bm6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (BLACK OR AFRICAN AMERICAN ALONE)\
+      \ \u2014 Black or African American alone household population \u2014 Total \u2014\
+      \ No Computer"
+    agg: sum
+    expr: '"B28009Bm6"'
+  - name: b28009ce1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 American Indian\
+      \ and Alaska Native alone household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Ce1"'
+  - name: b28009cm1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE\
+      \ ALONE) \u2014 American Indian and Alaska Native alone household population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28009Cm1"'
+  - name: b28009ce2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 American Indian\
+      \ and Alaska Native alone household population \u2014 Total \u2014 Has "
+    agg: sum
+    expr: '"B28009Ce2"'
+  - name: b28009cm2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE\
+      \ ALONE) \u2014 American Indian and Alaska Native alone household population\
+      \ \u2014 Total \u2014"
+    agg: sum
+    expr: '"B28009Cm2"'
+  - name: b28009ce3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 American Indian\
+      \ and Alaska Native alone household population \u2014 Total \u2014 Has "
+    agg: sum
+    expr: '"B28009Ce3"'
+  - name: b28009cm3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE\
+      \ ALONE) \u2014 American Indian and Alaska Native alone household population\
+      \ \u2014 Total \u2014"
+    agg: sum
+    expr: '"B28009Cm3"'
+  - name: b28009ce4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 American Indian\
+      \ and Alaska Native alone household population \u2014 Total \u2014 Has "
+    agg: sum
+    expr: '"B28009Ce4"'
+  - name: b28009cm4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE\
+      \ ALONE) \u2014 American Indian and Alaska Native alone household population\
+      \ \u2014 Total \u2014"
+    agg: sum
+    expr: '"B28009Cm4"'
+  - name: b28009ce5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 American Indian\
+      \ and Alaska Native alone household population \u2014 Total \u2014 Has "
+    agg: sum
+    expr: '"B28009Ce5"'
+  - name: b28009cm5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE\
+      \ ALONE) \u2014 American Indian and Alaska Native alone household population\
+      \ \u2014 Total \u2014"
+    agg: sum
+    expr: '"B28009Cm5"'
+  - name: b28009ce6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE ALONE) \u2014 American Indian\
+      \ and Alaska Native alone household population \u2014 Total \u2014 No C"
+    agg: sum
+    expr: '"B28009Ce6"'
+  - name: b28009cm6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (AMERICAN INDIAN AND ALASKA NATIVE\
+      \ ALONE) \u2014 American Indian and Alaska Native alone household population\
+      \ \u2014 Total \u2014"
+    agg: sum
+    expr: '"B28009Cm6"'
+  - name: b28009de1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone household population \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B28009De1"'
+  - name: b28009dm1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone\
+      \ household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Dm1"'
+  - name: b28009de2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone household population \u2014\
+      \ Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009De2"'
+  - name: b28009dm2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone\
+      \ household population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Dm2"'
+  - name: b28009de3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone household population \u2014\
+      \ Total \u2014 Has a computer \u2014 With dial-up Internet subscription alone"
+    agg: sum
+    expr: '"B28009De3"'
+  - name: b28009dm3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone\
+      \ household population \u2014 Total \u2014 Has a computer \u2014 With dial-up\
+      \ Internet subscription alo"
+    agg: sum
+    expr: '"B28009Dm3"'
+  - name: b28009de4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone household population \u2014\
+      \ Total \u2014 Has a computer \u2014 With a broadband Internet subscription"
+    agg: sum
+    expr: '"B28009De4"'
+  - name: b28009dm4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone\
+      \ household population \u2014 Total \u2014 Has a computer \u2014 With a broadband\
+      \ Internet subscription"
+    agg: sum
+    expr: '"B28009Dm4"'
+  - name: b28009de5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone household population \u2014\
+      \ Total \u2014 Has a computer \u2014 Without an Internet subscription"
+    agg: sum
+    expr: '"B28009De5"'
+  - name: b28009dm5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone\
+      \ household population \u2014 Total \u2014 Has a computer \u2014 Without an\
+      \ Internet subscription"
+    agg: sum
+    expr: '"B28009Dm5"'
+  - name: b28009de6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone household population \u2014\
+      \ Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009De6"'
+  - name: b28009dm6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (ASIAN ALONE) \u2014 Asian alone\
+      \ household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Dm6"'
+  - name: b28009fe1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014 Some other race alone household\
+      \ population \u2014 Total"
+    agg: sum
+    expr: '"B28009Fe1"'
+  - name: b28009fm1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014\
+      \ Some other race alone household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Fm1"'
+  - name: b28009fe2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014 Some other race alone household\
+      \ population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Fe2"'
+  - name: b28009fm2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014\
+      \ Some other race alone household population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Fm2"'
+  - name: b28009fe3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014 Some other race alone household\
+      \ population \u2014 Total \u2014 Has a computer \u2014 With dial-up Internet\
+      \ s"
+    agg: sum
+    expr: '"B28009Fe3"'
+  - name: b28009fm3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014\
+      \ Some other race alone household population \u2014 Total \u2014 Has a computer\
+      \ \u2014 With dial-up Inter"
+    agg: sum
+    expr: '"B28009Fm3"'
+  - name: b28009fe4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014 Some other race alone household\
+      \ population \u2014 Total \u2014 Has a computer \u2014 With a broadband Intern"
+    agg: sum
+    expr: '"B28009Fe4"'
+  - name: b28009fm4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014\
+      \ Some other race alone household population \u2014 Total \u2014 Has a computer\
+      \ \u2014 With a broadband I"
+    agg: sum
+    expr: '"B28009Fm4"'
+  - name: b28009fe5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014 Some other race alone household\
+      \ population \u2014 Total \u2014 Has a computer \u2014 Without an Internet sub"
+    agg: sum
+    expr: '"B28009Fe5"'
+  - name: b28009fm5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014\
+      \ Some other race alone household population \u2014 Total \u2014 Has a computer\
+      \ \u2014 Without an Interne"
+    agg: sum
+    expr: '"B28009Fm5"'
+  - name: b28009fe6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014 Some other race alone household\
+      \ population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Fe6"'
+  - name: b28009fm6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (SOME OTHER RACE ALONE) \u2014\
+      \ Some other race alone household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Fm6"'
+  - name: b28009ge1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two or more races household population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28009Ge1"'
+  - name: b28009gm1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two\
+      \ or more races household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Gm1"'
+  - name: b28009ge2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two or more races household population\
+      \ \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Ge2"'
+  - name: b28009gm2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two\
+      \ or more races household population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Gm2"'
+  - name: b28009ge3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two or more races household population\
+      \ \u2014 Total \u2014 Has a computer \u2014 With dial-up Internet subscript"
+    agg: sum
+    expr: '"B28009Ge3"'
+  - name: b28009gm3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two\
+      \ or more races household population \u2014 Total \u2014 Has a computer \u2014\
+      \ With dial-up Internet subs"
+    agg: sum
+    expr: '"B28009Gm3"'
+  - name: b28009ge4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two or more races household population\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband Internet subsc"
+    agg: sum
+    expr: '"B28009Ge4"'
+  - name: b28009gm4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two\
+      \ or more races household population \u2014 Total \u2014 Has a computer \u2014\
+      \ With a broadband Internet "
+    agg: sum
+    expr: '"B28009Gm4"'
+  - name: b28009ge5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two or more races household population\
+      \ \u2014 Total \u2014 Has a computer \u2014 Without an Internet subscriptio"
+    agg: sum
+    expr: '"B28009Ge5"'
+  - name: b28009gm5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two\
+      \ or more races household population \u2014 Total \u2014 Has a computer \u2014\
+      \ Without an Internet subscr"
+    agg: sum
+    expr: '"B28009Gm5"'
+  - name: b28009ge6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two or more races household population\
+      \ \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Ge6"'
+  - name: b28009gm6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (TWO OR MORE RACES) \u2014 Two\
+      \ or more races household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Gm6"'
+  - name: b28009he1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White alone, not\
+      \ Hispanic or Latino household population \u2014 Total"
+    agg: sum
+    expr: '"B28009He1"'
+  - name: b28009hm1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO)\
+      \ \u2014 White alone, not Hispanic or Latino household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Hm1"'
+  - name: b28009he2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White alone, not\
+      \ Hispanic or Latino household population \u2014 Total \u2014 Has a comput"
+    agg: sum
+    expr: '"B28009He2"'
+  - name: b28009hm2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO)\
+      \ \u2014 White alone, not Hispanic or Latino household population \u2014 Total\
+      \ \u2014 Has a c"
+    agg: sum
+    expr: '"B28009Hm2"'
+  - name: b28009he3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White alone, not\
+      \ Hispanic or Latino household population \u2014 Total \u2014 Has a comput"
+    agg: sum
+    expr: '"B28009He3"'
+  - name: b28009hm3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO)\
+      \ \u2014 White alone, not Hispanic or Latino household population \u2014 Total\
+      \ \u2014 Has a c"
+    agg: sum
+    expr: '"B28009Hm3"'
+  - name: b28009he4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White alone, not\
+      \ Hispanic or Latino household population \u2014 Total \u2014 Has a comput"
+    agg: sum
+    expr: '"B28009He4"'
+  - name: b28009hm4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO)\
+      \ \u2014 White alone, not Hispanic or Latino household population \u2014 Total\
+      \ \u2014 Has a c"
+    agg: sum
+    expr: '"B28009Hm4"'
+  - name: b28009he5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White alone, not\
+      \ Hispanic or Latino household population \u2014 Total \u2014 Has a comput"
+    agg: sum
+    expr: '"B28009He5"'
+  - name: b28009hm5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO)\
+      \ \u2014 White alone, not Hispanic or Latino household population \u2014 Total\
+      \ \u2014 Has a c"
+    agg: sum
+    expr: '"B28009Hm5"'
+  - name: b28009he6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO) \u2014 White alone, not\
+      \ Hispanic or Latino household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009He6"'
+  - name: b28009hm6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (WHITE ALONE, NOT HISPANIC OR LATINO)\
+      \ \u2014 White alone, not Hispanic or Latino household population \u2014 Total\
+      \ \u2014 No Comp"
+    agg: sum
+    expr: '"B28009Hm6"'
+  - name: b28009ie1_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic or Latino household population\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28009Ie1"'
+  - name: b28009im1_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic\
+      \ or Latino household population \u2014 Total"
+    agg: sum
+    expr: '"B28009Im1"'
+  - name: b28009ie2_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic or Latino household population\
+      \ \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Ie2"'
+  - name: b28009im2_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic\
+      \ or Latino household population \u2014 Total \u2014 Has a computer"
+    agg: sum
+    expr: '"B28009Im2"'
+  - name: b28009ie3_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic or Latino household population\
+      \ \u2014 Total \u2014 Has a computer \u2014 With dial-up Internet subscri"
+    agg: sum
+    expr: '"B28009Ie3"'
+  - name: b28009im3_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic\
+      \ or Latino household population \u2014 Total \u2014 Has a computer \u2014 With\
+      \ dial-up Internet su"
+    agg: sum
+    expr: '"B28009Im3"'
+  - name: b28009ie4_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic or Latino household population\
+      \ \u2014 Total \u2014 Has a computer \u2014 With a broadband Internet sub"
+    agg: sum
+    expr: '"B28009Ie4"'
+  - name: b28009im4_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic\
+      \ or Latino household population \u2014 Total \u2014 Has a computer \u2014 With\
+      \ a broadband Interne"
+    agg: sum
+    expr: '"B28009Im4"'
+  - name: b28009ie5_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic or Latino household population\
+      \ \u2014 Total \u2014 Has a computer \u2014 Without an Internet subscript"
+    agg: sum
+    expr: '"B28009Ie5"'
+  - name: b28009im5_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic\
+      \ or Latino household population \u2014 Total \u2014 Has a computer \u2014 Without\
+      \ an Internet subs"
+    agg: sum
+    expr: '"B28009Im5"'
+  - name: b28009ie6_estimate_presence_of_a_computer_and_type_of_internet_s
+    description: "Estimate \u2014 PRESENCE OF A COMPUTER AND TYPE OF INTERNET SUBSCRIPTION\
+      \ IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic or Latino household population\
+      \ \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Ie6"'
+  - name: b28009im6_marginoferror_presence_of_a_computer_and_type_of_inter
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 PRESENCE OF A COMPUTER AND\
+      \ TYPE OF INTERNET SUBSCRIPTION IN HOUSEHOLD (HISPANIC OR LATINO) \u2014 Hispanic\
+      \ or Latino household population \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28009Im6"'
+  - name: b28010e1_estimate_computers_in_household_households_total
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total"
+    agg: sum
+    expr: '"B28010e1"'
+  - name: b28010m1_marginoferror_computers_in_household_households_total
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total"
+    agg: sum
+    expr: '"B28010m1"'
+  - name: b28010e2_estimate_computers_in_household_households_total_has_on
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total \u2014 Has one or more types of computing devices"
+    agg: sum
+    expr: '"B28010e2"'
+  - name: b28010m2_marginoferror_computers_in_household_households_total_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total \u2014 Has one or more types of computing devices"
+    agg: sum
+    expr: '"B28010m2"'
+  - name: b28010e3_estimate_computers_in_household_households_total_has_on
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total \u2014 Has one or more types of computing devices \u2014 Desktop or\
+      \ laptop"
+    agg: sum
+    expr: '"B28010e3"'
+  - name: b28010m3_marginoferror_computers_in_household_households_total_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Desktop or laptop"
+    agg: sum
+    expr: '"B28010m3"'
+  - name: b28010e4_estimate_computers_in_household_households_total_has_on
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total \u2014 Has one or more types of computing devices \u2014 Desktop or\
+      \ laptop \u2014 Desktop or laptop alone"
+    agg: sum
+    expr: '"B28010e4"'
+  - name: b28010m4_marginoferror_computers_in_household_households_total_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Desktop or laptop \u2014 Desktop or laptop alone"
+    agg: sum
+    expr: '"B28010m4"'
+  - name: b28010e5_estimate_computers_in_household_households_total_has_on
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total \u2014 Has one or more types of computing devices \u2014 Smartphone\
+      \ tablet or other portable wireless computer or other computer"
+    agg: sum
+    expr: '"B28010e5"'
+  - name: b28010m5_marginoferror_computers_in_household_households_total_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Smartphone tablet or other portable wireless computer or other computer"
+    agg: sum
+    expr: '"B28010m5"'
+  - name: b28010e6_estimate_computers_in_household_households_total_has_on
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total \u2014 Has one or more types of computing devices \u2014 Smartphone\
+      \ tablet or other portable wireless computer or other computer \u2014 Smartphone\
+      \ tablet or oth"
+    agg: sum
+    expr: '"B28010e6"'
+  - name: b28010m6_marginoferror_computers_in_household_households_total_h
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total \u2014 Has one or more types of computing devices\
+      \ \u2014 Smartphone tablet or other portable wireless computer or other computer\
+      \ \u2014 Smartphone tablet o"
+    agg: sum
+    expr: '"B28010m6"'
+  - name: b28010e7_estimate_computers_in_household_households_total_no_com
+    description: "Estimate \u2014 COMPUTERS IN HOUSEHOLD \u2014 Households \u2014\
+      \ Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28010e7"'
+  - name: b28010m7_marginoferror_computers_in_household_households_total_n
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 COMPUTERS IN HOUSEHOLD \u2014\
+      \ Households \u2014 Total \u2014 No Computer"
+    agg: sum
+    expr: '"B28010m7"'
+  - name: b28011e1_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total"
+    agg: sum
+    expr: '"B28011e1"'
+  - name: b28011m1_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total"
+    agg: sum
+    expr: '"B28011m1"'
+  - name: b28011e2_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 With an Internet subscription"
+    agg: sum
+    expr: '"B28011e2"'
+  - name: b28011m2_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription"
+    agg: sum
+    expr: '"B28011m2"'
+  - name: b28011e3_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 With an Internet subscription \u2014 Dial-up alone"
+    agg: sum
+    expr: '"B28011e3"'
+  - name: b28011m3_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Dial-up alone"
+    agg: sum
+    expr: '"B28011m3"'
+  - name: b28011e4_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 With an Internet subscription \u2014 Broadband such as\
+      \ cable fiber optic or DSL"
+    agg: sum
+    expr: '"B28011e4"'
+  - name: b28011m4_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Broadband such as cable fiber optic or DSL"
+    agg: sum
+    expr: '"B28011m4"'
+  - name: b28011e5_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 With an Internet subscription \u2014 Satellite Internet\
+      \ service"
+    agg: sum
+    expr: '"B28011e5"'
+  - name: b28011m5_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Satellite Internet service"
+    agg: sum
+    expr: '"B28011m5"'
+  - name: b28011e6_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 With an Internet subscription \u2014 Other service"
+    agg: sum
+    expr: '"B28011e6"'
+  - name: b28011m6_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 With an Internet subscription\
+      \ \u2014 Other service"
+    agg: sum
+    expr: '"B28011m6"'
+  - name: b28011e7_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 Internet access without a subscription"
+    agg: sum
+    expr: '"B28011e7"'
+  - name: b28011m7_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 Internet access without a\
+      \ subscription"
+    agg: sum
+    expr: '"B28011m7"'
+  - name: b28011e8_estimate_internet_subscriptions_in_household_households
+    description: "Estimate \u2014 INTERNET SUBSCRIPTIONS IN HOUSEHOLD \u2014 Households\
+      \ \u2014 Total \u2014 No Internet access"
+    agg: sum
+    expr: '"B28011e8"'
+  - name: b28011m8_marginoferror_internet_subscriptions_in_household_house
+    description: "[MARGIN OF ERROR] MarginOfError \u2014 INTERNET SUBSCRIPTIONS IN\
+      \ HOUSEHOLD \u2014 Households \u2014 Total \u2014 No Internet access"
+    agg: sum
+    expr: '"B28011m8"'
