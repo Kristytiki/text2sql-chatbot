@@ -11,37 +11,43 @@ Success criteria: grounded answers, ≤60s latency, multi-turn context, guardrai
 
 ---
 
-## 核心论点 — Why semantic-IR over direct text-to-SQL
+## Core argument — Why semantic-IR over direct text-to-SQL
 
-> **企业级数据分析场景中，安全性和可控性 > 表达力。**
+> **In enterprise data-analysis settings, safety and controllability outweigh expressiveness.**
 
-### Direct-generation 方案的 80% 问题
+### The 80% problem with direct generation
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│  直接生成方案的 80% 问题是什么？                     │
-│                                                     │
-│  • 幻觉列名 (30-40% errors in production)           │
-│  • 错误 JOIN 路径                                   │
-│  • SQL 语法对但语义错（最危险 — 返回错误数据无报错） │
-│                                                     │
-│  本方案通过 bounded output 一次性消除这三类问题      │
+│  What is the 80% problem with direct generation?     │
+│                                                       │
+│  • Hallucinated column names (30-40% errors in prod) │
+│  • Wrong JOIN paths                                   │
+│  • Syntactically valid but semantically wrong SQL     │
+│    (most dangerous — returns wrong data, no error)    │
+│                                                       │
+│  Bounded output eliminates all three at once          │
 └─────────────────────────────────────────────────────┘
 ```
 
-LLM 只能输出受类型约束的 `SemanticQuery` JSON（metric / dimension / filter / time_grain），SQL 由确定性编译器生成。模型不再自由拼接列名或 JOIN，因此：
+The LLM can only emit a type-constrained `SemanticQuery` JSON (metric /
+dimension / filter / time_grain); the SQL is produced by a deterministic
+compiler. The model no longer freely concatenates column names or JOINs, so:
 
-- **幻觉列名** → 编译器只接受 catalog 内的 metric/dimension，未注册即拒绝。
-- **错误 JOIN 路径** → catalog 已声明每个 metric 的 fact 表与 join key，编译器按既定路径生成。
-- **语义对但结果错** → 每条 metric 的口径在 catalog 中冻结一次，所有问句共享同一份口径。
+- **Hallucinated column names** → the compiler only accepts metrics/dimensions
+  that exist in the catalog; anything unregistered is rejected.
+- **Wrong JOIN paths** → the catalog declares each metric's fact table and join
+  key, and the compiler generates along the predeclared path.
+- **Semantically wrong results** → each metric's definition is frozen once in
+  the catalog, and every question shares that same definition.
 
-### ⚠️ 本方案的局限 & 应对
+### ⚠️ Limitations of this approach & mitigations
 
-| 局限 | 应对策略 |
+| Limitation | Mitigation |
 |---|---|
-| 用户问超出 catalog 的问题 | 优雅降级：提示"当前不支持该指标"，或 fallback 到直接生成模式（受 SQL validator 兜底） |
-| 复杂分析需求（窗口函数、CTE） | 扩展 SemanticQuery schema（加 `derived_metric`、`window`、`having` 字段） |
-| 初始建设成本 | 以 dbt metrics 或现有 BI 工具的 semantic layer 为起点，不从零写 catalog |
+| User asks something outside the catalog | Graceful degradation: tell the user "that metric isn't supported", or fall back to direct generation (backstopped by the SQL validator) |
+| Complex analytics needs (window functions, CTEs) | Extend the SemanticQuery schema (add `derived_metric`, `window`, `having` fields) |
+| Initial build cost | Start from dbt metrics or an existing BI tool's semantic layer instead of writing the catalog from scratch |
 
 ---
 
@@ -50,12 +56,12 @@ LLM 只能输出受类型约束的 `SemanticQuery` JSON（metric / dimension / f
 ```
 User ──► React UI (Vite) ──► FastAPI ──► Strands Agent (Bedrock Claude Sonnet 4.6)
                                               │
-                                              │ ① LLM stage (概率推理)
+                                              │ ① LLM stage (probabilistic)
                                               ▼
                                     MetricFlowQueryRequest
                               {metric_names, group_by_names, where_constraints, time_*}
                                               │
-                                              │ ② Compiler stage (确定性翻译)
+                                              │ ② Compiler stage (deterministic)
                                               ▼
                                 MetricFlowEngine.explain() → Snowflake SQL
                                               │
@@ -86,6 +92,32 @@ Why MetricFlow vs. our own compiler vs. Cube.dev:
 | **MetricFlow standalone** | ✅ Battle-tested compiler, Snowflake dialect, light deps (Jinja2/pydantic/sqlglot — no SQLAlchemy or dbt-core in base install), works without a dbt project. |
 | Cube.dev | Adds a Node.js service — extra deploy surface for 24h. |
 | Hand-rolled compiler | Re-invents what MetricFlow already does correctly. |
+
+---
+
+## Data scope — tiered build-out
+
+The assignment explicitly warns against limiting to a subset ("Comprehensive
+Mapping: do not limit yourself … ensure your system can access the complete
+range of the data"). The full dataset is ~7,700 ACS metrics across 29 topic
+tables, all wide-format and named with leading digits (`B01001`, `C24010`, …)
+which MetricFlow's identifiers reject. We staged the build-out in three tiers so
+coverage could grow without throwing away early work:
+
+| Tier | Scope | How | Status |
+|---|---|---|---|
+| **Tier 1 — curated core** | 7 hand-picked schemas (population, race, hispanic, households, housing, poverty, employment) | Manually authored MetricFlow-friendly views: rename tables off leading digits, alias columns to human-readable measure names, add the geography join hub | Bootstrap — proved the semantic-IR loop end-to-end |
+| **Tier 2 — full auto-generated catalog** | All 29 ACS tables + geography (≈7,760 metrics, 30 semantic models) | `scripts/generate_catalog.py` introspects Snowflake and emits every semantic-model YAML; **no hand-written YAML remains** — the curated Tier-1 files were superseded by generated ones | **Current / deployed** — this is what runs in prod |
+| **Tier 3 — margins of error** | ACS confidence-interval / margin columns | Surface the `_margin`/MOE columns, but **rank them lower in the prompt** so the agent leads with point estimates and only cites margins when asked | Planned — not yet built |
+
+**Why tiered, not "full from day one":** Tier 1 de-risked the hard part (does the
+LLM → semantic-query → compiler → SQL loop actually ground answers?) on a small,
+trustworthy surface before investing in the generator. Once the loop was proven,
+Tier 2's generator replaced the hand-written YAML wholesale, so the system now
+covers the **complete** dataset rather than a curated slice — directly answering
+the "comprehensive mapping" requirement. Tier 3 is deferred because margins of
+error are a precision refinement, not a coverage gap, and surfacing them too
+prominently would clutter the common-case answer.
 
 ---
 
@@ -121,15 +153,36 @@ ui/                       # React + Vite (copy RolePlayChatbotUI)
 
 ## Guardrail trade-offs
 
+```
+                                          ┌─────────────────────────┐
+ User input → Bedrock guardrail (in) →    │  Strands Agent          │
+                   ↓                       │  (Claude Sonnet 4.5)    │
+               [allowed]                   │                         │
+                                           │  For OOC / refusals:    │
+                                           │   emits [REFUSE:cat]    │
+                                           │   instead of free text  │
+                                           └──────────┬──────────────┘
+                                                      ▼
+                                           ┌──────────────────────┐
+                                           │ canned.dispatch()     │
+                                           │ tag → canned text     │
+                                           │ no tag → pass through  │
+                                           └──────────┬────────────┘
+                                                      ▼
+                                          Bedrock guardrail (out)
+                                                      ↓
+                                                    user
+```
+
 | Layer | Catches | Cost | Verdict |
 |---|---|---|---|
-| **Bedrock Guardrails** (managed, input+output) | Profanity, PII, prompt-injection, content-policy, broad off-topic via "Denied Topics" | +200–400ms; ~$0.75/1k text units; configured in console | **Primary** — covers ~80% of pre-flight + output-filter without an extra LLM call. |
-| **Capability-boundary canned responses** (post-LLM tag dispatch) | "Census-related but agent can't do it" — generate / synthesize / train / forecast / export / give advice | <1ms; ~30 LOC; deterministic | **Required** — Bedrock can't tell *"What's the population of CA?"* (we can answer) from *"Generate a synthetic CA census"* (we can't). Both pass content + denied-topic checks. |
-| **Token-level / SQL static validator** (sqlglot) | DDL/DML rejection, schema allowlist, LIMIT injection (incl. CTE/UNION) | <5ms; ~120 LOC | **Mandatory** — last gate at the data boundary. Bedrock operates on natural language, not SQL ASTs — cannot tell `DROP TABLE` from `SELECT`. |
-| **Pre-flight LLM classifier** (custom) | Domain-specific rejects with canned replies | +1 LLM call (~500ms) | **Skip** — Bedrock "Denied Topics" + the post-LLM canned dispatch below subsume the use case without doubling LLM latency. |
-| **Output post-filter** (hallucination check) | Hallucinated stats, leaked schema names | +200ms or regex | **Skip** — output Bedrock guardrail covers PII/profanity; hallucination is fought with grounding (`semantic_query` cites SQL + row counts), not a post-filter. |
+| **Bedrock Guardrails** (managed, input+output) | Profanity, PII, prompt-injection, content-policy via **content filters** | +200–400ms; ~$0.75/1k text units; configured in console | **Content filters only** — see decision below. Off-topic is NOT handled here. |
+| **Capability-boundary canned responses** (post-LLM tag dispatch) | Off-topic + "census-related but agent can't do it" (generate / synthesize / forecast / advise) | <1ms; ~30 LOC; deterministic | **Required** — handles both off-topic *and* the can't-tell-apart case: *"population of CA?"* (answer) vs *"generate a synthetic CA census"* (refuse). |
+| **SQL static validator** (sqlglot) | DDL/DML rejection, schema allowlist, LIMIT cap (incl. CTE/UNION) | <5ms; ~120 LOC | **Mandatory** — last gate at the data boundary. Bedrock reads natural language, not SQL ASTs — can't tell `DROP TABLE` from `SELECT`. |
+| **Bedrock Denied Topic** for off-topic | Off-topic via semantic match | console-config | **Removed** — misfired on legit queries (blocked *"population of CA"*). Moved to canned-tag layer. See [reflection](./reflection.md). |
+| **Pre-flight LLM classifier** / **output hallucination filter** | Domain rejects / hallucinated stats | +1 LLM call / +200ms | **Skip** — canned-tag dispatch + grounding (`semantic_query` cites SQL + row counts) subsume these without extra latency. |
 
-**Net stack:** Bedrock Guardrails (in+out) → LLM → canned-tag dispatch → sqlglot SQL validator → read-only Snowflake role → result-row cap. The capability-boundary layer + SQL validator are the only **mandatory** custom code; everything else is managed.
+**Net stack:** Bedrock content filters (in+out) → LLM → canned-tag dispatch (incl. `[REFUSE:off_topic]`) → sqlglot SQL validator → read-only Snowflake role → result-row cap. Off-topic filtering lives in the prompt + canned-tag layer, NOT in a Bedrock Denied Topic — see [reflection](./reflection.md) for why. The capability-boundary layer + SQL validator are the only **mandatory** custom code; everything else is managed.
 
 ### Capability-boundary canned responses
 

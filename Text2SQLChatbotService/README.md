@@ -1,22 +1,37 @@
 # Text2SQLChatbotService
 
-FastAPI backend for the Text2SQL census agent.
+Natural-language chat agent over the Snowflake US Open Census dataset. The LLM
+emits a typed semantic query; a deterministic compiler (MetricFlow) — not the
+model — produces the SQL, which is validated and run read-only against Snowflake.
+
+## 🔗 Live demo
+
+> Reviewers: no local setup required.
+
+- **URL:** https://text2sql-chatbot.onrender.com/
+- **Access key:** `DlokgC3yS4tWsUVupcrrSby5f20axDeVECx1TutLb2E`
+
+Paste the key when prompted, then ask e.g. *"What's the population of California
+in 2020?"* Click **View SQL** to see the grounding query. The first request
+after idle may take ~30–60s (free-tier cold start).
+
+## Layout
 
 ```
 src/text2sqlchatbotservice/
   api/          FastAPI routers + Pydantic wire schemas
-  agent/        Strands Agent factory (Bedrock Claude Sonnet)
+  agent/        Strands Agent factory (Bedrock / Anthropic — see LLM_PROVIDER)
   semantic/     MetricFlow manifest loader + compiler wrapper, catalog/*.yaml
   snowflake/    Snowflake connection pool + read-only execution
-  guardrails/   Bedrock Guardrails wrapper, sqlglot SQL validator
-  memory/       In-process SessionRegistry
+  guardrails/   Bedrock content filters, capability-boundary canned responses, sqlglot SQL validator
+  memory/       SessionRegistry (in-process + on-demand restore)
   tools/        @tool functions: semantic_query, list_metrics, calculator
 ```
 
 ## Run locally
 
 ```bash
-cp .env.example .env  # fill SNOWFLAKE_PASSWORD, BEDROCK_GUARDRAIL_ID
+cp .env.example .env   # fill SNOWFLAKE_PASSWORD (+ AWS creds for Bedrock)
 pip install -e .
 text2sqlchatbotservice  # → http://127.0.0.1:8000
 ```
@@ -28,31 +43,11 @@ to a built `dist/` to serve both from this one process (single origin).
 
 ```bash
 pip install -e ".[test]"
-pytest
+pytest   # 32 tests, fully offline
 ```
 
-Covers the SQL validator (DDL/DML rejection, allowlists, LIMIT capping), the
-API-key auth boundary, LLM-provider selection, evidence extraction, and the
-HTTP auth/health contract — all offline (no Snowflake/Bedrock needed).
+## More
 
-## Accessing the deployed demo
-
-> **Reviewers:** the running web app is here. No local setup required.
-
-- **URL:** `<FILL IN AFTER DEPLOY — e.g. https://census-chatbot.onrender.com>`
-- **Access key:** `<FILL IN — the API_KEY value>`
-
-On first load the app prompts for the access key. Paste the key above; it is
-stored in your browser and sent on every request. Then ask questions like
-*"What's the population of California in 2020?"* Off-topic questions are
-declined by the guardrail. Click **View SQL** under any answer to see the
-grounding query.
-
-> First request after an idle period may take ~30–60s while the free-tier host
-> and Snowflake warehouse wake up. Subsequent requests are fast.
-
-## Deployment
-
-See [doc/deployment.md](doc/deployment.md) for the full AWS + Render setup.
-
-See [doc/design.md](../Text2SQLAgent/doc/design.md) for architecture.
+- [doc/design.md](doc/design.md) — architecture & key decisions
+- [doc/reflection.md](doc/reflection.md) — written reflection (process, trade-offs, edge cases, testing)
+- [doc/deployment.md](doc/deployment.md) — AWS + Render setup
