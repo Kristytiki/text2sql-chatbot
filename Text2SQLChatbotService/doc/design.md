@@ -1,11 +1,8 @@
-# Text2SQLAgent — Design Doc
+# Text2SQL Census Agent — Design Doc
 
 ## Context
 
-Build a production-quality chat agent that answers natural-language questions about the US population using the **Snowflake US Open Census** dataset (24h take-home for Snowflake interview). The skeleton package `Text2SQLAgent` is empty. We will reuse proven patterns from two local packages:
-
-- `AMXTalentPluginAgentCore` — Strands agent loop, Bedrock memory hooks, guardrails.
-- `RolePlayAgent` — React + Vite UI + FastAPI backend, server-side session registry.
+Build a production-quality chat agent that answers natural-language questions about the US population using the **Snowflake US Open Census** dataset.
 
 Success criteria: grounded answers, ≤60s latency, multi-turn context, guardrails, graceful degradation, public URL.
 
@@ -51,10 +48,10 @@ compiler. The model no longer freely concatenates column names or JOINs, so:
 
 ---
 
-## Architecture (matches reference screenshot)
+## Architecture
 
 ```
-User ──► React UI (Vite) ──► FastAPI ──► Strands Agent (Bedrock Claude Sonnet 4.6)
+User ──► React UI (Vite) ──► FastAPI ──► Strands Agent (Claude Sonnet 4.5)
                                               │
                                               │ ① LLM stage (probabilistic)
                                               ▼
@@ -77,7 +74,7 @@ Two-stage design (LLM → typed query request → deterministic compiler → SQL
 
 ### Semantic-layer choice: MetricFlow (standalone)
 
-We use `metricflow` from `/home/zheqi/workspace/SQLAgent/metricflow` as the semantic layer + SQL compiler — no dbt project required.
+We use `metricflow` as the semantic layer + SQL compiler — no dbt project required.
 
 - **Manifest** built from our own YAML via `parse_directory_of_yaml_files_to_semantic_manifest(...)` → `PydanticSemanticManifest` → `SemanticManifestLookup`.
 - **Compiler** = `MetricFlowEngine.explain(MetricFlowQueryRequest.create(metric_names=[...], group_by_names=[...], where_constraints=[...]))`. Returns SQL without executing.
@@ -124,29 +121,32 @@ prominently would clutter the common-case answer.
 ## Package layout
 
 ```
-src/text2_sql_agent/
+Text2SQLChatbotService/src/text2sqlchatbotservice/
+  app.py                  # FastAPI factory + lifespan (wires all components)
+  config.py               # pydantic-settings; env-driven
   agent/
-    agent.py              # Strands Agent factory (copy single_agent.py pattern)
-    system_prompt.py      # Census-grounded prompt + schema digest
+    factory.py            # Strands Agent factory (Bedrock or Anthropic per LLM_PROVIDER)
+    system_prompt.py      # Census-grounded prompt: data shape, time semantics, refusal tags
   semantic/
-    manifest_loader.py    # YAML dir → PydanticSemanticManifest → SemanticManifestLookup
-    catalog.yaml/         # hand-curated semantic_models + metrics (Census)
-    compiler.py           # thin wrapper: dict → MetricFlowQueryRequest → engine.explain() → SQL
+    compiler.py           # dict → MetricFlowQueryRequest → engine.explain() → SQL
+    catalog_index.py      # in-memory metric index for list_metrics fuzzy search
+    catalog/              # auto-generated semantic_models/*.yaml + metrics.yaml
   tools/
-    semantic_query_tool.py   # @tool: takes SemanticQuery, returns rows + sql
-    list_metrics_tool.py     # @tool: search the catalog (RAG-lite)
-    calculator_tool.py       # @tool: post-query math (per-capita, growth, ratio)
+    builder.py            # @tool: semantic_query, list_metrics, calculator
   snowflake/
-    client.py             # snowflake-connector-python, read-only role, LIMIT cap
+    client.py             # snowflake-connector-python pool, read-only, LIMIT cap
   guardrails/
-    bedrock_guardrail.py  # Bedrock Guardrails (input + output)
+    bedrock_guardrail.py  # Bedrock content filters (input + output)
     canned.py             # capability-boundary tag dispatch ([REFUSE:<category>])
-    sql_validator.py      # sqlglot AST: SELECT-only, allowlist schemas, LIMIT≤10k (CTE/UNION-aware)
+    sql_validator.py      # sqlglot AST: SELECT-only, allowlist schemas, LIMIT cap (CTE/UNION-aware)
   memory/
-    session_registry.py   # in-process dict[session_id] -> Agent
+    session_registry.py   # in-process map + on-demand restore from disk
   api/
-    app.py                # FastAPI: POST /chat/sessions, .../messages (SSE)
-ui/                       # React + Vite (copy RolePlayChatbotUI)
+    routers/chat.py       # POST /chat/sessions, .../messages, .../history
+    schemas.py            # Pydantic wire models
+    auth.py               # X-API-Key dependency
+
+Text2SQLChatbotUI/        # React 19 + Vite single-pane chat UI
 ```
 
 ---
@@ -197,7 +197,7 @@ The LLM is instructed (in `system_prompt.py`) that when a user asks for somethin
 | `[REFUSE:future_data:year=YYYY]` | Asks for a year we don't have (anything outside 2019/2020) | "The dataset only covers 2019 and 2020 ACS 5-year snapshots. I don't have data for {year}. Did you mean 2020?" |
 | `[REFUSE:individual_data]` | Asks about a specific person, address, or sub-CBG geography | "I can't look up individual people. The Census Bureau only releases aggregated counts at the census-block-group level (~600–3000 people each)." |
 | `[REFUSE:personal_advice]` | Asks for legal / medical / financial / policy advice or actions on the user's behalf | "I can answer factual questions about census data but can't give advice or take actions. Is there a Census stat I can pull for you?" |
-| `[REFUSE:prompt_injection]` | Tries to override the agent's rules ("ignore previous instructions", role-play override, system-prompt extraction) | "I'll stick to answering questions about the US Census dataset. What demographic data can I help you find?" |
+| `[REFUSE:prompt_injection]` | Tries to override the agent's rules ("ignore previous instructions", persona override, system-prompt extraction) | "I'll stick to answering questions about the US Census dataset. What demographic data can I help you find?" |
 | `[REFUSE:non_additive_metric:metric=X]` | User asks for a median / mean / aggregate column that the catalog excluded (sum-aggregating across CBGs is wrong) | "Census ACS provides {metric} per census-block-group; summing them across geographies is statistically incorrect. I can show you the underlying counts and you can compute a population-weighted estimate." |
 
 Tags are matched by a regex anchored at the **start of the LLM output** (`^\[REFUSE:([a-z_]+)(?::([^\]]*))?\]`). Anything after the tag is ignored. No tag → response goes through unchanged.
@@ -211,75 +211,55 @@ Why "tag" and not "have the LLM write the canned text directly":
 
 ## Strands agent
 
-Copy `create_agent()` pattern from `AMXTalentPluginAgentCore/.../agents/single_agent.py`:
-- `BedrockModel(model_id="us.anthropic.claude-sonnet-4-6", cache_config=CacheConfig(strategy="auto"))`
-- Tools (3): `semantic_query`, `list_metrics`, `calculator`
-- System prompt embeds the metric catalog (~30 metrics × 1 line) so the model picks a metric without an extra retrieval call. Long tail handled by `list_metrics` fuzzy search.
+- Model selected at runtime by `LLM_PROVIDER` — `bedrock` (default, host AWS creds) or `anthropic` (direct API key, no AWS). Default `claude-sonnet-4-5`.
+- Tools (3): `semantic_query`, `list_metrics`, `calculator`.
+- The catalog has ~7,700 metrics — far too many to inline in the prompt. The system prompt teaches the model the *shape* of the data (wide-format ACS tables, valid group-by dimensions, time semantics) and `list_metrics` does fuzzy discovery on demand.
 - `SlidingWindowConversationManager(window_size=20)` for multi-turn context.
-- Per-session `Agent` instance kept in `SessionRegistry` (RolePlayAgent pattern). No Bedrock AgentCore Memory — in-process dict + persistence to `.sessions/` is sufficient for 24h scope.
+- Per-session `Agent` instance held in `SessionRegistry`. Strands `FileSessionManager` persists each session to `.sessions/`; the registry restores from disk on cache-miss so sessions survive process restarts.
 
-**LLM choice note:** requirement.md does not constrain the LLM. We pick Bedrock Claude Sonnet 4.6 for tool-use quality + prompt caching; documented in REFLECTION.
+**LLM choice note:** the assignment does not constrain the LLM. We pick Claude Sonnet 4.5 for tool-use quality + prompt caching; see [reflection](./reflection.md).
 
 ---
 
 ## Snowflake connection
 
-- Free trial account; provision a **read-only role** (`USAGE` on warehouse + `SELECT` on the marketplace `US_OPEN_CENSUS_DATA` schema).
-- `snowflake-connector-python` with private-key or password auth via env vars.
-- Connection pool (size 4) created at FastAPI startup.
-- Every query goes through `sql_validator.py` first; warehouse auto-suspends after 60s.
-- Catalog (`catalog.py`) hand-curated against the dataset's `CBG_*`, `CENSUS_BLOCK_GROUPS_*`, `CBG_GEOGRAPHIC_DATA` tables — small enough to fit in the system prompt.
+- **Read-only execution** against the dataset views (`CENSUS_DB.CENSUS_VIEWS`).
+- `snowflake-connector-python` with password (or key-pair) auth via env vars.
+- A small `LifoQueue` connection pool (size 4) — each query gets its own connection (Snowflake's connector is not cursor-isolated on a shared connection), with warm-connection reuse.
+- Every query passes through `sql_validator.py` before execution; the warehouse auto-suspends when idle.
 
 ---
 
-## Frontend (RolePlayAgent pattern)
+## Frontend
 
-- Copy `RolePlayChatbotUI/` (React 19 + Vite + plain CSS) and trim persona-picker → single chat pane.
-- Add SSE for token streaming (RolePlayAgent does NOT stream — added here for the 60s SLA + UX). FastAPI endpoint returns `text/event-stream`.
-- Render: streamed tokens, then a collapsible **"View SQL + rows"** panel — grounding evidence for the user (and the reviewer).
+- React 19 + Vite, single-pane chat UI (`react-markdown` for rich answers).
+- Live "thinking" status (catalog → metrics → SQL → Snowflake → summarize) that collapses into a step list once the answer arrives.
+- Each answer carries a collapsible **"View SQL"** panel — the grounding query + row counts, so a user (or reviewer) can verify any number.
+- API-key gate: the key is entered once, stored in `localStorage`, sent as `X-API-Key` on every request.
 
 ---
 
 ## Tests (meaningful, not exhaustive)
 
-- `test_compiler.py` — semantic IR → SQL golden snapshots (10 cases).
-- `test_sql_validator.py` — reject DDL/DML/UNION-injection/non-allowlisted-schema (table-driven).
-- `test_agent_e2e.py` — 6–8 question fixtures hitting a mocked Snowflake; asserts correct metric pick + grounded answer.
-- `test_guardrails.py` — off-topic, prompt-injection, SQL-injection-in-NL all rejected.
-- Defer (call out in REFLECTION): load tests, full LLM-judge eval harness.
+- `test_sql_validator.py` — DDL/DML rejection, schema allowlist, LIMIT cap, CTE/UNION-aware injection (table-driven).
+- `test_canned.py` — refusal-tag dispatch: each category maps to its canned text; unknown tag falls back; param interpolation.
+- `test_provider.py` — LLM-provider selection (bedrock vs anthropic) and error on misconfig.
+- `test_evidence.py` — evidence extraction is scoped to the current turn only.
+- HTTP auth/health contract.
+- All offline — no Snowflake/Bedrock needed.
+- Deferred (see [reflection](./reflection.md)): load tests, full LLM-judge eval harness.
 
 ---
 
 ## Deployment
 
-- Public URL: **EC2 t3.small** (fallback: Streamlit Cloud if we drop React for Streamlit). Caddy in front for HTTPS + basic auth, credentials in README.
-- Secrets via `.env` on the host (Snowflake creds, AWS creds, Bedrock Guardrail ARN). Never committed.
-- Single Dockerfile, multi-stage: Vite build → FastAPI image serving static files.
-
----
-
-## Critical files to create
-
-- `src/text2_sql_agent/semantic/manifest_loader.py`, `compiler.py`, `catalog/*.yaml` — manifest + MetricFlow wrapper.
-- `src/text2_sql_agent/tools/semantic_query_tool.py` — primary agent tool.
-- `src/text2_sql_agent/guardrails/sql_validator.py` — sqlglot validation.
-- `src/text2_sql_agent/agent/agent.py` — Strands wiring.
-- `src/text2_sql_agent/api/app.py` — FastAPI app.
-- `ui/` — React + Vite.
-- `Dockerfile`, `README.md`, `REFLECTION.md`.
-
-## Reuse references
-
-- Strands agent loop: `/home/zheqi/workspace/AMXTalentPluginAgentCore/src/AMXTalentPluginAgentCore/src/amx_talent_plugin_agent_core/agents/single_agent.py`
-- FastAPI + session registry: `/home/zheqi/workspace/RolePlayAgent/RolePlayChatbotService/`
-- React UI: `/home/zheqi/workspace/RolePlayAgent/RolePlayChatbotUI/`
-- MetricFlow engine: `/home/zheqi/workspace/SQLAgent/metricflow/metricflow/engine/metricflow_engine.py` (`MetricFlowEngine`, `MetricFlowQueryRequest`, `MetricFlowExplainResult`)
-- Snowflake renderer: `/home/zheqi/workspace/SQLAgent/metricflow/metricflow/sql/render/snowflake.py`
-- Manifest parsing: `/home/zheqi/workspace/SQLAgent/metricflow/metricflow_semantic_interfaces/parsing/dir_to_model.py`
+- Public URL via Render (Docker web service). Single multi-stage Dockerfile: Vite build → Python image serving the API + static UI from one origin.
+- Secrets via environment (Snowflake creds, AWS creds or Anthropic key, `API_KEY`). Never committed.
+- See [deployment.md](./deployment.md) for the full setup.
 
 ## Verification
 
-1. `pytest -q` — all unit + e2e tests green.
-2. `docker compose up`, hit local URL, run 5 scripted questions covering: simple metric, multi-turn follow-up, ambiguous query, off-topic (guardrail), unanswerable (graceful "I don't have that").
+1. `pytest` — all unit tests green (offline).
+2. Hit the public URL, run scripted questions covering: simple metric, multi-turn follow-up, ambiguous query, off-topic (refused), out-of-capability (refused), unanswerable year (graceful "I don't have that").
 3. Deploy to EC2, repeat from a different network, time each turn (must be ≤60s).
 4. Manual adversarial prompts: `DROP TABLE`, `'; SELECT * FROM internal--`, "ignore previous instructions" — all rejected by either Bedrock Guardrail or sqlglot validator.
