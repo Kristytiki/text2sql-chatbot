@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import threading
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -61,17 +62,24 @@ async def lifespan(app: FastAPI):
         restore=_restore_agent,
     )
 
-    # Warm the MetricFlow engine at startup. Parsing the ~7,700-metric manifest
-    # takes ~20s and is a one-time cost; doing it here keeps it off the first
-    # user request's hot path (critical on small/shared-CPU hosts where it can
-    # otherwise blow the 60s latency budget).
-    try:
+    # Warm the MetricFlow engine in a BACKGROUND thread. Parsing the
+    # ~7,700-metric manifest takes ~20s (longer on shared CPU). Doing it
+    # synchronously here would block uvicorn from binding the port, and hosts
+    # like Render kill a deploy that doesn't open its port fast enough
+    # ("No open ports detected"). Running it off-thread lets the port bind
+    # immediately; the first query either races the warm-up or triggers the
+    # lazy build itself (SemanticCompiler._load_engine is idempotent + cheap
+    # once cached). Either way it's off the synchronous startup path.
+    def _warm() -> None:
         import time as _time
-        _t0 = _time.monotonic()
-        app.state.compiler.warm()
-        logger.info("metricflow engine warmed in %.1fs", _time.monotonic() - _t0)
-    except Exception:
-        logger.exception("metricflow warm-up failed (will retry lazily on first query)")
+        try:
+            _t0 = _time.monotonic()
+            app.state.compiler.warm()
+            logger.info("metricflow engine warmed in %.1fs", _time.monotonic() - _t0)
+        except Exception:
+            logger.exception("metricflow warm-up failed (will retry lazily on first query)")
+
+    threading.Thread(target=_warm, name="metricflow-warmup", daemon=True).start()
 
     logger.info(
         "startup ok — provider=%s guardrail=%s auth=%s db=%s catalog=%d metrics",
