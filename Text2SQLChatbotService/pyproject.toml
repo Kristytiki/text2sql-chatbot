@@ -15,16 +15,15 @@ dependencies = [
     "boto3>=1.35",
     "strands-agents>=0.5",
     "PyYAML>=6.0",
+    # MetricFlow is the SQL compiler — required at runtime, not optional.
+    "metricflow>=0.207,<0.212",
+    "dbt-semantic-interfaces",
 ]
 
 [project.optional-dependencies]
 # Needed only when LLM_PROVIDER=anthropic (direct Anthropic API instead of Bedrock).
 anthropic = [
     "anthropic>=0.39",
-]
-metricflow = [
-    "metricflow",
-    "dbt-semantic-interfaces",
 ]
 test = [
     "pytest>=8.0",
