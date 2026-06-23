@@ -60,6 +60,19 @@ async def lifespan(app: FastAPI):
         session_dir=settings.session_dir,
         restore=_restore_agent,
     )
+
+    # Warm the MetricFlow engine at startup. Parsing the ~7,700-metric manifest
+    # takes ~20s and is a one-time cost; doing it here keeps it off the first
+    # user request's hot path (critical on small/shared-CPU hosts where it can
+    # otherwise blow the 60s latency budget).
+    try:
+        import time as _time
+        _t0 = _time.monotonic()
+        app.state.compiler.warm()
+        logger.info("metricflow engine warmed in %.1fs", _time.monotonic() - _t0)
+    except Exception:
+        logger.exception("metricflow warm-up failed (will retry lazily on first query)")
+
     logger.info(
         "startup ok — provider=%s guardrail=%s auth=%s db=%s catalog=%d metrics",
         settings.llm_provider,

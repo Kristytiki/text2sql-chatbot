@@ -44,6 +44,14 @@ class SemanticCompiler:
     def __post_init__(self) -> None:
         self.manifest_dir = Path(self.manifest_dir)
 
+    def warm(self) -> None:
+        """Eagerly build the MetricFlow engine (parses the manifest).
+
+        Call once at startup so the ~20s manifest parse is not paid on the
+        first user query. Idempotent — subsequent calls are no-ops.
+        """
+        self._load_engine()
+
     def _load_engine(self) -> Any:
         if self._engine is not None:
             return self._engine
