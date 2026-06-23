@@ -108,14 +108,6 @@ Render, with a personal AWS account providing Bedrock (Claude Sonnet 4.5) via a
 + the marketplace subscription check, nothing else. Access is gated by a shared
 `X-API-Key`; the UI prompts for it and stores it client-side.
 
-### Provider abstraction (Bedrock ↔ Anthropic)
-
-The LLM provider is a flag (`LLM_PROVIDER`): `bedrock` by default, `anthropic`
-as a drop-in alternative needing only an API key. This kept development on the
-Amazon network unblocked while making a no-AWS deployment a one-line change. The
-abstraction cost ~30 LOC and is a clean seam if Bedrock access ever becomes a
-constraint.
-
 ---
 
 ## 2. Key decision changed mid-flight: off-topic filtering
