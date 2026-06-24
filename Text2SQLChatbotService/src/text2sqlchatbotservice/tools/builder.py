@@ -134,7 +134,13 @@ def build_tools(
     def calculator(expression: str) -> str:
         """Evaluate a small arithmetic expression for ratios / per-capita.
 
-        Whitelisted operators only: + - * / ( ) and floats.
+        Args:
+            expression: arithmetic expression using only + - * / ( ) and
+                numeric literals. Example: "(39538223 / 331449281) * 100".
+
+        Returns:
+            JSON object with `result` (float) on success or `error` (string)
+            on failure.
         """
         import ast
         import operator as op

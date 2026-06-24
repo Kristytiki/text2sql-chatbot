@@ -171,11 +171,22 @@ layer, and structural safety (no DDL, read-only) at the SQL/DB layer.
   with staged "thinking" labels. Real token streaming (Bedrock `ConverseStream`
   is already used under the hood) would improve perceived latency and is the
   right answer to the 60-second bar under load.
-- **Session durability.** Sessions use Strands' `FileSessionManager` on local
-  disk plus an in-process registry. On Render's free tier the disk is ephemeral
-  and the instance spins down when idle, so conversation history does not
-  survive a restart. A managed store (Redis / Postgres) would make multi-turn
-  context durable.
+- **System prompt / schema verbosity.** The system prompt is already concise,
+  but the auto-generated metric names in the catalog are long
+  (`b01001e1_estimate_sex_by_age_total_population_total`). When the LLM
+  includes these in tool calls or explanations, they consume output tokens and
+  increase latency. A condensed alias mapping (e.g. `total_pop` →
+  `b01001e1_…_total`) surfaced to the agent, or truncating the trailing
+  dimension chain to ≤30 chars, would cut token waste in both the catalog
+  search results and the metric name arguments the model emits.
+- **Session durability / memory scalability.** Sessions use Strands'
+  `FileSessionManager` on local disk plus an in-process registry. On Render's
+  free tier the disk is ephemeral and the instance spins down when idle, so
+  conversation history does not survive a restart. For scalable multi-instance
+  deployments, session and memory state should move to a managed store —
+  Firestore, DynamoDB, or Redis — behind the existing `SessionRegistry`
+  interface, which already abstracts storage behind `get`/`add`/`restore`
+  methods.
 - **Evaluation harness.** I have unit/integration tests (below) but no
   *answer-quality* evals — a fixed question set scored for correctness against
   known census figures. That's the highest-value thing I'd add next.
